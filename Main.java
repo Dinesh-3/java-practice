@@ -36,7 +36,7 @@ public class Main {
 //        var laptop = new Laptop("HP", 100_000, (byte) 8, 512, LocalDateTime.now());
 //        String laptopName = laptop.getName();
 //        System.out.println(laptopName);
-        LampdaExpression.main();
+//        LampdaExpression.main();
         // ThreadPractise.main();
 
 //        String s1 = new String("Dinesh");
