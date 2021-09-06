@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class IOPractise {
     public static void main(String[] args) {
         try {
-            var file = new File("/home/dinesh/Documents/Java Course/Java Practice/customer.csv");
+            var file = new File("/home/dinesh/Downloads/Java Practice/io/customer.csv");
 
 //            boolean isFileDeleted = file.delete();// To delete file
 //            if(isFileDeleted) System.out.println( " Deleted Successfully");
@@ -53,9 +53,9 @@ public class IOPractise {
 //            file.setReadOnly();
             System.out.println("file.canExecute() = " + file.canExecute());
 
-            boolean isFileCreated = file.createNewFile();
-            if(isFileCreated) System.out.println("File Created: "+name);
-            else System.out.println("File Already Exist: " + name);
+//            boolean isFileCreated = file.createNewFile();
+//            if(isFileCreated) System.out.println("File Created: "+name);
+//            else System.out.println("File Already Exist: " + name);
 
             boolean isFileExists = file.exists();
             System.out.println("isFileExists = " + isFileExists);
@@ -63,7 +63,8 @@ public class IOPractise {
 //            GET SIZE
             /* 🔥 DIFFERENCE GET USABLE SPACE AND GET FREE SPACE 🔥
             Note very importantly that getUsableSpace is not equal to getFreeSpace.
-            On Linux file systems for example, partitions very often have a number of reserved blocks.
+            On Linux file systems for example, partitions very often 
+            have a number of reserved blocks.
             These are included in the value returned by getFreeSpace()
             but not in the value from getUsableSpace().
             So if you are interested in how much space you have to write files in, use getUsableSpace -
@@ -103,7 +104,7 @@ public class IOPractise {
             writeFile("customer.csv", customers);
 
             Serialization.main();
-
+            readFile();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -117,6 +118,17 @@ public class IOPractise {
 
     }
 
+    private static void readFile() {
+        var file = new File("/home/dinesh/Downloads/Java Practice/io/IOPractise.java");
+        try {
+            System.out.println("INSIDE JAVA READ");
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNext())
+                System.out.println(scanner.nextLine());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
+    }
 
 }

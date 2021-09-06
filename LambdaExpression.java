@@ -6,6 +6,11 @@ import java.util.function.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+/*
+    References:
+        1. https://stackoverflow.com/questions/5894818/how-to-sort-arraylistlong-in-decreasing-order#comment6782749_5894842
+ */
+
 public class LambdaExpression {
     public static void main(String[] args) {
         System.out.println("--- LAMBDA EXPRESSION ---");
@@ -72,9 +77,18 @@ public class LambdaExpression {
         int page = 1;
         int limit = 2;
 
+        // Manual Comparing setup
+//        users.sort(User::compareTo);
+//        System.out.println(users);
+
         users.stream()
                 .distinct()
-                .sorted(Comparator.comparing(User::getFirstName))
+//                .sorted(Comparator.comparing(User::getFirstName))
+                .sorted(
+                        Comparator.comparing(User::getAge)
+                                .reversed()
+                                .thenComparing(User::getFirstName)
+                )
                 .peek(LambdaExpression::accept) // Used to log each element
                 .map(user -> user.getFirstName().toUpperCase())
 //                .filter(name -> name.startsWith("B"))

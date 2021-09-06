@@ -2,19 +2,21 @@ package dataStructure;
 
 import java.util.Arrays;
 
-public class Array {
+public class Array<T> {
 
-    private String[] array;
-    private int size;
+    private T[] array = (T[]) new Object[30];
     private int count;
-    public Array(int size) {
-        this.size = size;
-        this.array = new String[size];
+
+    public Array() {
     }
 
-    public void insert(String item) {
+    public Array(int size) {
+        this.array = (T[]) new Object[size];
+    }
+
+    public void insert(T item) {
         if(array.length == count) {
-            String[] newArray = new String[count * 2];
+            T[] newArray = (T[]) new Object[count * 2];
             for (int i = 0; i < count; i++) {
                 newArray[i] = array[i];
             }
@@ -30,6 +32,15 @@ public class Array {
 
     @Override
     public String toString() {
-        return Arrays.toString(array);
+        return "[" + getItemsSeparateByComma() + "]";
+
+    }
+
+    private String getItemsSeparateByComma() {
+        var items = "";
+        for (int i = 0; i < count - 1; i++)
+            items = items + array[i] + ", ";
+        items += array[count - 1];
+        return items;
     }
 }

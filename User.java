@@ -50,6 +50,7 @@ public class User implements DetailInterface{
         return "User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", age=" + age +
                 '}';
     }
 
@@ -64,5 +65,10 @@ public class User implements DetailInterface{
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);
+    }
+
+    public int compareTo(User other) {
+        return Byte.compare(other.age, this.age);
+//        return this.age > other.age ? -1 : this.age == other.age ? 0 : 1;
     }
 }

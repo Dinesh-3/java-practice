@@ -117,10 +117,10 @@ public class LinkedList<T> {
     }
 
     public T[] toList() {
-        var array = (T[]) new Object[size];
+        var array = (T[]) new Object[size + 1];
         var current = first;
         int index = 0;
-        while (current != null) {
+        while (current != null ) {
             array[index++] = current.data;
             current = current.next;
         }

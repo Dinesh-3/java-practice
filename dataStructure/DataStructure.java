@@ -1,25 +1,32 @@
 package dataStructure;
 
+import java.util.Arrays;
+
 public class DataStructure {
     public static void main(String[] args) {
 
 //        Collections.main();
 
-//        Array array = new Array(1);
-//        array.insert("Dinesh");
-//        array.insert("Babu");
+        Array<String> array = new Array<>(1);
+        array.insert("Dinesh");
+        array.insert("Babu");
+        array.insert("Babu");
+        array.insert("Babu");
+        array.insert("4");
 //        array.print();
-//        System.out.println("array = " + array);
+        System.out.println("array = " + array);
 
-//        LinkedList<Integer> linkedList = new LinkedList<>();
-//        linkedList.addLast(10);
-//        linkedList.addLast(20);
-//        linkedList.addLast(30);
-//        linkedList.addLast(40);
-//        linkedList.addFirst(5);
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.addLast(10);
+        linkedList.addLast(20);
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+        linkedList.addFirst(5);
 //        linkedList.removeFirst();
 //        linkedList.reverse();
 //        var list = linkedList.toList();
+
+        System.out.println("list = " + Arrays.toString(linkedList.toList()));
 
 //        System.out.println(linkedList.getKthFromTheEND(5));
 
@@ -73,7 +80,7 @@ public class DataStructure {
         searchTree.add(1);
         searchTree.add(4);
 
-        searchTree.preOrderTraversal();
+//        searchTree.preOrderTraversal();
 //        searchTree.inOrderTraversal();
 //        searchTree.postOrderTraversal();
 
@@ -81,7 +88,7 @@ public class DataStructure {
 //        System.out.println("searchTree.min() = " + searchTree.minVal());
 //        var kthNodes = searchTree.getKthNodes(1);
 //        System.out.println("kthNodes = " + kthNodes);
-        searchTree.traversLevelOrder();
+//        searchTree.traversLevelOrder();
         //        searchTree.contains(6);
 //        System.out.println("searchTree = " + searchTree.contains(33));
 //        var result = searchTree.find(2, searchTree.getRoot());
