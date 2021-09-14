@@ -2,6 +2,9 @@ package object;
 
 public class Cat extends Animal{
 
+//    @Override
+//    protected final String name; // Throws error field can't be override
+
     public Cat(String name) {
         super(name);
     }

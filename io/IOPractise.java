@@ -12,6 +12,9 @@ import java.util.regex.Pattern;
 public class IOPractise {
     public static void main(String[] args) {
         try {
+            System.out.println(10>>2);
+            Serialization.main();
+
             var file = new File("/home/dinesh/Downloads/Java Practice/io/customer.csv");
 
 //            boolean isFileDeleted = file.delete();// To delete file
@@ -103,8 +106,7 @@ public class IOPractise {
 //            }
             writeFile("customer.csv", customers);
 
-            Serialization.main();
-            readFile();
+//            readFile();
         } catch (Exception e) {
             e.printStackTrace();
         }

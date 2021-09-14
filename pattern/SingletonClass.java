@@ -18,7 +18,7 @@ public class SingletonClass implements Cloneable, Serializable {
         if(singletonClass == null) singletonClass = new SingletonClass();
     }
 
-    protected Object readResolve() {
+    protected Object readResolve() { // For prevent from serialization
         return singletonClass;
     }
 

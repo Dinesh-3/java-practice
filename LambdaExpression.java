@@ -66,9 +66,10 @@ public class LambdaExpression {
         UnaryOperator<Integer> squareOfNumber = n -> n * n;
 
 //        System.out.println("addOne.andThen(square).apply(1) = " + addOne.andThen(square).apply(1));
+//        System.out.println("addOne.andThen(square).apply(1) = " + addOne.compose(square).andThen(square).apply(1));
 
         Predicate<String> isValidName = message -> message.length() > 5;
-        boolean isValid = isValidName.test("DInesh");
+        boolean isValid = isValidName.test("DInesh"); // and, or, negate,test
         System.out.println("isValid = " + isValidName.negate().or(m -> m.startsWith("D")).test("Dinesh"));
         System.out.println("dinesh = " + doubleToIntFunction.applyAsInt(1.2F));
 //        users.forEach(print.andThen(message -> System.out.println("HELLO")));
@@ -96,6 +97,19 @@ public class LambdaExpression {
 //                .skip((page - 1) * limit)
 //                .limit(limit)
                 .forEach(System.out::println);
+
+        List<String> fruits = new ArrayList<>(List.of("Strawberries", "Fig", "pine apple", "Dragon", "apple", "orange", "banana", "mango", "grape"));
+        List<String> sortedFruit = fruits.stream()
+//                .sorted(Comparator.comparingInt(a -> a.length())) // ascending order
+//                .sorted(Comparator.comparing((String s) -> s.length()).reversed()) // descending order
+//                .sorted((a, b) -> a.length() - b.length()) // ascending order
+//                .sorted((a, b) -> b.length() - a.length()) // descending order
+//                .sorted((a, b) -> a.length() < b.length() ? -1: 1) // ascending order
+                .sorted((a, b) -> a.length() > b.length() ? -1: 1) // descending order
+                .collect(Collectors.toList());
+
+        System.out.println("sortedFruit = " + sortedFruit);
+
         var result = numbers.stream()
 //                .count()
 //                .anyMatch(number -> number > 5) // RETURNS BOOLEAN
@@ -114,6 +128,14 @@ public class LambdaExpression {
                 ;
         System.out.println("result = " + result);
 
+//        WHILE
+        System.out.println("\n--- WHILE ---");
+        numbers.stream()
+//                .takeWhile(num -> num < 5)
+//                .dropWhile(num -> num < 5) // Drop numbers that are less than 5
+//                .forEach(System.out::println);
+        ;
+        System.out.println();
 //        Collector
 
         var collect = numbers.stream()
@@ -132,10 +154,17 @@ public class LambdaExpression {
         System.out.println("collectString = " + collectString);
         System.out.println("--- END ---");
 
+        AddTwo addTwo = (a, b) -> a + b; // (int a, int b) -> a + b also valid but not needed
+        int sum = addTwo.add(1, 2);
+        System.out.println("sum = " + sum);
     }
 
 
     private static void accept(User peeked) {
         System.out.println("peeked = " + peeked);
     }
+}
+
+interface AddTwo {
+    int add(int a, int b);
 }

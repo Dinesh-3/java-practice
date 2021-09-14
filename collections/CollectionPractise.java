@@ -2,17 +2,20 @@ package collections;
 
 import java.util.*;
 
-/*
+/**
                                     Collection Order
                                       Collection
                                      /     |     \
                                   List   Queue    Set -> Extends Sorted Set, Tree Set
                                  /         |                   \
                     1. ArrayList   1. PriorityQueue             1. HashSet
-                    2. LinkedList  queue extends Deque
-                                   and ArrayDeque 2. Linked HashSet
+                    2. LinkedList  Deque<E> extends Queue<E>    2. Linked HashSet
+                                   Implementation ArrayDeque
                     3. Vector
                  -> extends stack
+
+    Topics:
+    1. Fail fast and fail safe
  */
 
 public class CollectionPractise {
@@ -45,4 +48,31 @@ public class CollectionPractise {
         System.out.println("integerLinkedList = " + integerLinkedList);
     }
 
+    public static void  collection() {
+        Collection<String> collection = new ArrayList<>();
+        collection.add("a");
+        collection.add("b");
+        collection.add("c");
+
+        // Add multiple items in one go
+        Collections.addAll(collection, "a", "b", "c");
+
+        var size = collection.size();
+
+        collection.remove("a");
+        var containsA = collection.contains("a");
+
+        collection.clear();
+        var isEmpty = collection.isEmpty();
+
+        Object[] objectArray = collection.toArray();
+        String[] stringArray = collection.toArray(new String[0]);
+
+        Collection<String> other = new ArrayList<>();
+        other.add("a");
+        other.add("b");
+        other.add("c");
+        System.out.println(collection == other);
+        System.out.println(collection.equals(other));
+    }
 }

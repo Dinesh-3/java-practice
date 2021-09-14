@@ -3,7 +3,7 @@ package object;
 import java.util.Objects;
 
 public abstract class Animal {
-    private final String name;
+    protected final String name;
 
     public Animal(String name) {
         this.name = name;

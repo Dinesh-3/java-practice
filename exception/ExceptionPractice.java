@@ -21,7 +21,7 @@ public class ExceptionPractice {
                 }
             }
         }
-//        Option 2
+//        Option 2 Classes that are implementing AutoClosable
         try(
                 FileReader fileReader1 = new FileReader("file.txt")
         ) {

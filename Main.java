@@ -4,7 +4,11 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Main {
-
+    /**
+     * JAR -> Java ARchive
+     * WAR -> Web Application Archive or Web Application Resource
+     * EAR -> Enterprise Archive file
+     */
     private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -25,8 +29,8 @@ public class Main {
 
 
 
-//        Main main = new Main();
-//        main.numberOperations();
+        Main main = new Main();
+        main.numberOperations();
 //        main.arrayOperations();
 //        main.userLogin();
 //        main.stringOperations();
@@ -98,6 +102,8 @@ public class Main {
         NumberFormat US = NumberFormat.getCurrencyInstance(Locale.US);
         System.out.println("availableLocales = " + Arrays.toString(availableLocales));
 //        System.out.println(US.format(productPrice));
+        float price1 = 0;
+        System.out.println("US = " + price1);
     }
 
     public void arrayOperations(){
@@ -178,7 +184,10 @@ public class Main {
     public void mortgageCalculator(){
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
-
+        boolean isEligible = true;
+//        boolean b = !!!isEligible;
+//        int i = ~10;
+//        System.out.println("i = " + i);
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Principal: ");

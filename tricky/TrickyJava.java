@@ -50,4 +50,22 @@ public class TrickyJava {
         System.out.println("index = " + index);
 
     }
+
+    public static void objectRelation(String[] args) {
+        /**
+         *  is a -> Dog IS A Animal (Dog inherits animal)
+         *  has a -> Car HAS Driver
+         *  Association (Has A) Relationship between two objects
+         *   Types:
+         *      1. Aggregation:
+         *          Loosely coupled both objects can work independently
+         *          example Car has Driver, Team Has Player, Player Has Ball
+         *      2. Composition:
+         *          Tightly coupled can't be run one without other
+         *          Example: Car Has Engine (
+         *          Car can't run without engine,
+         *          Engine can't exist without a car
+         *          )
+         */
+    }
 }
