@@ -212,4 +212,11 @@ public class Main {
     }
 
 
+    public Optional<?> optionalFeature() {
+//        Optional.of("Dinesh");
+//        Optional.ofNullable("Dinesh");
+//        return Optional.empty();
+        return Optional.of("Dinesh");
+    }
+
 }

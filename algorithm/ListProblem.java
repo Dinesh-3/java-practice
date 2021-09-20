@@ -35,8 +35,8 @@ public class ListProblem {
          */
         int[] numbers = {4,5,1,3,7};
         int positive = 1;
-        for (int i = 0; i < numbers.length; i++) {
-            if(numbers[i] )
-        }
+//        for (int i = 0; i < numbers.length; i++) {
+//            if(numbers[i] )
+//        }
     }
 }

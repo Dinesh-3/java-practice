@@ -7,15 +7,16 @@ public class StringPractise {
         String name2 = "name2";
         String name3 = "name1";
         String name4 = new String("name2");
+        String name5 = new String("name2");
 
         String newName1 = "newName1";
         String newName2 = "newName2";
 
-        System.out.println(name1 == name1);
-        System.out.println(name1 == name2);
-        System.out.println(name1.equals(name1));
-        System.out.println(name1.equals(name3));
-        System.out.println(name2.equals(name4));
+//        System.out.println(name1 == name1);
+//        System.out.println(name1 == name2);
+//        System.out.println(name1.equals(name1));
+//        System.out.println(name1.equals(name3));
+//        System.out.println(name2.equals(name4));
 
         ImmutableUser dinesh = new ImmutableUser("Dinesh", "I");
 

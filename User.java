@@ -68,7 +68,11 @@ public class User implements DetailInterface{
     }
 
     public int compareTo(User other) {
-        return Byte.compare(other.age, this.age);
+//        int compare = Byte.compare(other.age, this.age); // (second, first) descending order
+        int compare = Byte.compare(this.age, other.age); // (second, first) ascending order
+//        System.out.println(other.age + " " + this.age);
+//        System.out.println("compare = " + compare);
+        return compare;
 //        return this.age > other.age ? -1 : this.age == other.age ? 0 : 1;
     }
 }

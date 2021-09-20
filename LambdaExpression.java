@@ -53,6 +53,9 @@ public class LambdaExpression {
         IntFunction<Double> intToDouble = arg -> (double) arg;
         ToIntFunction<Float> floatToIntFunction = Math::round;
         DoubleToIntFunction doubleToIntFunction = arg -> (int) Math.round(arg);
+        System.out.println("dinesh = " + doubleToIntFunction.applyAsInt(1.2F));
+        IntToDoubleFunction intToDoubleFunction = arg ->  arg;
+//        System.out.println("intToDoubleFunction.applyAsDouble(12) = " + intToDoubleFunction.applyAsDouble(12));
         String dinesh = toUppercase.andThen(i -> { System.out.println(i); return i+ " I"; }).apply("Dinesh");
         System.out.println("dinesh = " + dinesh);
 
@@ -69,9 +72,8 @@ public class LambdaExpression {
 //        System.out.println("addOne.andThen(square).apply(1) = " + addOne.compose(square).andThen(square).apply(1));
 
         Predicate<String> isValidName = message -> message.length() > 5;
-        boolean isValid = isValidName.test("DInesh"); // and, or, negate,test
+        boolean isValid = isValidName.test("Dsh"); // and, or, negate,test
         System.out.println("isValid = " + isValidName.negate().or(m -> m.startsWith("D")).test("Dinesh"));
-        System.out.println("dinesh = " + doubleToIntFunction.applyAsInt(1.2F));
 //        users.forEach(print.andThen(message -> System.out.println("HELLO")));
 //        users.forEach(print);
 
@@ -96,6 +98,7 @@ public class LambdaExpression {
 //                .count()
 //                .skip((page - 1) * limit)
 //                .limit(limit)
+//                .max(Comparator.comparing(User::getAge)).get()
                 .forEach(System.out::println);
 
         List<String> fruits = new ArrayList<>(List.of("Strawberries", "Fig", "pine apple", "Dragon", "apple", "orange", "banana", "mango", "grape"));
@@ -115,15 +118,16 @@ public class LambdaExpression {
 //                .anyMatch(number -> number > 5) // RETURNS BOOLEAN
 //                .allMatch(number -> number > 5) // RETURNS BOOLEAN
 //                .noneMatch(number -> number > 5) // RETURNS BOOLEAN True if none of the objects are doesn't match the requirement
-//                .findFirst().get() // RETURNS FIRST ELEMENT IN STREAM
-//                .findAny().get() // RETURNS ANY ELEMENT IN STREAM
+//                .findFirst().get() // RETURNS FIRST ELEMENT IN STREAM , Always gives the computed result of the firstElement
+//                .findAny().get() // RETURNS ANY ELEMENT IN STREAM , Parallel stream
 
 //                FIND MIN AND MAX
 //                .max(Comparator.comparing(a -> a )).get()
 //                .min(Comparator.comparing(a -> a )).get();
-
+//                .isPresent(); Check given value is Present or not
+//                .isEmpty(); Opposite of isPresent
 //               REDUCE
-//                .reduce(Integer::sum).orElse(0);
+//                .reduce((a1, b1) -> Integer.sum(a1, b1));
 //                .reduce(0, Integer::sum);
                 ;
         System.out.println("result = " + result);
