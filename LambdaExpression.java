@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /*
     References:
@@ -101,6 +99,15 @@ public class LambdaExpression {
 //                .max(Comparator.comparing(User::getAge)).get()
                 .forEach(System.out::println);
 
+        /**
+         * FlatMap
+         */
+        List country = Stream.of(
+                Arrays.asList("Colombia", "Finland", "Greece", "Iceland", "Liberia", "Mali", "Mauritius"),
+                Arrays.asList("Peru", "Serbia", "Singapore", "Turkey", "Uzbekistan", "Yemen", "Zimbabwe", "Greece", "Iceland"))
+                .flatMap(strings -> strings.stream())
+                .collect(Collectors.toList());
+
         List<String> fruits = new ArrayList<>(List.of("Strawberries", "Fig", "pine apple", "Dragon", "apple", "orange", "banana", "mango", "grape"));
         List<String> sortedFruit = fruits.stream()
 //                .sorted(Comparator.comparingInt(a -> a.length())) // ascending order
@@ -123,7 +130,9 @@ public class LambdaExpression {
 
 //                FIND MIN AND MAX
 //                .max(Comparator.comparing(a -> a )).get()
-//                .min(Comparator.comparing(a -> a )).get();
+//                .max(Comparator.comparing(a -> a )).get()
+//                .min(Comparator.comparing(a -> a ))
+//                .get();
 //                .isPresent(); Check given value is Present or not
 //                .isEmpty(); Opposite of isPresent
 //               REDUCE
@@ -144,12 +153,14 @@ public class LambdaExpression {
 
         var collect = numbers.stream()
 //                .collect(Collectors.toList());
-                .collect(Collectors.toMap(a -> a, a -> a
+//                .collect(Collectors.toMap(a -> a, a -> a
 //                        ,(name1, name2) -> name1 + name2 // this function used for same key repeated
-                ));
+//                ));
 //                .collect(Collectors.toSet());
+//                .mapToInt(a -> a).sum()
 //                .collect(Collectors.summingInt(a -> a));
-//                .collect(Collectors.summarizingInt(a -> a));
+                .collect(Collectors.summarizingInt(a -> a))
+                ;
         System.out.println("Collected = " + collect);
 //        var collectString = String.join(",", users);
         var collectString = users.stream()
@@ -167,6 +178,42 @@ public class LambdaExpression {
     private static void accept(User peeked) {
         System.out.println("peeked = " + peeked);
     }
+
+    private static void flatMap() {
+        //creating ArrayList
+        List<String> productlist1 = Arrays.asList("Printer", "Mouse", "Keyboard", "Motherboard");
+        List<String>  productlist2 = Arrays.asList("Scanner", "Projector", "Light Pen");
+        List<String> productlist3 = Arrays.asList("Pen Drive", "Charger", "WIFI Adapter", "Cooling Fan");
+        List<String> productlist4 = Arrays.asList("CPU Cabinet", "WebCam", "USB Light", "Microphone", "Power cable");
+        List<List<String>> allproducts = new ArrayList<List<String>>();
+        //adding elements to the list
+        allproducts.add(productlist1);
+        allproducts.add(productlist2);
+        allproducts.add(productlist3);
+        allproducts.add(productlist4);
+        //creating a list of all products
+        List<String> listOfAllProducts = new ArrayList<String>();
+        //for each loop iterates over the list
+        for(List<String> pro : allproducts)
+        {
+            for(String product : pro)
+            {
+        //adds all products to the list
+                listOfAllProducts.add(product);
+            }
+        }
+        System.out.println("List Before Applying mapping and Flattening: \n");
+        //prints stream before applying the flatMap() method
+        System.out.println(listOfAllProducts);
+        System.out.println();
+
+        //creats a stream of elemnts using flatMap()
+        List<String> flatMapList = allproducts .stream().flatMap(pList -> pList.stream()).collect(Collectors.toList());
+        System.out.println("List After Applying Mapping and Flattening Operation: \n");
+        //prints the new stream that we get after applying mapping and flattening
+        System.out.println(flatMapList);
+    }
+
 }
 
 interface AddTwo {
