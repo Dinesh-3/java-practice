@@ -2,28 +2,27 @@ package io;
 
 import java.io.*;
 import java.net.URI;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.regex.Pattern;
 
-public class IOPractise {
-    public static void main(String[] args) {
+/**
+ * STREAM -> sequence of data
+ * Types:
+ *  1. Char Stream
+ *  2. Byte Stream
+ */
+public class Main {
+    public static void main(String[] args) throws IOException{
         try {
-            System.out.println(10>>2);
-            Serialization.main();
+//            System.out.println(10>>2);
+//            Serialization.main();
 
-            var file = new File("/home/dinesh/Downloads/Java Practice/io/customer.csv");
+            var file = new File("/home/dinesh/Downloads/Java Practice/io/sdfsdf.csv");
 
 //            boolean isFileDeleted = file.delete();// To delete file
 //            if(isFileDeleted) System.out.println( " Deleted Successfully");
-
-//            for (int i = 0; i < 1_000_000_000; i++) {
-//                System.out.println("LOOPED: "+ i);
-//            }
-            
+//            else System.out.println("Unable to delete.File Doesn't exist !");
             // FILE LOCATION API
             String name = file.getName();
             String absolutePath = file.getAbsolutePath();
@@ -40,7 +39,7 @@ public class IOPractise {
             System.out.println("parent Folder Path = " + parent);
             System.out.println("isDirectory = " + isDirectory);
             System.out.println("isFile = " + isFile);
-
+            System.out.println("file.lastModified() = " + file.lastModified());
             // FILE PERMISSIONS
             // To get User privileges of the file
             boolean canExecute = file.canExecute();
@@ -56,12 +55,14 @@ public class IOPractise {
 //            file.setReadOnly();
             System.out.println("file.canExecute() = " + file.canExecute());
 
-//            boolean isFileCreated = file.createNewFile();
-//            if(isFileCreated) System.out.println("File Created: "+name);
-//            else System.out.println("File Already Exist: " + name);
+            boolean isFileCreated = file.createNewFile();
+            if(isFileCreated) System.out.println("File Created: "+name);
+            else System.out.println("File Already Exist: " + name);
 
             boolean isFileExists = file.exists();
             System.out.println("isFileExists = " + isFileExists);
+
+            System.out.println("file size in bytes file.length() = " + file.length());
 
 //            GET SIZE
             /* 🔥 DIFFERENCE GET USABLE SPACE AND GET FREE SPACE 🔥
@@ -80,43 +81,57 @@ public class IOPractise {
             System.out.printf("Total Space %.3f GB\n", totalSpace);
             System.out.printf("Usable Space %.3f GB\n", usableSpace);
 
-            Scanner scanner = new Scanner(file);
+            boolean mkdir = file.mkdir(); // To create directory
+            String[] listFiles = file.list();
 
-            List<Customer> customers = new ArrayList<>();
-
-            scanner.nextLine();
-//            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            while (scanner.hasNext()) {
-//                Pattern compile = Pattern.compile("(\"[^\",]+),([^\"]+\")");
-
-                String[] userDetails = scanner.nextLine()
-                        .replaceAll("(\"[^\",]+),([^\"]+\")", "$1$2")
-                        .replaceAll("\"", "")
-                        .split(",");
-//                System.out.println(userDetails[6]);
-                LocalDate date = LocalDate.parse(userDetails[6], dateFormat);
-
-                var customer = new Customer(userDetails[1], userDetails[2], userDetails[3], userDetails[4], Byte.parseByte(userDetails[5]), date, Integer.parseInt(userDetails[7]));
-                customers.add(customer);
-            }
-
-//            for (var customer: customers) {
-//                System.out.println("customer = " + customer);
-//            }
-            writeFile("customer.csv", customers);
+//            writeFile("customer.csv");
 
 //            readFile();
+            bufferWriter();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private static void writeFile(String fileName, List<Customer> customers) throws IOException {
-        FileWriter fileWriter = new FileWriter("./" + fileName);
+    private static void bufferWriter() throws IOException {
+        /**
+         * Writes text to a character-output stream, buffering characters
+         * to provide for the efficient writing of single characters, arrays, and strings.
+         */
+        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/dinesh/Downloads/Java Practice/io/buffer.txt"));
+        writer.write("Hello World\n");
+        writer.write("From JAVA\n");
+        writer.close();
+    }
+
+    private static void writeFile( String file) throws IOException {
+        Scanner scanner = new Scanner(file);
+
+        List<Customer> customers = new ArrayList<>();
+
+        scanner.nextLine();
+//            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        while (scanner.hasNext()) {
+//                Pattern compile = Pattern.compile("(\"[^\",]+),([^\"]+\")");
+
+            String[] userDetails = scanner.nextLine()
+                    .replaceAll("(\"[^\",]+),([^\"]+\")", "$1$2")
+                    .replaceAll("\"", "")
+                    .split(",");
+//                System.out.println(userDetails[6]);
+            LocalDate date = LocalDate.parse(userDetails[6], dateFormat);
+
+            var customer = new Customer(userDetails[1], userDetails[2], userDetails[3], userDetails[4], Byte.parseByte(userDetails[5]), date, Integer.parseInt(userDetails[7]));
+            customers.add(customer);
+        }
+        FileWriter fileWriter = new FileWriter("./" + file);
 
         for(var customer: customers)
             fileWriter.append(customer.toString());
+        //            for (var customer: customers) {
+//                System.out.println("customer = " + customer);
+//            }
 
     }
 

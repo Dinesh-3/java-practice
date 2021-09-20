@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class MergeSort {
     public static void sort(int[] array) {
         if (array.length < 2)
@@ -23,7 +25,7 @@ public class MergeSort {
 
     private static void merge(int[] left, int[] right, int[] result) {
         int i = 0, j = 0, k = 0;
-
+        System.out.println("left = " + Arrays.toString(left) + " " + "right = " + Arrays.toString(right));
         while (i < left.length && j < right.length) {
             if (left[i] <= right[j])
                 result[k++] = left[i++];
@@ -36,5 +38,6 @@ public class MergeSort {
 
         while (j < right.length)
             result[k++] = right[j++];
+        System.out.println("result = " + Arrays.toString(result));
     }
 }

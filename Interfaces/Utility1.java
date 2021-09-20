@@ -11,6 +11,7 @@ public interface Utility1 {
         System.out.println(a);
     }
 
+    int getName();
 
     /**
      * Throws error we can't create default methods for object class

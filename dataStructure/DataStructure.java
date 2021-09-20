@@ -13,6 +13,7 @@ public class DataStructure {
         array.insert("Babu");
         array.insert("Babu");
         array.insert("4");
+        array.insert("Me", 3);
 //        array.print();
         System.out.println("array = " + array);
 

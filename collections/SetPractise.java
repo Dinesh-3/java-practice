@@ -32,6 +32,11 @@ public class SetPractise {
          *  3. Ordered version of HashSet
          */
         Set<Integer> linkedHashSet = new LinkedHashSet<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+        System.out.println("linkedHashSet.size() = " + linkedHashSet.size());
+        System.out.println("linkedHashSet.isEmpty() = " + linkedHashSet.isEmpty());
+        System.out.println("linkedHashSet.remove(12) = " + linkedHashSet.remove(12));
+        System.out.println("linkedHashSet.add(10) = " + linkedHashSet.add(10));
+        System.out.println("linkedHashSet.contains(10) = " + linkedHashSet.contains(10));
         System.out.println("linkedHashSet = " + linkedHashSet);
 
         /**
@@ -48,6 +53,11 @@ public class SetPractise {
         sortedSet.add(1);
         sortedSet.add(2);
         sortedSet.add(3);
+        System.out.println("sortedSet.first() = " + sortedSet.first());
+        System.out.println("sortedSet.last() = " + sortedSet.last());
+        System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // inclusive
+        System.out.println("sortedSet.headSet(1) = " + sortedSet.headSet(3)); // exclusive
+        System.out.println("sortedSet.subSet(1,3) = " + sortedSet.subSet(1, 3)); // (inclusive, exclusive)
 
 //        SortedSet<String> sortedSet = new TreeSet();
 //        sortedSet.add("1");

@@ -1,6 +1,10 @@
 package sorting;
 
 public class SelectionSort {
+    public static void main(String[] args) {
+        int[] numbers = { 2, 8, 1, 3, 6, 7, 5, 4 };
+        sort(numbers);
+    }
 //    public static void sort(int[] array) { // Version 1
 //        int sortedIndex = 0;
 //        for (int i = 0; i < array.length; i++) {

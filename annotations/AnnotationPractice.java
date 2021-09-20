@@ -17,6 +17,7 @@ public class AnnotationPractice {
         AnnotationPractice annot = new AnnotationPractice();
         Class obj = annot.getClass();
         Annotation annotation = obj.getAnnotation(Mobile.class);
+        // isAnnotationPresent
         Mobile mobile = (Mobile) annotation;
         String name = mobile.name();
         System.out.println("name = " + name);

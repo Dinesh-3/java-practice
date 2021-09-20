@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 
-public class Customer extends IOPractise implements Serializable
+public class Customer extends Main implements Serializable
 //        , Externalizable
 {
     private String firstName;
@@ -67,14 +67,14 @@ public class Customer extends IOPractise implements Serializable
 
     @Override
     public String toString() {
-        return
+        return "{" +
                 firstName + ',' +
                         lastName + ',' +
                         gender + ',' +
                         country + ',' +
                         age + ',' +
                         date + ',' +
-                        id
+                        id + "}"
                 ;
     }
 

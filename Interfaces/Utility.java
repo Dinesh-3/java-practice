@@ -16,6 +16,12 @@ public class Utility implements Utility1, Utility2{
         Utility1.super.print(a); // To resolve diamond problem
     }
 
+    // If two or more interface are having same method signature no problem
+    @Override
+    public int getName() {
+        return 0;
+    }
+
     private String demo() {
         int totalMethods = Utility1.totalMethods;
         System.out.println("totalMethods = " + totalMethods);

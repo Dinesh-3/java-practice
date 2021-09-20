@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.NoSuchElementException;
 
 public class LinkedList<T> {
+    public static int sample = 10;
     private class Node {
         private T data;
         private Node next;

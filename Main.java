@@ -12,6 +12,8 @@ public class Main {
     private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        char char1='\u0061';
+        char char2='\u0041';
 //        User user1 = new User("Dinesh", "I", (byte) 10);
 //        User user2 = user1;
 //        user1.setAge((byte) 20);

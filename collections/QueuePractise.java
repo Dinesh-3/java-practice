@@ -53,11 +53,13 @@ public class QueuePractise {
         integers.add(0);
         integers.add(2);
         integers.add(3);
+        Integer peeked = integers.peek();
+
+        System.out.println("integers = " + integers);
         System.out.println("integers.element() = " + integers.element());
         System.out.println("integers.remove() = " + integers.remove());
         System.out.println("integers.element() = " + integers.element());
-        
-        System.out.println("integers = " + integers);
+
 
     }
 }

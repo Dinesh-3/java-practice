@@ -51,6 +51,7 @@ public class ListPractise {
          *  pop() -> Returns last element and remove
          *  peek() -> Returns last element
          *  empty() -> Returns Boolean stack is empty or not
+         *  contains(T item) -> Returns boolean item exist or not
          */
 
         Stack<Integer> integerStack = new Stack<>();

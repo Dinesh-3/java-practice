@@ -6,7 +6,7 @@ import java.util.*;
                                     Collection Order
                                       Collection
                                      /     |     \
-                                  List   Queue    Set -> Extends Sorted Set, Tree Set
+                                  List   Queue    Set -> Implementation Sorted Set, Tree Set
                                  /         |                   \
                     1. ArrayList   1. PriorityQueue             1. HashSet
                     2. LinkedList  Deque<E> extends Queue<E>    2. Linked HashSet

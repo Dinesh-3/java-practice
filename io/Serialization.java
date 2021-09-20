@@ -25,8 +25,7 @@ public class Serialization {
 
         FileInputStream fileInputStream = new FileInputStream(file);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        Customer dineshOuted = (Customer) objectInputStream.readObject();
-        return dineshOuted;
+        return (Customer) objectInputStream.readObject();
     }
 
     //        SERIALIZATION

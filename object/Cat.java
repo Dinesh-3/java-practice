@@ -2,8 +2,9 @@ package object;
 
 public class Cat extends Animal{
 
-//    @Override
-//    protected final String name; // Throws error field can't be override
+//    @Override // Throws error field can't be override
+//    protected  String name; // value is null because no constructor and setter
+    // If we comment the above code super class field name accessed
 
     public Cat(String name) {
         super(name);

@@ -7,6 +7,24 @@ import java.util.Set;
 
 public class DateTimePractice {
     public static void main(String[] args) {
+        /**
+         * java.time -> Immutable date object and Thread Safe
+         * Provider -> Joda-Time (Stephen Colebourne)
+         */
+        /**
+         * Leap Year => Comes every four year
+         * https://spaceplace.nasa.gov/leap-year/en/
+         * It takes approximately 365.25 days for Earth to orbit the Sun — a solar year.
+         * We usually round the days in a calendar year to 365.
+         * To make up for the missing partial day, we add one day to our calendar approximately every four years.
+         * That is a leap year.
+         *    - <- GMT -> +
+         * GMT -> Greenwich Mean Time (England)
+         * 1 Hour -> 15 degree
+         * 24 Hour -> 24*15 = 360 degree
+         * India -> + 5.5
+         */
+
         Date date = new Date();
         String s = date.toString();
 //        System.out.println("s = " + s);
@@ -18,10 +36,18 @@ public class DateTimePractice {
         final byte MONTH = (byte) TODAY_DATE.getMonthValue();
         final int YEAR = TODAY_DATE.getYear();
 
+        System.out.println("isLeapYear() = " + TODAY_DATE.isLeapYear());
         System.out.println("DAY = " + DAY);
         System.out.println("MONTH = " + MONTH);
         System.out.println("YEAR = " + YEAR);
 
+        /**
+         * Milli -> 10 ^ -3 => 1 / 1000
+         * Micro -> 10 ^ -6
+         * Nano -> 10 ^ -9
+         * Pico -> 10 ^ -12
+         * Femto -> 10 ^ -15
+         */
 
         final LocalTime CURRENT_TIME = LocalTime.now();
         int hour = CURRENT_TIME.getHour();

@@ -71,7 +71,7 @@ public class MapPractise {
         customer = map.getOrDefault(1111, unknown);
 
         map.replace(1111, unknown);
-
+        System.out.println("map = " + map);
         for (var key : map.keySet())
             System.out.println(key);
 
