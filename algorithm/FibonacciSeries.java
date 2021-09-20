@@ -22,19 +22,19 @@ public class FibonacciSeries {
 
     public int topDownApproach(int number) {
         int[] memoizeArray = new int[number+1];
-        return topDownApproach(int number,memoizeArray);
+        return topDownApproach(number,memoizeArray);
     }
 
-    public int topDownApproach(int number, memoizeArray) {
+    public int topDownApproach(int number, int[] memoizeArray) {
         // Top Down Approach
         int result;
         if(memoizeArray[number] != 0){
             return memoizeArray[number];
         }
-        if(n == 1 or n== 2) {
+        if(number == 1 || number == 2) {
             result = 1;
         }else {
-            result = fib(n-1) + fib(n-2);
+            result = topDownApproach(number-1, memoizeArray) + topDownApproach(number-2, memoizeArray);
         }
         memoizeArray[number] = result;
         return result;
