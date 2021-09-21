@@ -208,7 +208,10 @@ public class LambdaExpression {
         System.out.println();
 
         //creats a stream of elemnts using flatMap()
-        List<String> flatMapList = allproducts .stream().flatMap(pList -> pList.stream()).collect(Collectors.toList());
+        List<String> flatMapList = allproducts .stream()
+//                                                .flatMap(List::stream) // or Collection::Stream
+                                                .flatMap(strings -> strings.stream())
+                                                .collect(Collectors.toList());
         System.out.println("List After Applying Mapping and Flattening Operation: \n");
         //prints the new stream that we get after applying mapping and flattening
         System.out.println(flatMapList);

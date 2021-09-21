@@ -1,6 +1,15 @@
 package thread;
 
+/**
+ * Strategy to Resolve concurrency issues
+ * 1. Confinement -> (don't share data, passing each data to particular thread and at last add all data)
+ * 2. Immutability
+ * 3. Synchronization
+ * 4. Atomic objects
+ * 5. Partition
+ */
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Thread.currentThread() = " + Thread.currentThread().getName());
         System.out.println("Thread.activeCount() = " + Thread.activeCount());

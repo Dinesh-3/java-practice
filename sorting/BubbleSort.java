@@ -40,7 +40,7 @@ public class BubbleSort {
 //        }
         for (int i = 0; i < numbers.length - 1; i++) { // Bubble Sort
             for (int j = 1; j < numbers.length - i; j++) {
-                if(numbers[j] < numbers[j - 1]) {
+                if(numbers[j - 1] > numbers[j] ) {
                     swap(numbers, j, j - 1);
                 };
             }
