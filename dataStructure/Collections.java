@@ -1,6 +1,7 @@
 package dataStructure;
 
 import java.util.*;
+import java.util.HashMap;
 import java.util.Stack;
 
 public class Collections {

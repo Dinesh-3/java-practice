@@ -9,10 +9,11 @@ public class ClassPractise {
         for(var method:methods){
             System.out.print(
                     "Method Name: "+method.getName()
-                            + " " +
-                            "Params count: " +
-                            method.getParameterCount());
-//            method.canAccess(new Object());
+                            + " "
+//                            + "Params count: " +
+//                            method.getParameterCount()
+            );
+//            method.canAccess(new Object());\
             System.out.print(" Params: " + Arrays.toString(method.getParameters()));
             System.out.println();
         }

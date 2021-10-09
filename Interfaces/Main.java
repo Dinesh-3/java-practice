@@ -13,5 +13,8 @@ public class Main {
 
         System.out.println("size = " + size);
         System.out.println("size1 = " + size1);
+
+//        String interfaceName = CombinedUtility.interfaceName; // through error because util1, util2 has same fieldName
+
     }
 }

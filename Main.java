@@ -12,8 +12,25 @@ public class Main {
     private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        char char1='\u0061';
-        char char2='\u0041';
+
+        extracted();
+
+        List<Integer> as = new ArrayList<>(List.of(1,2,3,5,4));
+
+        ListIterator<Integer> integerListIterator = as.listIterator(as.size());
+        while (integerListIterator.hasPrevious()){
+            System.out.print(integerListIterator.previous() + " ");
+        }
+        System.out.println();
+        char char1_UTF8 = '\u0061'; // UTF-8 OR UTF-32
+        char char1_ASCII = 97;
+        char char2_UTF8 = '\u0041';
+        char char2_ASCII = 65;
+        System.out.println("char1_UTF8 = " + char1_UTF8);
+        System.out.println("char1_ASCII = " + char1_ASCII);
+        System.out.println();
+        System.out.println("char2_UTF8 = " + char2_UTF8);
+        System.out.println("char2_ASCII = " + char2_ASCII);
 //        User user1 = new User("Dinesh", "I", (byte) 10);
 //        User user2 = user1;
 //        user1.setAge((byte) 20);
@@ -29,15 +46,13 @@ public class Main {
 
         System.out.println("new UserExample(\"new\") = " + new UserExample("new"));
 
-
-
         Main main = new Main();
         main.numberOperations();
-//        main.arrayOperations();
-//        main.userLogin();
-//        main.stringOperations();
-//        main.conditionalStatement();
-//        main.fizzBuzz();
+        main.arrayOperations();
+        main.userLogin();
+        main.stringOperations();
+        main.conditionalStatement();
+        main.fizzBuzz();
 
 //        var laptop = new Laptop("HP", 100_000, (byte) 8, 512, LocalDateTime.now());
 //        String laptopName = laptop.getName();
@@ -90,6 +105,24 @@ public class Main {
 
     }
 
+    private static void extracted() {
+        //        int[] answer = {1, 0, 0 , 4,0,2,0,0,5,6};
+        int[] answer = {1, 0, 0 , 4,0,2,0,0,5,6};
+        int count = 0;
+        int n = 10;
+
+        for (int i = 0; i < n; i++) {
+            if(answer[i] != 0){
+                answer[count++] = answer[i];
+            }
+            while (count < n) {
+                answer[count++] = 0;
+            }
+
+        }
+        System.out.println("answer = " + Arrays.toString(answer));
+    }
+
     public void numberOperations(){
         System.out.println("\n--- NUMBER OPERATION ---\n");
         final byte MONTHS_IN_YEAR = 12;
@@ -102,8 +135,9 @@ public class Main {
         String priceInRupee = currency.format(productPrice);
         Locale[] availableLocales = NumberFormat.getAvailableLocales();
         NumberFormat US = NumberFormat.getCurrencyInstance(Locale.US);
+        System.out.println("priceInRupee = " + priceInRupee);
         System.out.println("availableLocales = " + Arrays.toString(availableLocales));
-//        System.out.println(US.format(productPrice));
+        System.out.println(US.format(productPrice));
         float price1 = 0;
         System.out.println("US = " + price1);
     }

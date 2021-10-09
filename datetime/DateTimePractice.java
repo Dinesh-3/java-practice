@@ -83,12 +83,20 @@ public class DateTimePractice {
         System.out.println("DATE_TIME_NOW = " + DATE_TIME_NOW.format(timeFormatter));
 
         LocalDateTime plusOneMonths = DATE_TIME_NOW.plusMonths(1);
+        DATE_TIME_NOW.plusYears(1);
+        DATE_TIME_NOW.plusWeeks(1);
+        DATE_TIME_NOW.plusDays(1);
+        DATE_TIME_NOW.plusHours(1);
+        DATE_TIME_NOW.plusMinutes(1);
+        DATE_TIME_NOW.plusSeconds(100);
+        DATE_TIME_NOW.plusNanos(100);
         LocalDateTime minusOneMonths = DATE_TIME_NOW.minusMonths(1);
         LocalDate getDateObject = DATE_TIME_NOW.toLocalDate();
 
 //        Find Date Range
         boolean before = DATE_TIME_NOW.isBefore(plusOneMonths);
         boolean after = DATE_TIME_NOW.isAfter(plusOneMonths);
+        boolean isEqual = DATE_TIME_NOW.isEqual(plusOneMonths);
         System.out.print("after = " + after + "before = " + before + "\n");
 
         LocalDateTime withed = DATE_TIME_NOW.withMonth(12); //immutable returns new LocalDateTime
@@ -104,5 +112,7 @@ public class DateTimePractice {
         Set<String> availableZoneIds = ZoneId.getAvailableZoneIds();
         int totalZones = availableZoneIds.size();
         System.out.println("totalZones = " + totalZones);
+        ZoneId systemDefault = ZoneId.systemDefault();
+        System.out.println("systemDefault = " + systemDefault);
     }
 }

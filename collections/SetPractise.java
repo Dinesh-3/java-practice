@@ -21,7 +21,9 @@ public class SetPractise {
          *  3. Accepts only one null value
          *  4. Unordered -> Elements are shuffled so accessing element by index not support
          */
-        Set<Integer> hashSet = new HashSet<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+        Integer[] nums = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        Set<Integer> hashSet = new HashSet<>(Arrays.asList(nums));
         System.out.println("hashSet = " + hashSet);
 
         /**
@@ -47,16 +49,18 @@ public class SetPractise {
          *  1. items must implement comparable interface
          *  2. It's sort the element in ascending order
          */
+        System.out.println("--- TREE SET ---");
         SortedSet<Integer> sortedSet = new TreeSet<>();
         sortedSet.add(1);
         sortedSet.add(4);
         sortedSet.add(1);
         sortedSet.add(2);
         sortedSet.add(3);
+        System.out.println("sortedSet = " + sortedSet);
         System.out.println("sortedSet.first() = " + sortedSet.first());
         System.out.println("sortedSet.last() = " + sortedSet.last());
         System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // inclusive
-        System.out.println("sortedSet.headSet(1) = " + sortedSet.headSet(3)); // exclusive
+        System.out.println("sortedSet.headSet(3) = " + sortedSet.headSet(3)); // exclusive
         System.out.println("sortedSet.subSet(1,3) = " + sortedSet.subSet(1, 3)); // (inclusive, exclusive)
 
 //        SortedSet<String> sortedSet = new TreeSet();
@@ -75,14 +79,16 @@ public class SetPractise {
                 new HashSet<>(Arrays.asList("b", "c", "d"));
 
         // Union
-        set1.addAll(set2);
-        System.out.println(set1);
+//        set1.addAll(set2);
+//        System.out.println("addAll() set1 = " + set1);
+
         // Intersection
-        set1.retainAll(set2);
-        System.out.println(set1);
-        // Difference
+//        set1.retainAll(set2);
+//        System.out.println("retainAll() set1 = " + set1);
+
+//        // Difference
         set1.removeAll(set2);
-        System.out.println(set1);
+        System.out.println("removeAll() set1 = " + set1);
 
     }
 }

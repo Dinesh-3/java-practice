@@ -8,15 +8,17 @@ public class StringPractise {
         String name3 = "name1";
         String name4 = new String("name2");
         String name5 = new String("name2");
-
+        name5.substring(2);
         String newName1 = "newName1";
         String newName2 = "newName2";
 
-//        System.out.println(name1 == name1);
-//        System.out.println(name1 == name2);
-//        System.out.println(name1.equals(name1));
-//        System.out.println(name1.equals(name3));
-//        System.out.println(name2.equals(name4));
+        System.out.println("name1 == name1 = " + String.valueOf(name1 == name1));
+        System.out.println("name1 == name2 = " + String.valueOf(name1 == name2));
+        System.out.println("name2 == name4 = " + String.valueOf(name2 == name4));
+        System.out.println("name4 == name5 = " + String.valueOf(name4 == name5));
+        System.out.println("name1.equals(name1) = " + name1.equals(name1));
+        System.out.println("name1.equals(name3) = " + name1.equals(name3));
+        System.out.println("name2.equals(name4) = " + name2.equals(name4));
 
         ImmutableUser dinesh = new ImmutableUser("Dinesh", "I");
 
@@ -65,7 +67,7 @@ public class StringPractise {
         System.out.println("Time taken by StringBuffer: " + (System.currentTimeMillis() - startTime) + "ms");
         startTime = System.currentTimeMillis();
         StringBuilder sb2 = new StringBuilder("Java");
-        for (int i=0; i<1_0_0_0_0; i++){
+        for (int i=0; i<10_000; i++){
             sb2.append("Tpoint");
         }
         System.out.println("Time taken by StringBuilder: " + (System.currentTimeMillis() - startTime) + "ms");

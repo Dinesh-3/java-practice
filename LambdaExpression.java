@@ -40,7 +40,7 @@ public class LambdaExpression {
                 new User("Harish", "D", (byte) 23))
         );
         var numbers = new ArrayList<>(List.of(3, 2, 4, 8, 1, 5, 9, 6, 7, 0));
-
+        Utils.addUser(users);
         Consumer<String> print = content -> {
             content = content.toUpperCase();
             System.out.println("content = " + content);
@@ -56,7 +56,7 @@ public class LambdaExpression {
 //        System.out.println("intToDoubleFunction.applyAsDouble(12) = " + intToDoubleFunction.applyAsDouble(12));
         String dinesh = toUppercase.andThen(i -> { System.out.println(i); return i+ " I"; }).apply("Dinesh");
         System.out.println("dinesh = " + dinesh);
-
+        Double DoubleConverted = intToDouble.apply(10);
 
         BinaryOperator<Integer> add = (a, b) -> a + b;
         Function<Integer, Integer> square = a -> a * a;
@@ -94,7 +94,7 @@ public class LambdaExpression {
                 .map(user -> user.getFirstName().toUpperCase())
 //                .filter(name -> name.startsWith("B"))
 //                .count()
-//                .skip((page - 1) * limit)
+//                r4.skip((page - 1) * limit)
 //                .limit(limit)
 //                .max(Comparator.comparing(User::getAge)).get()
                 .forEach(System.out::println);
@@ -130,7 +130,6 @@ public class LambdaExpression {
 
 //                FIND MIN AND MAX
 //                .max(Comparator.comparing(a -> a )).get()
-//                .max(Comparator.comparing(a -> a )).get()
 //                .min(Comparator.comparing(a -> a ))
 //                .get();
 //                .isPresent(); Check given value is Present or not
@@ -158,6 +157,7 @@ public class LambdaExpression {
 //                ));
 //                .collect(Collectors.toSet());
 //                .mapToInt(a -> a).sum()
+//                .mapToLong(a -> a)
 //                .collect(Collectors.summingInt(a -> a));
                 .collect(Collectors.summarizingInt(a -> a))
                 ;

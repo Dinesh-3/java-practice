@@ -1,5 +1,5 @@
 public interface DetailInterface {
-    String NAME="Dinesh";
+    public static String NAME="Dinesh";
     String getDob();
     int salary();
     default int get(){

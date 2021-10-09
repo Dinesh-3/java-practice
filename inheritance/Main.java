@@ -4,8 +4,16 @@ import java.time.LocalDate;
 import java.time.Month;
 
 public class Main {
+    /**
+     * Java static block
+     * Is used to initialize the static data member.
+     * It is executed before the main method at the time of classloading.
+     */
+    static{
+        System.out.println("Static block called before main method");
+    }
     public static void main(String[] args) throws Throwable {
-
+        System.out.println("MAIN method called");
         User student = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
         String fullName = student.getFullName();
         System.out.println("fullName = " + fullName);

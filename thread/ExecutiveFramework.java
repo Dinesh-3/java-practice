@@ -19,7 +19,7 @@ public class ExecutiveFramework {
          * Thread Pool:
          *  Thread pool list of worker threads . We can assign a bunch of works. This pool will execute all the operation in
          *  ascending order. Given Tasks are stored in a queue.
-         *  We can all specify how Many threads in a thread pool.
+         *  We can specify how Many threads in a thread pool.
          * It will help in thread manipulation. It doesn't solve the concurrency issues
          * Executor:
          *  1. In Java the concept of thread pool is represented using ExecutorService interface, and it's implementation

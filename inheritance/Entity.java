@@ -11,6 +11,7 @@ public class Entity {
     }
     public int getId(){ // If we define this also getIndex() will throw error
 //        index++;
+        int index1 = index;
         int index = getIndex();
         System.out.println("index = " + index);
         return Entity.getIndex();

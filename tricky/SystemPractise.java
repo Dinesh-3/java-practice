@@ -31,7 +31,7 @@ public class SystemPractise {
          * in a system-specific manner.
          */
 
-//        System.loadLibrary(""); // To load native at dynamically
+        System.loadLibrary(""); // To load native at dynamically
         var puppy =  new Dog("Puppy");
         var twinky =  new Dog("Twinky");
 

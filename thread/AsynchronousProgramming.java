@@ -4,6 +4,7 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -29,6 +30,7 @@ public class AsynchronousProgramming {
 //        .thenAcceptAsync()
 //                .get() // Blocks Main thread
         ;
+        combine();
         try {
             Thread.sleep(7000);
         } catch (InterruptedException e) {
@@ -79,5 +81,55 @@ public class AsynchronousProgramming {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void combine() {
+        /**
+         * Combining two Completable feature results
+         */
+        final var task1 = CompletableFuture.supplyAsync(() -> "Task 1 Result");
+        var task2 = CompletableFuture.supplyAsync(() -> "Task 2 Result");
+        var task3 = CompletableFuture.supplyAsync(() -> "Task 3 Result");
+
+        task1.thenCombine(task2, (result1, result2) -> result1 + " " + result2)
+                .thenAccept(result -> System.out.println("result = " + result));
+
+        // all method
+        CompletableFuture<Void> all = CompletableFuture.allOf(task1, task2, task3);
+        all.thenRun(() -> {
+            try {
+                String result1 = task1.get();
+                String result2 = task2.get();
+                String result3 = task3.get();
+                System.out.printf("ALL %s, %s, %s\n", result1, result2, result3);
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
+        });
+
+        CompletableFuture<Integer> getWeatherSlow = CompletableFuture.supplyAsync(() -> {
+            LongTask.simulate();
+            return 10;
+        });
+
+        CompletableFuture<Integer> getWeatherFast = CompletableFuture.supplyAsync(() -> 20);
+
+        CompletableFuture.anyOf(getWeatherSlow, getWeatherFast) // return value from first completed task
+                .thenAccept(result -> System.out.println("result = " + result));
+
+        try {
+            getWeatherSlow
+                    .orTimeout(1, TimeUnit.SECONDS) // throw error if given task is not done with given value
+                    .get();
+            /**
+             * if the task take more than the given time it returns default value
+             */
+            getWeatherSlow
+                    .completeOnTimeout(1,1, TimeUnit.SECONDS)
+                    .get();
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+
     }
 }

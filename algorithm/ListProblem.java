@@ -6,9 +6,32 @@ import java.util.stream.Stream;
 
 public class ListProblem {
     public static void main(String[] args) {
+        int[] numbers = { 4,3,2,7,8,2,3,1 };
+//        numbers.length = 1; throw error length field is final
         shuffleArrayItemsInRandomOrder();
         char maxFrequency = findMaxFrequency("strawberry");
         System.out.println("maxFrequency = " + maxFrequency);
+
+        int maxRepeatingDigit = findMaxRepeatingDigit(34323);
+        System.out.println("maxRepeatingDigit = " + maxRepeatingDigit);
+
+        List<Integer> duplicates = getDuplicates(numbers);
+        System.out.println("duplicates = " + duplicates);
+
+    }
+
+    public static int findMaxRepeatingDigit(int n) {
+        int arr[] = new int[10];
+        int max = Integer.MIN_VALUE;
+        while(n!=0) {
+            int digit = n%10;
+            arr[digit]++;
+            if(arr[digit] > max)
+                max = arr[digit];
+            n=n/10;
+        }
+        System.out.println("Max find array = " + Arrays.toString(arr));
+        return max;
     }
 
     private static void shuffleArrayItemsInRandomOrder() {
@@ -111,5 +134,29 @@ public class ListProblem {
 //        for (int i = 0; i < numbers.length; i++) {
 //            if(numbers[i] )
 //        }
+    }
+
+    private static List<Integer> getDuplicates(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            nums[nums[i] % (n + 1) - 1] += n + 1;
+        }
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (nums[i] / (n + 1) == 2)
+                res.add(i + 1);
+        }
+        return res;
+
+//        Map<Integer,Integer> map = new HashMap<>();
+//        for(int i = 0; i < nums.length; i++) {
+//            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+//        }
+//        List<Integer> list = new ArrayList<>();
+//        for(int key: map.keySet()) {
+//            if(map.get(key) > 1) list.add(key);
+//        }
+//        return list;
+
     }
 }

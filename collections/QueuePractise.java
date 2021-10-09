@@ -1,9 +1,6 @@
 package collections;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /**
  *  QUEUE
@@ -31,9 +28,11 @@ public class QueuePractise {
         queue.add("c");
         queue.add("a");
         queue.add("b");
-        queue.remove();
-        queue.removeLast();
+        queue.addFirst("f");
         queue.addLast("d");
+        queue.remove();
+        queue.removeFirst();
+        queue.removeLast();
         var front = queue.remove();
 
         front = queue.element(); // Throws error if queue is Empty
@@ -47,6 +46,7 @@ public class QueuePractise {
          *  High priority elements served first irrespective of an insertion order
          *  Ascending Order
          */
+        System.out.println("--- PRIORITY QUEUE ---");
         Queue<Integer> integers = new PriorityQueue<>();
         integers.add(1);
         integers.add(4);
@@ -54,6 +54,19 @@ public class QueuePractise {
         integers.add(2);
         integers.add(3);
         Integer peeked = integers.peek();
+
+        Queue<Integer> minHeap = new PriorityQueue<>(); // smallest element has high priority || ascending order
+        Queue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()); // descending order
+
+        int n = 10;
+        for (int i = 0; i < n; i++) {
+            int number = (int) Math.round(Math.random()*n);
+            minHeap.add(number);
+            maxHeap.add(number);
+        }
+
+        System.out.println("minHeap = " + minHeap);
+        System.out.println("maxHeap = " + maxHeap);
 
         System.out.println("integers = " + integers);
         System.out.println("integers.element() = " + integers.element());

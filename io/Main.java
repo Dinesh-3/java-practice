@@ -15,6 +15,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException{
         try {
+            int[] nums = {23,23,232,35,45};
 //            System.out.println(10>>2);
 //            Serialization.main();
 

@@ -18,8 +18,8 @@ public class Graph {
         }
     }
 
-    private Map<String, Node> nodes = new HashMap<>();
-    private Map<Node, List<Node>> adjacencyList = new HashMap<>();
+    private final Map<String, Node> nodes = new HashMap<>();
+    private final Map<Node, List<Node>> adjacencyList = new HashMap<>();
 
     public void addNode(String label) {
         var node = new Node(label);
@@ -56,7 +56,7 @@ public class Graph {
             adjacencyList.get(n).remove(node);
 
         adjacencyList.remove(node);
-        nodes.remove(node);
+        nodes.remove(label);
     }
 
     public void removeEdge(String from, String to) {

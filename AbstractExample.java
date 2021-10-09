@@ -6,7 +6,8 @@ abstract class AbstractExample {
     }
 
     public String getName() {
+        getNewName();
         return name;
     }
-    abstract void getNewName();
+    abstract String getNewName();
 }

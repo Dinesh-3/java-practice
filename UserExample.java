@@ -5,7 +5,8 @@ public class UserExample extends AbstractExample {
     }
 
     @Override
-    void getNewName() {
+    String getNewName() {
         System.out.println("getName() = " + getName());
+        return getName();
     }
 }

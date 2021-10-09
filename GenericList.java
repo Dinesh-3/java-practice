@@ -32,6 +32,8 @@ public class GenericList<T> implements Iterable<T>{
 
     @Override
     public String toString() {
+        int[] nums = {1,2,3};
+        Arrays.sort(nums);
         return Arrays.toString(list);
     }
 }

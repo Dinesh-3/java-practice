@@ -1,31 +1,40 @@
 package collections;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
 
 public class ListPractise {
     public static void main(String[] args) {
-        List<Integer> numbers = new ArrayList<>(); // Initial Capacity 10
+        /**
+         * Initial Capacity 10
+         */
+        List<Integer> numbers = new ArrayList<>();
         numbers.add(0);
         numbers.add(1);
         numbers.add(2);
         numbers.add(3);
         numbers.add(4);
+        Object num = 3;
+        numbers.remove(num);
         numbers.sort(comparing(a -> a));
-
-
+        System.out.println("numbers = " + numbers);
         /**
          *          LinkedList
          * Doubly LinkedList Implementation
          */
 
-        List<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(0);
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(3);
         linkedList.add(4);
+        linkedList.addFirst(5);
+        linkedList.addLast(6);
+        linkedList.element(); // returns first element in LinkedList
+        System.out.println("linkedList = " + linkedList);
         /**
          *  Vector
          *  Points:
@@ -68,6 +77,21 @@ public class ListPractise {
         System.out.println("integerStack.pop() = " + integerStack.pop());
         System.out.println("integerStack = " + integerStack);
         System.out.println("integerStack.contains(1) = " + integerStack.contains(1));
+
+        Stack<String> hackAnimal = new Stack<>();
+        hackAnimal.push("dog");
+        hackAnimal.push("bat");
+        hackAnimal.push("cow");
+        hackAnimal.push("rat");
+        hackAnimal.push("cat");
+        System.out.println("Asdf5555555555555");
+        for(var item: hackAnimal){
+            System.out.println(item);
+        }
+        hackAnimal.pop();
+        hackAnimal.peek();
+        hackAnimal.pop();
+
         List<String> list = new ArrayList<>();
         list.add("a");
         list.add("b");

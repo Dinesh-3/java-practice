@@ -6,16 +6,16 @@ import java.util.*;
                                     Collection Order
                                       Collection
                                      /     |     \
-                                  List   Queue    Set -> Implementation Sorted Set, Tree Set
+                                  List   Queue    Set -> Implementation  Sorted Set, Tree Set
                                  /         |                   \
                     1. ArrayList   1. PriorityQueue             1. HashSet
                     2. LinkedList  Deque<E> extends Queue<E>    2. Linked HashSet
                                    Implementation ArrayDeque
                     3. Vector
-                 -> extends stack
+                        -> extends stack
 
     Topics:
-    1. Fail fast and fail safe
+    1. Fail fast and fail safe -> https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/
  */
 
 public class CollectionPractise {

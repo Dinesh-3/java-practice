@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class SelectionSort {
     public static void main(String[] args) {
         int[] numbers = { 2, 8, 1, 3, 6, 7, 5, 4 };
@@ -28,6 +30,7 @@ public class SelectionSort {
                 if(array[j] < array[minIndex]) minIndex = j;
             }
             swap(array, minIndex , i);
+            System.out.println("array = " + Arrays.toString(array));
         }
     }
 

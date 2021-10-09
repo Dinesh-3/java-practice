@@ -11,7 +11,7 @@ public class CharFinder {
 
         var chars = str.toCharArray();
         for (var ch : chars) {
-            var count = map.containsKey(ch) ? map.get(ch) : 0;
+            var count = map.getOrDefault(ch, 0);
             map.put(ch, count + 1);
         }
 

@@ -2,7 +2,7 @@ package annotations;
 
 import java.lang.annotation.*;
 
-@Inherited
+@Inherited // to make subclass also has this annotation
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @interface Mobile{
@@ -22,6 +22,14 @@ public class AnnotationPractice {
         String name = mobile.name();
         System.out.println("name = " + name);
         System.out.println(mobile.version());
+    }
+}
+
+class SubClass extends AnnotationPractice {
+    public static void main(String[] args) {
+        SubClass subClass = new SubClass();
+        Mobile annotation = subClass.getClass().getAnnotation(Mobile.class);
+        System.out.println("annotation.name() = " + annotation.name());
     }
 }
 

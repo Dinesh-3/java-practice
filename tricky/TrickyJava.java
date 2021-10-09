@@ -21,6 +21,7 @@ public class TrickyJava {
         if(cat1.equals(cat)) System.out.println(cat.hashCode()+" EQUula " + cat1.hashCode());
 
         /*
+            covariant return type -> Introduced in Java5
             while overriding a method in subclass
             we change return type to its subclass like below
             in this demo Object is the parent of all others, so we can use any return type

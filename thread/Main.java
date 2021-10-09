@@ -1,6 +1,13 @@
 package thread;
 
 /**
+ * Concurrency issues:
+ * 1. Race Condition
+ * 2. Visibility Problem
+ *
+ * Thread safe: code which can safely be used or shared in concurrent or multi-threading environment,
+ *              and they will behave as expected.
+ *
  * Strategy to Resolve concurrency issues
  * 1. Confinement -> (don't share data, passing each data to particular thread and at last add all data)
  * 2. Immutability
