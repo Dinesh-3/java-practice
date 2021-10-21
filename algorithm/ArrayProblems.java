@@ -8,9 +8,6 @@ import java.util.stream.Collectors;
  */
 public class ArrayProblems {
     public static void main(String[] args) {
-        int[] numbers = {1,2,3,4,5,6,7,8,9,10};
-        int target = 17;
-
 
 //        subArrayOfGivenSum(numbers, target);
 //        missingNumberInArray();
@@ -22,9 +19,8 @@ public class ArrayProblems {
 //        reverseArrayInGroups();
 //        kthSmallestElement();
 //        trappingRainWater();
-        turbulantSubArray();
-
-
+//        turbulantSubArray();
+//        findMinAndMax();
 
 //        int[] arrays = { 1, 5, 3, 2 };
 //        for (int i = 0; i < arrays.length; i++) {
@@ -274,38 +270,102 @@ public class ArrayProblems {
 
     public static void turbulantSubArray() {
         int[] numbers = {9,4,2,10,7,8,8,1,9};
-
-        boolean[] table = new boolean[numbers.length];
-
-        if(numbers.length == 1) {
-            System.out.println("max = " + 1);
-            return;
-        }
-
-        for (int i = 0; i < numbers.length - 1; i++) {
-            boolean isValid;
-            if(i%2 == 0 ) {
-                isValid = numbers[i] < numbers[i + 1];
-            }else {
-                isValid = numbers[i] > numbers[i + 1];
+        int inc = 1, dec = 1, res = 1;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > numbers[i - 1]) {
+                inc = dec + 1;
+                dec = 1;
+            } else if (numbers[i] < numbers[i - 1]) {
+                dec = inc + 1;
+                inc = 1;
+            } else {
+                inc = 1;
+                dec = 1;
             }
-            table[i] = table[i] ? table[i] : isValid;
-            table[i + 1] = isValid;
+            res = Math.max(res, Math.max(inc, dec));
         }
+        System.out.println("res = " + res);
+//        boolean[] table = new boolean[numbers.length];
+//
+//        if(numbers.length == 1) {
+//            System.out.println("max = " + 1);
+//            return;
+//        }
 
-        int max = 0;
-        int count = 0;
-        for (boolean b : table) {
-            if (b) count++;
-            else {
-                max = Math.max(count, max);
-                count = 0;
-            }
+//        for (int i = 0; i < numbers.length - 1; i++) {
+//            boolean isValid;
+//            if(i%2 == 0 ) {
+//                isValid = numbers[i] < numbers[i + 1];
+//            }else {
+//                isValid = numbers[i] > numbers[i + 1];
+//            }
+////            table[i] = table[i] ? table[i] : isValid;
+//            table[i + 1] = isValid;
+//        }
+
+//        int max = 0;
+//        int count = 0;
+//        for (boolean b : table) {
+//            if (b) count++;
+//            else {
+//                max = Math.max(count, max);
+//                count = 0;
+//            }
+//        }
+//        max = Math.max(count, max);
+//        System.out.println("max = " + max);
+
+//        System.out.println("table = " + Arrays.toString(table));
+    }
+
+    public static void findMinAndMax(){
+        int numbers[] = {3, 2, 1, 56, 10000, 167};
+
+        int min = numbers[0];
+        int max = numbers[0];
+
+        for (int number : numbers) {
+            if (number < min) min = number;
+            if (number > max) max = number;
         }
-        max = Math.max(count, max);
+        System.out.println("min = " + min);
         System.out.println("max = " + max);
+    }
+    static int longestPalSubstr(String str)
+    {
+        // get length of input String
+        int n = str.length();
 
-        System.out.println("table = " + Arrays.toString(table));
+        // All subStrings of length 1
+        // are palindromes
+        int maxLength = 1, start = 0;
+
+        // Nested loop to mark start and end index
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i; j < str.length(); j++) {
+                int flag = 1;
+
+                // Check palindrome
+                for (int k = 0; k < (j - i + 1) / 2; k++)
+                    if (str.charAt(i + k) != str.charAt(j - k)) {
+                        flag = 0;
+                        break;
+                    }
+
+                // Palindrome
+                if (flag!=0 && (j - i + 1) > maxLength) {
+                    start = i;
+                    maxLength = j - i + 1;
+                }
+            }
+        }
+
+        System.out.print("Longest palindrome subString is: ");
+        System.out.println(maxLength);
+        System.out.println(start);
+
+        // return length of LPS
+        return maxLength;
     }
 
     private static void swap(int i, int j, int[] nums) {

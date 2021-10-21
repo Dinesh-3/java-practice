@@ -4,6 +4,11 @@ import java.util.*;
 import java.util.HashMap;
 
 public class StringUtils {
+    public static void main(String[] args) {
+//        removeDuplicates("ababa");
+//        atoi();
+        longestDistinctSubString();
+    }
     public static int countVowels(String str) {
         if (str == null)
             return 0;
@@ -52,6 +57,10 @@ public class StringUtils {
 
         StringBuilder output = new StringBuilder();
         Set<Character> seen = new HashSet<>();
+
+//        for (var ch: str.toCharArray()) // O(N^2)
+//            if (output.indexOf(Character.toString(ch)) == -1) output.append(ch);
+//        System.out.println(output);
 
         for (var ch : str.toCharArray()) {
             if (!seen.contains(ch)) {
@@ -150,4 +159,46 @@ public class StringUtils {
         return true;
     }
 
+    public static void removeAdjacentDuplicates() {
+        /**
+         * Recursively remove all adjacent duplicates
+         */
+
+        String target = "geeksforgeek";
+
+
+    }
+
+    public static void atoi() {
+        String str = "212";
+        try {
+            int number = Integer.parseInt(str);
+            System.out.println(number);
+        }catch (Exception e){
+            System.out.println(-1);
+        }
+    }
+
+    public static void longestDistinctSubString(){
+        String word = "aewergrththy";
+        int maxLength = 0;
+
+        Set<Character> set = new HashSet<>();
+
+        int count = 0;
+
+        for (char item: word.toCharArray()) {
+            if(!set.contains(item)){
+                set.add(item);
+                count++;
+            }
+            else {
+                set.clear();
+                count = 1;
+                set.add(item);
+            }
+            if(maxLength < count) maxLength = count;
+        }
+        System.out.println("maxLength = " + maxLength);
+    }
 }

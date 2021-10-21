@@ -1,8 +1,7 @@
 package thread;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Working with threads has lot issues and error-prone. So java 5 comes with high level abstraction on thread called ExecutiveFramework
@@ -43,12 +42,14 @@ public class ExecutiveFramework {
 //        tasks.add(() -> System.out.println("Thread.currentThread().getName() = " + Thread.currentThread().getName()));
 //        for(var task: tasks)
 //            executorService.submit(task);
-
+            AtomicInteger sampleNumber = new AtomicInteger(100);
             // Callable Interface and Future
             Future<String> future = executorService.submit(() -> {
                 LongTask.simulate();
+                sampleNumber.set(20);
                 return Thread.currentThread().getName(); // Callable Interface returns Future
             });
+            System.out.println("sampleNumber.get(); = " + sampleNumber.get());
             System.out.println("Other tasks running before get future in Thread: " + Thread.currentThread().getName());
             String result = future.get(); // Blocks the current Thread to wait for completion
             System.out.println("result = " + result);
@@ -62,14 +63,33 @@ public class ExecutiveFramework {
             executorService2.shutdownNow(); // It forces the executor to stop even task not finished their execution
 //        executorService2.shutdown(); below code will throw because of shutdown the executor
         }
-
+        compose();
 
 
     }
 
     private static void compose() {
+        System.out.println("Before Completable Future ");
         CompletableFuture.supplyAsync(() -> "Email")
-                .thenCompose(email -> CompletableFuture.supplyAsync(() -> "Print"))
-                .thenAccept((result) -> System.out.println("result = " + result));
+                .thenCompose(email -> {
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return CompletableFuture.supplyAsync(() -> "Print");
+                })
+//                .thenApply() // blocks current thread
+                .thenApplyAsync((result) -> { // not blocks main thread
+                    System.out.println("result = "  + result);
+                    return result+" $";
+                })
+//                .thenRun() // blocks, with no param, no return
+//                .thenAccept() // blocks, Consumer with 1 result param
+//                .thenAcceptAsync() // non block
+
+        ;
+        System.out.println("After Completable Future ");
+
     }
 }

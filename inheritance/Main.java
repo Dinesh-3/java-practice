@@ -1,5 +1,7 @@
 package inheritance;
 
+import inheritance.sub_package.SubClass;
+
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -13,6 +15,11 @@ public class Main {
         System.out.println("Static block called before main method");
     }
     public static void main(String[] args) throws Throwable {
+
+        SubClass subClass = new SubClass();
+//        subClass.getDefaultField(); // Throw Compile time error| 'getDefaultField()' is not public in 'inheritance.sub_package.SubClass'. Cannot be accessed from outside package
+//        subClass.getProtectedField(); // 'getProtectedField()' has protected access in 'inheritance.sub_package.SubClass'
+
         System.out.println("MAIN method called");
         User student = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
         String fullName = student.getFullName();
@@ -31,5 +38,6 @@ public class Main {
         System.out.println("index = " + index);
         int id = student.getId();
         System.out.println("id = " + id);
+
     }
 }

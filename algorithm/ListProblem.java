@@ -39,13 +39,19 @@ public class ListProblem {
          * Operation O(N)
          */
         int[] numbers = {1,4,5,3,7,2};
-        for (int i = numbers.length -1 ; i >= 0; i--) {
-            double random = Math.random() * i;
-            int alterIndex = (int) Math.floor(random);
-//            System.out.println("random = " + random);
-//            System.out.println("alterIndex = " + alterIndex);
-            swap(numbers, alterIndex, i);
+
+        for (int i = 0; i < numbers.length; i++) {
+            int randomIndex = (int) (Math.random()* (numbers.length - 1));
+            swap(numbers, randomIndex, i);
         }
+
+//        for (int i = numbers.length -1 ; i >= 0; i--) {
+//            double random = Math.random() * i;
+//            int alterIndex = (int) Math.floor(random);
+////            System.out.println("random = " + random);
+////            System.out.println("alterIndex = " + alterIndex);
+//            swap(numbers, alterIndex, i);
+//        }
 
         System.out.println("numbers = " + Arrays.toString(numbers));
     }
@@ -137,10 +143,12 @@ public class ListProblem {
     }
 
     private static List<Integer> getDuplicates(int[] nums) {
+        System.out.println("Before nums = " + Arrays.toString(nums));
         int n = nums.length;
         for (int i = 0; i < n; i++) {
             nums[nums[i] % (n + 1) - 1] += n + 1;
         }
+        System.out.println("After nums = " + Arrays.toString(nums));
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             if (nums[i] / (n + 1) == 2)

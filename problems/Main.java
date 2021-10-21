@@ -10,7 +10,7 @@ public class Main {
         System.out.println("factorial = " + factorial);
         int reverse = reverseNumber(123);
         System.out.println("reverse = " + reverse);
-        int countDigit = countDigit(3454324, 4);
+        int countDigit = countDigit(34540324, 4);
         System.out.println("countDigit = " + countDigit);
     }
 
@@ -30,8 +30,19 @@ public class Main {
     }
 
     public static int reverseNumber(int x) {
+
         int reversedNumber = 0;
         int digit = x;
+        int finalDigit = digit;
+        int finalReversedNumber = reversedNumber;
+        class Name{
+            public int name = finalDigit; // class assigned variable should not updated or assigned new value
+
+            public int getName() {
+                return finalReversedNumber;
+            }
+        }
+        new Name();
         while(digit != 0) {
             int mod = digit%10;
             reversedNumber = reversedNumber * 10 + mod;

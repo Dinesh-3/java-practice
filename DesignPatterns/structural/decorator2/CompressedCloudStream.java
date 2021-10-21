@@ -14,6 +14,7 @@ public class CompressedCloudStream implements Stream {
   }
 
   private String compress(String data) {
+    System.out.println("Compressing....");
     return data.substring(0, 5);
   }
 }

@@ -1,6 +1,9 @@
 package algorithm;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -11,18 +14,24 @@ import java.util.stream.IntStream;
  */
 public class DynamicProgramming {
     public static void main(String[] args) {
-        boolean[][] grid = {
-                {true, true, true, true},
-                {true, true, true, true},
-                {true, true, true, true},
-                {true, true, true, true},
-        };
+        String name = "DInesh";
+
+        System.out.println("name.substring(1) = " + name.substring(1));
+        System.out.println("name.substring(1) = " + name.substring(1,3));
+        String palindromeSubstring = longestPalindromeSubstring("aba");
+        System.out.println("palindromeSubstring = " + palindromeSubstring);
 //        boolean[][] grid = {
-//                { true, true },
-//                { false, true },
+//                {true, true, true, true},
+//                {true, true, true, true},
+//                {true, true, true, true},
+//                {true, true, true, true},
 //        };
-//        int possiblePaths = countAllPossiblePath(grid, 0, 0);
-//        System.out.println("possiblePaths = " + possiblePaths);
+        boolean[][] grid = {
+                { true, true,  },
+                { true, true,  },
+        };
+        int possiblePaths = countAllPossiblePath(grid, 0, 0);
+        System.out.println("possiblePaths = " + possiblePaths);
 
         List<String> strings = letterCombinations("23");
         System.out.println("strings = " + strings);
@@ -37,17 +46,22 @@ public class DynamicProgramming {
         int traversal = gridTraversal(4, 4, new HashMap<>());
         System.out.println("traversal = " + traversal);
 
-        boolean canSome = canSome(2, coins,  new HashMap<>());
+        boolean canSome = canSome(111, coins,  new HashMap<>());
         System.out.println("canSome = " + canSome);
 
 
-        List<Integer> howSome = howSome(7, coins, new HashMap<>());
+        List<Integer> howSome = howSome(111, coins, new HashMap<>());
 //        howSome.stream().reduce(0, (a, b) -> a+b);
 //        howSome.size();
         System.out.println("howSome = " + howSome);
         List<Integer> bestSome = bestSome(9, coins, new HashMap<>());
         bestSome.size();
         System.out.println("bestSome = " + bestSome);
+
+        List<Integer> converted = Arrays.stream(coins).boxed().collect(Collectors.toList());
+        List<List<Integer>> allSomeCount = allSomeCount(7, converted, new ArrayList<>(), new ArrayList<>());
+        System.out.println("allSomeCount = " + allSomeCount);
+
 
         boolean construct = canConstruct("cdabc", Arrays.asList("ab", "abc", "cd", "def", "abcd"));
         System.out.println("construct = " + construct);
@@ -69,7 +83,7 @@ public class DynamicProgramming {
     }
 
     public static int countAllPossiblePath(boolean[][] grid, int row, int col) {
-        System.out.println("row = " + row + " " + "col = " + col);
+//        System.out.println("row = " + row + " " + "col = " + col);
         if (!validSquare(grid, row, col)) return 0;
         if (isAtEnd(grid, row, col)) return 1;
         return countAllPossiblePath(grid, row + 1, col) + countAllPossiblePath(grid, row, col + 1);
@@ -99,16 +113,38 @@ public class DynamicProgramming {
         return result;
     }
 
-    public static String longestPalindromeSubstring(String target, List<String> letters) {
-        if (target.length() == 0) return null;
-        if (new StringBuilder(target).reverse().toString().equals(target)) {
-            return target;
-        }
-        for (String item : target.split("")) {
-            return longestPalindromeSubstring(item, letters);
-        }
+    public static String longestPalindromeSubstring(String target) {
+        // aabacd
+        int maxLength = 1;
+        int left = 0;
+        int right = 0;
+        for (int i = 0; i < target.length(); i++) {
+            for (int j = i+1; j < target.length(); j++) {
+//                System.out.printf("i,j = %d, %d\n", i, j);
 
-        return null;
+                boolean palindrome = isPalindrome(target, i, j);
+                if(palindrome) {
+                    int length = j-i + 1;
+                    System.out.println("length = " + length);
+                    if( length > maxLength) {
+                        maxLength = length;
+                        left = i;
+                        right = j;
+                    }
+
+                };
+            }
+        }
+        return target.substring(left,right+1);
+    }
+
+    private static boolean isPalindrome(String target, int i, int j) {
+        int left = i;
+        int right = j;
+        while (left < right) {
+            if(target.charAt(left++) != target.charAt(right--)) return false;
+        }
+        return true;
     }
 
     public static int countPossibleCoin(int[] array, int m, int n) {
@@ -166,13 +202,13 @@ public class DynamicProgramming {
         return result;
     }
 
-    public static boolean canSome(int target, int[] array, Map<Integer, Boolean> memo) {
+    public static boolean canSome(int target, int[] coins, Map<Integer, Boolean> memo) {
         if (memo.containsKey(target)) return memo.get(target);
         if (target == 0) return true;
         if (target < 0) return false;
-        for (int number : array) {
+        for (int number : coins) {
             int diff = target - number;
-            if (canSome(diff, array, memo)) {
+            if (canSome(diff, coins, memo)) {
                 memo.put(target, true);
                 return true;
             }
@@ -215,6 +251,28 @@ public class DynamicProgramming {
         memo.put(target, shortestCombination);
         return shortestCombination;
     }
+
+    public static List<List<Integer>> allSomeCount(int target, List<Integer> numbers, List<Integer> partition, List<List<Integer>> result) {
+       int sum = partition.stream().reduce(0, (a, b) -> a+b);
+    // check if the partial sum is equals to target
+        if (sum == target) {
+            System.out.println("partition = " + partition);
+            result.add(partition);
+        }
+        if (sum >= target) {
+            return  result; // if we reach the number why bother to continue
+        }
+
+        for (int i = 0; i < numbers.size(); i++) {
+            int number = numbers.get(i);
+            List<Integer> remaining = numbers.subList(i,numbers.size());
+            partition.add(number);
+            allSomeCount(target, numbers, partition, result);
+        }
+        return result;
+
+    }
+
 
     public static boolean canConstruct(String target, List<String> array) {
         if (target.equals("")) return true;
@@ -347,5 +405,7 @@ public class DynamicProgramming {
         }
         return result;
     }
+
+//    public static int s
 
 }

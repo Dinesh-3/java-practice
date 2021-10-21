@@ -5,7 +5,7 @@ import java.util.concurrent.SynchronousQueue;
 
 public class SynchronizedCollections {
     public static void main(String[] args) {
-        Collection<Integer> numbers = Collections.synchronizedList(new ArrayList<>());
+        List<Integer> numbers = Collections.synchronizedList(new ArrayList<>());
 //        new SynchronousQueue<>()
         Thread thread1 = new Thread(() -> {
             numbers.addAll(Arrays.asList(1, 2, 3, 5, 6, 3, 8, 7));
@@ -13,14 +13,16 @@ public class SynchronizedCollections {
 
         Thread thread2 = new Thread(() -> {
             numbers.addAll(Arrays.asList(4, 5, 6));
+            Collections.sort(numbers);
         });
 
         thread1.start();
         thread2.start();
-
+        System.out.println("numbers = " + numbers.size());
         try {
             thread1.join();
             thread2.join();
+            System.out.println("numbers.size() = " + numbers.size());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

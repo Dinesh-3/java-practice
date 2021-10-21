@@ -163,4 +163,17 @@ public class Tabulation {
 
         return table.get(target.length());
     }
+
+    public static void minimumStaircase(){
+        int[] cost = {1,100,1,1,1,100,1,1,100,1};
+        int[] db = new int[cost.length+1];
+
+        for(int i = 2; i <= cost.length; i++){
+            int indexOne = db[i-1] + cost[i-1];
+            int indexTwo = db[i-2] + cost[i-2];
+            db[i] = Integer.min(indexOne, indexTwo);
+        }
+
+        System.out.println("db[cost.length] = " + db[cost.length]);
+    }
 }

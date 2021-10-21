@@ -50,4 +50,14 @@ public class User extends Entity {
     public static String getStaticClass() {
         return staticClass;
     }
+
+    @Override
+    protected String getProtectedField() {
+        return super.getProtectedField();
+    }
+
+    @Override
+    String getDefaultField() { // we can change default to protected or public
+        return super.getDefaultField();
+    }
 }

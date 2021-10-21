@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Object o = new Object();
         paramCheck(1 == 1); // Works
+        passingArray(new int[]{1,3,4,2}); // Passing array
 
         Dog dog = new Dog("dog");
         Cat cat = new Cat("cat");
@@ -13,6 +14,10 @@ public class Main {
     }
 
     public static void paramCheck(boolean isTrue) {
+
+    }
+
+    public static void passingArray(int[] numbers){
 
     }
 }

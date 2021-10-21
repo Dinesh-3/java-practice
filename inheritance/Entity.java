@@ -5,6 +5,9 @@ public class Entity {
     protected boolean isEnabled;
     public String className=this.getClass().getName();
     public static String staticClass=Entity.class.getName();
+    protected String protectedField = "Protected Field";
+    String defaultField = "Default Field";
+
     public Entity() {
 
         index++;
@@ -41,5 +44,13 @@ public class Entity {
 
     public static String getStaticClass() {
         return staticClass;
+    }
+
+    protected String getProtectedField() {
+        return protectedField;
+    }
+
+    String getDefaultField() {
+        return defaultField;
     }
 }

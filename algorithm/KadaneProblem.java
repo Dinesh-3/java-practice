@@ -11,10 +11,8 @@ public class KadaneProblem {
 
         for (int i = 1; i < numbers.length; i++) {
             maxCurrent = Integer.max(numbers[i], maxCurrent + numbers[i]);
-
             if(maxCurrent > maxGlobal) maxCurrent = maxGlobal;
-
         }
-
+        System.out.println("maxGlobal = " + maxGlobal);
     }
 }

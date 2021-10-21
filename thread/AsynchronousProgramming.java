@@ -1,7 +1,5 @@
 package thread;
 
-import java.util.NoSuchElementException;
-import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -13,6 +11,7 @@ import java.util.function.Supplier;
  */
 public class AsynchronousProgramming {
     public static void main(String[] args) {
+        System.out.println(Thread.currentThread().getName() + " Started..");
         CompletableFuture.runAsync(() -> System.out.println("Async without return any value Thread: " + Thread.currentThread().getName()));
         CompletableFuture<String> sent = CompletableFuture.supplyAsync(sendEmail()); // Program terminates but code still executed
 //        while (!sent.isDone()){
@@ -31,6 +30,7 @@ public class AsynchronousProgramming {
 //                .get() // Blocks Main thread
         ;
         combine();
+        System.out.println(Thread.currentThread().getName() + " Ended..");
         try {
             Thread.sleep(7000);
         } catch (InterruptedException e) {
@@ -41,7 +41,7 @@ public class AsynchronousProgramming {
     private static Supplier<String> sendEmail() {
        return () -> {
             try {
-                Thread.sleep(3000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -87,13 +87,15 @@ public class AsynchronousProgramming {
         /**
          * Combining two Completable feature results
          */
-        final var task1 = CompletableFuture.supplyAsync(() -> "Task 1 Result");
+        System.out.println("--- Combine Completable Future Start ---");
+        double PI = 3.14;
+        final var task1 = CompletableFuture.supplyAsync(() -> "Task 1 Result PI = "+ PI);
         var task2 = CompletableFuture.supplyAsync(() -> "Task 2 Result");
         var task3 = CompletableFuture.supplyAsync(() -> "Task 3 Result");
 
         task1.thenCombine(task2, (result1, result2) -> result1 + " " + result2)
                 .thenAccept(result -> System.out.println("result = " + result));
-
+        System.out.println("--- Combine Completable Future BEFORE allOf(task1, task2, task3) ---");
         // all method
         CompletableFuture<Void> all = CompletableFuture.allOf(task1, task2, task3);
         all.thenRun(() -> {
@@ -106,7 +108,7 @@ public class AsynchronousProgramming {
                 e.printStackTrace();
             }
         });
-
+        System.out.println("--- Combine Completable Future After ALL ---");
         CompletableFuture<Integer> getWeatherSlow = CompletableFuture.supplyAsync(() -> {
             LongTask.simulate();
             return 10;
@@ -119,7 +121,7 @@ public class AsynchronousProgramming {
 
         try {
             getWeatherSlow
-                    .orTimeout(1, TimeUnit.SECONDS) // throw error if given task is not done with given value
+                    .orTimeout(1, TimeUnit.SECONDS) // throw error if given task is not done with given time
                     .get();
             /**
              * if the task take more than the given time it returns default value

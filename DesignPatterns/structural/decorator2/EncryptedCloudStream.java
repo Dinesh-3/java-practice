@@ -14,6 +14,7 @@ public class EncryptedCloudStream implements Stream {
   }
 
   private String encrypt(String data) {
+    System.out.println("Encrypting...");
     return "!@#$(!@#*()*)(*!@#";
   }
 }

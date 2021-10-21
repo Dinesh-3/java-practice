@@ -1,7 +1,6 @@
 package algorithm;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,7 +56,7 @@ public class Main {
         System.out.println("SUM = " + sum + " left = " + left + " right = "+ index);
 
         Factorial factorial = new Factorial();
-        int fact = factorial.get(4);
+        long fact = factorial.get(4);
         System.out.println("fact = " + fact);
 
 
