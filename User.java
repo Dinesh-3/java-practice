@@ -1,3 +1,5 @@
+import exception.UserException;
+
 import java.util.Objects;
 
 public class User implements DetailInterface{

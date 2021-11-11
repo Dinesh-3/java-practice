@@ -36,11 +36,12 @@ public class DateTimePractice {
         final byte MONTH = (byte) TODAY_DATE.getMonthValue();
         final int YEAR = TODAY_DATE.getYear();
 
+        System.out.println("TODAY_DATE = " + TODAY_DATE);
         System.out.println("isLeapYear() = " + TODAY_DATE.isLeapYear());
         System.out.println("DAY = " + DAY);
         System.out.println("MONTH = " + MONTH);
         System.out.println("YEAR = " + YEAR);
-
+        System.out.println("TODAY_DATE.getDayOfWeek() = " + TODAY_DATE.getDayOfWeek());
         /**
          * Milli -> 10 ^ -3 => 1 / 1000
          * Micro -> 10 ^ -6

@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class InsertionSort {
     /**
      *   0  1  2  3  4
@@ -15,6 +17,7 @@ public class InsertionSort {
                 j--;
             }
             array[j+1] = current;
+            System.out.println("array = " + Arrays.toString(array));
         }
     }
 }

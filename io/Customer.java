@@ -8,15 +8,16 @@ import java.util.UUID;
 public class Customer extends Main implements Serializable
 //        , Externalizable
 {
+    @Serial
+    private static final long serialVersionUID = -5623412787116685771L;
     private String firstName;
     private String lastName;
     private String gender;
-    private transient String country = "IN"; // This Field Is Not Stored while serialization value will be null while deserialization
+    private transient  String country = "IN"; // This Field Is Not Stored while serialization value will be null while deserialization
     private byte age;
     private LocalDate date;
     private int id;
-    @Serial
-    private UUID serialNo = UUID.randomUUID();
+
 
     public Customer(String firstName, String lastName, String gender, byte age, LocalDate date, int id) {
         this.firstName = firstName;
@@ -84,6 +85,14 @@ public class Customer extends Main implements Serializable
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        throw new NotSerializableException("io.Customer");
+    }
+
+    private void writeObject(ObjectOutputStream out) throws IOException {
+        throw new NotSerializableException("io.Customer");
     }
     //    @Override
 //    public void writeExternal(ObjectOutput out) throws IOException {

@@ -7,12 +7,12 @@ public class Entity {
     public static String staticClass=Entity.class.getName();
     protected String protectedField = "Protected Field";
     String defaultField = "Default Field";
-
+    private String developer = "Dinesh";
     public Entity() {
 
         index++;
     }
-    public int getId(){ // If we define this also getIndex() will throw error
+    public int getId(){ // If we define this also getIndex() will throw error static and instance method names are not to be same
 //        index++;
         int index1 = index;
         int index = getIndex();

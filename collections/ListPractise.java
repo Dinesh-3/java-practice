@@ -9,6 +9,7 @@ public class ListPractise {
     public static void main(String[] args) {
         /**
          * Initial Capacity 10
+         * If array is full size will increase by 50 %
          */
         List<Integer> numbers = new ArrayList<>();
         numbers.add(0);
@@ -16,16 +17,20 @@ public class ListPractise {
         numbers.add(2);
         numbers.add(3);
         numbers.add(4);
+//        numbers.clear();
         Object num = 3;
         numbers.remove(num);
         numbers.sort(comparing(a -> a));
         System.out.println("numbers = " + numbers);
         /**
          *          LinkedList
+         * public class LinkedList<E> extends AbstractSequentialList<E>
+         * implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+         *
          * Doubly LinkedList Implementation
          */
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>(); // Also implements Dequeue and Queue Interface
         linkedList.add(0);
         linkedList.add(1);
         linkedList.add(2);
@@ -102,7 +107,6 @@ public class ListPractise {
 
         // We can add multiple items in one go
         Collections.addAll(list, "a", "b", "c");
-
         var first = list.get(0);
         list.set(0, "!!");
 

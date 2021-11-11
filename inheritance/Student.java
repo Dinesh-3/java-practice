@@ -26,10 +26,10 @@ public class Student extends User {
 //        return joinDate.getYear() + 4;
     }
 
-    @Override
-    public String getClassName() {
-        return className;
-    }
+//    @Override
+//    public String getClassName() {
+//        return className;
+//    }
 
     public static String getStaticClass() {
         return staticClass;

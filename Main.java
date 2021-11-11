@@ -1,8 +1,12 @@
 
+import exception.UserException;
+
 import java.text.NumberFormat;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+//import static tricky.TrickyJava.objectRelation;
 public class Main {
     /**
      * JAR -> Java ARchive
@@ -12,8 +16,7 @@ public class Main {
     private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        extracted();
+//        objectRelation();
 
         List<Integer> as = new ArrayList<>(List.of(1,2,3,5,4));
 
@@ -22,6 +25,7 @@ public class Main {
             System.out.print(integerListIterator.previous() + " ");
         }
         System.out.println();
+        System.out.println(" --- CHAR --- ");
         char char1_UTF8 = '\u0061'; // UTF-8 OR UTF-32
         char char1_ASCII = 97;
         char char2_UTF8 = '\u0041';
@@ -42,7 +46,7 @@ public class Main {
 
         System.out.println("d = " + d);
         System.out.println("s2 = " + s2);
-        Console.log("Dinesh", "I", "V");
+        Console.log("Dinesh", "I", "V", 1, 3);
 
         System.out.println("new UserExample(\"new\") = " + new UserExample("new"));
 
@@ -65,15 +69,15 @@ public class Main {
 //        s1 = s1.replace("n", "*");
 //        System.out.println("s1 = " + s1);
 
-//        User user1 = new User("Dinesh", "I");
-//        User user2 = new User("Dinesh", "I");
-//        boolean equals = user1.equals(user2);
-//        System.out.println(user1 == user2);
-//        int hashCode1 = user1.hashCode();
-//        int hashCode2 = user2.hashCode();
-//        System.out.println("hashCode = " + hashCode1 + " " + hashCode2);
-//        System.out.println("equals = " + equals);
-//        Print.print("Dinesh", "I", 9, 8, 7);
+        User user1 = new User("Dinesh", "I", (byte) 21);
+        User user2 = new User("Dinesh", "I", (byte) 21);
+        boolean equals = user1.equals(user2);
+        System.out.println(user1 == user2);
+        int hashCode1 = user1.hashCode();
+        int hashCode2 = user2.hashCode();
+        System.out.println("hashCode = " + hashCode1 + " " + hashCode2);
+        System.out.println("equals = " + equals);
+        Console.log("Dinesh", "I", 9, 8, 7);
 
         List list = new ArrayList<>();
         list.add("Dinesh");
@@ -105,24 +109,6 @@ public class Main {
 
     }
 
-    private static void extracted() {
-        //        int[] answer = {1, 0, 0 , 4,0,2,0,0,5,6};
-        int[] answer = {1, 0, 0 , 4,0,2,0,0,5,6};
-        int count = 0;
-        int n = 10;
-
-        for (int i = 0; i < n; i++) {
-            if(answer[i] != 0){
-                answer[count++] = answer[i];
-            }
-            while (count < n) {
-                answer[count++] = 0;
-            }
-
-        }
-        System.out.println("answer = " + Arrays.toString(answer));
-    }
-
     public void numberOperations(){
         System.out.println("\n--- NUMBER OPERATION ---\n");
         final byte MONTHS_IN_YEAR = 12;
@@ -134,7 +120,17 @@ public class Main {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         String priceInRupee = currency.format(productPrice);
         Locale[] availableLocales = NumberFormat.getAvailableLocales();
+//        for (Locale locale: availableLocales) {
+//            System.out.println("locale.getCountry() = " + locale.getCountry());
+//        }
         NumberFormat US = NumberFormat.getCurrencyInstance(Locale.US);
+        Locale indiaLocale = new Locale("en", "IN");
+        NumberFormat india  = NumberFormat.getCurrencyInstance(indiaLocale);
+        NumberFormat china  = NumberFormat.getCurrencyInstance(Locale.CHINA);
+        NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+        System.out.println("india.format(productPrice) = " + india.format(productPrice));
+        System.out.println("china.format(productPrice) = " + china.format(productPrice));
+        System.out.println("france.format(productPrice) = " + france.format(productPrice));
         System.out.println("priceInRupee = " + priceInRupee);
         System.out.println("availableLocales = " + Arrays.toString(availableLocales));
         System.out.println(US.format(productPrice));

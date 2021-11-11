@@ -28,7 +28,7 @@ import java.lang.annotation.*;
 public class AnnotationPractice {
     public static void main(String[] args) {
         AnnotationPractice annot = new AnnotationPractice();
-        Class obj = annot.getClass();
+        Class<? extends AnnotationPractice> obj = annot.getClass();
         Annotation[] annotations = obj.getAnnotations();
         Annotation annotation = obj.getAnnotation(Mobile.class);
 

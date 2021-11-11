@@ -3,16 +3,22 @@ package collections;
 import java.util.*;
 
 /**
-                                    Collection Order
-                                      Collection
-                                     /     |     \
-                                  List   Queue    Set -> Implementation  Sorted Set, Tree Set
-                                 /         |                   \
+                                        Collection Order
+                                            Collection
+                                     /          |         \
+                                  List       Queue        Set -> Implementation
+                                 /            |                        \
                     1. ArrayList   1. PriorityQueue             1. HashSet
                     2. LinkedList  Deque<E> extends Queue<E>    2. Linked HashSet
-                                   Implementation ArrayDeque
-                    3. Vector
-                        -> extends stack
+                    3. Vector               |                   3. Sorted Set
+            ->  Stack extends Vector   Implementation ArrayDeque   4. Tree Set
+                                    AbstractQueue,
+                                    ArrayBlockingQueue,
+                                    ArrayDeque, ConcurrentLinkedDeque, ConcurrentLinkedQueue,
+                                    DelayQueue, LinkedBlockingDeque, LinkedBlockingQueue,
+                                    LinkedList, LinkedTransferQueue, PriorityBlockingQueue,
+                                    PriorityQueue, SynchronousQueue
+
 
     Topics:
     1. Fail fast and fail safe -> https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/

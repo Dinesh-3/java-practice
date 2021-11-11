@@ -28,16 +28,14 @@ public class Main {
             String name = file.getName();
             String absolutePath = file.getAbsolutePath();
             String parent = file.getParent(); // Returns Parent Folder
-
             URI uri = file.toURI();
-            System.out.println("uri = " + uri);
-
             boolean isDirectory = file.isDirectory();
             boolean isFile = file.isFile();
 
             System.out.println("name = " + name);
             System.out.println("absolutePath = " + absolutePath);
             System.out.println("parent Folder Path = " + parent);
+            System.out.println("uri = " + uri);
             System.out.println("isDirectory = " + isDirectory);
             System.out.println("isFile = " + isFile);
             System.out.println("file.lastModified() = " + file.lastModified());

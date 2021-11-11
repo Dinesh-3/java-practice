@@ -1,5 +1,7 @@
 package tricky;
 
+import java.lang.reflect.Method;
+
 public class NativeKeyword {
     /*
         JNI -> Java Native Interface
@@ -10,5 +12,6 @@ public class NativeKeyword {
     public static void main(String[] args) {
         System.loadLibrary("Main");
         System.out.println(new NativeKeyword().square(2));
+
     }
 }

@@ -69,6 +69,7 @@ public class BehaviouralPattern {
          * Application:
          *  1. It keeps the state-specific behavior.
          *  2. It makes any state transitions explicit.
+         *  3. Follows Open Close Principle
          *
          * Used When:
          *  1. When the behavior of object depends on its state, and
@@ -174,6 +175,8 @@ public class BehaviouralPattern {
         HtmlDocument htmlDocument = new HtmlDocument();
         htmlDocument.setContent("Hello World!");
         BoldCommand boldCommand = new BoldCommand(htmlDocument, history1);
+        boldCommand.execute();
+        boldCommand.execute();
         boldCommand.execute();
         System.out.println(htmlDocument.getContent());
         UndoCommand undoCommand = new UndoCommand(history1);

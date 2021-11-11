@@ -23,7 +23,7 @@ import DesignPatterns.structural.proxy2.RealEbook;
 /**
  *  Structural design patterns are concerned with how classes and objects can be composed, to form larger structures.
  *  The structural design patterns simplifies the structure by identifying the relationships.
- *  These patterns focus on, how the classes inherit from each other and how they are composed from other classes.
+ *  These patterns focus on, how the classes inherit from each other and how they are composed of other classes.
  * Types:
  *  1. Adapter Pattern
  *  2. Bridge Pattern
@@ -76,7 +76,7 @@ public class StructuralPattern {
         imageView.apply(new CaramelFilter(new Caramel())); // using third party library with the help of adapter pattern
 
         /**
-         * Decorator Pattern
+         * Decorator Pattern OR Wrapper Pattern
          *  attach a flexible additional responsibilities to an object dynamically
          *  The Decorator Pattern is also known as Wrapper.
          * Application:

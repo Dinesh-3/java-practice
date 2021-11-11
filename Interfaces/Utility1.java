@@ -16,9 +16,10 @@ public interface Utility1 {
     /**
      * Throws error we can't create default methods for object class
      * Default method 'hashCode' overrides a member of 'java.lang.Object
-     *
+     *  if change in method param no problem
+     *  but change in return type will not prevent error
      */
-//    default int hashCode(){ //
+//    default int hashCode(){ // equals, toString, clone, wait,notify, notifyAll, getClass, finalizer
 //        return 234234;
 //    };
 }

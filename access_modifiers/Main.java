@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
         Entity entity = new Entity();
-//        entity.protectedName(); // throw's error
+//        entity.getProtectedField(); // throw's error
         Manager manager = new Manager();
         manager.getProtectedField();
     }

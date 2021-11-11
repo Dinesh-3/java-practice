@@ -8,7 +8,9 @@ public class UserInherited extends User {
     }
 
     @Override
-    protected String getProtectedField() {
+    public String getProtectedField() {
         return super.getProtectedField();
     }
+
+
 }

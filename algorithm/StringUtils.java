@@ -8,6 +8,41 @@ public class StringUtils {
 //        removeDuplicates("ababa");
 //        atoi();
         longestDistinctSubString();
+        String update = "Dinesh";
+        update.contains(String.valueOf('a'));
+    }
+
+
+//    public static void combinationMain() {
+//        List<Character> letters = List.of('a', 'e', 'i');
+//        List<List<Character>> result = combinations(letters);
+//    }
+//
+//    public static List<List<Character>> combinations(List<Character> letters) {
+//        for (int i = 0; i < letters.size(); i++) {
+//            List<Character> = combinations(letters);
+//        }
+//        return null;
+//    }
+
+    public static void sobDomainVisitCount() {
+        String[] cpdomains = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
+        Map<String, Integer> domains = new HashMap<>();
+        for (int i = 0; i < cpdomains.length; i++) {
+            String[] split = cpdomains[i].split(" ");
+            int visitedCount = Integer.parseInt(split[0]);
+            String mainDomain = split[1];
+            domains.put(mainDomain, domains.getOrDefault(mainDomain,0) + visitedCount);
+            for (int j = 0; j < mainDomain.length(); j++) {
+                if(mainDomain.charAt(j) == '.') {
+                    String subDomain = mainDomain.substring(j+1);
+                    domains.put(subDomain, domains.getOrDefault(subDomain, 0) + visitedCount);
+                }
+            }
+            System.out.println("domains = " + domains);
+        }
+        List<String> stringList = domains.entrySet().stream().map(entry -> String.format("%d %s", entry.getValue(), entry.getKey())).toList();
+        System.out.println("stringList = " + stringList);
     }
     public static int countVowels(String str) {
         if (str == null)

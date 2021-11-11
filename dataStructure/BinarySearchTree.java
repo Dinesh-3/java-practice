@@ -15,15 +15,28 @@ public class BinarySearchTree {
         public Node(int data) {
             this.value = data;
         }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "value=" + value +
+                    '}';
+        }
     }
 
     private Node root;
+    private int size;
 
 //    private BinarySearchTree(int data) {
 //        this.root = new Node(data);
 //    }
 
-    public void add(int data) {
+    public void insert(int data) {
+        add(data);
+        size++;
+    }
+
+    private void add(int data) {
         var node = new Node(data);
         if (root == null) {
             root = node;
@@ -196,5 +209,9 @@ public class BinarySearchTree {
 
     public Node getRoot() {
         return root;
+    }
+
+    public int size() {
+        return size;
     }
 }

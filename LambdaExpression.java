@@ -4,7 +4,10 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/*
+/**
+ * 0101
+ * 1000
+ * 1101
     References:
         1. https://stackoverflow.com/questions/5894818/how-to-sort-arraylistlong-in-decreasing-order#comment6782749_5894842
  */
@@ -66,12 +69,16 @@ public class LambdaExpression {
         UnaryOperator<Integer> addOne = n -> n + 1;
         UnaryOperator<Integer> squareOfNumber = n -> n * n;
 
-//        System.out.println("addOne.andThen(square).apply(1) = " + addOne.andThen(square).apply(1));
-//        System.out.println("addOne.andThen(square).apply(1) = " + addOne.compose(square).andThen(square).apply(1));
+        System.out.println("addOne.andThen(square).apply(1) = " + addOne.andThen(square).apply(1));
+        System.out.println(" addOne.compose(square).andThen(square).apply(2) = " + addOne.compose(square).andThen(square).apply(2));
 
         Predicate<String> isValidName = message -> message.length() > 5;
+        BiPredicate<String, String> isEqual = String::equals;
+        IntPredicate isFive = number -> number == 5; // Also have DoublePredicate, LongPredicate
+
         boolean isValid = isValidName.test("Dsh"); // and, or, negate,test
         System.out.println("isValid = " + isValidName.negate().or(m -> m.startsWith("D")).test("Dinesh"));
+        System.out.println("isFive.test(5); = " + isFive.test(5));
 //        users.forEach(print.andThen(message -> System.out.println("HELLO")));
 //        users.forEach(print);
 
@@ -90,7 +97,7 @@ public class LambdaExpression {
                                 .reversed()
                                 .thenComparing(User::getFirstName)
                 )
-                .peek(LambdaExpression::accept) // Used to log each element
+//                .peek(LambdaExpression::accept) // Used to log each element
                 .map(user -> user.getFirstName().toUpperCase())
 //                .filter(name -> name.startsWith("B"))
 //                .count()
@@ -102,7 +109,7 @@ public class LambdaExpression {
         /**
          * FlatMap
          */
-        List country = Stream.of(
+        List<String> country = Stream.of(
                 Arrays.asList("Colombia", "Finland", "Greece", "Iceland", "Liberia", "Mali", "Mauritius"),
                 Arrays.asList("Peru", "Serbia", "Singapore", "Turkey", "Uzbekistan", "Yemen", "Zimbabwe", "Greece", "Iceland"))
                 .flatMap(strings -> strings.stream())
@@ -110,12 +117,15 @@ public class LambdaExpression {
 
         List<String> fruits = new ArrayList<>(List.of("Strawberries", "Fig", "pine apple", "Dragon", "apple", "orange", "banana", "mango", "grape"));
         List<String> sortedFruit = fruits.stream()
-//                .sorted(Comparator.comparingInt(a -> a.length())) // ascending order
-//                .sorted(Comparator.comparing((String s) -> s.length()).reversed()) // descending order
+                .sorted(
+                        Comparator.comparing(String::length) // First by length and then by alphabetical order
+                                .thenComparing(a -> a)
+                ) // ascending order
+//                .sorted(Comparator.comparingInt((String s) -> s.length()).reversed()) // descending order
 //                .sorted((a, b) -> a.length() - b.length()) // ascending order
 //                .sorted((a, b) -> b.length() - a.length()) // descending order
 //                .sorted((a, b) -> a.length() < b.length() ? -1: 1) // ascending order
-                .sorted((a, b) -> a.length() > b.length() ? -1: 1) // descending order
+//                .sorted((a, b) -> a.length() > b.length() ? -1: 1) // descending order
                 .collect(Collectors.toList());
 
         System.out.println("sortedFruit = " + sortedFruit);
@@ -129,36 +139,49 @@ public class LambdaExpression {
 //                .findAny().get() // RETURNS ANY ELEMENT IN STREAM , Parallel stream
 
 //                FIND MIN AND MAX
-//                .max(Comparator.comparing(a -> a )).get()
+                .max(Comparator.comparing(a -> a )).get()
 //                .min(Comparator.comparing(a -> a ))
 //                .get();
 //                .isPresent(); Check given value is Present or not
 //                .isEmpty(); Opposite of isPresent
 //               REDUCE
 //                .reduce((a1, b1) -> Integer.sum(a1, b1));
-//                .reduce(0, Integer::sum);
+//                .reduce(0, Integer::sum); // param 1 is start value
                 ;
+//        List<String> objects = Collections.emptyList();
         System.out.println("result = " + result);
 
 //        WHILE
         System.out.println("\n--- WHILE ---");
         numbers.stream()
 //                .takeWhile(num -> num < 5)
-//                .dropWhile(num -> num < 5) // Drop numbers that are less than 5
+//                .dropWhile(num -> num < 5) // Drops numbers that are less than 5
 //                .forEach(System.out::println);
         ;
         System.out.println();
 //        Collector
 
         var collect = numbers.stream()
-//                .collect(Collectors.toList());
+//                .collect(Collectors.toList())
 //                .collect(Collectors.toMap(a -> a, a -> a
 //                        ,(name1, name2) -> name1 + name2 // this function used for same key repeated
-//                ));
-//                .collect(Collectors.toSet());
+//                ))
+//                .collect(Collectors.toSet())
+//                .collect(Collectors.averagingInt(a -> a))
 //                .mapToInt(a -> a).sum()
 //                .mapToLong(a -> a)
-//                .collect(Collectors.summingInt(a -> a));
+//                .mapMulti()
+//                .collect(Collectors.summingInt(a -> a))
+                /**
+                 * Sample - IntSummaryStatistics{count=10, sum=45, min=0, average=4.500000, max=9}
+                 * Methods
+                 * .getAverage()
+                 * .getCount()
+                 * .getSum()
+                 * getMin()
+                 * getMax()
+                 * combine(IntSummaryStatistics other) -> To combine with other IntStatistics
+                 */
                 .collect(Collectors.summarizingInt(a -> a))
                 ;
         System.out.println("Collected = " + collect);
@@ -221,4 +244,12 @@ public class LambdaExpression {
 
 interface AddTwo {
     int add(int a, int b);
+}
+
+class StringComparator implements Comparator<String>{
+
+    @Override
+    public int compare(String o1, String o2) {
+        return o1.compareToIgnoreCase(o2);
+    }
 }

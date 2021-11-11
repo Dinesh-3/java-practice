@@ -2,6 +2,28 @@ package dataStructure;
 
 import java.util.Arrays;
 
+/** Cluster -> Set of same thing in ordered
+ * Hashing: (given key) % (internal array.length)
+ * Collisions:
+ * 1. Chaining
+ * 2. Open Addressing
+ *      1. Linear Probing
+ *          -> Probing == searching
+ *          Formula: hash(key) + i
+ *      2. Quadratic Probing
+ *          Formula: hash(key) + i ^ 2
+ *          Issue -> Looping happen for same jump
+ *      3. Double Hashing
+ *          prime -> number less than array length
+ *          hash2(key) = prime - (key % prime)
+ *          (hash1(key) + i*hash2(key)) % table_size
+ */
+class Main{
+    public static void main(String[] args) {
+
+    }
+}
+
 public class HashMap {
 
     private class Entry {
@@ -99,3 +121,4 @@ public class HashMap {
         return Arrays.toString(entries);
     }
 }
+

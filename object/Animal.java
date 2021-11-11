@@ -1,7 +1,6 @@
 package object;
 
 import java.util.Objects;
-
 public abstract class Animal {
     protected final String name;
 

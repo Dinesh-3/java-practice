@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
         double atm = withdrawFromATM();
         System.out.println("atm = " + atm);
 

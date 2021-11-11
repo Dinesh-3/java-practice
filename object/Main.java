@@ -2,6 +2,9 @@ package object;
 
 public class Main {
     public static void main(String[] args) {
+        /**
+         * Object class Contains methods -> equals, hashCOde, clone, toString, finalize, wait, notify, notifyAll, getClass
+         */
         Object o = new Object();
         paramCheck(1 == 1); // Works
         passingArray(new int[]{1,3,4,2}); // Passing array

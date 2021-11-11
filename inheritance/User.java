@@ -4,7 +4,9 @@ public class User extends Entity {
     private String firstName;
     private String lastName;
     public String className=this.getClass().getName();
-    public static String staticClass=User.class.getName();
+//    @Override // Fields are can't be override
+//    public String className = this.getClass().getName();
+//    private static String staticClass=User.class.getName();
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

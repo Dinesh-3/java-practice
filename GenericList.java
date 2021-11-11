@@ -1,5 +1,8 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class GenericList<T> implements Iterable<T>{
     private final T[] list = (T[]) new Object[10];
@@ -34,6 +37,6 @@ public class GenericList<T> implements Iterable<T>{
     public String toString() {
         int[] nums = {1,2,3};
         Arrays.sort(nums);
-        return Arrays.toString(list);
+        return Arrays.toString(this.list);
     }
 }

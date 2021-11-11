@@ -18,7 +18,7 @@ public class DynamicProgramming {
 
         System.out.println("name.substring(1) = " + name.substring(1));
         System.out.println("name.substring(1) = " + name.substring(1,3));
-        String palindromeSubstring = longestPalindromeSubstring("aba");
+        String palindromeSubstring = longestPalindromeSubstring("sdfmalayalamdne");
         System.out.println("palindromeSubstring = " + palindromeSubstring);
 //        boolean[][] grid = {
 //                {true, true, true, true},
@@ -115,27 +115,23 @@ public class DynamicProgramming {
 
     public static String longestPalindromeSubstring(String target) {
         // aabacd
-        int maxLength = 1;
-        int left = 0;
-        int right = 0;
+        int leftIndex = 0;
+        int rightIndex = 0;
         for (int i = 0; i < target.length(); i++) {
             for (int j = i+1; j < target.length(); j++) {
 //                System.out.printf("i,j = %d, %d\n", i, j);
-
                 boolean palindrome = isPalindrome(target, i, j);
                 if(palindrome) {
-                    int length = j-i + 1;
-                    System.out.println("length = " + length);
-                    if( length > maxLength) {
-                        maxLength = length;
-                        left = i;
-                        right = j;
+                    int currentLength = j-i + 1;
+                    int prevLength = rightIndex - leftIndex + 1;
+                    if( currentLength > prevLength) {
+                        leftIndex = i;
+                        rightIndex = j;
                     }
-
                 };
             }
         }
-        return target.substring(left,right+1);
+        return target.substring(leftIndex,rightIndex+1);
     }
 
     private static boolean isPalindrome(String target, int i, int j) {

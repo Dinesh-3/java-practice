@@ -74,12 +74,12 @@ public class DataStructure {
 
 //        BINARY SEARCH TREE
         BinarySearchTree searchTree = new BinarySearchTree();
-        searchTree.add(3);
-        searchTree.add(2);
-        searchTree.add(6);
-        searchTree.add(7);
-        searchTree.add(1);
-        searchTree.add(4);
+        searchTree.insert(3);
+        searchTree.insert(2);
+        searchTree.insert(6);
+        searchTree.insert(7);
+        searchTree.insert(1);
+        searchTree.insert(4);
 
 //        searchTree.preOrderTraversal();
 //        searchTree.inOrderTraversal();

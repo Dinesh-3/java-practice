@@ -9,5 +9,5 @@ abstract class AbstractExample {
         getNewName();
         return name;
     }
-    abstract String getNewName();
+    abstract String getNewName(); // abstract method can't private
 }

@@ -17,7 +17,7 @@ public class SetPractise {
          * HashSet
          * Points:
          *  1. Contains unique elements
-         *  2. Internally uses HashMap -> Uses HashTable
+         *  2. Internally uses HashMap
          *  3. Accepts only one null value
          *  4. Unordered -> Elements are shuffled so accessing element by index not support
          */
@@ -31,7 +31,7 @@ public class SetPractise {
          * Points:
          *  1. It's preserves insertion order
          *  2. Internally uses doubly linked list
-         *  3. Ordered version of HashSet
+         *  3. Ordered version of Set
          */
         Set<Integer> linkedHashSet = new LinkedHashSet<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
         System.out.println("linkedHashSet.size() = " + linkedHashSet.size());
@@ -48,6 +48,7 @@ public class SetPractise {
          * Points:
          *  1. items must implement comparable interface
          *  2. It's sort the element in ascending order
+         *  3. Doesn't allow null value
          */
         System.out.println("--- TREE SET ---");
         SortedSet<Integer> sortedSet = new TreeSet<>();
@@ -56,21 +57,22 @@ public class SetPractise {
         sortedSet.add(1);
         sortedSet.add(2);
         sortedSet.add(3);
+//        sortedSet.add(null); // Throws error
         System.out.println("sortedSet = " + sortedSet);
         System.out.println("sortedSet.first() = " + sortedSet.first());
         System.out.println("sortedSet.last() = " + sortedSet.last());
-        System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // inclusive
-        System.out.println("sortedSet.headSet(3) = " + sortedSet.headSet(3)); // exclusive
-        System.out.println("sortedSet.subSet(1,3) = " + sortedSet.subSet(1, 3)); // (inclusive, exclusive)
-
-//        SortedSet<String> sortedSet = new TreeSet();
-//        sortedSet.add("1");
-//        sortedSet.add("4");
-//        sortedSet.add("1");
-//        sortedSet.add("2");
-//        sortedSet.add("3");
-
+        System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // inclusive return elements >= 2
+        System.out.println("sortedSet.headSet(3) = " + sortedSet.headSet(3)); // exclusive elements < 3
+        System.out.println("sortedSet.subSet(1,3) = " + sortedSet.subSet(1, 3)); // (inclusive, exclusive) element btw 1 2
         System.out.println("sortedSet = " + sortedSet);
+
+        SortedSet<String> sortedStringSet = new TreeSet();
+        sortedStringSet.add("Apple");
+        sortedStringSet.add("Orange");
+        sortedStringSet.add("1");
+        sortedStringSet.add("Banana");
+        sortedStringSet.add("3");
+        System.out.println("sortedStringSet.headSet(\"Cake\") = " + sortedStringSet.headSet("Cake")); // case sensitive
 
         Set<String> set1 =
                 new HashSet<>(Arrays.asList("a", "b", "c"));
@@ -82,7 +84,7 @@ public class SetPractise {
 //        set1.addAll(set2);
 //        System.out.println("addAll() set1 = " + set1);
 
-        // Intersection
+        // Intersection or common element
 //        set1.retainAll(set2);
 //        System.out.println("retainAll() set1 = " + set1);
 

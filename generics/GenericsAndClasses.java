@@ -9,7 +9,7 @@ public class GenericsAndClasses {
         System.out.println(box.get());
 
         Box<Letter> box2 = new Box<>();
-        box2.set(new Letter("Amigoscode"));
+        box2.set(new Letter("Amigoscode", "Dinesh I"));
         System.out.println(box2.get());
     }
 }

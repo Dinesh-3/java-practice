@@ -14,7 +14,8 @@ public class MapPractise {
          * Points:
          *  1. Initial Capacity 16
          *  2. Not Thread safe
-         *  3. Allow one null key and multiple null values
+         *  3. Allows one null key and multiple null values
+         *  HashMap contains an array of the nodes, and the node is represented as a class. It uses an array and LinkedList data structure
          */
         System.out.println("--- HASH MAP ---");
         HashMap<Integer, String> hashMap = new HashMap<>();
@@ -45,6 +46,10 @@ public class MapPractise {
 
         /**
          *      HashTable
+         * public class Hashtable<K,V>
+         *     extends Dictionary<K,V>
+         *     implements Map<K,V>, Cloneable, java.io.Serializable
+         *
          * Points:
          *  1. Not allow any null key or value
          *  2. Synchronized thread safe
@@ -69,11 +74,11 @@ public class MapPractise {
         sortedMap.put(2, "Dinesh");
         sortedMap.put(1, "Rahul");
         sortedMap.put(3, "Balaji");
+        sortedMap.put(4, "Ragavan");
 //        sortedMap.put(null, "unknown"); // Throws error
 //        sortedMap.put(4, null); // Throws error
-        Integer integer = sortedMap.firstKey();
-        Integer lastKey = sortedMap.lastKey();
-
+        System.out.println("sortedMap.firstKey() = " + sortedMap.firstKey());
+        System.out.println("sortedMap.lastKey() = " + sortedMap.lastKey());
         System.out.println("sortedMap.values() = " + sortedMap.values());
         System.out.println("sortedMap.isEmpty() = " + sortedMap.isEmpty());
         System.out.println("sortedMap.keySet(); = " + sortedMap.keySet());

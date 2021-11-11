@@ -5,7 +5,7 @@ import java.util.*;
 /**
  *  QUEUE
  *  FrontEnd -> Remove
- *  RearEnd -> Add
+ *  RearEnd (or) Last -> Add (Rear == Back)
  */
 public class QueuePractise {
 
@@ -30,7 +30,7 @@ public class QueuePractise {
         queue.add("b");
         queue.addFirst("f");
         queue.addLast("d");
-        queue.remove();
+        queue.remove(); // Removes first
         queue.removeFirst();
         queue.removeLast();
         var front = queue.remove();
