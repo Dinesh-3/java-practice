@@ -40,7 +40,7 @@ public class Main {
             System.out.println("isFile = " + isFile);
             System.out.println("file.lastModified() = " + file.lastModified());
             // FILE PERMISSIONS
-            // To get User privileges of the file
+            // To get model.User privileges of the file
             boolean canExecute = file.canExecute();
             boolean canRead = file.canRead();
             boolean canWrite = file.canWrite();

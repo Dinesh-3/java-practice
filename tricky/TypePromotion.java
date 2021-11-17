@@ -36,8 +36,8 @@ public class TypePromotion {
 //        int add = math.add(1, 1); // Throws error
         /**
          * Ambiguous method call. Both
-         * add (int, long) in MathOperation  and
-         * add (long, int) in MathOperation  match
+         * add (int, long) in operators.MathOperation  and
+         * add (long, int) in operators.MathOperation  match
          *
          * Notes:
          *  Smaller values are adjusted in big types ex: int to long

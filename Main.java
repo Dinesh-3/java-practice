@@ -1,5 +1,9 @@
 
 import exception.UserException;
+import model.Manager;
+import model.User;
+import utils.Console;
+import utils.GenericList;
 
 import java.text.NumberFormat;
 import java.util.*;
@@ -35,8 +39,8 @@ public class Main {
         System.out.println();
         System.out.println("char2_UTF8 = " + char2_UTF8);
         System.out.println("char2_ASCII = " + char2_ASCII);
-//        User user1 = new User("Dinesh", "I", (byte) 10);
-//        User user2 = user1;
+//        model.User user1 = new model.User("Dinesh", "I", (byte) 10);
+//        model.User user2 = user1;
 //        user1.setAge((byte) 20);
 //        System.out.println("user1 = " + user1.getAge());
 //        System.out.println("user2 = " + user2.getAge());
@@ -48,8 +52,6 @@ public class Main {
         System.out.println("s2 = " + s2);
         Console.log("Dinesh", "I", "V", 1, 3);
 
-        System.out.println("new UserExample(\"new\") = " + new UserExample("new"));
-
         Main main = new Main();
         main.numberOperations();
         main.arrayOperations();
@@ -58,7 +60,7 @@ public class Main {
         main.conditionalStatement();
         main.fizzBuzz();
 
-//        var laptop = new Laptop("HP", 100_000, (byte) 8, 512, LocalDateTime.now());
+//        var laptop = new model.Laptop("HP", 100_000, (byte) 8, 512, LocalDateTime.now());
 //        String laptopName = laptop.getName();
 //        System.out.println(laptopName);
 //        LampdaExpression.main();
@@ -148,7 +150,7 @@ public class Main {
     public void stringOperations(){
         System.out.println("\n--- STRING OPERATION ---\n");
         String userInput = "    dinesh i     ";
-        System.out.println("User Input: " + userInput);
+        System.out.println("model.User Input: " + userInput);
         String name = userInput.trim();
         System.out.println("Start and End Whitespace Removed: " + name);
         String nameInUppercase = name.toUpperCase(Locale.ROOT);

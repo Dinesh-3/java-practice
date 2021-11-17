@@ -1,6 +1,5 @@
 package collections;
 
-import dataStructure.HashTable;
 import io.Customer;
 
 import java.time.LocalDate;

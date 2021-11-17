@@ -32,14 +32,14 @@ public class Main {
         System.out.println("className = " + className);
         System.out.println("student.getClassName() = " + student.getClassName());
 
-        System.out.println("User.getStaticClass() = " + User.getStaticClass());
+        System.out.println("model.User.getStaticClass() = " + User.getStaticClass());
         int index = Entity.getIndex();
         System.out.println("index = " + index);
         int id = student.getId();
         System.out.println("id = " + id);
 
         User entity = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
-        System.out.println("User.staticClass = " + User.staticClass);
+        System.out.println("model.User.staticClass = " + User.staticClass);
         System.out.println("entity.getClassName() = " + entity.getClassName());
     }
 }

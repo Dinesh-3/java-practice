@@ -6,7 +6,7 @@ public class User extends Entity {
     public String className=this.getClass().getName();
 //    @Override // Fields are can't be override
 //    public String className = this.getClass().getName();
-//    private static String staticClass=User.class.getName();
+//    private static String staticClass=model.User.class.getName();
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -34,7 +34,7 @@ public class User extends Entity {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "model.User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
