@@ -2,6 +2,11 @@ package object;
 
 public class Dog extends Animal{
 
+    public Dog() {
+        super("Animal");
+        System.out.println("object.Dog Default Constructor called");
+    }
+
     public Dog(String name) {
         super(name);
     }

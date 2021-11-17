@@ -1,4 +1,4 @@
-package pattern;
+package DesignPatterns.creational.singleton;
 
 import java.io.Serial;
 import java.io.Serializable;

@@ -181,6 +181,8 @@ public class BehaviouralPattern {
         System.out.println(htmlDocument.getContent());
         UndoCommand undoCommand = new UndoCommand(history1);
         undoCommand.execute();
+        undoCommand.execute();
+        undoCommand.execute();
         System.out.println(htmlDocument.getContent());
 
         /**

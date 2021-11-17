@@ -38,11 +38,11 @@ public class BitwiseOperators {
 
         /**
          * bitwise and
+         * 8421
          * 0101
          * 0111
          * -----
          * 0101 = 5
-         *
          */
         System.out.println("a&b = " + (a & b));
 

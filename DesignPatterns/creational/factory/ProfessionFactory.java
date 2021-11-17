@@ -1,4 +1,4 @@
-package pattern;
+package DesignPatterns.creational.factory;
 
 public class ProfessionFactory {
     public static Profession getProfession(String profession) {

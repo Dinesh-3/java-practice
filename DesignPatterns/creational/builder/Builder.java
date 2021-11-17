@@ -1,4 +1,4 @@
-package pattern.builder;
+package DesignPatterns.creational.builder;
 
 public interface Builder {
     void buildFloors();

@@ -17,5 +17,5 @@ public abstract class Task {
     doExecute();
   }
 
-  protected abstract void doExecute();
+  abstract void doExecute();
 }

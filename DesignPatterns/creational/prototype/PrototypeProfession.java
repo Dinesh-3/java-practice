@@ -1,4 +1,6 @@
-package pattern;
+package DesignPatterns.creational.prototype;
+
+import DesignPatterns.creational.factory.Profession;
 
 import java.util.HashMap;
 import java.util.Map;

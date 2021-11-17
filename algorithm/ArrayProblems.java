@@ -9,18 +9,19 @@ import java.util.stream.Collectors;
 public class ArrayProblems {
     public static void main(String[] args) {
 
-//        subArrayOfGivenSum(numbers, target);
-//        missingNumberInArray();
-//        mergeWithoutExtraSpace();
-//        rearrangeArrayAlternatively();
-//        numberOfPairs();
-//        countInversions();
-//        equilibriumPoint();
-//        reverseArrayInGroups();
-//        kthSmallestElement();
-//        trappingRainWater();
-//        turbulantSubArray();
-//        findMinAndMax();
+        int[] numbers = {1, 3, 4, 5};
+        subArrayOfGivenSum(numbers, 7);
+        missingNumberInArray();
+        mergeWithoutExtraSpace();
+        rearrangeArrayAlternatively();
+        numberOfPairs();
+        countInversions();
+        equilibriumPoint();
+        reverseArrayInGroups();
+        kthSmallestElement();
+        trappingRainWater();
+        turbulantSubArray();
+        findMinAndMax();
 
 //        int[] arrays = { 1, 5, 3, 2 };
 //        for (int i = 0; i < arrays.length; i++) {
@@ -178,7 +179,7 @@ public class ArrayProblems {
         for (int i = 0; i < numbers.length; i++) {
             sum -= numbers[i];
             if(sum == equiliSum) {
-                System.out.println("i = " + i);
+                System.out.println("equilibriumPoint index = " + i);
                 break;
             }
             equiliSum += numbers[i];
