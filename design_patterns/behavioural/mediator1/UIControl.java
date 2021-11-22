@@ -3,15 +3,15 @@ package design_patterns.behavioural.mediator1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UIControl {
-    private List<EventHandler> eventHandlers = new ArrayList<>();
+public abstract class UIControl {
+  private final List<EventHandler> eventHandlers = new ArrayList<>();
 
-    public void addEventHandler(EventHandler handler) {
-        eventHandlers.add(handler);
-    }
+  public void addEventHandler(EventHandler observer) {
+    eventHandlers.add(observer);
+  }
 
-    public void notifyEventHandlers() {
-        for (var handler : eventHandlers)
-            handler.handle();
-    }
+  protected void notifyEventHandlers() {
+    for (var observer : eventHandlers)
+      observer.handle();
+  }
 }

@@ -1,6 +1,7 @@
 package io;
 
 import java.io.*;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 
 /**
@@ -23,22 +24,22 @@ import java.time.LocalDate;
  */
 public class Serialization {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Customer dinesh = new Customer("Dinesh", "I", "Male", "India", (byte) 21, LocalDate.now(), 1212);
-        File file = new File("dinesh.txt");
-        serialize(dinesh, file);
+        File file = new File(Paths.get("").toAbsolutePath()+"/io/dinesh.txt");
+        System.out.println("file = " + file);
+        file.createNewFile();
 
+        Customer dinesh = new Customer("Dinesh", "I", "Male", "India", (byte) 21, LocalDate.now(), 1212);
+        serialize(dinesh, file);
         Customer dineshOuted = deSerialize(file);
-        String country = dineshOuted.getCountry();
-        System.out.println("country = " + country);
         System.out.println("dineshOuted = " + dineshOuted);
         dineshOuted.setLastName("-I");
         serialize(dineshOuted, file);
 
         Customer againDeSerialize = deSerialize(file);
-        System.out.println("country = " + againDeSerialize);
+        System.out.println("againDeSerialized Customer= " + againDeSerialize);
 
         Movie movie = new Movie("Ayan", "Ayan actor Surya", "Action", 14);
-        File ayanFile = new File("ayan.txt");
+        File ayanFile = new File(Paths.get("").toAbsolutePath()+"/io/ayan.txt");
 
         FileOutputStream outputStream = new FileOutputStream(ayanFile);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
@@ -46,8 +47,8 @@ public class Serialization {
 
         FileInputStream inputStream = new FileInputStream(ayanFile);
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-        Object object = objectInputStream.readObject();
-        System.out.println("object = " + object);
+        Object ayan = objectInputStream.readObject();
+        System.out.println("movie = " + ayan);
     }
 
     //        DESERIALIZATION

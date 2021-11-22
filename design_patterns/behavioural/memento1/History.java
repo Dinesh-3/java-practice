@@ -1,16 +1,15 @@
 package design_patterns.behavioural.memento1;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 public class History {
-  private Deque<DocumentMemento> mementos = new ArrayDeque<>();
+  private Stack<EditorState> states = new Stack<>();
 
-  public void push(DocumentMemento memento) {
-    mementos.push(memento);
+  public void push(EditorState state) {
+    states.push(state);
   }
 
-  public DocumentMemento pop() {
-    return mementos.pop();
+  public EditorState pop() {
+    return states.pop();
   }
 }

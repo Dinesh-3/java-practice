@@ -37,17 +37,27 @@ public class ExceptionPractice {
             e.printStackTrace();
         }
 
+//        fileReader1 // We can't access try with resource fields
+
     }
 
     private static void checkBlockOrder() throws Exception {
         try {
-            System.out.println("TRY BLOCK");
-            throw new Exception("Try Thrown exception");
+            try {
+                System.out.println("TRY BLOCK"); // Step 1
+                throw new Exception("Try Thrown exception");
+            }catch (Exception e){
+                System.out.println("CATCH BLOCK"); // Step 2
+                throw new Exception("Catch Thrown exception"); // Step 5
+            }
+            finally {
+                System.out.println("FINALLY BLOCK LEVEL 2"); // step 3
+//                System.exit(0); // step 4 // it will stop the process so catch throwned not executed
+            }
         }catch (Exception e){
-            System.out.println("CATCH BLOCK");
-//            throw new Exception("Catch Thrown exception");
+            System.out.println("e = " + e);
         }finally {
-            System.out.println("FINALLY BLOCK");
+            System.out.println("FINALLY BLOCK LEVEL 1");
         }
     }
 

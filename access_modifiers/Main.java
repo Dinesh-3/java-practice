@@ -13,6 +13,7 @@ public class Main {
         Entity entity = new Entity();
 //        entity.getProtectedField(); // throw's error
         Manager manager = new Manager();
-        manager.getProtectedField();
+        String protectedField = manager.getProtectedField();
+        System.out.println("protectedField = " + protectedField);
     }
 }

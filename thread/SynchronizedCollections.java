@@ -7,6 +7,16 @@ public class SynchronizedCollections {
     public static void main(String[] args) {
         List<Integer> numbers = Collections.synchronizedList(new ArrayList<>());
 //        new SynchronousQueue<>()
+//        Collections.synchronizedSet();
+//        Collections.synchronizedNavigableSet()
+//        Collections.synchronizedSortedSet()
+
+//        Collections.synchronizedMap();
+//        Collections.synchronizedNavigableMap()
+//        Collections.synchronizedSortedMap()
+
+//        Collections.synchronizedCollection()
+        
         Thread thread1 = new Thread(() -> {
             numbers.addAll(Arrays.asList(1, 2, 3, 5, 6, 3, 8, 7));
         });

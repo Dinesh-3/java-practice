@@ -46,6 +46,8 @@ public class StreamMain {
                 new User("Harish", "D", (byte) 23))
         );
         var numbers = new ArrayList<>(List.of(3, 2, 4, 8, 1, 5, 9, 6, 7, 0));
+        System.out.println("numbers = " + numbers);
+
         Consumer<String> print = content -> {
             content = content.toUpperCase();
             System.out.println("content = " + content);
@@ -56,14 +58,14 @@ public class StreamMain {
         IntFunction<Double> intToDouble = arg -> (double) arg;
         ToIntFunction<Float> floatToIntFunction = Math::round;
         DoubleToIntFunction doubleToIntFunction = arg -> (int) Math.round(arg);
-        System.out.println("dinesh = " + doubleToIntFunction.applyAsInt(1.2F));
+        System.out.println("doubleToIntFunction.applyAsInt(1.2F) = " + doubleToIntFunction.applyAsInt(1.2F));
         IntToDoubleFunction intToDoubleFunction = arg ->  arg;
 //        System.out.println("intToDoubleFunction.applyAsDouble(12) = " + intToDoubleFunction.applyAsDouble(12));
         String dinesh = toUppercase.andThen(i -> { System.out.println(i); return i+ " I"; }).apply("Dinesh");
         System.out.println("dinesh = " + dinesh);
         Double DoubleConverted = intToDouble.apply(10);
 
-        BinaryOperator<Integer> add = (a, b) -> a + b;
+        BinaryOperator<Integer> add = Integer::sum;
         Function<Integer, Integer> square = a -> a * a;
 
 //        System.out.println("add.andThen(square) = " + add.andThen(square).apply(1,1));
@@ -72,7 +74,7 @@ public class StreamMain {
         UnaryOperator<Integer> squareOfNumber = n -> n * n;
 
         System.out.println("addOne.andThen(square).apply(1) = " + addOne.andThen(square).apply(1));
-        System.out.println(" addOne.compose(square).andThen(square).apply(2) = " + addOne.compose(square).andThen(square).apply(2));
+        System.out.println("addOne.compose(square).andThen(square).apply(2) = " + addOne.compose(square).andThen(square).apply(2));
 
         Predicate<String> isValidName = message -> message.length() > 5;
         BiPredicate<String, String> isEqual = String::equals;
@@ -91,7 +93,7 @@ public class StreamMain {
 //        users.sort(model.User::compareTo);
 //        System.out.println(users);
 
-        users.stream()
+        var userStream = users.stream()
                 .distinct()
 //                .sorted(Comparator.comparing(model.User::getFirstName))
                 .sorted(
@@ -99,15 +101,26 @@ public class StreamMain {
                                 .reversed()
                                 .thenComparing(User::getFirstName)
                 )
-//                .peek(stream.LambdaExpression::accept) // Used to log each element
+//                .peek(stream.StreamMain::accept) // Used to log each element
                 .map(user -> user.getFirstName().toUpperCase())
 //                .filter(name -> name.startsWith("B"))
 //                .count()
 //                r4.skip((page - 1) * limit)
 //                .limit(limit)
 //                .max(Comparator.comparing(model.User::getAge)).get()
-                .forEach(System.out::println);
+                .collect(
+                        Collectors.groupingBy(
+                                (item) -> item.startsWith("a"),
+//                                Collectors.counting()
+//                                Collectors.joining()
+//                                Collectors.toList()
+                                Collectors.mapping((item) -> item, Collectors.joining(","))
+                        )
+                )
 
+//                .forEach(System.out::println)
+                ;
+        System.out.println("userStream = " + userStream);
         /**
          * FlatMap
          */
@@ -174,18 +187,18 @@ public class StreamMain {
 //                .mapToLong(a -> a)
 //                .mapMulti()
 //                .collect(Collectors.summingInt(a -> a))
-                /**
-                 * Sample - IntSummaryStatistics{count=10, sum=45, min=0, average=4.500000, max=9}
-                 * Methods
-                 * .getAverage()
-                 * .getCount()
-                 * .getSum()
-                 * getMin()
-                 * getMax()
-                 * combine(IntSummaryStatistics other) -> To combine with other IntStatistics
-                 */
-                .collect(Collectors.summarizingInt(a -> a))
+//                .collect(Collectors.summarizingInt(a -> a))
                 ;
+        /**
+         * Sample - IntSummaryStatistics{count=10, sum=45, min=0, average=4.500000, max=9}
+         * Methods
+         * .getAverage()
+         * .getCount()
+         * .getSum()
+         * getMin()
+         * getMax()
+         * combine(IntSummaryStatistics other) -> To combine with other IntStatistics
+         */
         System.out.println("Collected = " + collect);
 //        var collectString = String.join(",", users);
         var collectString = users.stream()
@@ -194,7 +207,17 @@ public class StreamMain {
         System.out.println("collectString = " + collectString);
         System.out.println("--- END ---");
 
-        AddTwo addTwo = (a, b) -> a + b; // (int a, int b) -> a + b also valid but not needed
+        var numberGreaterThan5 = numbers.stream().
+                map(a -> a)
+                .collect(
+                        Collectors.partitioningBy(
+                                (number) -> number > 5,
+                                Collectors.mapping(a -> String.valueOf(a), Collectors.joining(","))
+                        )
+                );
+        System.out.println("numberGreaterThan5 = " + numberGreaterThan5);
+
+        AddTwo addTwo = (a, b) -> a + b; // (int a, int b) -> a + b specifying type also valid but optional
         int sum = addTwo.add(1, 2);
         System.out.println("sum = " + sum);
     }

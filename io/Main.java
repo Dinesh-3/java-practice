@@ -2,6 +2,7 @@ package io;
 
 import java.io.*;
 import java.net.URI;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -19,52 +20,45 @@ public class Main {
 //            System.out.println(10>>2);
 //            Serialization.main();
 
-            var file = new File("/home/dinesh/Downloads/Java Practice/io/sdfsdf.csv");
+            System.out.println("Paths.get(\"\").toAbsolutePath() = " + Paths.get("").toAbsolutePath());
+            var file = new File("/home/dinesh/Downloads/java_practice/io/sdfsdf.csv");
 
 //            boolean isFileDeleted = file.delete();// To delete file
 //            if(isFileDeleted) System.out.println( " Deleted Successfully");
 //            else System.out.println("Unable to delete.File Doesn't exist !");
-            // FILE LOCATION API
-            String name = file.getName();
-            String absolutePath = file.getAbsolutePath();
-            String parent = file.getParent(); // Returns Parent Folder
-            URI uri = file.toURI();
-            boolean isDirectory = file.isDirectory();
-            boolean isFile = file.isFile();
 
-            System.out.println("name = " + name);
-            System.out.println("absolutePath = " + absolutePath);
-            System.out.println("parent Folder Path = " + parent);
-            System.out.println("uri = " + uri);
-            System.out.println("isDirectory = " + isDirectory);
-            System.out.println("isFile = " + isFile);
+            System.out.println("file.getName() = " + file.getName());
+            System.out.println("file.getAbsolutePath() = " + file.getAbsolutePath());
+            System.out.println("parent Folder Path file.getParent() = " + file.getParent());
+            System.out.println("URI uri = file.toURI(); = " + file.toURI());
+            System.out.println("file.isDirectory(); = " + file.isDirectory());
+            System.out.println("file.isFile() = " + file.isFile());
+            System.out.println("file.exists() = " + file.exists());
             System.out.println("file.lastModified() = " + file.lastModified());
-            // FILE PERMISSIONS
-            // To get model.User privileges of the file
-            boolean canExecute = file.canExecute();
-            boolean canRead = file.canRead();
-            boolean canWrite = file.canWrite();
-            System.out.println("canRead = " + canRead);
-            System.out.println("canWrite = " + canWrite);
-            System.out.println("canExecute = " + canExecute);
 
-            file.setExecutable(true); // Set File Executable
-            file.setReadable(true);
-            file.setWritable(true,true);
-//            file.setReadOnly();
+            System.out.println("\n*** FILE PERMISSIONS ***\n");
+            // To get model.User privileges of the file
+            System.out.println("file.canRead() = " + file.canRead());
+            System.out.println("file.canWrite(); = " + file.canWrite());
             System.out.println("file.canExecute() = " + file.canExecute());
 
             boolean isFileCreated = file.createNewFile();
-            if(isFileCreated) System.out.println("File Created: "+name);
-            else System.out.println("File Already Exist: " + name);
+            if(isFileCreated) System.out.println("File Created: "+file);
+            else System.out.println("File Already Exist: " + file);
 
-            boolean isFileExists = file.exists();
-            System.out.println("isFileExists = " + isFileExists);
+            System.out.println("file.setReadOnly(); = " + file.setReadOnly());
+            System.out.println("file.setExecutable(true); = " + file.setExecutable(true));
+            System.out.println("file.setReadable(true) = " + file.setReadable(true));
+            System.out.println("file.setWritable(true,true) = " + file.setWritable(true, true));
+
+
+            System.out.println("To create directory file.mkdir() = " + file.mkdir());
+            System.out.println("String[] listFiles = file.list(); = " + file.list());
 
             System.out.println("file size in bytes file.length() = " + file.length());
 
-//            GET SIZE
-            /* 🔥 DIFFERENCE GET USABLE SPACE AND GET FREE SPACE 🔥
+            System.out.println("\n*** FILE / FOLDER SIZE ***\n");
+            /** 🔥 DIFFERENCE GET USABLE SPACE AND GET FREE SPACE 🔥
             Note very importantly that getUsableSpace is not equal to getFreeSpace.
             On Linux file systems for example, partitions very often 
             have a number of reserved blocks.
@@ -80,11 +74,7 @@ public class Main {
             System.out.printf("Total Space %.3f GB\n", totalSpace);
             System.out.printf("Usable Space %.3f GB\n", usableSpace);
 
-            boolean mkdir = file.mkdir(); // To create directory
-            String[] listFiles = file.list();
-
 //            writeFile("customer.csv");
-
 //            readFile();
             bufferWriter();
         } catch (Exception e) {
@@ -97,7 +87,7 @@ public class Main {
          * Writes text to a character-output stream, buffering characters
          * to provide for the efficient writing of single characters, arrays, and strings.
          */
-        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/dinesh/Downloads/Java Practice/io/buffer.txt"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(Paths.get("").toAbsolutePath() +"/io/buffer.txt"));
         writer.write("Hello World\n");
         writer.write("From JAVA\n");
         writer.close();
@@ -135,7 +125,7 @@ public class Main {
     }
 
     private static void readFile() {
-        var file = new File("/home/dinesh/Downloads/Java Practice/io/IOPractise.java");
+        var file = new File("/home/dinesh/Downloads/java_practice/io/IOPractise.java");
         try {
             System.out.println("INSIDE JAVA READ");
             Scanner scanner = new Scanner(file);

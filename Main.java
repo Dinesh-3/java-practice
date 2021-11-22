@@ -93,7 +93,7 @@ public class Main {
         }
         for(var item: list) {
             if(item instanceof String) System.out.println("String " + item);
-            if(item instanceof User) System.out.println("String " + ((User) item).getFirstName());
+            if(item instanceof User) System.out.println("User " + ((User) item).getFirstName());
             System.out.println("item = " + item.getClass());
         }
 
@@ -152,7 +152,7 @@ public class Main {
         String userInput = "    dinesh i     ";
         System.out.println("model.User Input: " + userInput);
         String name = userInput.trim();
-        System.out.println("Start and End Whitespace Removed: " + name);
+        System.out.println("Start and End Whitespace Removed: userInput.trim() :" + name);
         String nameInUppercase = name.toUpperCase(Locale.ROOT);
         System.out.println("Name in UpperCase: " + nameInUppercase);
         String[] firstAndLastName = name.split(" ");
@@ -183,14 +183,17 @@ public class Main {
         System.out.print("ENTER NUMBER: ");
         int number = scanner.nextInt();
 
-        String result = String.valueOf(number); // OR DATA_TYPE.toString(number)
-
-        if (number%5 ==0 && number%3 == 0) result = "FIZZBUZZ";
-        else if (number%5 == 0) result = "FIZZ";
-        else if (number%3 == 0) result = "BUZZ";
+        String result = findFizzBuzz(number);
 
         System.out.println("RESULT: " + result);
 
+    }
+
+    private String findFizzBuzz(int number) {
+        if (number %5 ==0 && number %3 == 0) return "FIZZBUZZ";
+        if (number %5 == 0) return "FIZZ";
+        if (number %3 == 0) return "BUZZ";
+        return String.valueOf(number);
     }
 
 

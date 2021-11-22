@@ -6,6 +6,7 @@ import design_patterns.creational.builder.Home;
 import design_patterns.creational.builder.HomeBuilder;
 import design_patterns.creational.factory.ProfessionFactory;
 import design_patterns.creational.factory.Profession;
+import design_patterns.creational.prototype.AbstractProfession;
 import design_patterns.creational.prototype.PrototypeProfession;
 import design_patterns.creational.singleton.SingletonClass;
 
@@ -54,13 +55,13 @@ public class Main {
         System.out.println("doctor = " + doctor);
 
         System.out.println("\n*** Prototype Pattern ***\n");
-        Profession doctor1 = PrototypeProfession.getNewClone("doctor");
-        Profession doctor2 = PrototypeProfession.getNewClone("doctor");
+        var doctor1 = PrototypeProfession.getNewClone("doctor");
+        var doctor2 = PrototypeProfession.getNewClone("doctor");
         System.out.println("doctor1 = " + doctor1);
         System.out.println("doctor2 = " + doctor2);
 
-        Profession teacher1 = PrototypeProfession.getNewClone("teacher");
-        Profession teacher2 = PrototypeProfession.getNewClone("teacher");
+        var teacher1 = PrototypeProfession.getNewClone("teacher");
+        var teacher2 = PrototypeProfession.getNewClone("teacher");
         System.out.println("teacher1 = " + teacher1);
         System.out.println("teacher2 = " + teacher2);
 

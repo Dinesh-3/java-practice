@@ -3,7 +3,7 @@ package inheritance;
 public class Entity {
     public static int index;
     protected boolean isEnabled;
-    public String className=this.getClass().getName();
+    public String className= getClass().getName();
     public static String staticClass=Entity.class.getName();
     protected String protectedField = "Protected Field";
     String defaultField = "Default Field";
@@ -47,7 +47,7 @@ public class Entity {
     }
 
     protected String getProtectedField() {
-        return protectedField;
+        return String.format("%s in %s", protectedField, className);
     }
 
     String getDefaultField() {

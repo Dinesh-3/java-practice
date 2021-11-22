@@ -8,13 +8,15 @@ public class ClassPractise {
         Method[] methods = Object.class.getMethods();
         for(var method:methods){
             System.out.print(
-                    "Method Name: "+method.getName()
-                            + " "
+                    "Method Name: "+ method
+//                            + method.getReturnType() +
+//                            method.getName()
+//                            + " "
 //                            + "Params count: " +
 //                            method.getParameterCount()
             );
 //            method.canAccess(new Object());\
-            System.out.print(" Params: " + Arrays.toString(method.getParameters()));
+//            System.out.print(" Params: " + Arrays.toString(method.getParameters()));
             System.out.println();
         }
     }

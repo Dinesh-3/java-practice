@@ -1,5 +1,7 @@
 package thread;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -27,8 +29,21 @@ public class ExecutiveFramework {
          *  Implementations: AbstractExecutorService, ForkJoinPool, ScheduledThreadPoolExecutor, ThreadPoolExecutor
          */
 
+        // Creating Thread Manually All implements ExecutorService
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 10, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
+        ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(10, r -> new Thread(r));
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+
         ExecutorService executorService = Executors.newFixedThreadPool(5);// Contains static factory method's to create instance of executors
         ExecutorService executorService2 = Executors.newFixedThreadPool(5);// Contains static factory method's to create instance of executors
+//        Executors.newCachedThreadPool();
+//        Executors.newWorkStealingPool();
+        Executors.newSingleThreadExecutor();
+        Executors.callable(() -> {
+            System.out.printf("%s Thread is started: ", Thread.currentThread().getName());
+        });
+        Executors.privilegedCallable(() -> Thread.currentThread().getName());
+//        Executors.unconfigurableExecutorService()
         try {
             for (int i = 1; i <= 10; i++) {
                 int finalI = i;
@@ -64,7 +79,6 @@ public class ExecutiveFramework {
 //        executorService2.shutdown(); below code will throw because of shutdown the executor
         }
         compose();
-
 
     }
 

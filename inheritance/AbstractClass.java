@@ -9,6 +9,10 @@ abstract class Book{
         return title;
     }
 
+    public String getClassName() {
+        return getClass().getName();
+    }
+
 }
 
 //Write MyBook class here
@@ -22,12 +26,15 @@ class MyBook extends Book{
 public class AbstractClass {
     public static void main(String []args){
         //Book new_novel=new Book(); This line prHMain.java:25: error: Book is abstract; cannot be instantiated
-        Scanner sc=new Scanner(System.in);
-        String title=sc.nextLine();
-        MyBook new_novel=new MyBook();
-        new_novel.setTitle(title);
-        System.out.println("The title is: "+new_novel.getTitle());
-        sc.close();
+        System.out.print("Enter Title: ");
+//        Scanner sc=new Scanner(System.in);
+//        String title=sc.nextLine();
+//        sc.close();
 
+        MyBook new_novel=new MyBook();
+        new_novel.setTitle("DInesh");
+        System.out.println("The title is: "+new_novel.getTitle());
+        System.out.println("new_novel = " + new_novel);
+        System.out.println("new_novel.getClassName() = " + new_novel.getClassName());
     }
 }

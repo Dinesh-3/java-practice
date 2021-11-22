@@ -3,36 +3,41 @@ package tricky;
 public class StringPractise {
     public static void main(String[] args) {
         mutableString();
-        String name1 = "name1";
-        String name2 = "name2";
-        String name3 = "name1";
-        String name4 = new String("name2");
-        String name5 = new String("name2");
-        name5.substring(2);
-        String newName1 = "newName1";
-        String newName2 = "newName2";
-
-        System.out.println("name1 == name1 = " + String.valueOf(name1 == name1));
-        System.out.println("name1 == name2 = " + String.valueOf(name1 == name2));
-        System.out.println("name2 == name4 = " + String.valueOf(name2 == name4));
-        System.out.println("name4 == name5 = " + String.valueOf(name4 == name5));
-        System.out.println("name1.equals(name1) = " + name1.equals(name1));
-        System.out.println("name1.equals(name3) = " + name1.equals(name3));
-        System.out.println("name2.equals(name4) = " + name2.equals(name4));
+        stringEqualsCheck();
 
         ImmutableUser dinesh = new ImmutableUser("Dinesh", "I");
 
         ImmutableUser copiedUser = dinesh;
         ImmutableUser babu = copiedUser.setFirstName("Babu");
-        System.out.println("babu.getFirstName() = " + babu.getFirstName());
-        System.out.println(dinesh == babu);
+        System.out.println("dinesh == copiedUser = " + (dinesh == copiedUser));
+        System.out.println("dinesh == babu = " + (dinesh == babu));
 
+    }
+
+    private static void stringEqualsCheck() {
+        String dineshWithoutNew = "dinesh";
+        String babuWithoutNew = "babu";
+        String dineshWithoutNew1 = "dinesh";
+        String dineshWithNew = new String("dinesh");
+        String babuWithNew = new String("babu");
+        dineshWithNew.substring(2);
+        String newName1 = "newName1";
+        String newName2 = "newName2";
+
+        System.out.println("dineshWithoutNew == dineshWithoutNew = " + (dineshWithoutNew == dineshWithoutNew));
+        System.out.println("dineshWithoutNew == babuWithoutNew = " + (dineshWithoutNew == babuWithoutNew));
+        System.out.println("babuWithoutNew == babuWithNew = " + (babuWithoutNew == babuWithNew));
+        System.out.println("babuWithNew == dineshWithNew = " + (babuWithNew == dineshWithNew));
+
+        System.out.println("dineshWithoutNew.equals(dineshWithNew) = " + dineshWithoutNew.equals(dineshWithoutNew));
+        System.out.println("dineshWithoutNew.equals(dineshWithoutNew1) = " + dineshWithoutNew.equals(dineshWithoutNew1));
+        System.out.println("babuWithoutNew.equals(babuWithNew) = " + babuWithoutNew.equals(babuWithNew));
     }
 
     protected static void mutableString() {
         char c = 'c';
         char c1 = 'c';
-        if(c == c1) System.out.println("c = c1");
+        if(c == c1) System.out.println("c == c1");
         /*
                 StringBuffer
             Points:
@@ -45,7 +50,7 @@ public class StringPractise {
         System.out.println("dinesh = " + dinesh);
 
          /*
-                StringBuffer
+                StringBuilder
             Points:
                 1. Not Thread safe
                 2. Introduced in 1.5

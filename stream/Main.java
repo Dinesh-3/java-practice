@@ -1,5 +1,8 @@
 package stream;
 
+import stream.examples.GroupingData;
+import stream.examples.HowStreamsWork;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -9,7 +12,8 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
+
     List<Person> people = getPeople();
 
     // Imperative approach ❌
@@ -36,15 +40,14 @@ public class Main {
         .filter(person -> person.getGender().equals(Gender.FEMALE))
         .collect(Collectors.toList());
 
-//    females.forEach(System.out::println);
+    System.out.println("females = " + females);
 
     // Sort
     List<Person> sorted = people.stream()
         .sorted(Comparator.comparing(Person::getAge).thenComparing(Person::getGender).reversed())
         .collect(Collectors.toList());
 
-//    sorted.forEach(System.out::println);
-
+    System.out.println("sorted = " + sorted);
     // All match
     boolean allMatch = people.stream()
         .allMatch(person -> person.getAge() > 8);

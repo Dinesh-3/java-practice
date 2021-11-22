@@ -24,6 +24,17 @@ public class DateTimePractice {
          * 24 Hour -> 24*15 = 360 degree
          * India -> + 5.5
          */
+        System.out.println("Instant.now() = " + Instant.now());
+        System.out.println("LocalDateTime.now(ZoneId.of(\"UTC\")) = " + LocalDateTime.now(ZoneId.of("UTC")));
+
+        System.out.println("OffsetDateTime.now() = " + OffsetDateTime.now());
+        System.out.println("OffsetTime.now() = " + OffsetTime.now());
+
+        System.out.println("ZonedDateTime.now() = " + ZonedDateTime.now());
+
+        System.out.println("LocalDateTime.now() = " + LocalDateTime.now());
+        System.out.println("LocalDate.now() = " + LocalDate.now());
+        System.out.println("LocalTime.now() = " + LocalTime.now());
 
         Date date = new Date();
         String s = date.toString();
@@ -111,8 +122,7 @@ public class DateTimePractice {
 
 //        ZONES
         Set<String> availableZoneIds = ZoneId.getAvailableZoneIds();
-        int totalZones = availableZoneIds.size();
-        System.out.println("totalZones = " + totalZones);
+        System.out.println("totalZones availableZoneIds.size(); " + availableZoneIds.size());
         ZoneId systemDefault = ZoneId.systemDefault();
         System.out.println("systemDefault = " + systemDefault);
     }

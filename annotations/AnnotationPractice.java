@@ -1,6 +1,7 @@
 package annotations;
 
 import java.lang.annotation.*;
+import java.util.Arrays;
 
 /**
  * SOURCE
@@ -22,24 +23,30 @@ import java.lang.annotation.*;
     String name() default "";
     int version() default 1;
     String getName() default "1";
+    static String toString = "Mobile Static Field";
+}
+
+@interface Car{
+
 }
 
 @Mobile(name = "MI", version = 1)
 public class AnnotationPractice {
     public static void main(String[] args) {
-        AnnotationPractice annot = new AnnotationPractice();
-        Class<? extends AnnotationPractice> obj = annot.getClass();
-        Annotation[] annotations = obj.getAnnotations();
+        AnnotationPractice annotationPractice = new AnnotationPractice();
+        Class<? extends AnnotationPractice> obj = annotationPractice.getClass();
         Annotation annotation = obj.getAnnotation(Mobile.class);
 
-        // isAnnotationPresent
+        System.out.println("obj.getAnnotations() = " + Arrays.toString(obj.getAnnotations()));
         System.out.println("annotation.annotationType() = " + annotation.annotationType());
         System.out.println("obj.isAnnotation() = " + obj.isAnnotation());
         System.out.println("obj.isAnnotationPresent(Mobile.class) = " + obj.isAnnotationPresent(Mobile.class));
         Mobile mobile = (Mobile) annotation;
-        String name = mobile.name();
-        System.out.println("name = " + name);
-        System.out.println(mobile.version());
+        System.out.println("Mobile.toString = " + Mobile.toString);
+        System.out.println("mobile.name(); = " + mobile.name());
+        System.out.println("mobile.version() = " + mobile.version());
+        System.out.println("mobile.toString() = " + mobile.toString());
+        System.out.println("mobile.getClass() = " + mobile.getClass());
     }
 }
 
@@ -51,8 +58,3 @@ class SubClass extends AnnotationPractice {
     }
 }
 
-class Practise {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}

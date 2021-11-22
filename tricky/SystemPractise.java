@@ -3,10 +3,27 @@ package tricky;
 
 import object.Dog;
 
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Map;
 
 public class SystemPractise {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        Process shCommand = Runtime.getRuntime().exec("ls -lh");
+
+        byte[] bytes = shCommand.getInputStream().readAllBytes();
+//        char[] chars = new char[bytes.length];
+//        for (int i = 0; i < bytes.length; i++) {
+//            chars[i] = (char) bytes[i];
+//        }
+//        String commandResult = String.valueOf(chars);
+
+        String commandResult = new String(bytes, StandardCharsets.UTF_8);
+        System.out.println("commandResult = " + commandResult);
+
         Map<String, String> env = System.getenv();
 //        env.forEach((a, b) -> System.out.println( a + " = " + b));
 
@@ -31,7 +48,7 @@ public class SystemPractise {
          * in a system-specific manner.
          */
 
-        System.loadLibrary(""); // To load native at dynamically
+//        System.loadLibrary(""); // To load native at dynamically
         var puppy =  new Dog("Puppy");
         var twinky =  new Dog("Twinky");
 

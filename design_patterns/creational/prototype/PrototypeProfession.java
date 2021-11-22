@@ -14,10 +14,10 @@ public class PrototypeProfession implements Cloneable{
         map.put("programmer",new Programmer());
         map.put("teacher",new Teacher());
     }
-    public static Profession getNewClone(String profession) {
+    public static AbstractProfession getNewClone(String profession) {
         AbstractProfession result = map.get(profession);
         try {
-            return (Profession) result.clone();
+            return (AbstractProfession) result.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

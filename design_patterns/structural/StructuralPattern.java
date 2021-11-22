@@ -1,23 +1,23 @@
 package design_patterns.structural;
 
-import design_patterns.structural.adapter2.*;
-import design_patterns.structural.adapter2.avaFilters.Caramel;
-import design_patterns.structural.bridge2.AdvancedRemoteControl;
-import design_patterns.structural.bridge2.RemoteControl;
-import design_patterns.structural.bridge2.SamsungTV;
-import design_patterns.structural.bridge2.SonyTV;
-import design_patterns.structural.composite2.Group;
-import design_patterns.structural.composite2.Shape;
-import design_patterns.structural.decorator2.CloudStream;
-import design_patterns.structural.decorator2.CompressedCloudStream;
-import design_patterns.structural.decorator2.EncryptedCloudStream;
-import design_patterns.structural.decorator2.Stream;
-import design_patterns.structural.facade2.NotificationService;
-import design_patterns.structural.flyweight2.Point;
-import design_patterns.structural.flyweight2.PointIconFactory;
-import design_patterns.structural.flyweight2.PointService;
-import design_patterns.structural.proxy2.EbookProxy;
-import design_patterns.structural.proxy2.Library;
+import design_patterns.structural.adapter1.*;
+import design_patterns.structural.adapter1.avaFilters.Caramel;
+import design_patterns.structural.bridge1.AdvancedRemoteControl;
+import design_patterns.structural.bridge1.RemoteControl;
+import design_patterns.structural.bridge1.SamsungTV;
+import design_patterns.structural.bridge1.SonyTV;
+import design_patterns.structural.composite1.Group;
+import design_patterns.structural.composite1.Shape;
+import design_patterns.structural.decorator1.CloudStream;
+import design_patterns.structural.decorator1.CompressedCloudStream;
+import design_patterns.structural.decorator1.EncryptedCloudStream;
+import design_patterns.structural.decorator1.Stream;
+import design_patterns.structural.facade1.NotificationService;
+import design_patterns.structural.flyweight1.Point;
+import design_patterns.structural.flyweight1.PointIconFactory;
+import design_patterns.structural.flyweight1.PointService;
+import design_patterns.structural.proxy1.EbookProxy;
+import design_patterns.structural.proxy1.Library;
 
 /**
  *  Structural design patterns are concerned with how classes and objects can be composed, to form larger structures.
@@ -46,6 +46,7 @@ public class StructuralPattern {
          *  2. When the responsibilities are needed to be added dynamically to the individual objects without affecting other objects.
          *     Where the responsibility of object may vary from time to time.
          */
+        System.out.println("\n*** Composite Pattern ***\n");
 
         Shape shape1 = new Shape(1);
         Shape shape2 = new Shape(2);
@@ -70,6 +71,8 @@ public class StructuralPattern {
          *      2. When you want to create a reusable class that
          *          cooperates with classes which don't have compatible interfaces.
          */
+        System.out.println("\n*** Adapter Pattern ***\n");
+
         ImageView imageView = new ImageView(new Image());
         imageView.apply(new VividFilter());
         imageView.apply(new CaramelFilter(new Caramel())); // using third party library with the help of adapter pattern
@@ -89,11 +92,10 @@ public class StructuralPattern {
          *      2. When you want to add responsibilities to an object that you may want to change in the future.
          *      3. Extending functionality by sub-classing is no longer practical.
          */
-        System.out.println("\n*** Decorator Pattern ***");
+        System.out.println("\n*** Decorator Pattern ***\n");
         Stream stream = new CloudStream();
         Stream encryptedCloudStream = new EncryptedCloudStream(new CompressedCloudStream(stream));
-         encryptedCloudStream.write("asdfasdfasdf");
-        System.out.println("*** End ***\n");
+        encryptedCloudStream.write("Dinesh I");
 
         /**
          * Facade Pattern
@@ -108,13 +110,15 @@ public class StructuralPattern {
          *  1. When you want to provide simple interface to a complex sub-system.
          *  2. When several dependencies exist between clients and the implementation classes of an abstraction.
          */
+        System.out.println("\n*** Facade Pattern ***\n");
 
-        NotificationService notificationService = new NotificationService();
+        var notificationService = new NotificationService();
         notificationService.send("Hello World!", "mobile"); // send method has all the complexity to send a message
 
         /**
          * Flyweight Pattern
-         * To reuse already existing similar kind of objects by storing them and create new object when no matching object is found
+         * To reuse already existing similar kind of objects by storing them
+         * and create new object when no matching object is found
          *
          * Notes:
          *  1. We can use HashMap for storing objects.
@@ -128,6 +132,7 @@ public class StructuralPattern {
          *  2. When the storage cost is high because of the quantity of objects.
          *  3. When the application does not depend on object identity.
          */
+        System.out.println("\n*** Flyweight Pattern ***\n");
 
         PointService pointService = new PointService(new PointIconFactory());
         for (Point point : pointService.getPoints()) {
@@ -152,13 +157,12 @@ public class StructuralPattern {
          *  3. It is mostly used in those places where changes are made in the implementation does not affect the clients.
          *
          */
-        System.out.println("\n*** Bridge Pattern ***");
+        System.out.println("\n*** Bridge Pattern ***\n");
         RemoteControl remote = new RemoteControl(new SonyTV());
         remote.turnOn();
 
         AdvancedRemoteControl advancedRemote = new AdvancedRemoteControl(new SamsungTV());
         remote.turnOff();
-        System.out.println("*** End ***\n");
 
         /**
          * Proxy Pattern
@@ -174,6 +178,7 @@ public class StructuralPattern {
          *  3. Remote Proxy -> For RPC or providing interface for remote resources such as web service or REST resources.
          *  4. Smart Proxy -> -A smart proxy provides additional layer of security by interposing specific actions when the object is accessed
          */
+        System.out.println("\n*** Proxy Pattern ***\n");
 
         String[] books = {"a", "b", "c", "d"};
         Library library = new Library();

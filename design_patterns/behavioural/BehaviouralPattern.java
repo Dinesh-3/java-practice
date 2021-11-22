@@ -1,35 +1,35 @@
 package design_patterns.behavioural;
 
-import design_patterns.behavioural.chainOfResponsibility.*;
-import design_patterns.behavioural.command.*;
-import design_patterns.behavioural.command.editor.BoldCommand;
-import design_patterns.behavioural.command.editor.HtmlDocument;
-import design_patterns.behavioural.command.editor.UndoCommand;
-import design_patterns.behavioural.command.fx.Button;
-import design_patterns.behavioural.command.fx.Command;
-import design_patterns.behavioural.iterator.BrowseHistory;
-import design_patterns.behavioural.iterator.Iterator;
-import design_patterns.behavioural.mediator.ArticlesDialogBox;
-import design_patterns.behavioural.memento.Editor;
-import design_patterns.behavioural.memento.History;
-import design_patterns.behavioural.observer.Chart;
-import design_patterns.behavioural.observer.DataSource;
-import design_patterns.behavioural.observer.SpreadSheet;
-import design_patterns.behavioural.state.BrushTool;
-import design_patterns.behavioural.state.Canvas;
-import design_patterns.behavioural.state.SelectionTool;
-import design_patterns.behavioural.strategy.BlackAndWhiteFilter;
-import design_patterns.behavioural.strategy.ImageStorage;
-import design_patterns.behavioural.strategy.PngCompressor;
-import design_patterns.behavioural.template.AuditTrail;
-import design_patterns.behavioural.template.GenerateReportTask;
-import design_patterns.behavioural.template.Task;
-import design_patterns.behavioural.template.TransferMoneyTask;
+import design_patterns.behavioural.chainOfResponsibility1.*;
+import design_patterns.behavioural.command1.*;
+import design_patterns.behavioural.command1.editor.BoldCommand;
+import design_patterns.behavioural.command1.editor.HtmlDocument;
+import design_patterns.behavioural.command1.editor.UndoCommand;
+import design_patterns.behavioural.command1.fx.Button;
+import design_patterns.behavioural.command1.fx.Command;
+import design_patterns.behavioural.iterator1.BrowseHistory;
+import design_patterns.behavioural.iterator1.Iterator;
+import design_patterns.behavioural.mediator1.ArticlesDialogBox;
+import design_patterns.behavioural.memento1.Editor;
+import design_patterns.behavioural.memento1.History;
+import design_patterns.behavioural.observer1.Chart;
+import design_patterns.behavioural.observer1.DataSource;
+import design_patterns.behavioural.observer1.SpreadSheet;
+import design_patterns.behavioural.state1.BrushTool;
+import design_patterns.behavioural.state1.Canvas;
+import design_patterns.behavioural.state1.SelectionTool;
+import design_patterns.behavioural.strategy1.BlackAndWhiteFilter;
+import design_patterns.behavioural.strategy1.ImageStorage;
+import design_patterns.behavioural.strategy1.PngCompressor;
+import design_patterns.behavioural.template1.AuditTrail;
+import design_patterns.behavioural.template1.GenerateReportTask;
+import design_patterns.behavioural.template1.Task;
+import design_patterns.behavioural.template1.TransferMoneyTask;
 
 public class BehaviouralPattern {
     public static void main(String[] args) {
         /**
-         * Momento Pattern
+         * Memento Pattern
          *
          * To restore the state of an object to its previous state
          *
@@ -41,7 +41,7 @@ public class BehaviouralPattern {
          *  1. It is used in Undo and Redo operations in most software.
          *  2. It is also used in database transactions.
          */
-        System.out.println("\n*** Momento Pattern ***\n");
+        System.out.println("\n*** Memento Pattern ***\n");
         Editor editor = new Editor();
         History history = new History();
 
@@ -61,7 +61,6 @@ public class BehaviouralPattern {
         editor.restore(history.pop());
 
         System.out.println(editor.getContent());
-        System.out.println("\n*** END ***\n");
 
         /**
          * State Pattern -> Polymorphism and setter implementation contains one has a relation
@@ -99,6 +98,7 @@ public class BehaviouralPattern {
          *  1. When you want to access a collection of objects without exposing its internal representation.
          *  2. When there are multiple traversals of objects need to be supported in the collection.
          */
+        System.out.println("\n*** Iterator Pattern ***\n");
 
         BrowseHistory browseHistory = new BrowseHistory();
         browseHistory.push("https://www.dinesh.com");
@@ -116,6 +116,11 @@ public class BehaviouralPattern {
         /**
          * Strategy Pattern -> Contains one or more has a relation. Polymorphism
          *  defines a family of functionality, encapsulate each one, and make them interchangeable
+         *  Example:
+         *  Burger has Three layers -> top bun + patty + bottom bun ( Patty -> Stuff that goes inside the bun )
+         *  1. top and bottom bun are common to all burgers. Varying part is patty. Patty might be cheese, chicken, beef etc
+         *  2. We need to extract varying part and make all parts implements single interface
+         *  3. then pass the concrete implementation ( cheese, chicken, beef cooking implementation ) based on the need
          * Application:
          *  1. It provides a substitute to subclassing.
          *  2. It defines each behavior within its own class, eliminating the need for conditional statements.
@@ -123,8 +128,12 @@ public class BehaviouralPattern {
          * Used When:
          * 1. When the multiple classes differ only in their behaviors.e.g. Servlet API.
          * 2. It is used when you need different variations of an algorithm.
+         * Principle's Used:
+         * 1. Encapsulate what varies
+         * 2. Favor composition over inheritance
+         * 3. Program to interface, not implementation
          */
-        System.out.println("\n*** Strategy Pattern ***");
+        System.out.println("\n*** Strategy Pattern ***\n");
         ImageStorage imageStorage = new ImageStorage();
         imageStorage.store("dog.png", new PngCompressor(), new BlackAndWhiteFilter());
 
@@ -136,7 +145,7 @@ public class BehaviouralPattern {
          * Used When:
          *  1. It is used when the common behavior among sub-classes should be moved to a single common class by avoiding the duplication.
          */
-        System.out.println("\n*** Template Pattern ***");
+        System.out.println("\n*** Template Pattern ***\n");
 
         Task transferMoneyTask = new TransferMoneyTask();
         transferMoneyTask.execute();
@@ -146,6 +155,7 @@ public class BehaviouralPattern {
 
         /**
          * Command Pattern -> Used in frameworks and libraries
+         * Used for : Rollback operations
          * Also Known as Action or Transaction.
          * encapsulate a request under an object as a command and pass it to invoker object.
          * Invoker object looks for the appropriate object which can handle this command and
@@ -158,7 +168,7 @@ public class BehaviouralPattern {
          *  2. When you need to create and execute requests at different times.
          *  3. When you need to support rollback, logging or transaction functionality.
          */
-        System.out.println("\n*** Command Pattern ***");
+        System.out.println("\n*** Command Pattern ***\n");
         // NOTE : Same interface in different package not work example
         // Type : DesignPatterns.behavioural.command.fx.Command and instantiation implements DesignPatterns.behavioural.command.editor.Command
         //        This will throw compile time Error
@@ -171,7 +181,7 @@ public class BehaviouralPattern {
         compositeCommand.add(new ResizeCommand());
         compositeCommand.execute(); // replay's all added commands
 
-        design_patterns.behavioural.command.editor.History history1 = new design_patterns.behavioural.command.editor.History();
+        design_patterns.behavioural.command1.editor.History history1 = new design_patterns.behavioural.command1.editor.History();
         HtmlDocument htmlDocument = new HtmlDocument();
         htmlDocument.setContent("Hello World!");
         BoldCommand boldCommand = new BoldCommand(htmlDocument, history1);
@@ -203,12 +213,13 @@ public class BehaviouralPattern {
          *  1. When the change of a state in one object must be reflected in another object without keeping the objects tight coupled.
          *  2. When the framework we write and needs to be enhanced in future with new observers with minimal changes.
          */
-        System.out.println("\n*** Observer Pattern ***");
+        System.out.println("\n*** Observer Pattern ***\n");
         DataSource dataSource = new DataSource();
         SpreadSheet spreadSheet = new SpreadSheet(dataSource);
+//        dataSource.addObserver(spreadSheet);
+
         Chart chart = new Chart(dataSource);
-        dataSource.addObserver(spreadSheet);
-        dataSource.addObserver(chart);
+//        dataSource.addObserver(chart);
 
         dataSource.setValue(3);
 
@@ -227,7 +238,7 @@ public class BehaviouralPattern {
          *  1. It is commonly used in message-based systems likewise chat applications.
          *  2. When the set of objects communicate in complex but in well-defined ways.
          */
-        System.out.println("\n*** Mediator Pattern ***");
+        System.out.println("\n*** Mediator Pattern ***\n");
         ArticlesDialogBox dialogBox = new ArticlesDialogBox();
         dialogBox.simulateUserInteraction();
 
@@ -243,13 +254,15 @@ public class BehaviouralPattern {
          *  1. When more than one object can handle a request and the handler is unknown.
          *  2. When the group of objects that can handle the request must be specified in dynamic way.
          */
-        System.out.println("\n*** Chain of Responsibility ***");
+        System.out.println("\n*** Chain of Responsibility ***\n");
         Compressor compressor = new Compressor(null);
         Logger logger = new Logger(compressor);
         Authenticator authenticator = new Authenticator(logger);
 
         WebServer webServer = new WebServer(authenticator);
         webServer.handle(new HttpRequest("admin", "1234"));
+
+        System.out.println("\n*** END ***\n");
 
     }
 }

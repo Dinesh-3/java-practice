@@ -15,11 +15,11 @@ public class Main {
         System.out.println("Static block called before main method");
     }
     public static void main(String[] args) throws Throwable {
+        System.out.println("MAIN method called");
         SubClass subClass = new SubClass();
 //        subClass.getDefaultField(); // Throw Compile time error| 'getDefaultField()' is not public in 'inheritance.sub_package.SubClass'. Cannot be accessed from outside package
 //        subClass.getProtectedField(); // 'getProtectedField()' has protected access in 'inheritance.sub_package.SubClass'
 
-        System.out.println("MAIN method called");
         User student = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
         String fullName = student.getFullName();
         System.out.println("fullName = " + fullName);
@@ -28,8 +28,7 @@ public class Main {
 //        System.out.println("Batch: "+student.getBatch());
 
 //        student.finalize(); // Garbage Collector
-        String className = student.className;
-        System.out.println("className = " + className);
+        System.out.println("student.className = " + student.className);
         System.out.println("student.getClassName() = " + student.getClassName());
 
         System.out.println("model.User.getStaticClass() = " + User.getStaticClass());
@@ -39,7 +38,7 @@ public class Main {
         System.out.println("id = " + id);
 
         User entity = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
-        System.out.println("model.User.staticClass = " + User.staticClass);
+        System.out.println("User.staticClass = " + User.staticClass);
         System.out.println("entity.getClassName() = " + entity.getClassName());
     }
 }

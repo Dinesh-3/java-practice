@@ -24,15 +24,18 @@ public class Movie implements Externalizable {
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(title);
         out.writeObject(description);
-        out.writeObject(ageRestriction);
+        out.writeInt(ageRestriction);
+        System.out.println("Writing work is going on ...");
+        System.out.println("out object= " + out);
     }
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        System.out.println("Reading work is going on ...");
         System.out.println("ObjectInput = " + in);
         title = (String) in.readObject(); // writeExternal Order must be followed
         description = (String) in.readObject();
-        ageRestriction = (int) in.readObject();
+        ageRestriction = (int) in.readInt();
 
     }
 

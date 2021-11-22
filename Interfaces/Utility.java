@@ -13,7 +13,7 @@ import java.util.List;
 public class Utility implements Utility1, Utility2{
     @Override
     public void print(int a) {
-        Utility1.super.print(a); // To resolve diamond problem
+        Utility1.super.print(a); // To resolve diamond problem in interface
     }
 
     // If two or more interface are having same method signature no problem

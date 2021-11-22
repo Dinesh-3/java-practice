@@ -34,4 +34,16 @@ public class Student extends User {
     public static String getStaticClass() {
         return staticClass;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "super.isEnabled=" + super.isEnabled +
+                ", super.className='" + className + '\'' +
+                ", super.protectedField='" + super.protectedField + '\'' +
+                ", super.defaultField='" + super.defaultField + '\'' +
+                ", super.joinDate=" + joinDate +
+                ", super.className='" + super.className + '\'' +
+                '}';
+    }
 }

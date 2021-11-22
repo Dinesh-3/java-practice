@@ -87,7 +87,6 @@ public class RetentionPolicyDemo {
          * can be accessed during runtime while annotations
          * of other two classes are discarded before runtime, so they can't be accessed
          */
-        System.out.println(
-                "Annotation attached to class C: " + c[0]);
+        System.out.println("Annotation attached to class C: " + c[0]);
     }
 }

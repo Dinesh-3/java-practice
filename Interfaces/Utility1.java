@@ -19,7 +19,7 @@ public interface Utility1 {
      *  if change in method param no problem
      *  but change in return type will not prevent error
      */
-//    default int hashCode(){ // equals, toString, clone, wait,notify, notifyAll, getClass, finalizer
+//    default int hashCode(){ // equals, toString, clone, wait,notify, notifyAll, getClass, finalize
 //        return 234234;
 //    };
 }

@@ -1,14 +1,14 @@
 package design_patterns.behavioural.mediator1;
 
 public class Button extends UIControl {
-    private boolean isEnabled;
+  private boolean isEnabled;
 
-    public boolean isEnabled() {
-        return isEnabled;
-    }
+  public boolean isEnabled() {
+    return isEnabled;
+  }
 
-    public void setEnabled(boolean enabled) {
-        isEnabled = enabled;
-        notifyEventHandlers();
-    }
+  public void setEnabled(boolean enabled) {
+    isEnabled = enabled;
+    notifyEventHandlers();
+  }
 }

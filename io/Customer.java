@@ -6,18 +6,24 @@ import java.util.UUID;
 
 
 public class Customer extends Main implements Serializable
-//        , Externalizable
+        , Externalizable
 {
     @Serial
     private static final long serialVersionUID = -5623412787116685771L;
     private String firstName;
     private String lastName;
     private String gender;
-    private transient  String country = "IN"; // This Field Is Not Stored while serialization value will be null while deserialization
+    /**
+     * This Field Is Not Stored while serialization value will be null while deserialization
+     * If we implement Externalizable keyword not take any effect or work
+     */
+    private transient  String country = "IN";
     private byte age;
     private LocalDate date;
     private int id;
 
+    public Customer() { // No args constructor is required for serialization
+    }
 
     public Customer(String firstName, String lastName, String gender, byte age, LocalDate date, int id) {
         this.firstName = firstName;
@@ -87,19 +93,30 @@ public class Customer extends Main implements Serializable
         this.lastName = lastName;
     }
 
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        throw new NotSerializableException("io.Customer");
+//    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+//        throw new NotSerializableException("io.Customer Serialization Not Allowed");
+//    }
+//
+//    private void writeObject(ObjectOutputStream out) throws IOException {
+//        throw new NotSerializableException("io.Customer Serialization Not Allowed");
+//    }
+    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+        out.writeObject(firstName);
+        out.writeObject(lastName);
+        out.writeObject(country);
+        out.writeByte(age);
+        out.writeObject(date);
+        out.writeInt(id);
     }
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
-        throw new NotSerializableException("io.Customer");
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        firstName = (String) in.readObject();
+        lastName = (String) in.readObject();
+        country = (String) in.readObject();
+        age = in.readByte();
+        date = (LocalDate) in.readObject();
+        id = in.readInt();
     }
-    //    @Override
-//    public void writeExternal(ObjectOutput out) throws IOException {
-//    }
-//
-//    @Override
-//    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-//
-//    }
 }

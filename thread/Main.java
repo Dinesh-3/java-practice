@@ -30,9 +30,9 @@ public class Main {
         System.out.println("Thread.currentThread() = " + Thread.currentThread().getName());
         System.out.println("Thread.activeCount() = " + Thread.activeCount());
         System.out.println("Runtime.getRuntime().availableProcessors() = " + Runtime.getRuntime().availableProcessors());
-        threadMethods();
+//        threadMethods();
         threadSignaling();
-        daemonThread();
+//        daemonThread();
     }
 
     public static void threadMethods() {
@@ -109,6 +109,7 @@ public class Main {
     }
 
     public static void threadSignaling() {
+        System.out.println("\n*** THREAD SIGNALING ***\n");
         var status = new DownloadStatus();
         Thread thread1 = new Thread(new DownloadFileTask(status));
 

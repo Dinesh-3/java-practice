@@ -1,26 +1,74 @@
 package thread;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.stream.IntStream;
 
 public class ConcurrentCollections {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         /**
          * Interfaces:
          *  1. ConcurrentMap -> ConcurrentHashMap
          *  2. ConcurrentNavigableMap -> Implementation ConcurrentSkipListMap
          */
-        Map<Object, Object> concurrentHashMap = new ConcurrentHashMap<>();
-        ConcurrentSkipListMap<Object, Object> skipListMap = new ConcurrentSkipListMap<>();
+        ConcurrentMap<Object, Object> concurrentHashMap = new ConcurrentHashMap<>();
+        ConcurrentNavigableMap<Object, Object> skipListMap = new ConcurrentSkipListMap<>();
+
+        ConcurrentLinkedQueue<Object> linkedQueue = new ConcurrentLinkedQueue<>();
+        ConcurrentLinkedDeque<Object> linkedDeque = new ConcurrentLinkedDeque<>();
 
         ConcurrentSkipListSet<Integer> set = new ConcurrentSkipListSet<>();
 
-        ConcurrentLinkedQueue<Object> concurrentLinkedQueue = new ConcurrentLinkedQueue<>();
-        ConcurrentLinkedDeque<String> deque = new ConcurrentLinkedDeque<>();
+//        concurrentSet(set);
 
+        hashMap(concurrentHashMap);
+        hashMap(skipListMap);
+
+//        queue(linkedQueue);
+//        queue(linkedDeque);
+
+    }
+
+    private static void queue(Queue<Object> queue) throws InterruptedException {
+        int size = 100_000;
+        List<Thread> threads = new ArrayList<>(size);
+
+        for (int i = 0; i < size; i++) {
+            int number = i;
+            var thread = new Thread(() -> {
+                queue.add(number);
+            });
+            threads.add(thread);
+        }
+
+        for (var thread: threads) thread.start();
+        for (var thread: threads) thread.join();
+//        System.out.println("map = " + map);
+        System.out.println(String.format("%s size %s", queue.getClass().getName(), queue.size()));
+    }
+
+    private static void hashMap(ConcurrentMap<Object, Object> map) throws InterruptedException {
+        int size = 100_000;
+        List<Thread> threads = new ArrayList<>(size);
+
+        for (int i = 0; i < size; i++) {
+//            int number = i;
+
+            var thread = new Thread(() -> {
+                IntStream.rangeClosed(1, 100).peek((item) -> map.put(item, item)).toArray();
+//               map.put(number, number);
+            });
+            threads.add(thread);
+        }
+
+        for (var thread: threads) thread.start();
+        for (var thread: threads) thread.join();
+
+        System.out.println("map = " + map);
+        System.out.printf("%s size %s%n", map.getClass().getName(), map.values().size());
+    }
+
+    private static void concurrentSet(ConcurrentSkipListSet<Integer> set) {
         List<Thread> threads = new ArrayList<>();
         int n = 1_000;
         for (int i = 0; i < n; i++) {
@@ -43,6 +91,5 @@ public class ConcurrentCollections {
             }
         }
         System.out.println("set = " + set.size());
-
     }
 }
