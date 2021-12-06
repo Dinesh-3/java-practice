@@ -112,9 +112,9 @@ public class StreamMain {
                         Collectors.groupingBy(
                                 (item) -> item.startsWith("a"),
 //                                Collectors.counting()
-//                                Collectors.joining()
+                                Collectors.joining(",")
 //                                Collectors.toList()
-                                Collectors.mapping((item) -> item, Collectors.joining(","))
+//                                Collectors.mapping((item) -> item, Collectors.joining(","))
                         )
                 )
 
@@ -140,7 +140,10 @@ public class StreamMain {
 //                .sorted((a, b) -> a.length() - b.length()) // ascending order
 //                .sorted((a, b) -> b.length() - a.length()) // descending order
 //                .sorted((a, b) -> a.length() < b.length() ? -1: 1) // ascending order
-//                .sorted((a, b) -> a.length() > b.length() ? -1: 1) // descending order
+//                .sorted((a, b) -> {
+//                    System.out.printf("%s, %s = %s\n", a, b, a.length() > b.length() ? -1: 1);
+//                    return a.length() > b.length() ? -1: 1;
+//                }) // descending order
                 .collect(Collectors.toList());
 
         System.out.println("sortedFruit = " + sortedFruit);
@@ -154,9 +157,17 @@ public class StreamMain {
 //                .findAny().get() // RETURNS ANY ELEMENT IN STREAM , Parallel stream
 
 //                FIND MIN AND MAX
-                .max(Comparator.comparing(a -> a )).get()
+//                .max(Comparator.naturalOrder())
+//                .max((a, b) -> a.compareTo(b))
+//                .max((x,y) -> x-y)
+//                .max((x,y) -> {
+//                    System.out.println("x, y = " + x + " " + y + " " + ((x < y) ? -1 : (x == y) ? 0 : 1));
+//                    return (x < y) ? -1 : (x == y) ? 0 : 1;
+//                })
+                .max((x,y) -> x - y) // maxValueComes
+//                .max((x,y) -> y - x) // minValueComes
 //                .min(Comparator.comparing(a -> a ))
-//                .get();
+                .get();
 //                .isPresent(); Check given value is Present or not
 //                .isEmpty(); Opposite of isPresent
 //               REDUCE
@@ -183,8 +194,9 @@ public class StreamMain {
 //                ))
 //                .collect(Collectors.toSet())
 //                .collect(Collectors.averagingInt(a -> a))
-//                .mapToInt(a -> a).sum()
-//                .mapToLong(a -> a)
+                .mapToInt(a -> a)
+//                .sum()
+                .mapToLong(a -> a)
 //                .mapMulti()
 //                .collect(Collectors.summingInt(a -> a))
 //                .collect(Collectors.summarizingInt(a -> a))
@@ -212,6 +224,8 @@ public class StreamMain {
                 .collect(
                         Collectors.partitioningBy(
                                 (number) -> number > 5,
+//                                Collectors.toList()
+//                                Collectors.counting()
                                 Collectors.mapping(a -> String.valueOf(a), Collectors.joining(","))
                         )
                 );

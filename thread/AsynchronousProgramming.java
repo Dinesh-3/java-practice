@@ -12,6 +12,18 @@ import java.util.function.Supplier;
 public class AsynchronousProgramming {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName() + " Started..");
+
+//        asyncOperation();
+        combine();
+        System.out.println(Thread.currentThread().getName() + " Ended..");
+//        try {
+//            Thread.sleep(7000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    private static void asyncOperation() {
         CompletableFuture.runAsync(() -> System.out.println("Async without return any value Thread: " + Thread.currentThread().getName()));
         CompletableFuture<String> sent = CompletableFuture.supplyAsync(sendEmail()); // Program terminates but code still executed
 //        while (!sent.isDone()){
@@ -29,13 +41,6 @@ public class AsynchronousProgramming {
 //        .thenAcceptAsync()
 //                .get() // Blocks Main thread
         ;
-        combine();
-        System.out.println(Thread.currentThread().getName() + " Ended..");
-        try {
-            Thread.sleep(7000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     private static Supplier<String> sendEmail() {
@@ -121,14 +126,15 @@ public class AsynchronousProgramming {
 
         try {
             getWeatherSlow
-                    .orTimeout(1, TimeUnit.SECONDS) // throw error if given task is not done with given time
+//                    .orTimeout(1, TimeUnit.SECONDS) // throw error if given task is not done with given time
                     .get();
             /**
              * if the task take more than the given time it returns default value
              */
-            getWeatherSlow
-                    .completeOnTimeout(1,1, TimeUnit.SECONDS)
+            Integer slowWeatherWithDefaultTimeoutValue = getWeatherSlow
+                    .completeOnTimeout(1, 1, TimeUnit.SECONDS)
                     .get();
+            System.out.println("slowWeatherWithDefaultTimeoutValue = " + slowWeatherWithDefaultTimeoutValue);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }

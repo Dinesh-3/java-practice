@@ -76,7 +76,7 @@ public class ExecutiveFramework {
         } finally {
             executorService.shutdown(); // Will shut down after all worker threads finishes the given tasks
             executorService2.shutdownNow(); // It forces the executor to stop even task not finished their execution
-//        executorService2.shutdown(); below code will throw because of shutdown the executor
+//        executorService2.shutdown(); below code will throw because of already shutdown the executor in above
         }
         compose();
 

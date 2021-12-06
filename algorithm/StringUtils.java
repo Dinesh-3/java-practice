@@ -2,6 +2,7 @@ package algorithm;
 
 import java.util.*;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class StringUtils {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class StringUtils {
         longestDistinctSubString();
         String update = "Dinesh";
         update.contains(String.valueOf('a'));
+        String input1 = "abcd";
+        String input2 = "cdab";
+        System.out.println("areRotations(input1, input2) = " + areRotations(input1, input2));
     }
 
 
@@ -107,7 +111,7 @@ public class StringUtils {
         return output.toString();
     }
 
-    public static char getMaxOccuringChar(String str) {
+    public static char getMaxOccurringChar(String str) {
         if (str == null || str.isEmpty())
             throw new IllegalArgumentException();
 
@@ -170,7 +174,7 @@ public class StringUtils {
 
         second = second.toLowerCase();
         for (var i = 0; i < second.length(); i++) {
-            var index = second.charAt(i) - 'a';
+            int index = second.charAt(i) - 'a';
             if (frequencies[index] == 0)
                 return false;
 

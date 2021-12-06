@@ -93,15 +93,9 @@ public class Customer extends Main implements Serializable
         this.lastName = lastName;
     }
 
-//    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-//        throw new NotSerializableException("io.Customer Serialization Not Allowed");
-//    }
-//
-//    private void writeObject(ObjectOutputStream out) throws IOException {
-//        throw new NotSerializableException("io.Customer Serialization Not Allowed");
-//    }
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
+        System.out.println("writeExternal = " + out);
         out.writeObject(firstName);
         out.writeObject(lastName);
         out.writeObject(country);
@@ -112,6 +106,7 @@ public class Customer extends Main implements Serializable
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        System.out.println("readExternal = " + in);
         firstName = (String) in.readObject();
         lastName = (String) in.readObject();
         country = (String) in.readObject();

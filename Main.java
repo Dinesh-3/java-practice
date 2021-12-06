@@ -16,6 +16,16 @@ public class Main {
      * JAR -> Java ARchive
      * WAR -> Web Application Archive or Web Application Resource
      * EAR -> Enterprise Archive file
+     *
+     * Community Links:
+     * 1. Java Community Process -> https://www.jcp.org/en/home/index
+     * 2. Java Specifications Request
+     *      -> https://stackoverflow.com/questions/9901976/what-is-jsr-and-whats-its-use
+     *      -> https://jcp.org/en/jsr/overview
+     * JAX-RS:
+     *  Jakarta RESTful Web Services . Specifications for building RESTful services.
+     *  Implementation -> RESTEasy, Jersey
+     *      Links -> https://www.baeldung.com/rest-api-jax-rs-vs-spring
      */
     private Scanner scanner = new Scanner(System.in);
 
@@ -34,11 +44,11 @@ public class Main {
         char char1_ASCII = 97;
         char char2_UTF8 = '\u0041';
         char char2_ASCII = 65;
-        System.out.println("char1_UTF8 = " + char1_UTF8);
-        System.out.println("char1_ASCII = " + char1_ASCII);
+        System.out.println("char1_UTF8 '\\u0061' = " + char1_UTF8);
+        System.out.println("char1_ASCII 97 = " + char1_ASCII);
         System.out.println();
-        System.out.println("char2_UTF8 = " + char2_UTF8);
-        System.out.println("char2_ASCII = " + char2_ASCII);
+        System.out.println("char2_UTF8 '\\u0041'; = " + char2_UTF8);
+        System.out.println("char2_ASCII 65 = " + char2_ASCII);
 //        model.User user1 = new model.User("Dinesh", "I", (byte) 10);
 //        model.User user2 = user1;
 //        user1.setAge((byte) 20);

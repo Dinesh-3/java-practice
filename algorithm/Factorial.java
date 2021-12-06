@@ -2,7 +2,7 @@ package algorithm;
 
 public class Factorial {
     public static void main(String[] args) {
-        int number = 30;
+        int number = 3;
         long fact = fact(number);
         long get = get(number);
         System.out.println("fact = " + fact);
@@ -15,7 +15,10 @@ public class Factorial {
 
     public static long fact(int number){
         long result = 1;
-        for (int i = number; i > 0; i--) {
+//        for (int i = number; i > 0; i--) {
+//            result *= i;
+//        }
+        for (int i = 1; i <= number; i++) {
             result *= i;
         }
         return result;

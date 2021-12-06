@@ -1,9 +1,16 @@
 package stream.mockdata;
 
+import com.google.common.io.Resources;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
+import org.apache.commons.io.IOUtils;
 import stream.beans.Car;
 import stream.beans.Person;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,14 +27,24 @@ public class MockData {
         add(new Car(1, "Tesla", "X", "red", 2018, 3_000_000.0));
         add(new Car(1, "Ferrari", "D", "yellow", 2020, 2_500_000.0));
         add(new Car(1, "BMW", "V", "white", 2019, 4_000_000.0));
+        add(new Car(1, "Tesla", "Y", "white", 2018, 4_000_000.0));
+
     }};
 
     public static List<Person> getPeople() throws IOException {
-        return persons;
+        InputStream inputStream = Resources.getResource("/home/dinesh/Downloads/java_practice/stream/mockdata/people.json").openStream();
+        String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        Type listType = new TypeToken<ArrayList<Person>>() {
+        }.getType();
+        return new Gson().fromJson(json, listType);
     }
 
     public static List<Car> getCars() throws IOException {
-        return cars;
+        InputStream inputStream = Resources.getResource("/home/dinesh/Downloads/java_practice/stream/mockdata/cars.json").openStream();
+        String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+        Type listType = new TypeToken<ArrayList<Car>>() {
+        }.getType();
+        return new Gson().fromJson(json, listType);
     }
 
 }

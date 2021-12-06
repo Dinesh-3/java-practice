@@ -262,6 +262,17 @@ public class BehaviouralPattern {
         WebServer webServer = new WebServer(authenticator);
         webServer.handle(new HttpRequest("admin", "1234"));
 
+        /**
+         * Visitor Pattern
+         * Allows us to Add new Operation on object structure without modifying it.
+         *
+         * Achieved By: Method Overloading
+         * Application:
+         *
+         * Used When:
+         *
+         */
+
         System.out.println("\n*** END ***\n");
 
     }

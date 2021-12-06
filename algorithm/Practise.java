@@ -6,7 +6,7 @@ import java.util.Map;
 public class Practise {
     public static void main(String[] args) {
         BalancedParentheses parentheses = new BalancedParentheses();
-        boolean valid = parentheses.isValid("[{[()}]");
+        boolean valid = parentheses.isValid("[[()]{[()]}]");
         System.out.println("valid = " + valid);
 
         int n = 100_000;

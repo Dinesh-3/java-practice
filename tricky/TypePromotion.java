@@ -1,6 +1,7 @@
 package tricky;
 
 class MathOperation {
+    // byte > short > int > long > float > double
 //    public int add(int a, int b) {
 //        System.out.println("long add(int a, int b)");
 //        return a + b;

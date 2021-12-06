@@ -10,8 +10,8 @@ import java.util.*;
                                  /            |                        \
                     1. ArrayList   1. PriorityQueue             1. HashSet
                     2. LinkedList  Deque<E> extends Queue<E>    2. Linked HashSet
-                    3. Vector               |                   3. Sorted Set
-            ->  Stack extends Vector   Implementation ArrayDeque   4. Tree Set
+                    3. Vector               |                   3. Sorted Set -> implementation Tree Set
+            ->  Stack extends Vector   Implementation ArrayDeque
                                     AbstractQueue,
                                     ArrayBlockingQueue,
                                     ArrayDeque, ConcurrentLinkedDeque, ConcurrentLinkedQueue,
@@ -31,6 +31,7 @@ public class CollectionPractise {
         numbers.add(1); // Doesn't throw Error. Remove's duplicate
         System.out.println(numbers);
         listPractise();
+        collection();
     }
 
     public static void listPractise() {
@@ -62,7 +63,7 @@ public class CollectionPractise {
 
         // Add multiple items in one go
         Collections.addAll(collection, "a", "b", "c");
-
+        System.out.println("collection = " + collection);
         var size = collection.size();
 
         collection.remove("a");

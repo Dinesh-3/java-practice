@@ -5,6 +5,10 @@ import inheritance.sub_package.SubClass;
 import java.time.LocalDate;
 import java.time.Month;
 
+/**
+ * static Field, static method, instance are not polymorphic
+ * only instance method is polymorphic
+ */
 public class Main {
     /**
      * Java static block
@@ -13,6 +17,9 @@ public class Main {
      */
     static{
         System.out.println("Static block called before main method");
+    }
+    static {
+        System.out.println("STatic Block 2");
     }
     public static void main(String[] args) throws Throwable {
         System.out.println("MAIN method called");

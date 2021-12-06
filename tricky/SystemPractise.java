@@ -22,7 +22,7 @@ public class SystemPractise {
 //        String commandResult = String.valueOf(chars);
 
         String commandResult = new String(bytes, StandardCharsets.UTF_8);
-        System.out.println("commandResult = " + commandResult);
+        System.out.println("commandResult : \n" + commandResult);
 
         Map<String, String> env = System.getenv();
 //        env.forEach((a, b) -> System.out.println( a + " = " + b));
@@ -31,11 +31,11 @@ public class SystemPractise {
         System.out.println("pwd = " + pwd);
 
         for (Map.Entry<Object, Object> entry : System.getProperties().entrySet()) {
-//            entry.setValue("New"); danger
-//            System.out.println(entry.getKey() + " = " + entry.getValue());
+//            entry.setValue("New"); // danger
+            System.out.println(entry.getKey() + " = " + entry.getValue());
         }
 
-//        String put = env.put("unique_key", "sample_value"); // throws error
+//        String put = env.put("unique_key", "sample_value"); // throws UnsupportedOperationException
 //        System.out.println("put env = " + put);
 
         /**

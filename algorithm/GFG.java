@@ -7,7 +7,7 @@ package algorithm;
 class GFG {
 
     public static void main(String[] args) {
-        String arr[] = {"geeksforgeeks", null,
+        String arr[] = {"geeksforgeeks", "geeksfef",
                 "gekk", "geezer"};
         String target = arr[0];
 
@@ -19,13 +19,13 @@ class GFG {
 
     private static String getPrefix(String target, String other) {
         if(target == null || other == null) return "";
-        int index = 0;
+        int equalLength = 0;
         int minLength = Integer.min(target.length(), other.length());
         for (int i = 0; i < minLength; i++) {
-            if(target.charAt(i) == other.charAt(i)) index++;
+            if(target.charAt(i) == other.charAt(i)) equalLength++;
             else break;
         }
-        return target.substring(0,index);
+        return target.substring(0,equalLength);
     }
 }
 

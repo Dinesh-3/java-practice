@@ -5,8 +5,11 @@ package tricky;
  }
  abstract class Pancake implements Syrupable { }
 
-class BlueBerryPancake extends Pancake { // implements Pancake throws error
-     public void getSugary() { ; }
+class BlueBerryPancake extends Pancake {
+    @Override
+    public void getSugary() {
+
+    } // implements Pancake throws error
  }
 
  class SourdoughBlueBerryPancake extends BlueBerryPancake {

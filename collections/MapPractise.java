@@ -15,6 +15,12 @@ public class MapPractise {
          *  2. Not Thread safe
          *  3. Allows one null key and multiple null values
          *  HashMap contains an array of the nodes, and the node is represented as a class. It uses an array and LinkedList data structure
+         *
+         *  If we Map Key is a class object. It uses hasCode method to generate index
+         *  So we need to override equals and hashcode methods inorder to get same result if object data is same
+         *
+         *  In Java 16 record by default creates equals and hashcode implementation based on the data
+         *  So no need to override
          */
         System.out.println("--- HASH MAP ---");
         HashMap<Integer, String> hashMap = new HashMap<>();

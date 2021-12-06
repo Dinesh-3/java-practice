@@ -8,6 +8,15 @@ import static java.util.Comparator.comparing;
 public class ListPractise {
     public static void main(String[] args) {
         /**
+         * Return ImmutableCollections
+         * We can't do insert, update or delete
+         */
+        List<String> ALPHABET = List.of("A", "B", "C", "D");
+//        boolean add = ALPHABET.add("E"); // Throws UnsupportedOperationException
+//        System.out.println("add = " + add);
+        System.out.println("ALPHABET.getClass() = " + ALPHABET.getClass());
+
+        /**
          * Initial Capacity 10
          * If array is full size will increase by 50 %
          */
