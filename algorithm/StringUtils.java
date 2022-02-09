@@ -45,7 +45,8 @@ public class StringUtils {
             }
             System.out.println("domains = " + domains);
         }
-        List<String> stringList = domains.entrySet().stream().map(entry -> String.format("%d %s", entry.getValue(), entry.getKey())).toList();
+        List<String> stringList = domains.entrySet().stream().map(entry -> String.format("%d %s", entry.getValue(), entry.getKey())).collect(Collectors.toList());
+//                .toList(); // JAVA 16
         System.out.println("stringList = " + stringList);
     }
     public static int countVowels(String str) {

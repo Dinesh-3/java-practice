@@ -3,7 +3,7 @@ package io;
 import java.io.*;
 
 public class Movie implements Externalizable {
-    @Serial
+//    @Serial
     private static final long serialVersionUID = -2856907389312536747L;
     private String title;
     private String description;

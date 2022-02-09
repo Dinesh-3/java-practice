@@ -8,7 +8,7 @@ import java.util.UUID;
 public class Customer extends Main implements Serializable
         , Externalizable
 {
-    @Serial
+//    @Serial
     private static final long serialVersionUID = -5623412787116685771L;
     private String firstName;
     private String lastName;

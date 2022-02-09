@@ -1,6 +1,6 @@
 package design_patterns.creational.singleton;
 
-import java.io.Serial;
+//import java.io.Serial;
 import java.io.Serializable;
 
 public class SingletonClass implements Cloneable, Serializable {
@@ -24,7 +24,7 @@ public class SingletonClass implements Cloneable, Serializable {
      * Instead of returning the deserialized object we return the singleton object
      * So readObject is return the singleton object
      */
-    @Serial
+//    @Serial // Java 16
     protected Object readResolve() {
         return getInstance();
     }

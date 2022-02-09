@@ -87,7 +87,7 @@ public class ListProblem {
          class GFG
         {
             static final int ASCII_SIZE = 256;
-            static char getMaxOccuringChar(String str)
+            char getMaxOccuringChar(String str)
             {
                 // Create array to keep the count of individual
                 // characters and initialize the array as 0
@@ -115,7 +115,7 @@ public class ListProblem {
             }
 
             // Driver Method
-            public static void main(String[] args)
+            public void main(String[] args)
             {
                 String str = "sample string";
                 System.out.println("Max occurring character is " +

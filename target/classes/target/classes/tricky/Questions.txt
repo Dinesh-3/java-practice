@@ -1,0 +1,71 @@
+In Top Core Java Interview Questions and Answers video you will get top 10 tricky core interview question asked in an interview. Also this video is for both Freshers and Experienced canditates.
+
+This video covers Top Java interview Questions And Answers asked in MNCs from both Freshers and Laterals,
+
+Which May includes some Questions of java interview questions and Answers like :
+Q) Why Java is not 100% Object-oriented?
+               Because of Primitive data types namely:
+
+boolean, byte, char, int, float, double, long, short
+
+we have wrapper classes which actually “wrap” the primitive data type into an object of that class.
+
+Q) Why pointers are not used in Java? Mostly asked in java interview questions and Answers in MNC to check you basic knowledge of java and programming languages and logics behind them.
+Because :
+ 1) They are unsafe.
+
+ 2) Increases the complexity of the program and since Java is known for its  simplicity of code, adding the concept of pointers will be contradicting.
+
+ 3) Since JVM is responsible for implicit memory allocation, thus in order to  avoid direct access to memory by the user,  pointers are discouraged in Java
+
+Q)  What is JIT compiler in Java?
+
+ Q) Why String is immutable in java?
+1) String pool requires string to be immutable otherwise shared reference can be changed from anywhere.
+
+2) security because string is shared on different area like file system, networking connection, database connection , having immutable string allows you to be secure and safe because no one can change reference of string once it gets created.
+
+Q) What is a marker interface?
+A Marker interface can be defined as the interface having no data member and member functions. In simpler terms, an empty interface is called the Marker interface.
+
+Q) Can you override a private or static method in Java?
+As I have told you in previous videos : method overriding is a good topic to ask trick questions in Java.
+
+1) you can not override a private or static method in Java.
+
+2) you cannot override a private method in sub class because it's not accessible there, what you do is create another private method with the same name in the child class.
+
+3) For static methods if you create a similar method with same return type and same method arguments in child class then it will hide the superclass method, this is known as method hiding.
+
+Q) Does “finally” always execute in Java?
+Not in following cases
+
+“System.exit()” function
+system crash
+
+Q) What Methods Does the Object Class Have?
+Java.lang.Object class, parent of all has following methods :
+
+protected Object clone() throws CloneNotSupportedException
+  Creates and returns a copy of this object.
+
+public boolean equals(Object obj)
+  Indicates whether some other object is “equal to” this one.
+
+protected void finalize() throws Throwable
+  Called by the garbage collector on an object when garbagecollection   determines that there are no more references to the object.
+
+public final Class getClass() : Returns the runtime class of an object.
+
+public int hashCode(): Returns a hash code value for the object.
+
+public String toString(): Returns a string representation of the object.
+
+public final void notify()
+public final void notifyAll()
+public final void wait()
+public final void wait(long timeout)
+public final void wait(long timeout, int nanos)
+Q) How Can You Make a Class Immutable?
+
+Q) What is singleton class in Java and how can we make a class singleton?

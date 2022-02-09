@@ -1,5 +1,6 @@
 package datetime;
 
+import java.math.BigDecimal;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -7,6 +8,26 @@ import java.util.Set;
 
 public class DateTimePractice {
     public static void main(String[] args) {
+        BigDecimal decimal = new BigDecimal(10.0);
+        System.out.println("decimal.toString() = " + decimal.toString());
+        decimal.intValue();
+
+        LocalDate parse = LocalDate.parse("2017-05-01");
+        int years = Period.between(parse, LocalDate.now()).getYears();
+        System.out.println("years = " + years);
+
+        LocalDate now = LocalDate.now();
+        String number = String.format("%s 00:00:00",now);
+        System.out.println("number = " + number);
+
+        double bookPrice = 34.46;
+        System.out.println("Math.round(bookPrice) = " + Math.round(bookPrice));
+
+//        System.out.println("Integer.parseInt(\"20.56\") = " + Integer.parseInt("20.56"));
+
+        LocalDate start = LocalDate.parse("2022-03-16");
+        System.out.println("start.plusYears(1) = " + start.plusYears(1));
+
         /**
          * java.time -> Immutable date object and Thread Safe
          * Provider -> Joda-Time (Stephen Colebourne)

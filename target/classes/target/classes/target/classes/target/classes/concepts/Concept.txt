@@ -1,0 +1,7 @@
+JMS -> Java Message Service
+
+Javax Removed Version 11
+Java 8 - OK
+Java 9 - DEPRECATED
+Java 10 - DEPRECATED
+Java 11 - REMOVED
