@@ -32,7 +32,14 @@ public class Main {
     public static void main(String[] args) {
 //        objectRelation();
 
+
+
         List<Integer> as = new ArrayList<>(List.of(1,2,3,5,4));
+
+        for (int i = 0; i < 10; i++) {
+            as.add(i);
+            as.remove(1);
+        }
 
         ListIterator<Integer> integerListIterator = as.listIterator(as.size());
         while (integerListIterator.hasPrevious()){

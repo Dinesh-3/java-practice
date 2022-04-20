@@ -1,5 +1,6 @@
 package operators;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Arrays;
 
@@ -12,6 +13,9 @@ public class Main {
         double floatAdded = 0.2 + 0.1;
         System.out.println("floatAdded = " + floatAdded);
         System.out.println( floatAdded == 0.3); // false
+
+        BigDecimal.valueOf(10_000);
+
     }
 
     public static double roundOf(double number, int round){

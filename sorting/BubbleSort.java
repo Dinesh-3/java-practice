@@ -1,7 +1,7 @@
 package sorting;
 
 import java.util.Arrays;
-import java.util.List;
+import java.util.Scanner;
 
 public class BubbleSort {
     public static void main(String[] args) {
@@ -9,17 +9,10 @@ public class BubbleSort {
     }
 
     public static void sort(int[] array) {
-        boolean isSorted;
-        for (var i = 0; i < array.length; i++) {
-            isSorted = true;
-            for (var j = 1; j < array.length - i; j++)
-                if (array[j] < array[j - 1]) {
-                    swap(array, j, j - 1);
-                    isSorted = false;
-                }
-            if (isSorted)
-                return;
-        }
+
+
+
+
     }
 
     private static void swap(int[] array, int index1, int index2) {
