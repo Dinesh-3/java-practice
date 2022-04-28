@@ -184,6 +184,13 @@ class BinaryTree {
         public Node(int data) {
             this.data = data;
         }
+
+        @Override
+        public String toString() {
+            Node left = null;
+            System.out.println(this.left);
+            return String.valueOf(data);
+        }
     }
 
     private Node tree;
@@ -392,8 +399,8 @@ class DoublyLinkedList<T> {
 public class Practise {
     public static void main(String[] args) {
 //        linkedListPractise();
-//        binaryTreePractise();
-        doublyLinkedListPractice();
+        binaryTreePractise();
+//        doublyLinkedListPractice();
     }
 
     private static void doublyLinkedListPractice() {

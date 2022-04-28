@@ -1,7 +1,11 @@
 package model;
 
 import exception.UserException;
+import system.CopyToClipboard;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class User implements DetailInterface {
@@ -9,11 +13,13 @@ public class User implements DetailInterface {
     private String firstName;
     private String lastName;
     private byte age;
+    private LocalDate dateOfBirth;
 
-    public User(String firstName, String lastName, byte age) throws UserException {
+    public User(String firstName, String lastName, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
-        setAge(age);
+        this.dateOfBirth = LocalDate.parse(dateOfBirth);
+        setAge();
     }
 
     public String getFirstName() {
@@ -28,9 +34,8 @@ public class User implements DetailInterface {
         return age;
     }
 
-    public void setAge(byte age) throws UserException {
-        if(age < 1) throw new UserException("Invalid model.User", new InvalidAgeException("Age should not be zero or negative"));
-        this.age = age;
+    private void setAge() throws UserException {
+        this.age = (byte) Period.between(dateOfBirth ,LocalDate.now()).getYears();
     }
 
     public void setFirstName(String firstName) {
@@ -78,5 +83,23 @@ public class User implements DetailInterface {
 //        System.out.println("compare = " + compare);
         return compare;
 //        return this.age > other.age ? -1 : this.age == other.age ? 0 : 1;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public static void covertAgeIntoDateOfBirthAndCopy(ArrayList<User> users) {
+        StringBuilder builder = new StringBuilder();
+        for (User user: users) {
+            String converted = String.format("new User(\"%s\", \"%s\", \"%s\"),", user.firstName, user.lastName, LocalDate.now().minusYears(user.getAge()));
+            builder.append(converted);
+        }
+
+        CopyToClipboard.copy(builder.toString());
     }
 }

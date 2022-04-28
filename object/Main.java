@@ -1,5 +1,8 @@
 package object;
 
+import model.User;
+import utils.Console;
+
 public class Main {
     public static void main(String[] args) {
         /**
@@ -15,6 +18,17 @@ public class Main {
 
         System.out.println("dog.name = " + dog.name);
         System.out.println("cat.name = " + cat.name);
+
+        User user1 = new User("Dinesh", "I", "2001-01-01");
+        User user2 = new User("Dinesh", "I", "2001-02-01");
+        boolean equals = user1.equals(user2);
+        System.out.println(user1 == user2);
+        int hashCode1 = user1.hashCode();
+        int hashCode2 = user2.hashCode();
+        System.out.println("hashCode = " + hashCode1 + " " + hashCode2);
+        System.out.println("equals = " + equals);
+        Console.log("Dinesh", "I", 9, 8, 7);
+
     }
 
     public static void paramCheck(boolean isTrue) {

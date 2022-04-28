@@ -11,40 +11,43 @@ import java.util.stream.Stream;
  * 0101
  * 1000
  * 1101
-    References:
-        1. https://stackoverflow.com/questions/5894818/how-to-sort-arraylistlong-in-decreasing-order#comment6782749_5894842
+ * References:
+ * 1. https://stackoverflow.com/questions/5894818/how-to-sort-arraylistlong-in-decreasing-order#comment6782749_5894842
  */
 
 public class StreamMain {
     public static void main(String[] args) {
         System.out.println("--- LAMBDA EXPRESSION ---");
         var users = new ArrayList<>(List.of(
-                new User("Dinesh", "I", (byte) 21),
-                new User("Babu", "K", (byte) 21),
-                new User("Babu", "K", (byte) 18),
-                new User("Babu", "A", (byte) 18),
-                new User("Rahul", "D", (byte) 24),
-                new User("Balaji", "D", (byte) 21),
-                new User("Ranjith", "D", (byte) 23),
-                new User("Barani", "D", (byte) 21),
-                new User("Gowtham", "D", (byte) 21),
-                new User("Logesh", "D", (byte) 16),
-                new User("Nishanth", "D", (byte) 20),
-                new User("Pavithran", "D", (byte) 21),
-                new User("Naveen", "D", (byte) 18),
-                new User("Mohan", "D", (byte) 19),
-                new User("Sathi", "D", (byte) 22),
-                new User("Murali", "D", (byte) 22),
-                new User("Alfin Thomas", "D", (byte) 20),
-                new User("Alavi", "D", (byte) 21),
-                new User("Tony", "D", (byte) 24),
-                new User("Abdul Aseef", "D", (byte) 22),
-                new User("Vasanth", "D", (byte) 25),
-                new User("Vasanth Kumar", "D", (byte) 22),
-                new User("Mathiraj", "D", (byte) 26),
-                new User("Saran", "D", (byte) 21),
-                new User("Harish", "D", (byte) 23))
-        );
+                new User("Dinesh", "I", "2001-04-25"),
+                new User("Babu", "K", "2001-04-25"),
+                new User("Babu", "K", "2004-04-25"),
+                new User("Babu", "A", "2004-04-25"),
+                new User("Rahul", "D", "1998-04-25"),
+                new User("Balaji", "D", "2001-04-25"),
+                new User("Ranjith", "D", "1999-04-25"),
+                new User("Barani", "D", "2001-04-25"),
+                new User("Gowtham", "D", "2001-04-25"),
+                new User("Logesh", "D", "2006-04-25"),
+                new User("Nishanth", "D", "2002-04-25"),
+                new User("Pavithran", "D", "2001-04-25"),
+                new User("Naveen", "D", "2004-04-25"),
+                new User("Mohan", "D", "2003-04-25"),
+                new User("Sathi", "D", "2000-04-25"),
+                new User("Murali", "D", "2000-04-25"),
+                new User("Alfin Thomas", "D", "2002-04-25"),
+                new User("Alavi", "D", "2001-04-25"),
+                new User("Tony", "D", "1998-04-25"),
+                new User("Abdul Aseef", "D", "2000-04-25"),
+                new User("Vasanth", "D", "1997-04-25"),
+                new User("Vasanth Kumar", "D", "2000-04-25"),
+                new User("Mathiraj", "D", "1996-04-25"),
+                new User("Saran", "D", "2001-04-25"),
+                new User("Harish", "D", "1999-04-25")
+                ));
+
+//        User.covertAgeIntoDateOfBirthAndCopy(users);
+
         var numbers = new ArrayList<>(List.of(3, 2, 4, 8, 1, 5, 9, 6, 7, 0));
         System.out.println("numbers = " + numbers);
 
@@ -53,15 +56,19 @@ public class StreamMain {
             System.out.println("content = " + content);
         };
         Supplier<Double> getRandom = Math::random;
-
+        System.out.println("getRandom.get() = " + getRandom.get());
+        
         Function<String, String> toUppercase = String::toUpperCase;
         IntFunction<Double> intToDouble = arg -> (double) arg;
         ToIntFunction<Float> floatToIntFunction = Math::round;
         DoubleToIntFunction doubleToIntFunction = arg -> (int) Math.round(arg);
         System.out.println("doubleToIntFunction.applyAsInt(1.2F) = " + doubleToIntFunction.applyAsInt(1.2F));
-        IntToDoubleFunction intToDoubleFunction = arg ->  arg;
+        IntToDoubleFunction intToDoubleFunction = arg -> arg;
 //        System.out.println("intToDoubleFunction.applyAsDouble(12) = " + intToDoubleFunction.applyAsDouble(12));
-        String dinesh = toUppercase.andThen(i -> { System.out.println(i); return i+ " I"; }).apply("Dinesh");
+        String dinesh = toUppercase.andThen(i -> {
+            System.out.println(i);
+            return i + " I";
+        }).apply("Dinesh");
         System.out.println("dinesh = " + dinesh);
         Double DoubleConverted = intToDouble.apply(10);
 
@@ -125,8 +132,8 @@ public class StreamMain {
          * FlatMap
          */
         List<String> country = Stream.of(
-                Arrays.asList("Colombia", "Finland", "Greece", "Iceland", "Liberia", "Mali", "Mauritius"),
-                Arrays.asList("Peru", "Serbia", "Singapore", "Turkey", "Uzbekistan", "Yemen", "Zimbabwe", "Greece", "Iceland"))
+                        Arrays.asList("Colombia", "Finland", "Greece", "Iceland", "Liberia", "Mali", "Mauritius"),
+                        Arrays.asList("Peru", "Serbia", "Singapore", "Turkey", "Uzbekistan", "Yemen", "Zimbabwe", "Greece", "Iceland"))
                 .flatMap(strings -> strings.stream())
                 .collect(Collectors.toList());
 
@@ -164,7 +171,7 @@ public class StreamMain {
 //                    System.out.println("x, y = " + x + " " + y + " " + ((x < y) ? -1 : (x == y) ? 0 : 1));
 //                    return (x < y) ? -1 : (x == y) ? 0 : 1;
 //                })
-                .max((x,y) -> x - y) // maxValueComes
+                .max((x, y) -> x - y) // maxValueComes
 //                .max((x,y) -> y - x) // minValueComes
 //                .min(Comparator.comparing(a -> a ))
                 .get();
@@ -173,7 +180,7 @@ public class StreamMain {
 //               REDUCE
 //                .reduce((a1, b1) -> Integer.sum(a1, b1));
 //                .reduce(0, Integer::sum); // param 1 is start value
-                ;
+        ;
 //        List<String> objects = Collections.emptyList();
         System.out.println("result = " + result);
 
@@ -244,7 +251,7 @@ public class StreamMain {
     private static void flatMap() {
         //creating ArrayList
         List<String> productlist1 = Arrays.asList("Printer", "Mouse", "Keyboard", "Motherboard");
-        List<String>  productlist2 = Arrays.asList("Scanner", "Projector", "Light Pen");
+        List<String> productlist2 = Arrays.asList("Scanner", "Projector", "Light Pen");
         List<String> productlist3 = Arrays.asList("Pen Drive", "Charger", "WIFI Adapter", "Cooling Fan");
         List<String> productlist4 = Arrays.asList("CPU Cabinet", "WebCam", "USB Light", "Microphone", "Power cable");
         List<List<String>> allproducts = new ArrayList<List<String>>();
@@ -256,11 +263,9 @@ public class StreamMain {
         //creating a list of all products
         List<String> listOfAllProducts = new ArrayList<String>();
         //for each loop iterates over the list
-        for(List<String> pro : allproducts)
-        {
-            for(String product : pro)
-            {
-        //adds all products to the list
+        for (List<String> pro : allproducts) {
+            for (String product : pro) {
+                //adds all products to the list
                 listOfAllProducts.add(product);
             }
         }
@@ -270,10 +275,10 @@ public class StreamMain {
         System.out.println();
 
         //creats a stream of elemnts using flatMap()
-        List<String> flatMapList = allproducts .stream()
+        List<String> flatMapList = allproducts.stream()
 //                                                .flatMap(List::stream) // or Collection::Stream
-                                                .flatMap(strings -> strings.stream())
-                                                .collect(Collectors.toList());
+                .flatMap(strings -> strings.stream())
+                .collect(Collectors.toList());
         System.out.println("List After Applying Mapping and Flattening Operation: \n");
         //prints the new stream that we get after applying mapping and flattening
         System.out.println(flatMapList);

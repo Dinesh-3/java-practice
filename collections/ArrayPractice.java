@@ -82,5 +82,11 @@ public class ArrayPractice {
 
         Spliterator.OfInt spliterator = Arrays.spliterator(numbers);
 
+        System.out.println("\n--- ARRAY OPERATION ---\n");
+        final String[] MONTHS = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+        System.out.println(MONTHS);
+        System.out.println(List.of(MONTHS));
+        System.out.println(Arrays.asList(MONTHS));
+
     }
 }

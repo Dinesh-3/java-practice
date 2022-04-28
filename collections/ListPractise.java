@@ -1,5 +1,8 @@
 package collections;
 
+import exception.UserException;
+import model.User;
+
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -128,5 +131,23 @@ public class ListPractise {
 //    list.replaceAll(item -> {if(item.equals("a")) return "d"; return item;});
         list.replaceAll(item -> item.equals("a") ? "FOUND" : item);
         System.out.println(list);
+    }
+
+    private void  rawList(){
+        List list = new ArrayList<>();
+        list.add("Dinesh");
+        list.add(1);
+        list.add(0.1F);
+        list.add(true);
+        try {
+            list.add(new User("Dinesh", "I", "2001-06-01"));
+        } catch (UserException e) {
+            e.printStackTrace();
+        }
+        for(var item: list) {
+            if(item instanceof String) System.out.println("String " + item);
+            if(item instanceof User) System.out.println("User " + ((User) item).getFirstName());
+            System.out.println("item = " + item.getClass());
+        }
     }
 }
