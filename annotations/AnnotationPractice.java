@@ -16,14 +16,15 @@ import java.util.Arrays;
  *
  * Target -> https://stackoverflow.com/questions/3550292/what-do-java-annotation-elementtype-constants-mean/3550413
  */
-@Inherited // to make subclass also has this annotation
+@Inherited // to make subclass also has this annotation. If A is annotated with @Inherited then If B is extending A then B also having that annotation
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @interface Mobile{
     String name() default "";
     int version() default 1;
     String getName() default "1";
-    static String toString = "Mobile Static Field";
+//    private String getName() default "1"; // Modifier 'private' not allowed here
+    public static String toString = "Mobile Static Field";
 }
 
 @interface Car{

@@ -12,5 +12,14 @@ public class Example {
 //        for (Object number : numbers) {
 //            System.out.println((String) number);
 //        }
+
+        //        Comparable number = 10;
+//        number.compareTo("10");
+        Comparable<Integer> number = 10;
+
+        System.out.println("number.getClass() = " + number.getClass());
+
+        System.out.println(number.compareTo(9));
+
     }
 }

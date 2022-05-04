@@ -7,7 +7,7 @@ import java.util.List;
  *  If two interfaces have same method signature diamond problem will occur
  *  (Interfaces.Utility inherits unrelated defaults for print(int) from types Interfaces.Utility1 and Interfaces.Utility2)
  *  Fix:
- *      To fix this issue we need override the method
+ *      To fix this issue we must need to override the method
  */
 
 public class Utility implements Utility1, Utility2{
@@ -16,7 +16,7 @@ public class Utility implements Utility1, Utility2{
         Utility1.super.print(a); // To resolve diamond problem in interface
     }
 
-    // If two or more interface are having same method signature no problem
+    // If two or more interface are having same method signature no problem in class
     @Override
     public int getName() {
         return 0;

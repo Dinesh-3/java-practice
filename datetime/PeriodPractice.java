@@ -30,5 +30,7 @@ public class PeriodPractice {
         System.out.println("endDate minusYears = " + endDate.minusYears(3));
         System.out.println("endDate minusYears = " + endDate.minusYears(3).isAfter(startDate));
 
+        System.out.println("Period.ofYears(1) = " + Period.ofYears(1));
+
     }
 }

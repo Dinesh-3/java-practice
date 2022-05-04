@@ -101,7 +101,7 @@ public class ListPractise {
         hackAnimal.push("cow");
         hackAnimal.push("rat");
         hackAnimal.push("cat");
-        System.out.println("Asdf5555555555555");
+
         for(var item: hackAnimal){
             System.out.println(item);
         }
@@ -123,10 +123,11 @@ public class ListPractise {
         list.set(0, "!!");
 
         list.remove(0);
+        list.remove("Dinesh");
 
         var index = list.indexOf("a");
         var lastIndex = list.lastIndexOf("a");
-        var subList = list.subList(0, 2);
+        System.out.println("list.subList(0, 2) = " + list.subList(0, 2));
         System.out.println(list);
 //    list.replaceAll(item -> {if(item.equals("a")) return "d"; return item;});
         list.replaceAll(item -> item.equals("a") ? "FOUND" : item);

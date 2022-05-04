@@ -15,7 +15,7 @@ public class QueuePractise {
          *
          *   Deque -> Double Ended Queue Item can be added and removed from both end
          *   public interface Deque<E> extends Queue<E>
-         *   Implementation: ArrayDeque -> Resizable Array, no capacity restrictions
+         *   Implementation: ArrayDeque -> Resizable Array, no capacity restrictions, Default Array Size = 16
          *
          *          We have alternative methods that don't
          *          throw an exception:
@@ -55,7 +55,7 @@ public class QueuePractise {
         integers.add(3);
         Integer peeked = integers.peek();
 
-        Queue<Integer> minHeap = new PriorityQueue<>(); // smallest element has high priority || ascending order
+        Queue<Integer> minHeap = new PriorityQueue<>(); // ascending order || smallest element has high priority
         Queue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()); // descending order
 
         int n = 10;

@@ -22,4 +22,16 @@ public interface Utility1 {
 //    default int hashCode(){ // equals, toString, clone, wait,notify, notifyAll, getClass, finalize
 //        return 234234;
 //    };
+
+    // Won't throw error
+    default String hashCode(String word){ // equals, toString, clone, wait,notify, notifyAll, getClass, finalize
+        return "234234";
+    };
+
+    static String getAny(){return "";};
+
+    static String gedfstAny(){return "";}
+
+
+
 }

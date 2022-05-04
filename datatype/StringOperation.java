@@ -23,8 +23,18 @@ public class StringOperation {
         s1 = s1.replace("n", "*");
         System.out.println("s1 = " + s1);
 
+        String emptyString = "";
+        System.out.println("emptyString.isEmpty() = " + emptyString.isEmpty());
+        System.out.println("emptyString.isBlank() = " + emptyString.isBlank());
 
+        String literalString = "SAME";
+        String newString = new String("SAME");
 
+        System.out.println("newString == literalString = " + newString == literalString);
+
+        String concat = "Favorite Number: " + 3;
+
+        System.out.println("concat.substring(0, 2) = " + concat.substring(0, 2)); // end exclusive
 
     }
 }

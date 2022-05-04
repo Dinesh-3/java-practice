@@ -19,7 +19,6 @@ import java.util.*;
                                     LinkedList, LinkedTransferQueue, PriorityBlockingQueue,
                                     PriorityQueue, SynchronousQueue
 
-
     Topics:
     1. Fail fast and fail safe -> https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/
  */
@@ -69,11 +68,15 @@ public class CollectionPractise {
         collection.remove("a");
         var containsA = collection.contains("a");
 
-        collection.clear();
+//        collection.clear();
         var isEmpty = collection.isEmpty();
 
         Object[] objectArray = collection.toArray();
         String[] stringArray = collection.toArray(new String[0]);
+
+        System.out.println("collection = " + collection);
+        System.out.println("objectArray = " + Arrays.toString(objectArray));
+        System.out.println("stringArray = " + Arrays.toString(stringArray));
 
         Collection<String> other = new ArrayList<>();
         other.add("a");

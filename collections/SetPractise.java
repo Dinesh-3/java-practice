@@ -25,6 +25,10 @@ public class SetPractise {
 
         Set<Integer> hashSet = new HashSet<>(Arrays.asList(nums));
         System.out.println("hashSet = " + hashSet);
+        System.out.println("hashSet.toArray() = " + hashSet.toArray());
+        System.out.println("hashSet.size() = " + hashSet.size());
+        System.out.println("hashSet.isEmpty() = " + hashSet.isEmpty());
+        System.out.println("hashSet.remove(4) = " + hashSet.remove(4));
 
         /**
          *      LinkedHashSet
@@ -33,6 +37,7 @@ public class SetPractise {
          *  2. Internally uses doubly linked list
          *  3. Ordered version of Set
          */
+
         Set<Integer> linkedHashSet = new LinkedHashSet<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
         System.out.println("linkedHashSet.size() = " + linkedHashSet.size());
         System.out.println("linkedHashSet.isEmpty() = " + linkedHashSet.isEmpty());

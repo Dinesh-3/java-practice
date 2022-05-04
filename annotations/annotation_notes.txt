@@ -1,0 +1,41 @@
+111
+
+Let's say the annotation to which you specify the ElementType is called YourAnnotation:
+
+ANNOTATION_TYPE - Annotation type declaration. Note: This goes on other annotations
+
+@YourAnnotation
+public @interface AnotherAnnotation {..}
+CONSTRUCTOR - Constructor declaration
+
+public class SomeClass {
+    @YourAnnotation
+    public SomeClass() {..}
+}
+FIELD - Field declaration (includes enum constants)
+
+@YourAnnotation
+private String someField;
+LOCAL_VARIABLE - Local variable declaration. Note: This can't be read at runtime, so it is used only for compile-time things, like the @SuppressWarnings annotation.
+
+public void someMethod() {
+    @YourAnnotation int a = 0;
+}
+METHOD - Method declaration
+
+@YourAnnotation
+public void someMethod() {..}
+PACKAGE - Package declaration. Note: This can be used only in package-info.java.
+
+@YourAnnotation
+package org.yourcompany.somepackage;
+PARAMETER - Parameter declaration
+
+public void someMethod(@YourAnnotation param) {..}
+TYPE - Class, interface (including annotation type), or enum declaration
+
+@YourAnnotation
+public class SomeClass {..}
+You can specify multiple ElementTypes for a given annotation. E.g.:
+
+@Target({ElementType.CONSTRUCTOR, ElementType.METHOD})

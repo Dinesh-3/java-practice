@@ -59,8 +59,15 @@ public class StreamMain {
         System.out.println("getRandom.get() = " + getRandom.get());
         
         Function<String, String> toUppercase = String::toUpperCase;
+
         IntFunction<Double> intToDouble = arg -> (double) arg;
+        DoubleFunction<Integer> doubleToFunction = arg -> (int) arg;
+        LongFunction<Integer> longToInteger = arg -> (int) arg;
+
         ToIntFunction<Float> floatToIntFunction = Math::round;
+        ToDoubleFunction<Integer> integerToDoubleFunction = arg -> (double) arg;
+        ToLongFunction<Double> doubleToLongFunction = Double::longValue;
+
         DoubleToIntFunction doubleToIntFunction = arg -> (int) Math.round(arg);
         System.out.println("doubleToIntFunction.applyAsInt(1.2F) = " + doubleToIntFunction.applyAsInt(1.2F));
         IntToDoubleFunction intToDoubleFunction = arg -> arg;
@@ -97,8 +104,8 @@ public class StreamMain {
         int limit = 2;
 
         // Manual Comparing setup
-//        users.sort(model.User::compareTo);
-//        System.out.println(users);
+        users.sort(model.User::compareTo);
+        System.out.println(users);
 
         var userStream = users.stream()
                 .distinct()

@@ -5,7 +5,7 @@ public interface CombinedUtility extends Utility1, Utility2{
     String interfaceName = CombinedUtility.class.getSimpleName();
 
     /**
-     * Must need to be override
+     * Must need to be override if two interface having same method signature && 1 or more default implementation
      * Interfaces.CombinedUtility inherits unrelated defaults for print(int)
      * from types Interfaces.Utility1 and Interfaces.Utility2
      */

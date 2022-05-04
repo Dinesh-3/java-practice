@@ -15,5 +15,6 @@ public class Main {
         Manager manager = new Manager();
         String protectedField = manager.getProtectedField();
         System.out.println("protectedField = " + protectedField);
+
     }
 }

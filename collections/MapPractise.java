@@ -34,11 +34,13 @@ public class MapPractise {
         System.out.println("getOrDefault = " + getOrDefault);
 
         Set<Integer> keySet = hashMap.keySet();
-        Set<Map.Entry<Integer, String>> entrySet = hashMap.entrySet();
-        Collection<String> values = hashMap.values();
         System.out.println("keySet = " + keySet);
-        System.out.println("entrySet = " + entrySet);
+
+        Collection<String> values = hashMap.values();
         System.out.println("values = " + values);
+
+        Set<Map.Entry<Integer, String>> entrySet = hashMap.entrySet();
+        System.out.println("entrySet = " + entrySet);
 
         System.out.println("hashMap.containsKey(1) = " + hashMap.containsKey(1)); // 0(1)
         System.out.println("hashMap.containsValue(\"dinesh\") = " + hashMap.containsValue("dinesh")); // Case Sensitive -> 0(n)

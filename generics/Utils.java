@@ -7,11 +7,12 @@ import utils.GenericList;
 import java.util.List;
 
 public class Utils {
+
     public static void printUser(GenericList<? extends User> users) {
         Manager manager = new Manager("Dinesh", "I", (byte) 20);
         User user = new User("model.User", "I", "2003-08-01");
         User user1 = users.get(0); // using extends we can view
-//        users.add(user); // throw error
+//        users.add(user); // will throw error java: incompatible types: model.User cannot be converted to capture#1 of ? extends model.User
         System.out.println("user1.getFirstName() = " + user1.getFirstName());
     }
 

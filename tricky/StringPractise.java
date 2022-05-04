@@ -1,5 +1,10 @@
 package tricky;
 
+
+/**
+ * SCP = String Constant Pool
+
+ */
 public class StringPractise {
     public static void main(String[] args) {
         mutableString();
@@ -15,9 +20,18 @@ public class StringPractise {
     }
 
     private static void stringEqualsCheck() {
+        /**
+         * String literals are stored in string constant pool in heap memory section
+         * if one or more variables are having same content it will reference the same content in string pool
+         * It is used to reduce memory consumption
+         */
         String dineshWithoutNew = "dinesh";
-        String babuWithoutNew = "babu";
         String dineshWithoutNew1 = "dinesh";
+
+        System.out.println("dineshWithoutNew.hashCode() = " + dineshWithoutNew.hashCode());
+        System.out.println("dineshWithoutNew1.hashCode() = " + dineshWithoutNew1.hashCode());
+
+        String babuWithoutNew = "babu";
         String dineshWithNew = new String("dinesh");
         String babuWithNew = new String("babu");
         dineshWithNew.substring(2);
@@ -32,6 +46,30 @@ public class StringPractise {
         System.out.println("dineshWithoutNew.equals(dineshWithNew) = " + dineshWithoutNew.equals(dineshWithoutNew));
         System.out.println("dineshWithoutNew.equals(dineshWithoutNew1) = " + dineshWithoutNew.equals(dineshWithoutNew1));
         System.out.println("babuWithoutNew.equals(babuWithNew) = " + babuWithoutNew.equals(babuWithNew));
+
+        /**
+         * Returns a canonical representation for the string object.
+         * A pool of strings, initially empty, is maintained privately by the class String.
+         * When the intern method is invoked, if the pool already contains a string equal to this String object as determined by the equals(Object) method, then the string from the pool is returned. Otherwise, this String object is added to the pool and a reference to this String object is returned.
+         * It follows that for any two strings s and t, s.intern() == t.intern() is true if and only if s.equals(t) is true
+         */
+
+        String s1 = "abced";
+        String s2 = new String("abced");
+        String s3 = new String("foo");
+        String s4 = s1.intern();
+        String s5 = s2.intern();
+
+        System.out.println("(s3 == s4) = " + (s3 == s4));;
+        System.out.println("s1 == s5 = " + (s1 == s5));
+
+        String stringLiteral = "dinesh_string_intern_check";
+        String stringCreatedWithNew = new String("dinesh_string_intern_check");
+
+        System.out.println("(stringLiteral.intern() == stringCreatedWithNew.intern()) = " + (stringLiteral.intern() == stringCreatedWithNew.intern()));
+
+        System.out.println("s1.hashCode() = " + s1.hashCode());
+
     }
 
     protected static void mutableString() {

@@ -11,6 +11,7 @@ public class Main {
         /**
          * Synchronized collection are blocking collection low performance
          * Concurrent collection are efficient high performance uses lock stripping mechanism
+         * https://stackoverflow.com/questions/16151606/need-simple-explanation-how-lock-striping-works-with-concurrenthashmap
          */
         concurrentHashMapVSHashMap();
     }
@@ -23,7 +24,7 @@ public class Main {
 
         for (int i = 0; i < 100_000; i++) {
             Thread thread = new Thread(() -> {
-                for (int j = 0; j < 1_000_000; j++) {
+                for (int j = 0; j < 1_000; j++) {
                     int random = (int) (Math.random() * 10);
                     map.put(random, map.getOrDefault(random, 0) + 1);
                     cMap.put(random, cMap.getOrDefault(random, 0) + 1);

@@ -39,12 +39,13 @@ public class ArrayPractice {
         List<Integer> integerList = Arrays.stream(randomIntegers).boxed().collect(Collectors.toList());
         Arrays.stream(numbers, 0, 3).peek(number -> System.out.println(number)).toArray();
 
+        // It will work fine for Boxed
 //        Arrays.asList();
 //        List.of();
 
         String[] names = new String[10];
 //        Arrays.fill(names, "Dinesh");
-        Arrays.fill(names, 0, 2, "Dinesh"); // toExclusive
+        Arrays.fill(names, 0, 2, "Dinesh"); // toExclusive 0 to 2 => 0 1
         System.out.println("names = " + Arrays.toString(names));
 
         Arrays.sort(numbers);
@@ -52,16 +53,23 @@ public class ArrayPractice {
 //        Arrays.sort(names, String::compareTo); // throws null pointer exception if any null value passed
 
 //        int[] ints = Arrays.copyOf(numbers, numbers.length + (numbers.length) / 2);
-        int[] ints = Arrays.copyOf(numbers, numbers.length);
-        int[] intCopyOfRange = Arrays.copyOfRange(numbers, 0, 2);
+        int[] copiedNumbers = Arrays.copyOf(numbers, numbers.length);
+        System.out.println("numbers = " + numbers);
+        System.out.println("copiedNumbers = " + copiedNumbers);
+
+        int[] intCopyOfRange = Arrays.copyOfRange(numbers, 0, 2); // Exclusive => 0 to 2 -> 0 1
         System.out.println("intCopyOfRange = " + Arrays.toString(intCopyOfRange));
 
-        System.out.println("Arrays.equals(numbers, ints) = " + Arrays.equals(numbers, ints));
+        // Will check the content not the reference
+        System.out.println("Arrays.equals(numbers, ints) = " + Arrays.equals(numbers, copiedNumbers));
 
-        System.out.println("Arrays.compare(numbers, ints) = " + Arrays.compare(numbers, ints));
+        // return false
+        System.out.println("Arrays.compare(new int[] {3, 5, 2}, new int[] {2, 5, 3}) = " + Arrays.compare(new int[]{3, 5, 2}, new int[]{2, 5, 3}));
+
+        System.out.println("Arrays.compare(numbers, ints) = " + Arrays.compare(numbers, copiedNumbers)); // if two arrays are equal
         System.out.println("Arrays.compare(numbers, intCopyOfRange) = " + Arrays.compare(numbers, intCopyOfRange)); // returns length difference
         // Return the index which two arrays differ
-        System.out.println("Arrays.mismatch(numbers, ints) = " + Arrays.mismatch(numbers, ints));
+        System.out.println("Arrays.mismatch(numbers, ints) = " + Arrays.mismatch(numbers, copiedNumbers));
         System.out.println("Arrays.mismatch(numbers, numbers1) = " + Arrays.mismatch(numbers, numbers1));
 
         int hashCode = Arrays.hashCode(numbers);

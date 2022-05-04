@@ -26,6 +26,7 @@ class Son extends Father {
     public int getAge() {
         return age;
     }
+
 }
 
 public class FieldHiding {

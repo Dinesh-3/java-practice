@@ -62,6 +62,7 @@ public class ExceptionPractice {
     }
 
     private static boolean isValid() {
+        // Always returns false
         try {
             return true;
         }finally {

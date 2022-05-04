@@ -1,6 +1,6 @@
 package model;
 
-public class InvalidAgeException extends Exception{
+public class InvalidAgeException extends Exception{ // Checked exception
     public InvalidAgeException(String message) {
         super(message);
         super.getCause();
