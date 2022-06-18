@@ -6,7 +6,7 @@ public class BinarySearch {
         var right = array.length - 1;
 
         while (left <= right) {
-            var middle = (left + right) / 2;
+            var middle = left + (right - left) / 2;
 
             if (array[middle] == target)
                 return middle;
@@ -19,4 +19,12 @@ public class BinarySearch {
 
         return -1;
     }
+
+    public static void main(String[] args) {
+        int[] numbers = {2, 5, 6,7,8,9,12,23,34,56,67};
+
+        int search = search(numbers, 12);
+
+    }
+
 }

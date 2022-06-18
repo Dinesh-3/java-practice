@@ -68,7 +68,7 @@ public class BitwiseOperators {
          * bitwise not
          * ~0101 = 5
          * -----
-         * 1010 = 10
+         * 1010 = -6
          * will give 2's complement of 1010 = -6
          */
         System.out.println("~a = " + ~a);

@@ -93,6 +93,27 @@ public class MapPractise {
 
         System.out.println("sortedMap = " + sortedMap);
 
+        System.out.println("--- LINKED HASH MAP ---");
+        /**
+         * LINKED HASH MAP
+         * Preserves the insertion order
+         *
+         */
+        LinkedHashMap<Integer, String> linkedHashMapPersons = new LinkedHashMap<>();
+
+        linkedHashMapPersons.put(2, "Dinesh");
+        linkedHashMapPersons.put(1, "Rahul");
+        linkedHashMapPersons.put(3, "Balaji");
+        linkedHashMapPersons.put(4, "Ragavan");
+        linkedHashMapPersons.put(1, "Gowtham");
+        System.out.println("linkedHashMapPersons = " + linkedHashMapPersons);
+
+        for (Map.Entry<Integer, String> persons : linkedHashMapPersons.entrySet()) {
+            System.out.println("persons.getKey() = " + persons.getKey());
+        }
+
+
+
         var c1 = new Customer("Dinesh", "I", "Male", "India", (byte) 21, LocalDate.now(), 1212);
         var c2 = new Customer("Ram", "V", "Male", "India", (byte) 20, LocalDate.now(), 1213);
 

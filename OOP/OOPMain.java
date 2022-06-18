@@ -1,5 +1,7 @@
 package OOP;
 
+import object.Person;
+
 import java.time.LocalDate;
 
 /**

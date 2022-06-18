@@ -4,6 +4,14 @@ import inheritance.Entity;
 
 /**
  * Related with inheritance folder
+ *
+ *  + => accessible , - -> not accessible , pkg -> package
+ *
+                    Class	    Package	    Subclass same pkg	Subclass diff pkg	World
+     public	        +	        +	                +	                +	            +
+     protected	    +	        +	                +	                +
+     no modifier	+	        +	                +                   -               -
+     private	    +           -                   -                   -               -
  */
 public class Main {
     public String instanceField = "";

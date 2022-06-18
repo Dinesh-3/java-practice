@@ -8,14 +8,18 @@ public class StringUtils {
     public static void main(String[] args) {
 //        removeDuplicates("ababa");
 //        atoi();
-        longestDistinctSubString();
-        String update = "Dinesh";
-        update.contains(String.valueOf('a'));
-        String input1 = "abcd";
-        String input2 = "cdab";
-        System.out.println("areRotations(input1, input2) = " + areRotations(input1, input2));
-    }
+//        longestDistinctSubString();
+//        String update = "Dinesh";
+//        update.contains(String.valueOf('a'));
+//        String input1 = "abcd";
+//        String input2 = "cdab";
+//        System.out.println("areRotations(input1, input2) = " + areRotations(input1, input2));
+//        longestCommonSequence();
 
+        String one = "1";
+
+        System.out.println("padStart(\"576\", \"0\", 5) = " + padStart("576", "0", 5));
+    }
 
 //    public static void combinationMain() {
 //        List<Character> letters = List.of('a', 'e', 'i');
@@ -241,4 +245,50 @@ public class StringUtils {
         }
         System.out.println("maxLength = " + maxLength);
     }
+
+    private static void longestCommonSequence(){
+        String word = "ASSJDHFCCCCCDDDEEEEEEEEEFFEIRU";
+
+        char key = word.charAt(0);
+        int max = 1;
+
+        char currentKey = word.charAt(0);
+        int count = 1;
+
+        for (int i = 1; i < word.length(); i++) {
+            if(word.charAt(i) == currentKey){
+                count++;
+            }else {
+                if(count > max) {
+                    max = count;
+                    key = currentKey;
+                }
+                currentKey = word.charAt(i);
+                count = 1;
+            }
+        }
+
+        System.out.println("key count = " + key + " " + max);
+
+    }
+
+    private static String  padStart(String value, String fillContent, int maxLength){
+
+        if ( value.length() > maxLength ) return value;
+
+        StringBuilder builder = new StringBuilder();
+
+        while (builder.length() < ( maxLength - value.length() )){
+            builder.append(fillContent);
+        }
+
+        builder.append(value);
+
+        return builder.toString();
+    }
+
+//    private static String padAt(int index, String value, String fillContent, int maxLength){
+//
+//    }
+
 }

@@ -8,9 +8,9 @@ public class ClassPractise {
         Method[] methods = Object.class.getMethods();
         for(var method:methods){
             System.out.print(
-                    "Method Name: "+ method
+//                    "Method Name: "+ method
 //                            + method.getReturnType() +
-//                            method.getName()
+                            method.getName()
 //                            + " "
 //                            + "Params count: " +
 //                            method.getParameterCount()

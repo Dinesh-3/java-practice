@@ -6,31 +6,37 @@ import java.util.Map;
 import java.util.Set;
 
 public class CharFinder {
-    public char findFirstNonRepeatingChar(String str) {
-        Map<Character, Integer> map = new HashMap<>();
+
+    public static void main(String[] args) {
+        System.out.println("97 = " + (char) 97);
+        System.out.println("123 = " + (char) 122);
+        System.out.println("findFirstNonRepeatingChar(\"awheiufaiwuer\") = " + findFirstNonRepeatingChar("awheiufaiwuer"));
+        System.out.println("findFirstNonRepeatingChar(\"awheiufaiwuer\") = " + findFirstRepeatedChar("awheiufaiwuer"));
+
+    }
+
+    public static char findFirstNonRepeatingChar(String str) {
+
+        int[] alphabets = new int[26];
 
         var chars = str.toCharArray();
         for (var ch : chars) {
-            var count = map.getOrDefault(ch, 0);
-            map.put(ch, count + 1);
+            alphabets[ch - 97] += 1;
         }
 
-        for (var ch : chars)
-            if (map.get(ch) == 1)
-                return ch;
+        for (int i = 0; i < alphabets.length; i++) {
+            if(alphabets[i] == 1)
+                return (char) (i + 97);
+        }
 
         return Character.MIN_VALUE;
     }
 
-    public char findFirstRepeatedChar(String str) {
-        Set<Character> set = new HashSet<>();
+    public static char findFirstRepeatedChar(String str) {
+        int[] alphabets = new int[26];
 
-        for (var ch : str.toCharArray()) {
-            if (set.contains(ch))
-                return ch;
-
-            set.add(ch);
-        }
+        for (var ch : str.toCharArray())
+            if (++alphabets[ch - 97] > 1) return ch;
 
         return Character.MIN_VALUE;
     }

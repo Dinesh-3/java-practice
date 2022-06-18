@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Stack;
 
 public class BalancedParentheses {
+
     private final Map<Character, Character> BRACKET = new HashMap<>();
 
     public BalancedParentheses(){

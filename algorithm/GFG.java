@@ -7,7 +7,7 @@ package algorithm;
 class GFG {
 
     public static void main(String[] args) {
-        String arr[] = {"geeksforgeeks", "geeksfef",
+        String[] arr = {"geeksforgeeks", "geeksfef",
                 "gekk", "geezer"};
         String target = arr[0];
 

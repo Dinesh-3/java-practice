@@ -20,4 +20,14 @@ public class InsertionSort {
             System.out.println("array = " + Arrays.toString(array));
         }
     }
+
+    public static void sortNew(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            int insertAt = i;
+            while (insertAt > 0 && array[insertAt] < array[i]){
+                insertAt--;
+            }
+
+        }
+    }
 }

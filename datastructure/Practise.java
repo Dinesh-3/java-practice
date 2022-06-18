@@ -434,25 +434,7 @@ public class Practise {
         tree.add(2);
         tree.add(6);
         tree.add(4);
-        /**
-         *              5
-         *           /     \
-         *          3       8
-         *         / \     /
-         *        2   4   6
-         *
-         * Traversal Types:
-         *  1. Breadth First: Level Order Traversal -> Traversing Level By Level
-         *  2. Depth First:
-         *      1. PreOrder Traversal -> ROOT LEFT RIGHT
-         *      2. InOrder Traversal -> LEFT ROOT RIGHT (Ascending Order) RIGHT ROOT LEFT (Descending Order)
-         *      3. PostOrder Traversal -> LEFT RIGHT ROOT
-         *
-         * Depth Of Node:
-         *  1. Number of edges from root to target node. Ex depth of 4 is 2 , 8 is 1
-         *  2. Or Sum Nodes from root == 0 to target
-         *
-         */
+
         tree.preOrderTraversal(); // 5 3 2 4 8 6
         tree.inOrderTraversal(); // 2 3 4 5 6 8
         tree.postOrderTraversal(); // 2 4 3 6 8 5

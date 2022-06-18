@@ -6,11 +6,24 @@ import java.util.Scanner;
 public class BubbleSort {
     public static void main(String[] args) {
         practise();
+        int[] numbers = {3, 7, 4, 9, 5, 2, 6, 1};
+        sort(numbers);
+        System.out.println("numbers = " + Arrays.toString(numbers));
     }
 
     public static void sort(int[] array) {
-
-
+        // Bubble Sort
+        for (int i = 0; i < array.length; i++) {
+            boolean isSorted = true;
+            for (int j = 1; j < array.length - i; j++) {
+                if(array[j-1] > array[j])
+                {
+                    swap(array, j , j-1);
+                    isSorted = false;
+                }
+            }
+            if (isSorted) break;
+        }
 
 
     }
@@ -21,7 +34,7 @@ public class BubbleSort {
         array[index2] = temp;
     }
 
-    private  static void practise () {
+    private  static void practise() {
         int[] numbers = { 2, 8, 1, 3, 6, 7, 5, 4 };
 
 //        for (int i = 0; i < numbers.length; i++) {
@@ -38,6 +51,7 @@ public class BubbleSort {
                 };
             }
         }
+
         System.out.println("numbers = " + Arrays.toString(numbers));
     }
 

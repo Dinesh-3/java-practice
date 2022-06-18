@@ -6,7 +6,7 @@ public class DataStructure {
     public static void main(String[] args) {
 
 //        Collections.main();
-
+        System.out.println("5^1 = " +( 5 ^ 1));
         Array<String> array = new Array<>(1);
         array.insert("Dinesh");
         array.insert("Babu");

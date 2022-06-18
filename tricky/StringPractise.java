@@ -22,7 +22,7 @@ public class StringPractise {
     private static void stringEqualsCheck() {
         /**
          * String literals are stored in string constant pool in heap memory section
-         * if one or more variables are having same content it will reference the same content in string pool
+         * if one or more variables are having same content it will reference the same memory space in string pool
          * It is used to reduce memory consumption
          */
         String dineshWithoutNew = "dinesh";
@@ -85,6 +85,14 @@ public class StringPractise {
          */
         StringBuffer dinesh = new StringBuffer("Dinesh");
         dinesh.append(" I");
+        /**
+         * Better technique (although still not ideal):
+         *
+         * Reverse each string you want to insert.
+         * Append each string to a StringBuilder.
+         * Reverse the entire StringBuilder when you're done
+         */
+        dinesh.insert(0, "NAME: "); // To insert at beginning O(N^2)
         System.out.println("dinesh = " + dinesh);
 
          /*

@@ -42,6 +42,11 @@ public class TypePromotion {
          *
          * Notes:
          *  Smaller values are adjusted in big types ex: int to long
+         *
+         *  What is Automatic Type Promotion?
+         * The name Type Promotion specifies that a small size datatype can be promoted to a large size datatype. i.e.,
+         * an Integer data type can be promoted to long, float, double, etc.
+         * This Automatic Type Promotion is done when any method which accepts a higher size data type argument is called with the smaller data type.
          */
         long addLong = math.add(1, (long) 1);
 

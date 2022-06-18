@@ -34,6 +34,7 @@ public class Main {
         int reversedNumber = 0;
         int digit = x;
         int finalDigit = digit;
+
         int finalReversedNumber = reversedNumber;
         class Name{
             public int name = finalDigit; // class assigned variable should not updated or assigned new value

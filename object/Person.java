@@ -1,4 +1,4 @@
-package OOP;
+package object;
 
 import java.time.LocalDate;
 import java.time.Period;

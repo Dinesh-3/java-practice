@@ -12,11 +12,6 @@ public class Temp {
         double result = ONE.subtract(BigDecimal.valueOf(20000).divide(BigDecimal.valueOf(100.0))).doubleValue();
         System.out.println("result = " + result);
 
-        Boolean eligible = null;
-
-        if(eligible == FALSE)
-            System.out.println("eligible = " + eligible);
-        boolean isApplicable = eligible ? true: false;
 
     }
 }

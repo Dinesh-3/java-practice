@@ -1,7 +1,6 @@
 package algorithm;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#arrays
@@ -10,19 +9,21 @@ public class ArrayProblems {
     public static void main(String[] args) {
 
         int[] numbers = {1, 3, 4, 5};
-        subArrayOfGivenSum(numbers, 7);
-        missingNumberInArray();
-        mergeWithoutExtraSpace();
-        rearrangeArrayAlternatively();
-        numberOfPairs();
-        countInversions();
-        equilibriumPoint();
-        reverseArrayInGroups();
-        kthSmallestElement();
-        trappingRainWater();
-        turbulantSubArray();
-        findMinAndMax();
+//        subArrayOfGivenSum(numbers, 7);
+//        missingNumberInArray();
+//        mergeWithoutExtraSpace();
+//        rearrangeArrayAlternatively();
+//        numberOfPairs();
+//        countInversions();
+//        equilibriumPoint();
+//        reverseArrayInGroups();
+//        kthSmallestElement();
+//        trappingRainWater();
+//        turbulantSubArray();
+//        findMinAndMax();
 
+//        smallerPositiveMissingNumber();
+        firstRepeatingElement();
 //        int[] arrays = { 1, 5, 3, 2 };
 //        for (int i = 0; i < arrays.length; i++) {
 //            int sum = arrays[i];
@@ -35,6 +36,35 @@ public class ArrayProblems {
 //                }
 //            }
 //        }
+    }
+
+    private static void smallerPositiveMissingNumber() {
+
+        /**
+         * Smallest Positive missing number
+         * You are given an array arr[] of N integers including 0. The task is to find the smallest positive number missing from the array.
+         * Input: N = 5 arr[] = {1,2,3,4,5} Output: 6
+         * Explanation: Smallest positive missing number is 6.
+         *
+         * Input:  N = 5 arr[] = {0,-10,1,3,-20} Output: 2
+         * Explanation: Smallest positive missing number is 2.
+         */
+
+        int[] numbers = {0,-10,1, 3,-20};
+
+        int smallNumber = 1;
+
+        Arrays.sort(numbers);
+
+        for (int number : numbers) {
+            if (number == smallNumber)
+                smallNumber++;
+            else if (smallNumber < number)
+                break;
+        }
+
+        System.out.println("smallNumber = " + smallNumber);
+
     }
 
     private static void subArrayOfGivenSum(int[] numbers, int target) {
@@ -174,34 +204,28 @@ public class ArrayProblems {
 
         int sum = Arrays.stream(numbers).sum();
 
-        System.out.println("sum = " + sum);
-        int equiliSum = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            sum -= numbers[i];
-            if(sum == equiliSum) {
-                System.out.println("equilibriumPoint index = " + i);
-                break;
-            }
-            equiliSum += numbers[i];
-        }
-
-        // O(N)
+//        System.out.println("sum = " + sum);
+//        int equiliSum = 0;
 //        for (int i = 0; i < numbers.length; i++) {
-//            int leftSum = 0;
-//            int rightSum = 0;
-//            for (int j = 0; j < numbers.length; j++) {
-//                if(i == j) continue;
-//                if(j < i) leftSum += numbers[j];
-//                else rightSum += numbers[j];
-//            }
-//            System.out.println("leftSum = " + leftSum);
-//            System.out.println("rightSum = " + rightSum);
-//            if(leftSum == rightSum) {
-//                System.out.println("POINT = " + i);
+//            sum -= numbers[i];
+//            if(sum == equiliSum) {
+//                System.out.println("equilibriumPoint index = " + i);
 //                break;
 //            }
+//            equiliSum += numbers[i];
 //        }
 
+        // O(N)
+        int equiliSum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            equiliSum += numbers[i];
+            if(equiliSum == sum){
+                System.out.println("Equilibrium Point = " + i);
+                break;
+            }
+            sum -= numbers[i];
+
+        }
     }
 
     public static void reverseArrayInGroups(){
@@ -331,6 +355,59 @@ public class ArrayProblems {
         }
         System.out.println("min = " + min);
         System.out.println("max = " + max);
+    }
+
+    private static void firstRepeatingElement(){
+
+        int[] numbers = {1, 5, 3, 4, 3, 5, 6};
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < numbers.length; i++) {
+            int number = numbers[i];
+            map.put(numbers[i], map.getOrDefault(number, 0) + 1);
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (map.get(numbers[i]) > 1){
+                System.out.println("result = " + numbers[i]);
+                break;
+            }
+        }
+
+        /**
+
+        Map<Integer, Integer[]> map = new HashMap<>();
+
+        for (int i = 0; i < numbers.length; i++) {
+            int number = numbers[i];
+            Integer[] value;
+            if (map.containsKey(number)){
+                value = map.get(number);
+                value[1] = value[1] + 1;
+            }else{
+                value = new Integer[]{i, 1};
+            }
+            map.put(number, value);
+        }
+
+
+        for (Map.Entry<Integer, Integer[]> entry : map.entrySet()) {
+            System.out.println(String.format("Number %d, Index %d, Count %d ", entry.getKey(), entry.getValue()[0], entry.getValue()[1]));
+        }
+
+        Map.Entry<Integer, Integer[]> result = null;
+
+        for (Map.Entry<Integer, Integer[]> entry : map.entrySet()){
+            if (result == null && entry.getValue()[1] > 1) {
+                result = entry;
+            } else if (entry.getValue()[1] > 1 && entry.getValue()[0] < result.getValue()[0])
+                result = entry;
+        }
+
+        System.out.println("result = " + result);
+         **/
+
     }
     static int longestPalSubstr(String str)
     {
