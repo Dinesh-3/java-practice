@@ -16,9 +16,10 @@ public class StringUtils {
 //        System.out.println("areRotations(input1, input2) = " + areRotations(input1, input2));
 //        longestCommonSequence();
 
-        String one = "1";
-
-        System.out.println("padStart(\"576\", \"0\", 5) = " + padStart("576", "0", 5));
+//        String one = "1";
+//
+//        System.out.println("padStart(\"576\", \"0\", 5) = " + padStart("576", "0", 5));
+        findTheOccurrence();
     }
 
 //    public static void combinationMain() {
@@ -290,5 +291,32 @@ public class StringUtils {
 //    private static String padAt(int index, String value, String fillContent, int maxLength){
 //
 //    }
+
+    private static void findTheOccurrence() {
+
+        String sentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elementum justo. Suspendisse ut libero scelerisque, congue nibh at, vehicula urna";
+
+        String target = "sit";
+
+        for (int i = 0; i < sentence.length(); i++) {
+            if(sentence.charAt(i) == target.charAt(0)){
+                boolean isValid = true;
+                for (int sentenceIndex = i, charIndex=0; sentenceIndex < sentence.length() && charIndex < target.length(); sentenceIndex++, charIndex++) {
+                    if (!(sentence.charAt(sentenceIndex) == target.charAt(charIndex))) {
+                        isValid = false;
+                        break;
+                    }
+                }
+
+                if (isValid){
+                    System.out.println("index = " + i);
+                    System.out.println("sentence.substring(i, i + target.length()) = " + sentence.substring(i, i + target.length()));
+                    break;
+                }
+            }
+
+        }
+
+    }
 
 }
