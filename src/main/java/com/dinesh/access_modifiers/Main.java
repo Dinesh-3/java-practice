@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         Entity entity = new Entity();
 //        entity.getProtectedField(); // throw's error
-        Manager manager = new Manager();
+        access_modifiers.Manager manager = new access_modifiers.Manager();
         String protectedField = manager.getProtectedField();
         System.out.println("protectedField = " + protectedField);
 

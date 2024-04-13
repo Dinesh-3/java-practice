@@ -39,18 +39,15 @@ public class Tree {
          *          3       8
          *         / \     /
          *        2   4   6
-         *
          * Traversal Types:
          *  1. Breadth First: Level Order Traversal -> Traversing Level By Level = 5 3 8 2 4 6
          *  2. Depth First:
          *      1. PreOrder Traversal -> ROOT LEFT RIGHT = 5 3 2 4 8 6
          *      2. InOrder Traversal -> LEFT ROOT RIGHT (Ascending Order) RIGHT ROOT LEFT (Descending Order) = 2 3 4 5 6 8
          *      3. PostOrder Traversal -> LEFT RIGHT ROOT
-         *
          * Depth Of Node:
          *  1. Number of edges from root to target node. Ex depth of 4 is 2 , 8 is 1
          *  2. Or Sum Nodes from root == 0 to target
-         *
          */
 
         datastructure.tree.BinarySearchTree searchTree = new datastructure.tree.BinarySearchTree();
@@ -62,6 +59,11 @@ public class Tree {
         searchTree.add(4);
         searchTree.add(6);
 
+        System.out.println("searchTree.getAncestors(4) = " + searchTree.getAncestors(8));
+        System.out.println("searchTree.areSiblings(2,4) = " + searchTree.areSiblings(2,4));
+        System.out.println("searchTree.isPresent(8) = " + searchTree.isPresent(2));
+        System.out.println("searchTree.countLeaves() = " + searchTree.countLeaves());
+        System.out.println("searchTree.size() = " + searchTree.size());
         System.out.println("searchTree.contains(4) = " + searchTree.contains(4));
         System.out.println("searchTree.contains(3) = " + searchTree.contains(3));
 

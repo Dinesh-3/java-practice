@@ -146,8 +146,34 @@ public class LinkedList<T> {
         return indexOf(item) != -1;
     }
 
+    public T getMiddle() {
+        var slow = first;
+        var fast = first;
+
+        while (fast != last && fast.next != last) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow.data;
+    }
+
+    public boolean hasCycle() {
+        var slow = first;
+        var fast = first;
+
+        while (fast != last && fast.next != last) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast)
+                return true;
+        }
+
+        return false;
+    }
+
     public T[] toList() {
-        var array = (T[]) new Object[size + 1];
+        var array = (T[]) new Object[size];
         var current = first;
         int index = 0;
         while (current != null ) {
@@ -168,9 +194,14 @@ public class LinkedList<T> {
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 10; i++) {
             list.addLast(i);
         }
+
+        Integer middle = list.getMiddle();
+        System.out.println("middle = " + middle);
+        System.out.println(Arrays.toString(list.toList()));
+
         ListNode one = new ListNode(-9);
         ListNode two = new ListNode(5);
 
@@ -191,6 +222,5 @@ public class LinkedList<T> {
         }
 
 //        list.mergeTwoLists(one, two);
-        System.out.println(Arrays.toString(list.toList()));
     }
 }

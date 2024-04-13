@@ -12,8 +12,6 @@ public class Backtracking {
     };
 
     public static void main(String[] args) {
-
-
         boolean isWordExist = isWordPresent("AED");
         System.out.println("isWordExist = " + isWordExist);
     }

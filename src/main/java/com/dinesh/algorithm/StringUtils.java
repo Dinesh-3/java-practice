@@ -19,7 +19,11 @@ public class StringUtils {
 //        String one = "1";
 //
 //        System.out.println("padStart(\"576\", \"0\", 5) = " + padStart("576", "0", 5));
-        findTheOccurrence();
+//        findTheOccurrence();
+
+        String reversed = reverseStringOnIChar("string");
+        System.out.println("reversed = " + reversed);
+
     }
 
 //    public static void combinationMain() {
@@ -317,6 +321,20 @@ public class StringUtils {
 
         }
 
+    }
+
+    public static String reverseStringOnIChar(String s) {
+
+        StringBuilder builder = new StringBuilder();
+
+        for(char letter: s.toCharArray()) {
+            if(letter == 'i')
+                builder.reverse();
+            else
+                builder.append(letter);
+        }
+
+        return builder.toString();
     }
 
 }

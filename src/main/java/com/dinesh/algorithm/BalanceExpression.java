@@ -12,8 +12,8 @@ public class BalanceExpression {
             = Arrays.asList(')', '>', ']', '}');
 
     public boolean isBalanced(String input) {
-        Stack<Character> stack = new Stack<>();
 
+        Stack<Character> stack = new Stack<>();
         for (char ch : input.toCharArray()) {
             if (isLeftBracket(ch))
                 stack.push(ch);

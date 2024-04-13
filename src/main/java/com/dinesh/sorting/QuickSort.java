@@ -23,7 +23,6 @@ public class QuickSort {
                 swap(array, i, ++boundary);
 
         return boundary;
-
     }
 
     private void swap(int[] array, int index1, int index2) {

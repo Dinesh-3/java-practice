@@ -41,9 +41,7 @@ public class AVLTree {
 
         setHeight(current);
 
-        current = balance(current);
-
-        return current;
+        return balance(current);
     }
 
     private AVLNode balance(AVLNode root) {

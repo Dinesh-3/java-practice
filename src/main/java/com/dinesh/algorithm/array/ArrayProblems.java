@@ -1,4 +1,4 @@
-package algorithm;
+package com.dinesh.algorithm.array;
 
 import java.util.*;
 
@@ -9,13 +9,17 @@ public class ArrayProblems {
     public static void main(String[] args) {
 
         int[] numbers = {1, 3, 4, 5};
+        System.out.println(Math.pow(4,2));
+        List<Character> brackets
+                = Arrays.asList('(', '<', '[', '{');
+        brackets.subList(0,0);
 //        subArrayOfGivenSum(numbers, 7);
 //        missingNumberInArray();
 //        mergeWithoutExtraSpace();
-//        rearrangeArrayAlternatively();
+        rearrangeArrayAlternatively();
 //        numberOfPairs();
 //        countInversions();
-//        equilibriumPoint();
+        equilibriumPoint();
 //        reverseArrayInGroups();
 //        kthSmallestElement();
 //        trappingRainWater();
@@ -204,18 +208,6 @@ public class ArrayProblems {
 
         int sum = Arrays.stream(numbers).sum();
 
-//        System.out.println("sum = " + sum);
-//        int equiliSum = 0;
-//        for (int i = 0; i < numbers.length; i++) {
-//            sum -= numbers[i];
-//            if(sum == equiliSum) {
-//                System.out.println("equilibriumPoint index = " + i);
-//                break;
-//            }
-//            equiliSum += numbers[i];
-//        }
-
-        // O(N)
         int equiliSum = 0;
         for (int i = 0; i < numbers.length; i++) {
             equiliSum += numbers[i];
@@ -224,7 +216,6 @@ public class ArrayProblems {
                 break;
             }
             sum -= numbers[i];
-
         }
     }
 

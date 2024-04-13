@@ -9,7 +9,8 @@ import java.util.Arrays;
  * Annotations are to be discarded by the compiler.
  * CLASS
  * public static final RetentionPolicy CLASS
- * Annotations are to be recorded in the class file by the compiler but need not be retained by the VM at run time. This is the default behavior.
+ * Annotations are to be recorded in the class file by the compiler but need not be retained by the VM at run time.
+ * This is the default behavior.
  * RUNTIME
  * public static final RetentionPolicy RUNTIME
  * Annotations are to be recorded in the class file by the compiler and retained by the VM at run time, so they may be read reflectively.
@@ -34,6 +35,7 @@ import java.util.Arrays;
 @Mobile(name = "MI", version = 1)
 public class AnnotationPractice {
     public static void main(String[] args) {
+
         AnnotationPractice annotationPractice = new AnnotationPractice();
         Class<? extends AnnotationPractice> obj = annotationPractice.getClass();
         Annotation annotation = obj.getAnnotation(Mobile.class);
@@ -48,6 +50,7 @@ public class AnnotationPractice {
         System.out.println("mobile.version() = " + mobile.version());
         System.out.println("mobile.toString() = " + mobile.toString());
         System.out.println("mobile.getClass() = " + mobile.getClass());
+
     }
 }
 

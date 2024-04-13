@@ -90,11 +90,11 @@ public class BinarySearchTree {
     public int height(){
         return height(root);
     }
-// 1 + max(1+1)
+    // 1 + max(1+1)
     private int height(Node current) {
         if(current == null)
             return 0;
-        return 1 + Integer.max(height(current.left), height(current.right));
+        return 1 + Math.max(Math.max(height(current.left), height(current.right)), current.value);
     }
 
     private boolean isLeaf(Node node) {
@@ -123,11 +123,12 @@ public class BinarySearchTree {
         return equals(root, other.root);
     }
     private boolean equals(Node current, Node other) {
-        if(current == null && other == null) return true;
-        if(current != null && other != null) return
-                current.value == other.value
-                        && equals(current.left, other.left)
-                        && equals(current.right, other.right);
+        if(current == null && other == null)
+            return true;
+        if(current != null && other != null)
+            return current.value == other.value
+                    && equals(current.left, other.left)
+                    && equals(current.right, other.right);
         return false;
     }
 
@@ -142,9 +143,11 @@ public class BinarySearchTree {
         isValidBST(current.right, current.value, max);
     }
 
-//    public int findKthElement(int distance) {
-//        return findKthElement(root, distance);
-//    }
+        private List<Integer> getNodesAtDistance(Node node, int distance) {
+            List<Integer> nodes = new ArrayList<>();
+            findKthElement(node, distance, nodes);
+            return nodes;
+        }
     private int findKthElement(Node current, int distance) {
         if(current == null) return -1;
         if(distance == 0) return current.value;
@@ -170,6 +173,96 @@ public class BinarySearchTree {
         findKthElement(current.right, distance - 1, list);
     }
 
+
+    public int size() {
+        return getSize(root);
+    }
+
+    private int getSize(Node current) {
+        if (current == null)
+            return 0;
+
+        return 1 + getSize(current.left) + getSize(current.right);
+    }
+
+    public int countLeaves() {
+        return countLeaves(root);
+    }
+
+    private int countLeaves(Node current) {
+        if(current == null)
+            return 0;
+        if(isLeaf(current))
+            return 1;
+        return countLeaves(current.left) + countLeaves(current.right);
+    }
+
+    public boolean isPresent(int value) {
+        return isPresent(root, value);
+    }
+
+    private boolean isPresent(Node current, int value) {
+        if(current == null)
+            return false;
+        if(current.value == value)
+            return true;
+        boolean isPresentLeft = isPresent(current.left, value);
+        boolean isPresentRight = isPresent(current.right, value);
+
+        return isPresentLeft || isPresentRight;
+    }
+
+    public boolean areSiblings(int first, int second) {
+        return areSiblings(root, first, second);
+    }
+
+    private boolean areSiblings(Node current, int first, int second) {
+        if(current == null)
+            return false;
+        if(current.left != null && current.right != null && current.left.value == first && current.right.value == second)
+            return true;
+        return areSiblings(current.left, first, second) || areSiblings(current.right, first, second);
+    }
+
+    public List<Integer> getAncestors(int value) {
+        List<Integer> ancestors = new ArrayList<>();
+        getAncestors(root, value, ancestors);
+        return ancestors;
+    }
+
+    private boolean getAncestors(Node current, int value, List<Integer> ancestors) {
+        if(current == null)
+            return false;
+        if(current.value == value)
+            return true;
+        boolean leftVal = getAncestors(current.left, value, ancestors);
+        boolean rightVal = getAncestors(current.right, value, ancestors);
+
+        if(leftVal || rightVal) {
+            ancestors.add(current.value);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isBalanced() {
+        isBalanced(root, 0);
+        return true;
+    }
+
+    private int isBalanced(Node current, int height) {
+        if(current == null)
+            return 0;
+
+        int left = isBalanced(current.left, height);
+        if(left == -1)
+            return -1;
+        int right = isBalanced(current.right, height);
+        if(right == -1)
+            return -1;
+
+        return 0;
+    }
 
     class Traversal {
 
@@ -236,6 +329,13 @@ public class BinarySearchTree {
             postOrder(current.right);
             numbers[index++] = current.value;
 
+        }
+
+        public void traversLevelOrder() {
+            for (int i = 0; i < height(root); i++) {
+                List<Integer> nodes = getNodesAtDistance(root, i);
+                System.out.println("nodes = " + nodes);
+            }
         }
     }
 
