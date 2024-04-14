@@ -25,7 +25,7 @@ public class Graph {
     public void addNode(String label) {
         var node = new Node(label);
         nodes.putIfAbsent(label, node);
-        adjacencyList.putIfAbsent(node, new ArrayList<>());
+        adjacencyList.put(node, new ArrayList<>());
     }
 
     public void addEdge(String from, String to) {

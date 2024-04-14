@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class HeapMain {
     public static void main(String[] args) {
-        Heap heap = new Heap();
+        String str1 = "ABCABC";
+        System.out.println("str1.substring(0, 6) = " + str1.substring(0, 6));
 
+        Heap heap = new Heap();
         heap.add(10);
         heap.add(15);
         heap.add(20);

@@ -6,6 +6,14 @@ import java.util.stream.Collectors;
 
 public class StringUtils {
     public static void main(String[] args) {
+//        char[] letters = { 'a','a','b','b','c','c','c' };
+//        compress(letters);
+
+        String s1 = "abc";
+        String s2 = "ahbgdc";
+
+        isSubsequence(s1, s2);
+
 //        removeDuplicates("ababa");
 //        atoi();
 //        longestDistinctSubString();
@@ -24,6 +32,56 @@ public class StringUtils {
         String reversed = reverseStringOnIChar("string");
         System.out.println("reversed = " + reversed);
 
+    }
+
+    public static boolean isSubsequence(String s, String t) {
+        int index = 0;
+
+        for(int i = 0; i < t.length(); i++) {
+            if(s.charAt(index) == t.charAt(i))
+                index++;
+        }
+
+        return index == s.length() - 1;
+
+    }
+
+    public static int compress(char[] chars) {
+
+        int index = 0;
+        int count = 1;
+        char letter = chars[0];
+        for(int i = 1; i < chars.length; i++) {
+            if(letter == chars[i])
+            {
+                count++;
+                if(i == chars.length - 1) {
+                    chars[index++] = letter;
+                    if(count > 1) {
+                        char[] arr = (count + "").toCharArray();
+                        for (int j = 0; j < arr.length; j++)
+                            chars[index++] = arr[j];
+                    }
+                    count = 1;
+                    letter = chars[i];
+                }
+            }
+            else
+            {
+                chars[index++] = letter;
+                if(count > 1) {
+                    char[] arr = (count + "").toCharArray();
+                    for(int j = 0; j < arr.length; j++)
+                        chars[index++] = arr[j];
+                }
+                count = 1;
+                letter = chars[i];
+            }
+        }
+
+        System.out.println(Arrays.toString(chars));
+
+        return index;
     }
 
 //    public static void combinationMain() {

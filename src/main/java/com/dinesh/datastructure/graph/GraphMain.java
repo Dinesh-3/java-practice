@@ -14,6 +14,8 @@ public class GraphMain {
         graph.traverseDepthFirst("C");
         graph.traverseDepthFirstRec("C");
 
+        System.out.println("graph.topologicalSort() = " + graph.topologicalSort());
+
         WeightedGraph weightedGraph = new WeightedGraph();
 
         weightedGraph.addNode("A");

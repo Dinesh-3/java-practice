@@ -131,20 +131,21 @@ public class Trie {
         return current;
     }
 
-    private void traverse(Node current, List<String> words, StringBuilder word) {
+    private void traverse(Node current, List<String> words, StringBuilder word)
+    {
         if(current == null)
             return;
 
+        word.append(current.value);
         if(current.isWordEnd)
             words.add(word.toString());
 
-        for (var node: current.getChildren()) {
-            var character = node.value;
-            traverse(current.getChild(character), words, word.append(character));
+        for (Node child : current.getChildren()) {
+            traverse(child, words, word);
         }
 
-        if(word.length() > 0)
-            word.deleteCharAt(word.length() - 1);
+        word.delete(word.length() - 1, word.length() - 1);
+
 
     }
 
@@ -153,6 +154,18 @@ public class Trie {
         traverse(root, words, new StringBuilder());
 
         return words.size();
+    }
+
+    public void preOrderTraversal() {
+        preOrderTraversal(root);
+    }
+
+    private void preOrderTraversal(Node current) {
+        System.out.println(current.value);
+        for (Node child : current.getChildren()) {
+            preOrderTraversal(child);
+        }
+        System.out.println();
     }
 
     public static String longestCommonPrefix(List<String> words) {
