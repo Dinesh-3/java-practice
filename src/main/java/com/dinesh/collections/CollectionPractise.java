@@ -47,7 +47,7 @@ public class CollectionPractise {
         integerLinkedList.add(20);
 
         Iterator<Integer> descendingIterator = integerLinkedList.descendingIterator();
-        for(int i = 0; descendingIterator.hasNext() == true; i++) {
+        for(int i = 0; descendingIterator.hasNext(); i++) {
             System.out.print(i + " = " + descendingIterator.next());
         }
         System.out.println();
@@ -96,7 +96,6 @@ public class CollectionPractise {
         public static void main(String[] args) {
 
             /**
-             *
              *   Deque -> Double Ended Queue Item can be added and removed from both end
              *   public interface Deque<E> extends Queue<E>
              *   Implementation: ArrayDeque -> Resizable Array, no capacity restrictions, Default Array Size = 16
@@ -152,7 +151,6 @@ public class CollectionPractise {
             System.out.println("integers.element() = " + integers.element());
             System.out.println("integers.remove() = " + integers.remove());
             System.out.println("integers.element() = " + integers.element());
-
 
         }
     }

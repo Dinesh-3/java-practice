@@ -21,6 +21,5 @@ public class CollectionsPractice {
         boolean disjoint = Collections.disjoint(fruitsList, fruitsSet);
         System.out.println("disjoint = " + disjoint);
 
-
     }
 }

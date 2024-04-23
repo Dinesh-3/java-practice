@@ -5,15 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/TrappingRainWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/KadaneAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MinimumWindowSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MissingNumberInSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NumberAppearsOneAndOthersTwice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/RearrangeArrayElementsBySign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ReverseArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/RotateArrayByK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SecondLargestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/EvaluateDivision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/KeysAndRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NearestExitFromEntranceInMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfProvinces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/ReorderRouteToMakeAllRoutesLeadsToZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/AsteroidCollision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeCountGoodNodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeLongestCommonAncestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeLongestZigZagPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeMaximumLevelSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreePathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeRightSideView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreesWithSameLeafs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/DecodeCombinedString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/DeleteMiddleNodeInLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/Dota2SenateQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/EqualRowAndColumnPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/FindTheDifferenceOfTwoArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/LongestSubArrayOfOnesAfterDeletingOneElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaxAverageSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaxConsecutiveOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaximumDepthOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaximumTwinSumOfLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/NumberOfRecentCalls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/OddAndEvenLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/PivotSumIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/RemoveStarsFromString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/SuccessfulPairsOfSpellsAndPotions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/UniqueNumberOfOccurrences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/AmstrongNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/GCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/pattern/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/PrintOneToN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/graph/GraphMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/graph/GraphMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/heap/HeapMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/heap/HeapMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/trie/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/trie/TrieMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datastructure/trie/TrieMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionsPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionsPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ListPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ListPractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/ConvertCharToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/ConvertCharToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/GenericList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/GenericList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +101,18 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TrappingRainWater">
-    <configuration name="HeapMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.datastructure.heap.HeapMain" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dinesh.algorithm.array" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NextPermutation">
+    <configuration name="KadaneAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.KadaneAlgorithm" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.datastructure.heap.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datatype.StringOperation" />
+    <configuration name="MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.MajorityElement" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datatype.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.StringUtils" />
+    <configuration name="MissingNumberInSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.MissingNumberInSortedArray" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.leetcode75.TrappingRainWater" />
+    <configuration name="NextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.NextPermutation" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.leetcode75.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.datastructure.trie.TrieMain" />
+    <configuration name="SortZerosOnesTwos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.SortZerosOnesTwos" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.datastructure.trie.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,19 +173,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HeapMain" />
-      <item itemvalue="Application.StringOperation" />
-      <item itemvalue="Application.StringUtils" />
-      <item itemvalue="Application.TrappingRainWater" />
-      <item itemvalue="Application.TrieMain" />
+      <item itemvalue="Application.KadaneAlgorithm" />
+      <item itemvalue="Application.MajorityElement" />
+      <item itemvalue="Application.MissingNumberInSortedArray" />
+      <item itemvalue="Application.NextPermutation" />
+      <item itemvalue="Application.SortZerosOnesTwos" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TrappingRainWater" />
-        <item itemvalue="Application.StringUtils" />
-        <item itemvalue="Application.StringOperation" />
-        <item itemvalue="Application.HeapMain" />
-        <item itemvalue="Application.TrieMain" />
+        <item itemvalue="Application.NextPermutation" />
+        <item itemvalue="Application.KadaneAlgorithm" />
+        <item itemvalue="Application.MajorityElement" />
+        <item itemvalue="Application.SortZerosOnesTwos" />
+        <item itemvalue="Application.MissingNumberInSortedArray" />
       </list>
     </recent_temporary>
   </component>
@@ -260,9 +312,134 @@
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/TrappingRainWater.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="126" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaxAverageSubArray.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaxConsecutiveOnes.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaxConsecutiveOnes.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/DecodeCombinedString.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/ReverseLinkedList.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaximumTwinSumOfLinkedList.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaximumTwinSumOfLinkedList.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/MaximumTwinSumOfLinkedList.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeCountGoodNodes.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeCountGoodNodes.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/SuccessfulPairsOfSpellsAndPotions.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/SuccessfulPairsOfSpellsAndPotions.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/SuccessfulPairsOfSpellsAndPotions.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfProvinces.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/utils/ConvertCharToString.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/AmstrongNumber.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/RotateArrayByK.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MissingNumberInSortedArray.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElement.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/KadaneAlgorithm.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
@@ -300,11 +477,22 @@
           </properties>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/leetcode75/BinaryTreeCountGoodNodes.java</url>
+          <line>87</line>
+          <properties class="com.dinesh.algorithm.leetcode75.BinaryTreeCountGoodNodes" method="recursion">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="com.dinesh.algorithm.leetcode75.ReverseLinkedList$ListNode" memberName="next" />
         <PinnedItemInfo parentTag="com.dinesh.datastructure.tree.AVLTree$AVLNode" memberName="left" />
+        <PinnedItemInfo parentTag="com.dinesh.algorithm.leetcode75.BinaryTreeCountGoodNodes$TreeNode" memberName="left" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

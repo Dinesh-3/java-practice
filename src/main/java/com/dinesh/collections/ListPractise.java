@@ -50,6 +50,7 @@ public class ListPractise {
         linkedList.add(4);
         linkedList.addFirst(5);
         linkedList.addLast(6);
+        linkedList.sort(Comparator.reverseOrder());
         linkedList.element(); // returns first element in LinkedList
         System.out.println("linkedList = " + linkedList);
         /**

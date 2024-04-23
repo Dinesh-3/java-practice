@@ -56,7 +56,7 @@ public class MapPractise {
          * public class Hashtable<K,V>
          *     extends Dictionary<K,V>
          *     implements Map<K,V>, Cloneable, java.io.Serializable
-         *
+         * ------------------------------------------
          * Points:
          *  1. Not allow any null key or value
          *  2. Synchronized thread safe

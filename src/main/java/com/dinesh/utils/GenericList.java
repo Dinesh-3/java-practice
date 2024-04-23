@@ -41,4 +41,5 @@ public class GenericList<T> implements Iterable<T>{
         Arrays.sort(nums);
         return Arrays.toString(this.list);
     }
+
 }

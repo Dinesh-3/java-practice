@@ -37,7 +37,7 @@ public class ArrayPractice {
          */
 
         List<Integer> integerList = Arrays.stream(randomIntegers).boxed().collect(Collectors.toList());
-        Arrays.stream(numbers, 0, 3).peek(number -> System.out.println(number)).toArray();
+        int[] array = Arrays.stream(numbers, 0, 3).peek(number -> System.out.println(number)).toArray();
 
         // It will work fine for Boxed
 //        Arrays.asList();

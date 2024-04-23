@@ -20,11 +20,11 @@ public class BooleanType {
         boolean isApplicable = eligible == TRUE ? true: false;
 
 
-        Boolean nullBoolean = null;
-
-        boolean isTrue = nullBoolean;
-
-        System.out.println("isTrue = " + isTrue);
+//        Boolean nullBoolean = null;
+//
+//        boolean isTrue = nullBoolean; // Throws -> Cannot invoke "java.lang.Boolean.booleanValue()" because "nullBoolean" is null
+//
+//        System.out.println("isTrue = " + isTrue);
 
     }
 }
