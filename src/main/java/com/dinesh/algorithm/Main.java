@@ -2,6 +2,16 @@ package algorithm;
 
 import java.util.*;
 
+/**
+ *
+ * Top 5 Math Skills To be mastered
+ * 1. Combinations
+ * 2. Logarithm
+ * 3. Factorial
+ * 4. Exponential
+ * 5. Modulus
+ */
+
 public class Main {
     public static void main(String[] args) {
 
