@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="23-04-2024">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/GenerateSpiralMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/Rotate2DArrayBy90Degree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BinaryExponentialPowerOfN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindElementInRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindFirstAndLastPositionOfElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindHowManyTimesArrayIsRotated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindMinimumInRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindPeakElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindSquareRootOfNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FloorAndCeilInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/LowerBound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SearchInRotatedSortedArrayWithDuplicateElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SingleNonRepeatElementInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/UpperBound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +53,7 @@
       <recent name="com.dinesh.algorithm.array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindNthRootOfNumber">
+  <component name="RunManager" selected="Application.KthMissingPositiveNumber">
     <configuration name="BinaryExponentialPowerOfN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.BinaryExponentialPowerOfN" />
       <module name="JavaPractice" />
@@ -95,19 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindPeakElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.FindPeakElement" />
-      <module name="JavaPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FindSquareRootOfNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.FindSquareRootOfNumber" />
       <module name="JavaPractice" />
@@ -121,8 +93,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNonRepeatElementInSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.SingleNonRepeatElementInSortedArray" />
+    <configuration name="KthMissingPositiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.KthMissingPositiveNumber" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dinesh.algorithm.binary_search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmallestDivisorInGivenThreshold" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.SmallestDivisorInGivenThreshold" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -135,19 +120,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.KthMissingPositiveNumber" />
+      <item itemvalue="Application.SmallestDivisorInGivenThreshold" />
       <item itemvalue="Application.BinaryExponentialPowerOfN" />
       <item itemvalue="Application.FindNthRootOfNumber" />
-      <item itemvalue="Application.FindPeakElement" />
       <item itemvalue="Application.FindSquareRootOfNumber" />
-      <item itemvalue="Application.SingleNonRepeatElementInSortedArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KthMissingPositiveNumber" />
+        <item itemvalue="Application.SmallestDivisorInGivenThreshold" />
         <item itemvalue="Application.FindNthRootOfNumber" />
         <item itemvalue="Application.BinaryExponentialPowerOfN" />
         <item itemvalue="Application.FindSquareRootOfNumber" />
-        <item itemvalue="Application.FindPeakElement" />
-        <item itemvalue="Application.SingleNonRepeatElementInSortedArray" />
       </list>
     </recent_temporary>
   </component>
@@ -456,6 +441,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java</url>
           <line>45</line>
           <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
