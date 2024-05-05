@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="23-04-2024">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/AggressiveCows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BSSearchIn2DColumnSortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BinarySearchIn2DMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/CapacityToShipPackagesWithinDDays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KokoEatingBananas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinNumberOfDaysToMakeMBouquets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/StudentBookAllocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,9 +61,9 @@
       <recent name="com.dinesh.algorithm.array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KthMissingPositiveNumber">
-    <configuration name="BinaryExponentialPowerOfN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.BinaryExponentialPowerOfN" />
+  <component name="RunManager" selected="Application.BSSearchIn2DColumnSortedMatrix">
+    <configuration name="BSSearchIn2DColumnSortedMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.BSSearchIn2DColumnSortedMatrix" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -67,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindNthRootOfNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.FindNthRootOfNumber" />
+    <configuration name="BinarySearchIn2DMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.BinarySearchIn2DMatrix" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindSquareRootOfNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.FindSquareRootOfNumber" />
+    <configuration name="KokoEatingBananas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.KokoEatingBananas" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KthMissingPositiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.KthMissingPositiveNumber" />
+    <configuration name="MinimizeMaxDistanceToGasStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.MinimizeMaxDistanceToGasStation" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmallestDivisorInGivenThreshold" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.SmallestDivisorInGivenThreshold" />
+    <configuration name="SplitArrayLargestSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.SplitArrayLargestSum" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -120,19 +128,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.KthMissingPositiveNumber" />
-      <item itemvalue="Application.SmallestDivisorInGivenThreshold" />
-      <item itemvalue="Application.BinaryExponentialPowerOfN" />
-      <item itemvalue="Application.FindNthRootOfNumber" />
-      <item itemvalue="Application.FindSquareRootOfNumber" />
+      <item itemvalue="Application.BSSearchIn2DColumnSortedMatrix" />
+      <item itemvalue="Application.BinarySearchIn2DMatrix" />
+      <item itemvalue="Application.KokoEatingBananas" />
+      <item itemvalue="Application.MinimizeMaxDistanceToGasStation" />
+      <item itemvalue="Application.SplitArrayLargestSum" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KthMissingPositiveNumber" />
-        <item itemvalue="Application.SmallestDivisorInGivenThreshold" />
-        <item itemvalue="Application.FindNthRootOfNumber" />
-        <item itemvalue="Application.BinaryExponentialPowerOfN" />
-        <item itemvalue="Application.FindSquareRootOfNumber" />
+        <item itemvalue="Application.BSSearchIn2DColumnSortedMatrix" />
+        <item itemvalue="Application.BinarySearchIn2DMatrix" />
+        <item itemvalue="Application.MinimizeMaxDistanceToGasStation" />
+        <item itemvalue="Application.KokoEatingBananas" />
+        <item itemvalue="Application.SplitArrayLargestSum" />
       </list>
     </recent_temporary>
   </component>
@@ -462,6 +470,61 @@
           <line>9</line>
           <option name="timeStamp" value="292" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/CapacityToShipPackagesWithinDDays.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/AggressiveCows.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/AggressiveCows.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/StudentBookAllocation.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KokoEatingBananas.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BinarySearchIn2DMatrix.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BSSearchIn2DColumnSortedMatrix.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
           <line>56</line>
@@ -506,6 +569,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java</url>
+          <line>14</line>
+          <properties class="com.dinesh.algorithm.binary_search.SplitArrayLargestSum" method="splitArray">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
+          <line>98</line>
+          <properties class="com.dinesh.algorithm.binary_search.MinimizeMaxDistanceToGasStation" method="MinimiseMaxDistancePriorityQueue">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="315" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
