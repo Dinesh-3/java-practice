@@ -15,32 +15,37 @@ import java.util.List;
 public class NextPermutation {
 
     public static void main(String[] args) {
-        int[] arr = { 2,3,1 };
+        int[] arr = { 3, 2, 1 };
 
 
         // Step 1 Find the intersection where i < i + 1
         int index = 0;
-        for (int i = arr.length - 2; i >= 0; i--) {
-            if(arr[i] < arr[i+1])
+        for (int i = arr.length - 1; i > 0; i--) {
+            if(arr[i-1] < arr[i])
             {
-                index = i;
+                index = i - 1;
                 break;
             }
         }
 
-        // Step 2 Find and replace minimum element which is just greater than intersection index
-        int smallerMax = index + 1;
-        for (int i = arr.length - 1; i >= index; i--) {
-            if(arr[i] > arr[index]) {
-                smallerMax = i;
-                break;
+        if(index >= 0)
+        {
+            // Step 2 Find and replace minimum element which is just greater than intersection index
+            int smallerMax = index + 1;
+            for (int i = arr.length - 1; i >= index; i--) {
+                if(arr[i] > arr[index] && arr[i] < arr[smallerMax] ) {
+                    smallerMax = i;
+                    break;
+                }
             }
+
+            swap(arr, smallerMax, index);
         }
-        swap(arr, smallerMax, index);
 
         // step 3 sort the right section of the intersection array
-        Arrays.sort(arr, index, arr.length);
+        Arrays.sort(arr, index + 1, arr.length);
 
+        System.out.println("arr = " + Arrays.toString(arr));
     }
 
     private static void swap(int[] arr, int first, int second) {
