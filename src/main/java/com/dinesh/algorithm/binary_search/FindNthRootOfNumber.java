@@ -14,6 +14,10 @@ public class FindNthRootOfNumber {
 
         FindNthRootOfNumber root = new FindNthRootOfNumber();
 
+        double i = Math.ceil((double) 3 / 2);
+
+        System.out.println("i = " + i);
+
         int result = root.nthRoot(sq, number);
         System.out.println("result = " + result);
 

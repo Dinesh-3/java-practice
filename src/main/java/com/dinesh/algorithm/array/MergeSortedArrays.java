@@ -16,6 +16,7 @@ public class MergeSortedArrays {
         int[] nums2 = {1};
         sortedArrays.merge(nums1, nums2);
         sortedArrays.mergeTwoSortedArray();
+
     }
 
     public void merge(int[] nums1, int[] nums2) {
@@ -72,6 +73,30 @@ public class MergeSortedArrays {
 
         Arrays.sort(arrayOne);
         Arrays.sort(arrayTwo);
+
+        /**
+         *     public void mergeTwoSortedArray() {
+         *         int[] nums1 = { 1, 3, 5, 7 };
+         *         int m = nums1.length;
+         *         int[] nums2 = { 0, 2, 6, 8, 7 };
+         *         int n = nums2.length;
+         *
+         *         int n1Right = m - 1;
+         *         int n2Left = 0;
+         *
+         *         while( n1Right >= 0 && n2Left < n && nums1[n1Right] >= nums2[n2Left]) {
+         *             int temp = nums1[n1Right];
+         *             nums1[n1Right] = nums2[n2Left];
+         *             nums2[n2Left] = temp;
+         *             n1Right--;
+         *             n2Left++;
+         *         }
+         *
+         *         Arrays.sort(nums1);
+         *         Arrays.sort(nums2);
+         *
+         *     }
+         */
 
     }
 

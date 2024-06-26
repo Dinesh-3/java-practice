@@ -6,7 +6,6 @@ package com.dinesh.algorithm.binary_search;
  */
 public class FindMinimumInRotatedSortedArray {
     public static void main(String[] args) {
-
         int[] nums = { 18,13,15,17 };
 
         int minIndex = approachOne(nums);
@@ -16,25 +15,25 @@ public class FindMinimumInRotatedSortedArray {
     }
 
     private static int approachTwo(int[] nums) {
-        int leftIndex = 0;
-        int rightIndex = nums.length - 1;
+        int low = 0;
+        int high = nums.length - 1;
 
-        int minValue = Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
 
-        while (leftIndex <= rightIndex) {
+        while(low <= high) {
+            int mid = (low + high) / 2;
 
-            int middleIndex = leftIndex + ( rightIndex - leftIndex ) / 2;
-
-            if(nums[leftIndex] <= nums[middleIndex]) {
-                minValue = Math.min(nums[middleIndex], minValue);
-                leftIndex = middleIndex + 1;
+            if(nums[low] <= nums[mid]) {
+                min = Math.min(nums[low], min);
+                low = mid + 1;
             } else {
-                minValue = Math.min(nums[middleIndex], minValue);
-                rightIndex = middleIndex - 1;
+                min = Math.min(nums[mid], min);
+                high = mid - 1;
             }
 
         }
-        return minValue;
+
+        return min;
     }
 
     private static int approachOne(int[] nums) {

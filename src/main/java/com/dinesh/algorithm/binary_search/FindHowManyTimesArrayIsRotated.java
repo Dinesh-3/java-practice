@@ -42,4 +42,22 @@ public class FindHowManyTimesArrayIsRotated {
 
     }
 
+    int findKRotationOptimal(int arr[], int n) {
+        int low = 0;
+        int high = arr.length - 1;
+
+        if(arr[low] <= arr[arr.length - 1])
+            return 0;
+
+        while( low <= high ) {
+            int mid = (low + high) / 2;
+            if(arr[mid] >= arr[0])
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+
+        return low;
+    }
+
 }

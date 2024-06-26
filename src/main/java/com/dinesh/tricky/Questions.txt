@@ -41,6 +41,10 @@ Q) Does “finally” always execute in Java?
 Not in following cases
 
 “System.exit()” function
+Thread Termination // Thread.currentThread().stop(); // Forcefully stops the thread
+OutOfMemoryError or StackOverflowError
+JVM Shutdown
+
 system crash
 
 Q) What Methods Does the Object Class Have?

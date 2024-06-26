@@ -15,41 +15,35 @@ public class FindFirstAndLastPositionOfElement {
     }
 
     public int[] searchRange(int[] nums, int target) {
+        int low = 0;
+        int high = nums.length - 1;
 
-        int leftIndex = 0;
-        int rightIndex = nums.length - 1;
-
-        while(leftIndex <= rightIndex) {
-
-            int mid = leftIndex + ( rightIndex - leftIndex ) / 2;
-
-            if(nums[mid] == target) {
-                int first = mid;
-
-                for(int i = mid; i >= 0; i--) {
-                    if(nums[i] != target)
-                        break;
-                    first = i;
-                }
-
-                int last = mid;
-                for(int i = mid; i < nums.length; i++) {
-                    if(nums[i] != target)
-                        break;
-                    last = i;
-                }
-
-                return new int[]{ first, last };
-            }
-
-            if(nums[mid] < target)
-                leftIndex = mid + 1;
+        int lowerBound = -1;
+        while(low <= high) {
+            int mid = ( low + high ) / 2;
+            if(nums[mid] == target)
+                lowerBound = mid;
+            if(nums[mid] >= target)
+                high = mid - 1;
             else
-                rightIndex = mid - 1;
-
+                low = mid + 1;
         }
 
-        return new int[]{ -1, -1 };
+        if(lowerBound == -1)
+            return new int[]{ -1, -1 };
 
+        low = lowerBound;
+        high = nums.length - 1;
+        int upperBound = -1;
+        while(low <= high) {
+            int mid = ( low + high ) / 2;
+            if(nums[mid] == target)
+                upperBound = mid;
+            if(nums[mid] <= target)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return new int[]{ lowerBound, upperBound };
     }
 }

@@ -27,7 +27,7 @@ public class SplitArrayLargestSum {
         int ans = max;
         while (left <= right) {
             int middle = ( left + right ) / 2;
-            if(isPossibleSum(numbers, middle, k)) {
+            if(isPossibleSum(middle, numbers, k)) {
                 left = middle + 1;
                 ans = middle;
             }
@@ -38,24 +38,22 @@ public class SplitArrayLargestSum {
         return ans;
     }
 
-    private boolean isPossibleSum(int[] numbers, int target, int subLength) {
+    private boolean isPossibleSum(int number, int[] nums, int k) {
         int count = 0;
-
         int sum = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            int num = numbers[i];
+
+        for(int num: nums) {
             sum += num;
-            if(sum > target) {
+            if(sum > number)
+            {
                 count++;
                 sum = num;
             }
 
-            if(count >= subLength)
-                return true;
         }
-        if(sum >= target) {
+
+        if(sum <= number)
             count++;
-        }
-        return count >= subLength;
+        return count <= k;
     }
 }

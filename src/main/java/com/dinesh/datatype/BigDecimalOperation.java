@@ -1,6 +1,7 @@
 package datatype;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import static java.math.BigDecimal.ONE;
 
@@ -25,6 +26,13 @@ public class BigDecimalOperation {
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(30000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(30000)));
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(35000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(35000)));
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(40000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(40000)));
+
+        BigDecimal quantity = new BigDecimal("3");
+        BigDecimal total = price.multiply(quantity);
+
+        total = total.setScale(2, RoundingMode.HALF_EVEN);
+
+        System.out.println("Total: $" + total);
 
     }
 }

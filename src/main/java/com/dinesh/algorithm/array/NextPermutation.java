@@ -48,6 +48,26 @@ public class NextPermutation {
         System.out.println("arr = " + Arrays.toString(arr));
     }
 
+    public void nextPermutationTwo(int[] arr) {
+        int index = arr.length - 2;
+        while(index >= 0 && arr[index] >= arr[index + 1])
+            index--;
+        if(index >= 0)
+        {
+            int smallerMax = index + 1;
+            for (int i = arr.length - 1; i > index; i--) {
+                if(arr[i] > arr[index]) {
+                    smallerMax = i;
+                    break;
+                }
+            }
+            swap(arr, smallerMax, index);
+        }
+
+        Arrays.sort(arr, index + 1, arr.length);
+
+    }
+
     private static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];

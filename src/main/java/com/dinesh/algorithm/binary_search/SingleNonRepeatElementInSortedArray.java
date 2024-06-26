@@ -10,9 +10,9 @@ public class SingleNonRepeatElementInSortedArray {
     public static void main(String[] args) {
         SingleNonRepeatElementInSortedArray array = new SingleNonRepeatElementInSortedArray();
 
-        int[] nums = { 1, 1, 2, 2, 3 };
+        int[] nums = { 1,1,2,2,3 };
 
-        int result = array.singleNonDuplicate(nums);
+        int result = array.singleNonDuplicateTwo(nums);
 
         System.out.println("result = " + result);
     }
@@ -39,6 +39,31 @@ public class SingleNonRepeatElementInSortedArray {
                 leftIndex = middleIndex + 1;
             else
                 rightIndex = middleIndex - 1;
+        }
+
+        return -1;
+    }
+
+    public int singleNonDuplicateTwo(int[] nums) {
+        int low = 0;
+        int high = nums.length - 1;
+
+        while( low <= high ) {
+            int mid = ( low + high ) / 2;
+
+            if(mid - 1 < 0 && mid + 1 >= nums.length)
+                return nums[mid];
+            if(mid - 1 < 0 && nums[mid] != nums[mid + 1])
+                return nums[mid];
+            if(mid + 1 >= nums.length && nums[mid - 1] != nums[mid])
+                return nums[mid];
+            if(nums[mid - 1] != nums[mid] && nums[mid] != nums[mid + 1])
+                return nums[mid];
+
+            if((mid % 2 == 1 && nums[mid] == nums[mid - 1]) || (mid % 2 == 0 && nums[mid] == nums[mid + 1]))
+                low = mid + 1;
+            else
+                high = mid - 1;
         }
 
         return -1;

@@ -10,7 +10,7 @@ public class NativeKeyword {
      */
     public native int square(int i);
     public static void main(String[] args) {
-        System.loadLibrary("Main");
+//        System.loadLibrary("D:\\practice\\JavaPractice\\src\\main\\java\\com\\dinesh\\tricky\\Main.c");
         System.out.println(new NativeKeyword().square(2));
 
     }

@@ -5,11 +5,40 @@ package com.dinesh.algorithm.array;
  */
 public class MajorityElement {
     public static void main(String[] args) {
-        int[] numbers = { 6,5,5 };
+        int[] numbers = { 10,9,9,9,10 };
 
         MajorityElement element = new MajorityElement();
         element.majorityElement(numbers);
         element.mooresVotingAlgorithm(numbers);
+        element.majorityElementA(numbers);
+    }
+
+    public int majorityElementA(int[] nums) {
+        int major = -1;
+        int count = 0;
+
+        for(int i = 0; i < nums.length; i++) {
+            if(count == 0) {
+                major = nums[i];
+                count++;
+            } else {
+                if(major == nums[i])
+                    count++;
+                else
+                    count--;
+            }
+        }
+
+        count = 0;
+        for (int num : nums)
+            if (num == major)
+                count++;
+
+        if(count >= nums.length / 2)
+            return major;
+
+        return -1;
+
     }
 
     public int majorityElement(int[] nums) {

@@ -5,24 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/InsertNewInterval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LargestSubArrayWithSumZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElementTwoGreaterThanNby3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MaximumProductSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/ConvertInToBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/MinimumBitFlipsToConvertNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/AssignCookies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/FractionalKnapSack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/JobSequencingProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/JumpGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/JumpGame2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/MinimumCoins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/MinimumPlatformsRequired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/NMettingsInOneRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/ValidParanthesisChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArraySumEqualsK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BinarySearch2DRowWithMaxOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/IsoMorphicStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/LongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/RemoveOutMostParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/StringValidAnagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeIntervals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/BuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/BuyAndSellStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/GenerateSpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/GenerateSpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LargestSubArrayWithSumZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LargestSubArrayWithSumZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/Rotate2DArrayBy90Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/Rotate2DArrayBy90Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SetMatrixZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SetMatrixZeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BSSearchIn2DColumnSortedMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/BSSearchIn2DColumnSortedMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindElementInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindElementInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindFirstAndLastPositionOfElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindFirstAndLastPositionOfElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindHowManyTimesArrayIsRotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindHowManyTimesArrayIsRotated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindMinimumInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindMinimumInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindSquareRootOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindSquareRootOfNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SingleNonRepeatElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SingleNonRepeatElementInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Abstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Abstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/InnerClassPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/InnerClassPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/NativeKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/NativeKeyword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Questions.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +69,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/fullstack/apimart_backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/practice/JavaPractice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,13 +83,13 @@
       <recent name="com.dinesh.algorithm.array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JumpGame2">
-    <configuration name="InsertNewInterval" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.array.InsertNewInterval" />
+  <component name="RunManager" selected="Application.GarbageCollector">
+    <configuration name="BSSearchIn2DColumnSortedMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_search.BSSearchIn2DColumnSortedMatrix" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.array.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.binary_search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobSequencingProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.greedy.JobSequencingProblem" />
+    <configuration name="BreakDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tricky.BreakDemo" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.greedy.*" />
+          <option name="PATTERN" value="tricky.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.greedy.JumpGame" />
+    <configuration name="GarbageCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tricky.GarbageCollector" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.greedy.*" />
+          <option name="PATTERN" value="tricky.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpGame2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.greedy.JumpGame2" />
+    <configuration name="IsoMorphicStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.string.IsoMorphicStrings" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.greedy.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumPlatformsRequired" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.greedy.MinimumPlatformsRequired" />
+    <configuration name="NativeKeyword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tricky.NativeKeyword" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.greedy.*" />
+          <option name="PATTERN" value="tricky.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,19 +150,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JumpGame2" />
-      <item itemvalue="Application.JobSequencingProblem" />
-      <item itemvalue="Application.InsertNewInterval" />
-      <item itemvalue="Application.MinimumPlatformsRequired" />
-      <item itemvalue="Application.JumpGame" />
+      <item itemvalue="Application.BreakDemo" />
+      <item itemvalue="Application.GarbageCollector" />
+      <item itemvalue="Application.IsoMorphicStrings" />
+      <item itemvalue="Application.NativeKeyword" />
+      <item itemvalue="Application.BSSearchIn2DColumnSortedMatrix" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JumpGame2" />
-        <item itemvalue="Application.JobSequencingProblem" />
-        <item itemvalue="Application.InsertNewInterval" />
-        <item itemvalue="Application.MinimumPlatformsRequired" />
-        <item itemvalue="Application.JumpGame" />
+        <item itemvalue="Application.GarbageCollector" />
+        <item itemvalue="Application.NativeKeyword" />
+        <item itemvalue="Application.BreakDemo" />
+        <item itemvalue="Application.IsoMorphicStrings" />
+        <item itemvalue="Application.BSSearchIn2DColumnSortedMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -404,11 +418,6 @@
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElement.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/KadaneAlgorithm.java</url>
           <line>12</line>
           <option name="timeStamp" value="253" />
@@ -417,11 +426,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/NextPermutation.java</url>
           <line>48</line>
           <option name="timeStamp" value="254" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindFirstAndLastPositionOfElement.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="270" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindElementInRotatedSortedArray.java</url>
@@ -445,7 +449,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java</url>
-          <line>27</line>
+          <line>31</line>
           <option name="timeStamp" value="285" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -455,7 +459,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindNthRootOfNumber.java</url>
-          <line>45</line>
+          <line>49</line>
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -472,11 +476,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SmallestDivisorInGivenThreshold.java</url>
           <line>10</line>
           <option name="timeStamp" value="291" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/CapacityToShipPackagesWithinDDays.java</url>
@@ -497,11 +496,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/StudentBookAllocation.java</url>
           <line>57</line>
           <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SplitArrayLargestSum.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KokoEatingBananas.java</url>
@@ -594,11 +588,6 @@
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SetMatrixZeros.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="348" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CountAllSumSequencesWithSumEqualK.java</url>
           <line>16</line>
           <option name="timeStamp" value="350" />
@@ -625,12 +614,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeSortedArrays.java</url>
-          <line>75</line>
+          <line>100</line>
           <option name="timeStamp" value="366" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MergeSortedArrays.java</url>
-          <line>57</line>
+          <line>58</line>
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -746,6 +735,31 @@
           <line>16</line>
           <option name="timeStamp" value="403" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindElementInRotatedSortedArray.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/SingleNonRepeatElementInSortedArray.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindPeakElement.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/KthMissingPositiveNumber.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/IsoMorphicStrings.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
           <line>56</line>
@@ -817,6 +831,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/IsoMorphicStrings.java</url>
+          <line>14</line>
+          <properties class="com.dinesh.algorithm.string.IsoMorphicStrings" method="isIsomorphic">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="414" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

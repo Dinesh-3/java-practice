@@ -39,7 +39,7 @@ class OuterClass {
     }
 }
 
-class InnerClassPractice {
+public class InnerClassPractice {
     // How to create instance of static
     // and non static nested class?
     public static void main(String args[])

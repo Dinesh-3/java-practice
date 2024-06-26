@@ -30,4 +30,22 @@ public class BSSearchIn2DColumnSortedMatrix {
         }
         return false;
     }
+
+    public boolean searchMatrixTwo(int[][] matrix, int target) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int row = 0;
+        int col = n - 1;
+
+        while(row < m && col >= 0) {
+            if(matrix[row][col] == target)
+                return true;
+            if(target < matrix[row][col])
+                col--;
+            else
+                row++;
+        }
+
+        return false;
+    }
 }

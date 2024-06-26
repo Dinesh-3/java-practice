@@ -28,7 +28,7 @@ public class Dog extends Animal{
 
     @Override
     protected void finalize() throws Throwable {
-        System.out.println("Garbage Collected: " + this);
+        System.out.println("Inside Finalize method Garbage Collected: " + this);
 //        super.finalize();
     }
 }
