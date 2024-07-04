@@ -1,4 +1,4 @@
-package design_patterns.behavioural.template1;
+package com.dinesh.design_patterns.behavioural.template1;
 
 public abstract class Task {
   private final AuditTrail auditTrail;

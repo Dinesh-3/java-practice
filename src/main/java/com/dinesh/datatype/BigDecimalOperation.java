@@ -26,7 +26,7 @@ public class BigDecimalOperation {
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(30000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(30000)));
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(35000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(35000)));
         System.out.println("BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(40000)) = " + BigDecimal.valueOf(35000).compareTo(BigDecimal.valueOf(40000)));
-
+        BigDecimal.valueOf(45);
         BigDecimal quantity = new BigDecimal("3");
         BigDecimal total = price.multiply(quantity);
 

@@ -1,4 +1,4 @@
-package design_patterns.behavioural.template2;
+package com.dinesh.design_patterns.behavioural.template2;
 
 public class ChatWindow extends Window {
     @Override

@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 public class ConvertCharToString {
     public static void main(String[] args) {
         char[] chars = {'q', 'd', 'a', 'c'};
-        System.out.println(new String(chars));
+        System.out.println("new String(chars) = " + new String(chars));
         System.out.println("String.valueOf(chars); = " + String.valueOf(chars));
         System.out.println("String.copyValueOf(chars); = " + String.copyValueOf(chars));
 

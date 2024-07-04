@@ -1,4 +1,4 @@
-package design_patterns.behavioural.mediator2;
+package com.dinesh.design_patterns.behavioural.mediator2;
 
 import java.util.ArrayList;
 import java.util.List;

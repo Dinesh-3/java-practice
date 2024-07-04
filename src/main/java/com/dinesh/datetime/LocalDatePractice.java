@@ -11,11 +11,11 @@ public class LocalDatePractice {
 //        System.out.println("effectiveDate = " + effectiveDate.compareTo(policyStartDate.minusYears(3)));
 
 //        System.out.println("LocalDate.now().minusYears(3) = " + LocalDate.now().minusYears(3));
-
+        LocalDateTime localDateTime = LocalDateTime.now();
         LocalDate policyStartDate = LocalDate.of(2022, 1, 2);
         LocalDate effectiveDate = LocalDate.of(2025, 1, 2);
 
-        System.out.println("policyStartDate = " + policyStartDate.plusYears(3).minusDays(1).isBefore(effectiveDate));
+        System.out.println("policyStartDate = " + policyStartDate.plusYears(3).minusDays(1));
 
 //        System.out.println("policyStartDate = " + policyStartDate.plusYears(3).isBefore(effectiveDate));
 

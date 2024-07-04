@@ -1,4 +1,4 @@
-package design_patterns.behavioural.memento1;
+package com.dinesh.design_patterns.behavioural.memento1;
 
 public class Editor {
   private String content;

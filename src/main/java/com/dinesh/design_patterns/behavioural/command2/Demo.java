@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command2;
+package com.dinesh.design_patterns.behavioural.command2;
 
 public class Demo {
     public static void show() {

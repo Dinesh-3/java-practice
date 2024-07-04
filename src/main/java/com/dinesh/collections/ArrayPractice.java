@@ -89,6 +89,7 @@ public class ArrayPractice {
         Arrays.parallelSort(numbers, 0, 2);
 
         Spliterator.OfInt spliterator = Arrays.spliterator(numbers);
+//        spliterator.forEachRemaining((int a) -> System.out.println("spliterator = " + a));
 
         System.out.println("\n--- ARRAY OPERATION ---\n");
         final String[] MONTHS = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };

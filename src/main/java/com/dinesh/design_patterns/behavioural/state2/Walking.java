@@ -1,4 +1,4 @@
-package design_patterns.behavioural.state2;
+package com.dinesh.design_patterns.behavioural.state2;
 
 public class Walking implements TravelMode {
     @Override

@@ -82,4 +82,33 @@ public class VerticalOrderTraversalBinaryTree {
         return output;
     }
 
+    public List<List<Integer>> verticalTraversalRecursive(TreeNode root) {
+        SortedMap<Integer, SortedMap<Integer, Queue<Integer>>> map = new TreeMap<>();
+        traverse(root, 0, 0, map);
+
+        List<List<Integer>> result = new ArrayList<>();
+        for(var entry: map.entrySet()) {
+            List<Integer> level = new ArrayList<>();
+            for(var queue: entry.getValue().entrySet())
+                while(!queue.getValue().isEmpty())
+                    level.add(queue.getValue().remove());
+            result.add(level);
+        }
+
+        return result;
+    }
+
+    private static void traverse(TreeNode root, int vertical, int level, SortedMap<Integer, SortedMap<Integer, Queue<Integer>>> map) {
+        if(root == null)
+            return;
+
+        map.computeIfAbsent(vertical, k -> new TreeMap<>())
+                .computeIfAbsent(level, k -> new PriorityQueue<>())
+                .add(root.val);
+
+        traverse(root.left, vertical - 1, level + 1, map);
+        traverse(root.right, vertical + 1, level + 1, map);
+
+    }
+
 }

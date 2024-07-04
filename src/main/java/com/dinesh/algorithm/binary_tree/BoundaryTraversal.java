@@ -48,13 +48,12 @@ public class BoundaryTraversal {
         while (current != null) {
             if(current.left == null && current.right == null)
                 break;
-            if(current.right != null) {
-                stack.push(current.val);
+            stack.push(current.val);
+
+            if(current.right != null)
                 current = current.right;
-            } else {
-                stack.push(current.val);
+            else
                 current =  current.left;
-            }
         }
 
         while (!stack.isEmpty())
@@ -80,13 +79,11 @@ public class BoundaryTraversal {
         while (current != null) {
             if(current.left == null && current.right == null)
                 break;
-            if(current.left != null) {
-                result.add(current.val);
+            result.add(current.val);
+            if(current.left != null)
                 current =  current.left;
-            } else {
-                result.add(current.val);
+            else
                 current = current.right;
-            }
         }
 
     }

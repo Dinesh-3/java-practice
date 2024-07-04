@@ -1,4 +1,4 @@
-package design_patterns.behavioural.iterator2;
+package com.dinesh.design_patterns.behavioural.iterator2;
 
 public interface Iterator {
   boolean hasNext();

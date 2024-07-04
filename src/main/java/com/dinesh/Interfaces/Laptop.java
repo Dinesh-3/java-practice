@@ -1,4 +1,4 @@
-package Interfaces;
+package com.dinesh.Interfaces;
 
 public interface Laptop {
     int RAM = 8; // public static is unnecessary

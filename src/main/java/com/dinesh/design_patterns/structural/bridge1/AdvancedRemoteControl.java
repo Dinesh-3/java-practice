@@ -1,4 +1,4 @@
-package design_patterns.structural.bridge1;
+package com.dinesh.design_patterns.structural.bridge1;
 
 public class AdvancedRemoteControl extends RemoteControl {
   public AdvancedRemoteControl(Device device) {

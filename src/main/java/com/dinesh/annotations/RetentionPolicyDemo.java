@@ -42,7 +42,7 @@ class B {
 }
 
 @RuntimeRetention
-class C {
+ class C {
 };
 
 // Main class

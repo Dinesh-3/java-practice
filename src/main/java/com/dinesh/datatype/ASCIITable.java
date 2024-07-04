@@ -4,12 +4,17 @@ package datatype;
 public class ASCIITable {
     // main() method start
     public static void main(String[] args) {
+        char a = 'a';
+        char A = 'A';
+        System.out.println("(int) a = " + (int) a);
+        System.out.println("(int) A = " + (int) A);
+
         // design header for the ASCII Table
         System.out.printf("%1$-8s %2$-10s %3$s\n", "Decimal", "ASCII", "Hex");
         // use for loop to print all possible ASCII values
         // set value for min and max ASCII values
         int min = 0;
-        int max = 128;
+        int max = 256;
         //for loop
         for (int i = min; i < max; i++) {
             // convert each value into character

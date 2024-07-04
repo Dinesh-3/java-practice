@@ -1,4 +1,4 @@
-package design_patterns.structural.composite1;
+package com.dinesh.design_patterns.structural.composite1;
 
 public class Shape implements Component {
 

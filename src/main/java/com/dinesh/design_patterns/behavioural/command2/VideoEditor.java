@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command2;
+package com.dinesh.design_patterns.behavioural.command2;
 
 public class VideoEditor {
     private float contrast = 0.5f;

@@ -1,23 +1,23 @@
-package design_patterns.structural;
+package com.dinesh.design_patterns.structural;
 
-import design_patterns.structural.adapter1.*;
-import design_patterns.structural.adapter1.avaFilters.Caramel;
-import design_patterns.structural.bridge1.AdvancedRemoteControl;
-import design_patterns.structural.bridge1.RemoteControl;
-import design_patterns.structural.bridge1.SamsungTV;
-import design_patterns.structural.bridge1.SonyTV;
-import design_patterns.structural.composite1.Group;
-import design_patterns.structural.composite1.Shape;
-import design_patterns.structural.decorator1.CloudStream;
-import design_patterns.structural.decorator1.CompressedCloudStream;
-import design_patterns.structural.decorator1.EncryptedCloudStream;
-import design_patterns.structural.decorator1.Stream;
-import design_patterns.structural.facade1.NotificationService;
-import design_patterns.structural.flyweight1.Point;
-import design_patterns.structural.flyweight1.PointIconFactory;
-import design_patterns.structural.flyweight1.PointService;
-import design_patterns.structural.proxy1.EbookProxy;
-import design_patterns.structural.proxy1.Library;
+import com.dinesh.design_patterns.structural.adapter1.*;
+import com.dinesh.design_patterns.structural.adapter1.avaFilters.Caramel;
+import com.dinesh.design_patterns.structural.bridge1.AdvancedRemoteControl;
+import com.dinesh.design_patterns.structural.bridge1.RemoteControl;
+import com.dinesh.design_patterns.structural.bridge1.SamsungTV;
+import com.dinesh.design_patterns.structural.bridge1.SonyTV;
+import com.dinesh.design_patterns.structural.composite1.Group;
+import com.dinesh.design_patterns.structural.composite1.Shape;
+import com.dinesh.design_patterns.structural.decorator1.CloudStream;
+import com.dinesh.design_patterns.structural.decorator1.CompressedCloudStream;
+import com.dinesh.design_patterns.structural.decorator1.EncryptedCloudStream;
+import com.dinesh.design_patterns.structural.decorator1.Stream;
+import com.dinesh.design_patterns.structural.facade1.NotificationService;
+import com.dinesh.design_patterns.structural.flyweight1.Point;
+import com.dinesh.design_patterns.structural.flyweight1.PointIconFactory;
+import com.dinesh.design_patterns.structural.flyweight1.PointService;
+import com.dinesh.design_patterns.structural.proxy1.EbookProxy;
+import com.dinesh.design_patterns.structural.proxy1.Library;
 
 /**
  *  Structural design patterns are concerned with how classes and objects can be composed, to form larger structures.

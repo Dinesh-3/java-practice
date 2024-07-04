@@ -26,4 +26,21 @@ public class NumberOfSubstringContainerAllThreeCharacters {
         System.out.println("count = " + count);
         return count;
     }
+
+    public int numberOfSubstringsTwo(String s) {
+        int[] lastSeens = { -1, -1, -1 };
+
+        int count = 0;
+
+        for(int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            lastSeens[ch-'a'] = i;
+
+            count += Math.min(lastSeens[0], Math.min(lastSeens[1], lastSeens[2])) + 1;
+        }
+
+        return count;
+
+    }
 }

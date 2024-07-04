@@ -1,4 +1,4 @@
-package design_patterns.behavioural.state1;
+package com.dinesh.design_patterns.behavioural.state1;
 
 public class Canvas {
   private Tool currentTool;

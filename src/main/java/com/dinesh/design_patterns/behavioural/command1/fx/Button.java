@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command1.fx;
+package com.dinesh.design_patterns.behavioural.command1.fx;
 
 public class Button {
   private String label;

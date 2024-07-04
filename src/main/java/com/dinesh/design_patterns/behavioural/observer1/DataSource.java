@@ -1,4 +1,4 @@
-package design_patterns.behavioural.observer1;
+package com.dinesh.design_patterns.behavioural.observer1;
 
 public class DataSource extends Subject {
   private int value;

@@ -45,4 +45,38 @@ public class LongestRepeatingCharacterReplacement {
 
     }
 
+    public int characterReplacement(String s, int k) {
+        int[] chars = new int[256];
+        int maxCharL = 0;
+        int maxChar = 'A';
+
+        int left = 0;
+        int right = 0;
+
+        int maxLength = 0;
+        while(right < s.length()) {
+            char ch = s.charAt(right);
+            chars[ch]++;
+            if(chars[ch] > maxCharL) {
+                maxChar = chars[ch];
+                maxCharL = chars[ch];
+            }
+            if((right - left - maxCharL + 1) <= k)
+            {
+                maxLength = Math.max(maxLength, right - left + 1);
+            } else {
+                char charLeft = s.charAt(left);
+                chars[charLeft]--;
+
+                if(charLeft == maxChar)
+                    maxCharL--;
+                left++;
+            }
+            right++;
+        }
+
+        return maxLength;
+
+    }
+
 }

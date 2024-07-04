@@ -1,4 +1,4 @@
-package enums;
+package com.dinesh.enums;
 
 public enum Genre {
     ACTION ( "Action"),

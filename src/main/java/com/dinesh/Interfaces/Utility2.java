@@ -1,4 +1,4 @@
-package Interfaces;
+package com.dinesh.Interfaces;
 
 public interface Utility2 {
     String interfaceName = Utility2.class.getSimpleName();

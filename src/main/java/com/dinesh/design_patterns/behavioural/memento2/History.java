@@ -1,4 +1,4 @@
-package design_patterns.behavioural.memento2;
+package com.dinesh.design_patterns.behavioural.memento2;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

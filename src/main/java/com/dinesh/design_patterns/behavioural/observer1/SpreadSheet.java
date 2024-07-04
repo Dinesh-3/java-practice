@@ -1,4 +1,4 @@
-package design_patterns.behavioural.observer1;
+package com.dinesh.design_patterns.behavioural.observer1;
 
 public class SpreadSheet implements Observer {
   private DataSource dataSource;

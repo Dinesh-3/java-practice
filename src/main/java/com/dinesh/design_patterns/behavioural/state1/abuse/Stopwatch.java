@@ -1,4 +1,4 @@
-package design_patterns.behavioural.state1.abuse;
+package com.dinesh.design_patterns.behavioural.state1.abuse;
 
 public class Stopwatch {
   private State currentState = new StoppedState(this);

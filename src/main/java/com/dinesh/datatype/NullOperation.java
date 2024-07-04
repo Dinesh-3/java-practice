@@ -11,7 +11,7 @@ public class NullOperation {
 
     private static void passingNullForPrimitiveBoolean(boolean isValid){
         System.out.println("isValid = " + isValid);
-
-
     }
+
 }
+

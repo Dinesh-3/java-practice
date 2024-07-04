@@ -1,7 +1,7 @@
-package design_patterns.structural.adapter2;
+package com.dinesh.design_patterns.structural.adapter2;
 
 
-import design_patterns.structural.adapter2.Gmail.GmailClient;
+import com.dinesh.design_patterns.structural.adapter2.Gmail.GmailClient;
 
 public class GmailAdapter implements EmailProvider {
   private GmailClient client = new GmailClient();

@@ -24,7 +24,7 @@ import java.time.LocalDate;
  */
 public class Serialization {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        File file = new File(Paths.get("").toAbsolutePath()+"/io/dinesh.txt");
+        File file = new File(Paths.get("").toAbsolutePath()+"/src/main/java/com/dinesh/io/dinesh.txt");
         System.out.println("file = " + file);
         file.createNewFile();
 

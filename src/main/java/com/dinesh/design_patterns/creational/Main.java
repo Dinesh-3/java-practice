@@ -1,14 +1,14 @@
-package design_patterns.creational;
+package com.dinesh.design_patterns.creational;
 
-import design_patterns.creational.builder.Builder;
-import design_patterns.creational.builder.Director;
-import design_patterns.creational.builder.Home;
-import design_patterns.creational.builder.HomeBuilder;
-import design_patterns.creational.factory.ProfessionFactory;
-import design_patterns.creational.factory.Profession;
-import design_patterns.creational.prototype.AbstractProfession;
-import design_patterns.creational.prototype.PrototypeProfession;
-import design_patterns.creational.singleton.SingletonClass;
+import com.dinesh.design_patterns.creational.builder.Builder;
+import com.dinesh.design_patterns.creational.builder.Director;
+import com.dinesh.design_patterns.creational.builder.Home;
+import com.dinesh.design_patterns.creational.builder.HomeBuilder;
+import com.dinesh.design_patterns.creational.factory.ProfessionFactory;
+import com.dinesh.design_patterns.creational.factory.Profession;
+import com.dinesh.design_patterns.creational.prototype.AbstractProfession;
+import com.dinesh.design_patterns.creational.prototype.PrototypeProfession;
+import com.dinesh.design_patterns.creational.singleton.SingletonClass;
 
 /**
  *

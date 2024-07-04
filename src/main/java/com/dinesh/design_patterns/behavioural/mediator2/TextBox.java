@@ -1,4 +1,4 @@
-package design_patterns.behavioural.mediator2;
+package com.dinesh.design_patterns.behavioural.mediator2;
 
 public class TextBox extends UIControl {
     private String content;

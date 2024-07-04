@@ -99,7 +99,7 @@ public class User implements DetailInterface {
             String converted = String.format("new User(\"%s\", \"%s\", \"%s\"),", user.firstName, user.lastName, LocalDate.now().minusYears(user.getAge()));
             builder.append(converted);
         }
-
+        CopyToClipboard clipboard = new CopyToClipboard();
         CopyToClipboard.copy(builder.toString());
     }
 }

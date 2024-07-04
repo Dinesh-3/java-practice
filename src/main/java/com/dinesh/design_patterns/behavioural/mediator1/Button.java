@@ -1,4 +1,4 @@
-package design_patterns.behavioural.mediator1;
+package com.dinesh.design_patterns.behavioural.mediator1;
 
 public class Button extends UIControl {
   private boolean isEnabled;

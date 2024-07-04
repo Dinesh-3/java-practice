@@ -1,5 +1,6 @@
 package com.dinesh.algorithm.sliding_window;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,7 +14,9 @@ import java.util.Set;
  */
 public class LongestSubstringWithoutRepeatingChars {
     public static void main(String[] args) {
-        lengthOfLongestSubstring("");
+//        lengthOfLongestSubstring("");
+        LongestSubstringWithoutRepeatingChars result = new LongestSubstringWithoutRepeatingChars();
+//        result.lengthOfLongestSubstringTwo(" ");
     }
 
     public static int lengthOfLongestSubstring(String s) {
@@ -39,4 +42,5 @@ public class LongestSubstringWithoutRepeatingChars {
 
         return 0;
     }
+
 }

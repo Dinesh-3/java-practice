@@ -1,6 +1,6 @@
-package design_patterns.structural.adapter1;
+package com.dinesh.design_patterns.structural.adapter1;
 
-import design_patterns.structural.adapter1.avaFilters.Caramel;
+import com.dinesh.design_patterns.structural.adapter1.avaFilters.Caramel;
 
 public class CaramelAdapter extends Caramel implements Filter {
   @Override

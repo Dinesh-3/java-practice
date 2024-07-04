@@ -37,13 +37,13 @@ public class AnnotationPractice {
     public static void main(String[] args) {
 
         AnnotationPractice annotationPractice = new AnnotationPractice();
-        Class<? extends AnnotationPractice> obj = annotationPractice.getClass();
-        Annotation annotation = obj.getAnnotation(Mobile.class);
+        Class<? extends AnnotationPractice> cls = annotationPractice.getClass();
+        Annotation annotation = cls.getAnnotation(Mobile.class);
 
-        System.out.println("obj.getAnnotations() = " + Arrays.toString(obj.getAnnotations()));
+        System.out.println("obj.getAnnotations() = " + Arrays.toString(cls.getAnnotations()));
         System.out.println("annotation.annotationType() = " + annotation.annotationType());
-        System.out.println("obj.isAnnotation() = " + obj.isAnnotation());
-        System.out.println("obj.isAnnotationPresent(Mobile.class) = " + obj.isAnnotationPresent(Mobile.class));
+        System.out.println("obj.isAnnotation() = " + cls.isAnnotation());
+        System.out.println("obj.isAnnotationPresent(Mobile.class) = " + cls.isAnnotationPresent(Mobile.class));
         Mobile mobile = (Mobile) annotation;
         System.out.println("Mobile.toString = " + Mobile.toString);
         System.out.println("mobile.name(); = " + mobile.name());

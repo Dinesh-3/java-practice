@@ -1,4 +1,4 @@
-package design_patterns.structural.composite1;
+package com.dinesh.design_patterns.structural.composite1;
 
 import java.util.ArrayList;
 import java.util.List;

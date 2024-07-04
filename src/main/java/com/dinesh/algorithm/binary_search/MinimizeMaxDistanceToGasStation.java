@@ -141,7 +141,7 @@ public class MinimizeMaxDistanceToGasStation {
 
         for(int i = 1; i < arr.length; i++){
             double numberInBtw = Math.ceil((arr[i] - arr[i-1]) / distance);
-            cnt += numberInBtw - 1;
+            cnt += (int) (numberInBtw - 1);
         }
         return cnt;
     }

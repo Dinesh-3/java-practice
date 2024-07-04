@@ -1,4 +1,4 @@
-package design_patterns.behavioural.state1;
+package com.dinesh.design_patterns.behavioural.state1;
 
 public class SelectionTool implements Tool {
   @Override

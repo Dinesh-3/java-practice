@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command1.editor;
+package com.dinesh.design_patterns.behavioural.command1.editor;
 
 import java.io.*;
 

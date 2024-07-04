@@ -1,6 +1,6 @@
-package design_patterns.structural.adapter1.avaFilters;
+package com.dinesh.design_patterns.structural.adapter1.avaFilters;
 
-import design_patterns.structural.adapter1.Image;
+import com.dinesh.design_patterns.structural.adapter1.Image;
 
 public class Caramel {
   public void init() {

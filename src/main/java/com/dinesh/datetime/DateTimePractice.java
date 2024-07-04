@@ -16,9 +16,8 @@ public class DateTimePractice {
         int years = Period.between(parse, LocalDate.now()).getYears();
         System.out.println("years = " + years);
 
-        LocalDate now = LocalDate.now();
-        String number = String.format("%s 00:00:00",now);
-        System.out.println("number = " + number);
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println("number = " + String.format("%s 00:00:00",now));
 
         double bookPrice = 34.46;
         System.out.println("Math.round(bookPrice) = " + Math.round(bookPrice));
@@ -111,7 +110,7 @@ public class DateTimePractice {
         System.out.println("hour1 = " + hour1);
         System.out.println("dayOfMonth = " + dayOfMonth);
 
-        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd/HH:mm:ss");
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy-MMMM-dd/HH:mm:ss");
         DATE_TIME_NOW.format(timeFormatter);
         System.out.println("DATE_TIME_NOW = " + DATE_TIME_NOW.format(timeFormatter));
 

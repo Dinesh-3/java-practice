@@ -1,4 +1,4 @@
-package design_patterns.structural.adapter2.Gmail;
+package com.dinesh.design_patterns.structural.adapter2.Gmail;
 
 public class GmailClient  {
   public void connect() {

@@ -30,8 +30,8 @@ public class Main {
         System.out.println("Thread.currentThread() = " + Thread.currentThread().getName());
         System.out.println("Thread.activeCount() = " + Thread.activeCount());
         System.out.println("Runtime.getRuntime().availableProcessors() = " + Runtime.getRuntime().availableProcessors());
-//        threadMethods();
-        threadSignaling();
+        threadMethods();
+//        threadSignaling();
 //        daemonThread();
     }
 

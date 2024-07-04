@@ -1,4 +1,4 @@
-package design_patterns.behavioural.strategy2;
+package com.dinesh.design_patterns.behavioural.strategy2;
 
 public class AES implements EncryptionAlgorithm {
     @Override

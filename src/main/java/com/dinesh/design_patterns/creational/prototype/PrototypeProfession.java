@@ -1,6 +1,4 @@
-package design_patterns.creational.prototype;
-
-import design_patterns.creational.factory.Profession;
+package com.dinesh.design_patterns.creational.prototype;
 
 import java.util.HashMap;
 import java.util.Map;

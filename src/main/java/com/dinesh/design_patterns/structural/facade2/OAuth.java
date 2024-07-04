@@ -1,4 +1,4 @@
-package design_patterns.structural.facade2;
+package com.dinesh.design_patterns.structural.facade2;
 
 public class OAuth {
   public String requestToken(String appKey, String appSecret) {

@@ -24,28 +24,27 @@ public class DetectCycle {
         ListNode slow = head;
         ListNode fast = head;
 
-        boolean isLoop = false;
-        while( fast != null && fast.next != null ) {
+        boolean hasCycle = false;
+        while(fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
             if(slow == fast) {
-                isLoop = true;
+                hasCycle = true;
                 break;
             }
         }
 
-        if(!isLoop)
+        if(hasCycle == false)
             return null;
 
         slow = head;
-        while( fast != null ) {
-            if(slow == fast)
-                return slow;
+
+        while(slow != fast) {
             slow = slow.next;
             fast = fast.next;
-
         }
 
-        return null;
+        return slow;
+
     }
 }

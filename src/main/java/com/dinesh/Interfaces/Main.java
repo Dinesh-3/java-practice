@@ -1,4 +1,4 @@
-package Interfaces;
+package com.dinesh.Interfaces;
 
 import java.lang.reflect.Method;
 import java.util.List;

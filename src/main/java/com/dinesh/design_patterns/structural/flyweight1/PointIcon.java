@@ -1,4 +1,4 @@
-package design_patterns.structural.flyweight1;
+package com.dinesh.design_patterns.structural.flyweight1;
 
 public class PointIcon {
   private final PointType type; // 4 bytes

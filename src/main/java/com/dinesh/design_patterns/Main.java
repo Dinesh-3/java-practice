@@ -1,4 +1,4 @@
-package design_patterns;
+package com.dinesh.design_patterns;
 
 /**
  * What is Design Pattern ?

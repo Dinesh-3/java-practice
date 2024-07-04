@@ -1,4 +1,4 @@
-package design_patterns.structural.flyweight2;
+package com.dinesh.design_patterns.structural.flyweight2;
 
 public class SpreadSheet {
   private final int MAX_ROWS = 3;

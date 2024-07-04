@@ -57,16 +57,15 @@ public class SetPractise {
          */
         System.out.println("--- TREE SET ---");
         SortedSet<Integer> sortedSet = new TreeSet<>();
-        sortedSet.add(1);
+        sortedSet.add(34);
         sortedSet.add(4);
-        sortedSet.add(1);
-        sortedSet.add(2);
         sortedSet.add(3);
+        sortedSet.add(10);
 //        sortedSet.add(null); // Throws error
         System.out.println("sortedSet = " + sortedSet);
         System.out.println("sortedSet.first() = " + sortedSet.first());
         System.out.println("sortedSet.last() = " + sortedSet.last());
-        System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // inclusive return elements >= 2
+        System.out.println("sortedSet.tailSet(2) = " + sortedSet.tailSet(2)); // not index it's int value stored inclusive return elements >= 2
         System.out.println("sortedSet.headSet(3) = " + sortedSet.headSet(3)); // exclusive elements < 3
         System.out.println("sortedSet.subSet(1,3) = " + sortedSet.subSet(1, 3)); // (inclusive, exclusive) element btw 1 2
         System.out.println("sortedSet = " + sortedSet);

@@ -1,4 +1,4 @@
-package design_patterns.behavioural.template2;
+package com.dinesh.design_patterns.behavioural.template2;
 
 public class Window {
     // The close method is defining a template. Custom window classes

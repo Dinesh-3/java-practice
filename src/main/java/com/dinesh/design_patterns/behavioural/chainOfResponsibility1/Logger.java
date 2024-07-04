@@ -1,4 +1,4 @@
-package design_patterns.behavioural.chainOfResponsibility1;
+package com.dinesh.design_patterns.behavioural.chainOfResponsibility1;
 
 public class Logger extends Handler {
   public Logger(Handler next) {

@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command2;
+package com.dinesh.design_patterns.behavioural.command2;
 
 public class SetContrastCommand extends AbstractUndoableCommand {
     private float prevContrast;

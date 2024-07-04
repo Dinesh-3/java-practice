@@ -46,7 +46,7 @@ public class StreamMain {
                 new User("Harish", "D", "1999-04-25")
                 ));
 
-//        User.covertAgeIntoDateOfBirthAndCopy(users);
+        User.covertAgeIntoDateOfBirthAndCopy(users);
 
         var numbers = new ArrayList<>(List.of(3, 2, 4, 8, 1, 5, 9, 6, 7, 0));
         System.out.println("numbers = " + numbers);
@@ -82,7 +82,7 @@ public class StreamMain {
         BinaryOperator<Integer> add = Integer::sum;
         Function<Integer, Integer> square = a -> a * a;
 
-//        System.out.println("add.andThen(square) = " + add.andThen(square).apply(1,1));
+        System.out.println("add.andThen(square) = " + add.andThen(square).apply(1,1));
 
         UnaryOperator<Integer> addOne = n -> n + 1;
         UnaryOperator<Integer> squareOfNumber = n -> n * n;
@@ -109,7 +109,7 @@ public class StreamMain {
 
         var userStream = users.stream()
                 .distinct()
-//                .sorted(Comparator.comparing(model.User::getFirstName))
+//                .sorted(Comparator.comparing(User::getFirstName))
                 .sorted(
                         Comparator.comparing(User::getAge)
                                 .reversed()
@@ -119,16 +119,16 @@ public class StreamMain {
                 .map(user -> user.getFirstName().toUpperCase())
 //                .filter(name -> name.startsWith("B"))
 //                .count()
-//                r4.skip((page - 1) * limit)
+//                .skip((page - 1) * limit)
 //                .limit(limit)
-//                .max(Comparator.comparing(model.User::getAge)).get()
+//                .max(Comparator.comparing(model.User::getAge)) //.get()
                 .collect(
                         Collectors.groupingBy(
                                 (item) -> item.startsWith("a"),
 //                                Collectors.counting()
-                                Collectors.joining(",")
+//                                Collectors.joining(",")
 //                                Collectors.toList()
-//                                Collectors.mapping((item) -> item, Collectors.joining(","))
+                                Collectors.mapping((item) -> item, Collectors.joining(","))
                         )
                 )
 
@@ -178,15 +178,15 @@ public class StreamMain {
 //                    System.out.println("x, y = " + x + " " + y + " " + ((x < y) ? -1 : (x == y) ? 0 : 1));
 //                    return (x < y) ? -1 : (x == y) ? 0 : 1;
 //                })
-                .max((x, y) -> x - y) // maxValueComes
+//                .max((x, y) -> x - y) // maxValueComes
 //                .max((x,y) -> y - x) // minValueComes
 //                .min(Comparator.comparing(a -> a ))
-                .get();
+//                .get();
 //                .isPresent(); Check given value is Present or not
 //                .isEmpty(); Opposite of isPresent
 //               REDUCE
 //                .reduce((a1, b1) -> Integer.sum(a1, b1));
-//                .reduce(0, Integer::sum); // param 1 is start value
+                .reduce(0, Integer::sum); // param 1 is start value
         ;
 //        List<String> objects = Collections.emptyList();
         System.out.println("result = " + result);
@@ -245,9 +245,9 @@ public class StreamMain {
                 );
         System.out.println("numberGreaterThan5 = " + numberGreaterThan5);
 
-        AddTwo addTwo = (a, b) -> a + b; // (int a, int b) -> a + b specifying type also valid but optional
-        int sum = addTwo.add(1, 2);
-        System.out.println("sum = " + sum);
+        BinaryOperator<Integer> addTwo = (a, b) -> a + b; // (int a, int b) -> a + b specifying type also valid but optional
+//        int sum = addTwo.add(1, 2);
+//        System.out.println("sum = " + sum);
     }
 
 

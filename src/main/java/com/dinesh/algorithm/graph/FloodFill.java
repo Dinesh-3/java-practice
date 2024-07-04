@@ -1,5 +1,8 @@
 package com.dinesh.algorithm.graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 733. Flood Fill
  * https://leetcode.com/problems/flood-fill
@@ -8,6 +11,16 @@ package com.dinesh.algorithm.graph;
  * https://www.youtube.com/watch?v=C-2_uSRli8o
  */
 public class FloodFill {
+
+    public static void main(String[] args) {
+        FloodFill fill = new FloodFill();
+        int[][] image = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
+        int sr = 1;
+        int sc = 1;
+        int color = 2;
+        fill.floodFillBFS(image, sr, sc, color);
+    }
+
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int n = image.length;
         int m = image[0].length;
@@ -50,4 +63,41 @@ public class FloodFill {
         }
 
     }
+
+    public int[][] floodFillBFS(int[][] image, int sr, int sc, int color) {
+        if(image[sr][sc] == color)
+            return image;
+
+        int r = image.length;
+        int c = image[0].length;
+
+        int initColor = image[sr][sc];
+        Queue<int[]> queue = new LinkedList<>();
+        image[sr][sc] = color;
+        queue.add(new int[]{ sr, sc });
+
+        int[] rowP = { -1, 0, 1, 0 };
+        int[] colP = { 0, 1, 0, -1 };
+
+        while(!queue.isEmpty()) {
+            int[] pos = queue.remove();
+            int i = pos[0];
+            int j = pos[1];
+
+            for(int k = 0; k < rowP.length; k++) {
+                int rowIndex = i + rowP[k];
+                int colIndex = j + colP[k];
+                if(rowIndex >= 0 && rowIndex < r && colIndex >= 0 && colIndex < c
+                        && image[rowIndex][colIndex] == initColor
+                ) {
+                    image[rowIndex][colIndex] = color;
+                    queue.add(new int[]{ rowIndex, colIndex });
+                }
+            }
+        }
+
+        return image;
+
+    }
+
 }

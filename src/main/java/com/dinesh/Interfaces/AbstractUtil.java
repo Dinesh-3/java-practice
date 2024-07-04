@@ -1,4 +1,4 @@
-package Interfaces;
+package com.dinesh.Interfaces;
 
 public abstract class AbstractUtil implements Utility1 {
     @Override

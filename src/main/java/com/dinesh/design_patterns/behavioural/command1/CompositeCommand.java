@@ -1,7 +1,7 @@
-package design_patterns.behavioural.command1;
+package com.dinesh.design_patterns.behavioural.command1;
 
 
-import design_patterns.behavioural.command1.editor.Command;
+import com.dinesh.design_patterns.behavioural.command1.editor.Command;
 
 import java.util.ArrayList;
 import java.util.List;

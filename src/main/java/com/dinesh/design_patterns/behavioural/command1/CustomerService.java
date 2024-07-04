@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command1;
+package com.dinesh.design_patterns.behavioural.command1;
 
 public class CustomerService {
   public void addCustomer() {

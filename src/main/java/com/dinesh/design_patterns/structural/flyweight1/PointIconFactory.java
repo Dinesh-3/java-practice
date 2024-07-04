@@ -1,4 +1,4 @@
-package design_patterns.structural.flyweight1;
+package com.dinesh.design_patterns.structural.flyweight1;
 
 import java.util.HashMap;
 import java.util.Map;

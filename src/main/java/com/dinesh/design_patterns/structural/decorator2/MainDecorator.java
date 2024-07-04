@@ -1,4 +1,4 @@
-package design_patterns.structural.decorator2;
+package com.dinesh.design_patterns.structural.decorator2;
 
 public class MainDecorator implements AbstractArtefact {
     private AbstractArtefact artefact;

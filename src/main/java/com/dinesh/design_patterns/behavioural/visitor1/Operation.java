@@ -1,4 +1,4 @@
-package design_patterns.behavioural.visitor1;
+package com.dinesh.design_patterns.behavioural.visitor1;
 
 public interface Operation {
   void apply(HeadingNode heading);

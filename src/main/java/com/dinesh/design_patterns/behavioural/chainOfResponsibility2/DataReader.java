@@ -1,4 +1,4 @@
-package design_patterns.behavioural.chainOfResponsibility2;
+package com.dinesh.design_patterns.behavioural.chainOfResponsibility2;
 
 public abstract class DataReader {
     private DataReader next;

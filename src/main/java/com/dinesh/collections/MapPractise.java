@@ -83,7 +83,7 @@ public class MapPractise {
         sortedMap.put(3, "Balaji");
         sortedMap.put(4, "Ragavan");
 //        sortedMap.put(null, "unknown"); // Throws error
-//        sortedMap.put(4, null); // Throws error
+//        sortedMap.put(4, null); // allows null value
         System.out.println("sortedMap.firstKey() = " + sortedMap.firstKey());
         System.out.println("sortedMap.lastKey() = " + sortedMap.lastKey());
         System.out.println("sortedMap.values() = " + sortedMap.values());
@@ -127,7 +127,7 @@ public class MapPractise {
         var customer = map.get(1212);
         customer = map.getOrDefault(1111, unknown);
 
-        map.replace(1111, unknown);
+        map.replace(1111, unknown); // Replaces the entry for the specified key only if it is currently mapped to some value.
         System.out.println("map = " + map);
         for (var key : map.keySet())
             System.out.println(key);

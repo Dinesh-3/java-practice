@@ -1,4 +1,4 @@
-package design_patterns.structural.proxy1;
+package com.dinesh.design_patterns.structural.proxy1;
 
 import java.util.HashMap;
 import java.util.Map;

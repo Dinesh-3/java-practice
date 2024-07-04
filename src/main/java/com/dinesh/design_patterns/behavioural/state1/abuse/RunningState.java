@@ -1,4 +1,4 @@
-package design_patterns.behavioural.state1.abuse;
+package com.dinesh.design_patterns.behavioural.state1.abuse;
 
 public class RunningState implements State {
   private Stopwatch stopwatch;

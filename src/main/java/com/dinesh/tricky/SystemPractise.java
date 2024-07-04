@@ -12,20 +12,20 @@ import java.util.Map;
 public class SystemPractise {
     public static void main(String[] args) throws IOException {
 
-        Process shCommand = Runtime.getRuntime().exec("ls -lh");
-
-        byte[] bytes = shCommand.getInputStream().readAllBytes();
+//        Process shCommand = Runtime.getRuntime().exec("dir");
+//
+//        byte[] bytes = shCommand.getInputStream().readAllBytes();
 //        char[] chars = new char[bytes.length];
 //        for (int i = 0; i < bytes.length; i++) {
 //            chars[i] = (char) bytes[i];
 //        }
 //        String commandResult = String.valueOf(chars);
 
-        String commandResult = new String(bytes, StandardCharsets.UTF_8);
-        System.out.println("commandResult : \n" + commandResult);
+//        String commandResult = new String(bytes, StandardCharsets.UTF_8);
+//        System.out.println("commandResult : \n" + commandResult);
 
         Map<String, String> env = System.getenv();
-//        env.forEach((a, b) -> System.out.println( a + " = " + b));
+        env.forEach((a, b) -> System.out.println( a + " = " + b));
 
         String pwd = env.get("PWD");
         System.out.println("pwd = " + pwd);

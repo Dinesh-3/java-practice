@@ -1,4 +1,4 @@
-package design_patterns.behavioural.visitor2;
+package com.dinesh.design_patterns.behavioural.visitor2;
 
 public class FormatSegment extends Segment {
   @Override

@@ -1,4 +1,4 @@
-package design_patterns.creational.builder;
+package com.dinesh.design_patterns.creational.builder;
 
 public interface Builder {
     void buildFloors();

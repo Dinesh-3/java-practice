@@ -22,13 +22,11 @@ public class Main {
 
         List<Thread> threads = new ArrayList<>();
 
-        for (int i = 0; i < 100_000; i++) {
+        for (int i = 0; i < 100_00; i++) {
+            int finalI = i;
             Thread thread = new Thread(() -> {
-                for (int j = 0; j < 1_000; j++) {
-                    int random = (int) (Math.random() * 10);
-                    map.put(random, map.getOrDefault(random, 0) + 1);
-                    cMap.put(random, cMap.getOrDefault(random, 0) + 1);
-                }
+                map.put(finalI, map.getOrDefault(finalI, 0) + 1);
+                cMap.put(finalI, cMap.getOrDefault(finalI, 0) + 1);
             });
             threads.add(thread);
         }
@@ -45,8 +43,8 @@ public class Main {
             }
         }
 
-        System.out.println("map = " + map);
-        System.out.println("cMap = " + cMap);
+        System.out.println("map = " + map.size());
+        System.out.println("cMap = " + cMap.size());
 
     }
 }

@@ -34,15 +34,15 @@ public class StringOperation {
 
         String emptyString = "";
         System.out.println("emptyString.isEmpty() = " + emptyString.isEmpty());
-        System.out.println("emptyString.isBlank() = " + emptyString.isBlank());
+        System.out.println("emptyString.isBlank() = " + emptyString.isBlank()); // If is empty or contains only white space
 
         String literalString = "SAME";
         String newString = new String("SAME");
 
-        System.out.println("newString == literalString = " + newString == literalString);
+        System.out.print("newString == literalString = " );
+        System.out.println(newString == literalString);
 
         String concat = "Favorite Number: " + 3;
-
         System.out.println("concat.substring(0, 2) = " + concat.substring(0, 2)); // end exclusive
 
     }

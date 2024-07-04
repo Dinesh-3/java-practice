@@ -21,7 +21,11 @@ public class Main {
     static {
         System.out.println("STatic Block 2");
     }
+    {
+        System.out.println("called while instantiating the object = " + true);
+    }
     public static void main(String[] args) throws Throwable {
+        Main main = new Main();
         System.out.println("MAIN method called");
         SubClass subClass = new SubClass();
 //        subClass.getDefaultField(); // Throw Compile time error| 'getDefaultField()' is not public in 'inheritance.sub_package.SubClass'. Cannot be accessed from outside package

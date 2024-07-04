@@ -1,4 +1,4 @@
-package design_patterns.behavioural.mediator2;
+package com.dinesh.design_patterns.behavioural.mediator2;
 
 public class SignUpDialogBox {
     private TextBox usernameTextBox = new TextBox();

@@ -1,4 +1,4 @@
-package design_patterns.structural.decorator1;
+package com.dinesh.design_patterns.structural.decorator1;
 
 import java.beans.Encoder;
 import java.util.Base64;

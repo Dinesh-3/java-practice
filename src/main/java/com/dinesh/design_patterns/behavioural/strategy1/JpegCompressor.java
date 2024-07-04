@@ -1,4 +1,4 @@
-package design_patterns.behavioural.strategy1;
+package com.dinesh.design_patterns.behavioural.strategy1;
 
 public class JpegCompressor implements Compressor {
   @Override

@@ -21,7 +21,7 @@ public class Main {
 //            Serialization.main();
 
             System.out.println("Paths.get(\"\").toAbsolutePath() = " + Paths.get("").toAbsolutePath());
-            var file = new File("/home/dinesh/Downloads/java_practice/io/sdfsdf.csv");
+            var file = new File(Paths.get("").toAbsolutePath() + "/com/dinesh/io/sdfsdf.csv");
 
 //            boolean isFileDeleted = file.delete();// To delete file
 //            if(isFileDeleted) System.out.println( " Deleted Successfully");

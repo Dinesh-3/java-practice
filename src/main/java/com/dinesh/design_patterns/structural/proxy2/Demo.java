@@ -1,4 +1,4 @@
-package design_patterns.structural.proxy2;
+package com.dinesh.design_patterns.structural.proxy2;
 
 public class Demo {
   public static void show() {

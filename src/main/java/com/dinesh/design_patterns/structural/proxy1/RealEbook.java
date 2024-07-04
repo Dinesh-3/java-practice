@@ -1,4 +1,4 @@
-package design_patterns.structural.proxy1;
+package com.dinesh.design_patterns.structural.proxy1;
 
 public class RealEbook implements Ebook {
   private String fileName;

@@ -1,6 +1,6 @@
 package object;
 
-public class Cat extends Animal{
+public class Cat extends object.Animal {
 
 //    @Override // Throws error field can't be override
     protected  String name; // value is null because no constructor and setter

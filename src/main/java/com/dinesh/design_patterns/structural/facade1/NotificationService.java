@@ -1,4 +1,4 @@
-package design_patterns.structural.facade1;
+package com.dinesh.design_patterns.structural.facade1;
 
 public class NotificationService {
   public void send(String message, String target) {

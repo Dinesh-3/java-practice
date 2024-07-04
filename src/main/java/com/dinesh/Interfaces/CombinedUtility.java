@@ -1,4 +1,4 @@
-package Interfaces;
+package com.dinesh.Interfaces;
 
 public interface CombinedUtility extends Utility1, Utility2{
 

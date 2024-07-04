@@ -1,4 +1,4 @@
-package design_patterns.creational.singleton;
+package com.dinesh.design_patterns.creational.singleton;
 
 //import java.io.Serial;
 import java.io.Serializable;

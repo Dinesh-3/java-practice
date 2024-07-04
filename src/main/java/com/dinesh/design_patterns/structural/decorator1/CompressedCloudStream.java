@@ -1,4 +1,4 @@
-package design_patterns.structural.decorator1;
+package com.dinesh.design_patterns.structural.decorator1;
 
 public class CompressedCloudStream implements Stream {
   private Stream stream;

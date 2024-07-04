@@ -1,4 +1,4 @@
-package design_patterns.behavioural.visitor2;
+package com.dinesh.design_patterns.behavioural.visitor2;
 
 import java.util.ArrayList;
 import java.util.List;

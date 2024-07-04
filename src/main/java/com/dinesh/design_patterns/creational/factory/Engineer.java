@@ -1,4 +1,4 @@
-package design_patterns.creational.factory;
+package com.dinesh.design_patterns.creational.factory;
 
 public class Engineer implements Profession {
     @Override

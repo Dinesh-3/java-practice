@@ -1,4 +1,4 @@
-package design_patterns.behavioural.strategy2;
+package com.dinesh.design_patterns.behavioural.strategy2;
 
 public class ChatClient {
     private EncryptionAlgorithm encryptionAlgorithm;

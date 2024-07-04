@@ -1,4 +1,4 @@
-package design_patterns.creational.prototype;
+package com.dinesh.design_patterns.creational.prototype;
 
 public class Doctor extends AbstractProfession  {
     @Override

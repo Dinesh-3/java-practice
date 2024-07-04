@@ -1,4 +1,4 @@
-package design_patterns.behavioural.iterator1;
+package com.dinesh.design_patterns.behavioural.iterator1;
 
 public class BrowseHistory {
   private String[] urls = new String[10];

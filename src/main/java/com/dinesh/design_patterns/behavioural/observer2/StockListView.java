@@ -1,4 +1,4 @@
-package design_patterns.behavioural.observer2;
+package com.dinesh.design_patterns.behavioural.observer2;
 
 import java.util.ArrayList;
 import java.util.List;

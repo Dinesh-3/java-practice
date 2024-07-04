@@ -1,4 +1,4 @@
-package design_patterns.behavioural.command2;
+package com.dinesh.design_patterns.behavioural.command2;
 
 // The purpose of this class is to make sure all undoable commands have
 // a VideoEditor and a History. Plus, whenever a command is executed,
