@@ -52,4 +52,36 @@ public class EventualSafeStates {
         return false;
 
     }
+
+    /**
+     *
+     * Intuition
+     * Mark all visited paths as false and if you are visiting the same path again then there is a loop.
+     * If there is a loop , just directly return false and don't mark it as safe node by marking true;
+     */
+    public List<Integer> eventualSafeNodesMap(int[][] graph) {
+        Map<Integer, Boolean> map = new HashMap<>();
+
+        List<Integer> safeNodes = new ArrayList<>();
+
+        for(int i = 0; i < graph.length; i++)
+            if(dfs(i, graph, map))
+                safeNodes.add(i);
+
+        return safeNodes;
+
+    }
+
+    private boolean dfs(int node, int[][] graph, Map<Integer, Boolean> map) {
+        if(map.containsKey(node))
+            return map.get(node);
+        map.put(node, false);
+        for(int ad: graph[node])
+            if(!dfs(ad, graph, map))
+                return false;
+
+        map.put(node, true);
+        return true;
+    }
+
 }

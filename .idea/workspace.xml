@@ -5,312 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/AllNodesDistanceKinBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/BinaryTreeInOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/BinaryTreePostOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/CountCompleteTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/MaximumDepthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/MaximumWidthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/NumberOfConnectedIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/PreOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/RootToLeafPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfEnclaves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/AddOneNumberToLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/DeleteMiddleNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/IntersectionOfTwoLinkedLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/RemoveNthNodeFromEndOfList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/ReverseLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/SortLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CombinationSumII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/GenerateParenthesis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/GenerateSubSets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/LetterCombinationOfPhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/PowerSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/SubSetSums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/SubSetTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/CountNumberOfNiceSubArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/SortCharacterByFrequency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/PriorityQueuePractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/QueuePractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/ThreadPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/VolatileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/ZonedDateTimePractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/servlet/WebServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/DeamonThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/AlienDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CheapestFlightsWithinKStops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CycleDetectionInDirectedGraphBFSKahnsAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/MaximumImportance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NetworkDelayTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfWaysToArriveAtDestination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/PathMinimumEffort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/ShortestPathInBinaryMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/ShortestPathInUndirectedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/TopologicalSortBFSKahnsAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/TopologicalSortDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/AbstractUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/AbstractUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/CombinedUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/CombinedUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/HP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/HP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Print.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/BoundaryTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/BoundaryTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/LevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/LevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/RightSideViewOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/RightSideViewOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/VerticalOrderTraversalBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/VerticalOrderTraversalBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/FloodFill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfProvinces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NumberOfProvinces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/RottenOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/RottenOranges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/SurroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/SurroundedRegions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/DetectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/DetectCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/CountNumberOfSubArrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/LongestRepeatingCharacterReplacement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/LongestSubstringWithoutRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/LongestSubstringWithoutRepeatingChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/NumberOfSubstringContainerAllThreeCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/NumberOfSubstringContainerAllThreeCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/annotations/AnnotationPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/annotations/AnnotationPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/annotations/RetentionPolicyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/annotations/RetentionPolicyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/SetPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/SetPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/ASCIITable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/ASCIITable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NullOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NullOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/DateTimePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/DateTimePractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/LocalDatePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/LocalDatePractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/PeriodPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/PeriodPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/BehaviouralPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/BehaviouralPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Encryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/HttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/HttpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility1/WebServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/DataReaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/DataReaderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/NumbersReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/NumbersReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/QuickBooksReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility2/QuickBooksReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/CORPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/CORPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Encryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/chainOfResponsibility3/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/AddCustomerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/AddCustomerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/BlackAndWhiteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/BlackAndWhiteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/CompositeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/CompositeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/ResizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/ResizeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/BoldCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/BoldCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/HistoryStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/HistoryStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/HtmlDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/HtmlDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/UndoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/UndoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/UndoableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/editor/UndoableCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/fx/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/fx/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/fx/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command1/fx/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/AbstractUndoableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/AbstractUndoableCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/SetContrastCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/SetContrastCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/SetTextCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/SetTextCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/UndoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/UndoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/UndoableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/UndoableCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/VideoEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/command2/VideoEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator1/BrowseHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator1/BrowseHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator1/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator1/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/ProductCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/iterator2/ProductCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/ArticlesDialogBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/ArticlesDialogBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/ListBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/ListBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator1/UIControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/CheckBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/CheckBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/SignUpDialogBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/SignUpDialogBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/mediator2/UIControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/EditorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/EditorState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento1/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/DocumentMemento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/DocumentMemento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/memento2/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/SpreadSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/SpreadSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer1/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/StatusBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/StatusBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/StockListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/observer2/StockListView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/BrushTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/BrushTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/EraserTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/EraserTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/SelectionTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/SelectionTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/ToolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/ToolType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/RunningState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/RunningState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/StoppedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/StoppedState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state1/abuse/Stopwatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Bicyling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Bicyling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/DirectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/DirectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Driving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Driving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Transit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Transit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/TravelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/TravelMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Walking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/state2/Walking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/BlackAndWhiteFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/BlackAndWhiteFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/HighContrastFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/HighContrastFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/ImageStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/ImageStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/JpegCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/JpegCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/PngCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy1/PngCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/AES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/AES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/DES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/DES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/EncryptionAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/strategy2/EncryptionAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/AuditTrail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/AuditTrail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/GenerateReportTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/GenerateReportTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/TransferMoneyTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template1/TransferMoneyTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/ChatWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/ChatWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/template2/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/AnchorNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/AnchorNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HeadingNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HeadingNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HighlightOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HighlightOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HtmlDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HtmlDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HtmlNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/HtmlNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/PlainTextOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor1/PlainTextOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/AudioFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/AudioFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/FactSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/FactSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/FormatSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/FormatSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/NoiseReductionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/NoiseReductionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/NormalizeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/NormalizeFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/ReverbFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/ReverbFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/Segment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/WavFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/visitor2/WavFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/HomeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/builder/HomeBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Engineer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Engineer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Profession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/ProfessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/ProfessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Programmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/factory/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/AbstractProfession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/AbstractProfession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Engineer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Engineer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Programmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/PrototypeProfession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/PrototypeProfession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/singleton/SingletonClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/singleton/SingletonClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/StructuralPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/StructuralPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/CaramelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/CaramelAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/CaramelFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/CaramelFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/ImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/ImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/VividFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/VividFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/avaFilters/Caramel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter1/avaFilters/Caramel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/EmailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/EmailProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/EmailProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/Gmail/GmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/Gmail/GmailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/GmailAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/adapter2/GmailAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/AdvancedRemoteControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/AdvancedRemoteControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/RemoteControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/RemoteControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/SamsungTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/SamsungTV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/SonyTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/bridge1/SonyTV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite1/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/HumanResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/HumanResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/composite2/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/CloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/CloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/CompressedCloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/CompressedCloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/EncryptedCloudStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/EncryptedCloudStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/Stream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator1/Stream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/AbstractArtefact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/AbstractArtefact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Artefact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Artefact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/ErrorDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/ErrorDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/MainDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/decorator2/MainDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/AuthToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/AuthToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/NotificationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/NotificationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade1/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/OAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/OAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/TwitterAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/TwitterAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/TwitterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/facade2/TwitterClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointIconFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointIconFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight1/PointType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/CellContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/CellContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/CellContextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/CellContextFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/SpreadSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/flyweight2/SpreadSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/Ebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/Ebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/EbookProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/EbookProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/LoggingEbookProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/LoggingEbookProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/RealEbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy1/RealEbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/DbContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/ProductProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/structural/proxy2/ProductProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/DayOfWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/DayOfWeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/EnumMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/EnumMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/exception/AssertionPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/exception/AssertionPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Serialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Serialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/dinesh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/dinesh.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/stream/StreamMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/stream/StreamMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/SystemPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/SystemPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/ConvertCharToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/utils/ConvertCharToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/EventualSafeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/EventualSafeStates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,13 +66,13 @@
       <recent name="com.dinesh.algorithm.array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberOfConnectedIslands">
-    <configuration name="BottomViewOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_tree.BottomViewOfBinaryTree" />
+  <component name="RunManager" selected="Application.AlienDictionary">
+    <configuration name="AlienDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.AlienDictionary" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_tree.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoundaryTraversalTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_tree.BoundaryTraversalTwo" />
+    <configuration name="CheapestFlightsWithinKStops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.CheapestFlightsWithinKStops" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_tree.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -385,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumWidthOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_tree.MaximumWidthOfBinaryTree" />
+    <configuration name="NetworkDelayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.NetworkDelayTime" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_tree.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -398,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfConnectedIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_tree.NumberOfConnectedIslands" />
+    <configuration name="PathMinimumEffort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.PathMinimumEffort" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_tree.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -411,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortCharacterByFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.string.SortCharacterByFrequency" />
+    <configuration name="ShortestPathInBinaryMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.ShortestPathInBinaryMaze" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.string.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -425,19 +133,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MaximumWidthOfBinaryTree" />
-      <item itemvalue="Application.NumberOfConnectedIslands" />
-      <item itemvalue="Application.BottomViewOfBinaryTree" />
-      <item itemvalue="Application.BoundaryTraversalTwo" />
-      <item itemvalue="Application.SortCharacterByFrequency" />
+      <item itemvalue="Application.AlienDictionary" />
+      <item itemvalue="Application.CheapestFlightsWithinKStops" />
+      <item itemvalue="Application.NetworkDelayTime" />
+      <item itemvalue="Application.PathMinimumEffort" />
+      <item itemvalue="Application.ShortestPathInBinaryMaze" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberOfConnectedIslands" />
-        <item itemvalue="Application.MaximumWidthOfBinaryTree" />
-        <item itemvalue="Application.BottomViewOfBinaryTree" />
-        <item itemvalue="Application.SortCharacterByFrequency" />
-        <item itemvalue="Application.BoundaryTraversalTwo" />
+        <item itemvalue="Application.AlienDictionary" />
+        <item itemvalue="Application.NetworkDelayTime" />
+        <item itemvalue="Application.CheapestFlightsWithinKStops" />
+        <item itemvalue="Application.PathMinimumEffort" />
+        <item itemvalue="Application.ShortestPathInBinaryMaze" />
       </list>
     </recent_temporary>
   </component>
@@ -1065,6 +773,41 @@
           <line>56</line>
           <option name="timeStamp" value="444" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="447" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="452" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/MaximumImportance.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="455" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/PathMinimumEffort.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CheapestFlightsWithinKStops.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
           <line>56</line>
@@ -1150,6 +893,7 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="com.dinesh.algorithm.graph.NetworkDelayTime$Pair" memberName="node" />
         <PinnedItemInfo parentTag="com.dinesh.algorithm.leetcode75.ReverseLinkedList$ListNode" memberName="next" />
         <PinnedItemInfo parentTag="com.dinesh.datastructure.tree.AVLTree$AVLNode" memberName="left" />
         <PinnedItemInfo parentTag="com.dinesh.algorithm.linked_list.ReverseNodeInKGroup$ListNode" memberName="next" />
