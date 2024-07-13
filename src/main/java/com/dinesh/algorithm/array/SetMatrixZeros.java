@@ -91,11 +91,11 @@ public class SetMatrixZeros {
         }
 
         if(matrix[0][0] == 0)
-            for (int i = 1; i < matrix.length; i++)
+            for (int i = 0; i < matrix[0].length; i++)
                 matrix[0][i] = 0;
 
         if(col1 == 0)
-            for (int i = 0; i < matrix[0].length; i++)
+            for (int i = 0; i < matrix.length; i++)
                 matrix[i][0] = 0;
     }
 

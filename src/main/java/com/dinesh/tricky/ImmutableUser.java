@@ -1,4 +1,4 @@
-package tricky;
+package com.dinesh.tricky;
 
 final public class ImmutableUser {
     private final String firstName;

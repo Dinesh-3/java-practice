@@ -1,4 +1,4 @@
-package inheritance;
+package com.dinesh.inheritance;
 
 import java.time.LocalDate;
 import java.util.Date;

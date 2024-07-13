@@ -1,6 +1,6 @@
-package access_modifiers;
+package com.dinesh.access_modifiers;
 
-import inheritance.Entity;
+import com.dinesh.inheritance.Entity;
 
 public class Manager extends Entity {
     @Override

@@ -1,6 +1,6 @@
-package reflection;
+package com.dinesh.reflection;
 
-import object.Person;
+import com.dinesh.object.Person;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

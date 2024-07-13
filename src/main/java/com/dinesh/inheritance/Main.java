@@ -1,6 +1,6 @@
-package inheritance;
+package com.dinesh.inheritance;
 
-import inheritance.sub_package.SubClass;
+import com.dinesh.inheritance.sub_package.SubClass;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -41,7 +41,6 @@ public class Main {
 //        student.finalize(); // Garbage Collector
         System.out.println("student.className = " + student.className);
         System.out.println("student.getClassName() = " + student.getClassName());
-
         System.out.println("model.User.getStaticClass() = " + User.getStaticClass());
         int index = Entity.getIndex();
         System.out.println("index = " + index);
@@ -51,5 +50,14 @@ public class Main {
         User entity = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
         System.out.println("User.staticClass = " + User.staticClass);
         System.out.println("entity.getClassName() = " + entity.getClassName());
+
+        /**
+         *
+         * Runtime Polymorphism won't be achieved  with data members
+         * Dog dog = new Labrator();
+         * System.out.println(dog.name); // Prints dog -> not labrator
+         *
+         */
+
     }
 }

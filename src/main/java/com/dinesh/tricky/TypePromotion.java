@@ -1,4 +1,4 @@
-package tricky;
+package com.dinesh.tricky;
 
 class MathOperation {
     // byte > short > int > long > float > double

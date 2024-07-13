@@ -1,7 +1,7 @@
-package tricky;
+package com.dinesh.tricky;
 
 
-import object.Dog;
+import com.dinesh.object.Dog;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

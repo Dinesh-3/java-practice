@@ -14,38 +14,42 @@ public class ThreeSum {
     }
 
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-
+        int len = nums.length;
         Arrays.sort(nums);
 
-        int i = 0;
+        int left = 0;
 
-        while(i < nums.length - 2) {
-            if(i != 0 && nums[i] == nums[i - 1]) {
-                i++;
-                continue;
-            } else {
-                int j = i + 1;
-                int k = nums.length - 1;
+        List<List<Integer>> result = new ArrayList<>();
 
-                while(j < k) {
-                    int sum =  nums[i] + nums[j] + nums[k];
-                    if(sum == 0) {
-                        result.add(List.of(nums[i], nums[j], nums[k]));
-                        while(nums[j] == nums[j+1])
-                            j++;
-                        while(nums[k-1] == nums[k])
-                            k--;
-                    } else if(sum > 0) {
-                        k--;
-                    } else {
-                        j++;
-                    }
+        while(left < nums.length - 2) {
+            int mid = left + 1;
+            int right = nums.length - 1;
+            while(mid < right) {
+                int sum = nums[left] + nums[mid] + nums[right];
+                if(sum == 0)
+                    result.add(new ArrayList<>(List.of(nums[left] , nums[mid] , nums[right])));
+
+                if(sum <= 0) {
+                    mid++;
+                    while(mid < right && nums[mid] == nums[mid-1])
+                        mid++;
                 }
+
+
+                if(sum >= 0) {
+                    right--;
+                    while(mid < right && nums[right] == nums[right+1])
+                        right--;
+                }
+
             }
-            i++;
+
+            left++;
+            while(left < len && nums[left] == nums[left-1])
+                left++;
         }
 
         return result;
+
     }
 }

@@ -8,6 +8,13 @@ import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
 
+/**
+ * Implementations
+ * 1. ArrayList
+ * 2. LinkedList
+ * 3. Vector
+ * 4. Stack
+ */
 public class ListPractise {
     public static void main(String[] args) {
         /**
@@ -22,6 +29,7 @@ public class ListPractise {
         /**
          * Initial Capacity 10
          * If array is full size will increase by 50 %
+         * Not Synchronized
          */
         List<Integer> numbers = new ArrayList<>();
         numbers.add(0);
@@ -40,6 +48,8 @@ public class ListPractise {
          * implements List<E>, Deque<E>, Cloneable, java.io.Serializable
          *
          * Doubly LinkedList Implementation
+         *
+         *
          */
 
         LinkedList<Integer> linkedList = new LinkedList<>(); // Also implements Dequeue and Queue Interface
@@ -58,6 +68,9 @@ public class ListPractise {
          *  Points:
          *      1. Legacy Class
          *      2. Thread safe
+         *
+         *  1. Synchronized
+         *
          */
 
         Vector<Integer> integers = new Vector<>();

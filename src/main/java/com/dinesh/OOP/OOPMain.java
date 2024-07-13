@@ -1,6 +1,6 @@
-package OOP;
+package com.dinesh.OOP;
 
-import object.Person;
+import com.dinesh.object.Person;
 
 import java.time.LocalDate;
 

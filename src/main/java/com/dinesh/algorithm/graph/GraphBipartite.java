@@ -1,6 +1,8 @@
 package com.dinesh.algorithm.graph;
 
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Set;
 
 /**
@@ -50,5 +52,31 @@ public class GraphBipartite {
 
     }
 
+    public boolean isBipartiteBFS(int[][] graph) {
+        Integer[] colors = new Integer[graph.length];
+
+        for(int i = 0; i < graph.length; i++) {
+            if(colors[i] != null)
+                continue;
+            Queue<Integer> queue = new LinkedList<>();
+            queue.add(i);
+            colors[i] = 1;
+
+            while(!queue.isEmpty()) {
+                int node = queue.remove();
+                for(int ad: graph[node]) {
+                    if(colors[ad] == null) {
+                        colors[ad] = colors[node] == 0 ? 1: 0;
+                        queue.add(ad);
+                    } else if (colors[ad] == colors[node])
+                        return false;
+
+                }
+            }
+        }
+
+        return true;
+
+    }
 
 }

@@ -9,6 +9,11 @@ import java.util.*;
             LinkedHashSet
     TreeSet implements SortedSet
     public interface SortedSet<E> extends Set<E> {
+
+ Set -> HashSet, Linked HashSet
+
+ SortedSet, TreeSet
+
  */
 public class SetPractise {
     public static void main(String[] args) {

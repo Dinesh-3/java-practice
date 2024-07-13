@@ -1,6 +1,6 @@
-package object;
+package com.dinesh.object;
 
-public class Cat extends object.Animal {
+public class Cat extends Animal {
 
 //    @Override // Throws error field can't be override
     protected  String name; // value is null because no constructor and setter

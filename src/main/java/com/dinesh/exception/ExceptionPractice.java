@@ -4,10 +4,64 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ *
+ *                                      Throwable
+ *                      Error                       Exception ( CheckedException and UncheckedException )
+ *              OutOfMemoryError            ArrayIndexOutOfBoundException
+ *              StackOverflowError          NullPointerException
+ *              VirtualMachineError
+ *
+ *  CheckedException -> IOException, ClassNotFoundException
+ *  UncheckedException -> ArrayIndexOutOfBoundException, NullPointerException
+ *
+ *  Interview Quesitons:
+ *
+ *  1. When an exception is thrown by main method. Java runtime terminates the program
+ *      and prints the exception stack trace in the system console
+ *  2. What is meant by unreachable catch block error
+ *      It will happen , when there is multiple catch blocks, super class first and cub class later ( generic once above and more specific one below )
+ *
+ */
 public class ExceptionPractice {
     public static void main(String[] args) throws Exception {
 
-        checkBlockOrder();
+        try {
+//            throw new StackOverflowError("Overlow"); // Program terminates
+        }finally {
+            System.out.println("sdsd");
+        }
+
+        if(true)
+            throw new IllegalAccessException("Illegal Statement");
+
+        if(true)
+            throw new IllegalAccessException("Illegal Statement");
+
+//        throw new IllegalAccessException("Illegal Statement"); // Unreachable Statement compile time error
+//        throw new IllegalAccessException("Illegal Statement"); // Unreachable Statement compile time error
+
+        System.out.println("Continuing my work = " );
+
+        /**
+         * What is Multi catch block
+         *
+         * Introduced in Java 7
+         * Catch block with multiple exceptions. Class must be in same level of inheritance
+         *
+         */
+        try {
+            int[] arr = { 3 };
+            System.out.println(arr[3]);
+        }catch (IndexOutOfBoundsException | NullPointerException  e) { // Types in multi-catch must be disjoint: 'java.lang.ArrayIndexOutOfBoundsException' is a subclass of 'java.lang.Exception'
+            System.out.println(e);
+        }
+
+        try{
+            checkBlockOrder();
+        } finally { // try needs catch or finally
+
+        }
         System.out.println("isValid(); = " + isValid()); // returns false
 //        Option 1
         FileReader fileReader = null;

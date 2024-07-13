@@ -11,26 +11,19 @@ public class SortZerosOnesTwos {
     }
 
     public void dutchNationalFlagAlgorithm() {
-        int[] numbers = {2,0,1};
+        int[] nums = {2,0,1};
 
-        int left = 0;
+        int low = 0;
         int mid = 0;
-        int right = numbers.length - 1;
+        int high = nums.length - 1;
 
-        while (mid <= right) {
-
-            if(numbers[mid] == 2)
-            {
-                swap(numbers, right, mid);
-                right--;
-            } else if(numbers[mid] == 1) {
+        while(mid <= high) {
+            if(nums[mid] == 0)
+                swap(nums, mid++, low++);
+            else if(nums[mid] == 2)
+                swap(nums, mid, high--);
+            else
                 mid++;
-            }else if(numbers[mid] == 0)
-            {
-                swap(numbers, left, mid);
-                left++;
-                mid++;
-            }
         }
 
     }

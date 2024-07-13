@@ -14,10 +14,10 @@ public class KadaneAlgorithm {
 
         int sum = 0;
         for (int num : nums) {
-            if (sum < 0)
-                sum = 0;
             sum += num;
             max = Math.max(sum, max);
+            if (sum < 0)
+                sum = 0;
         }
 
         return max;

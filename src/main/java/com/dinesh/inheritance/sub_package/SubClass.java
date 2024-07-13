@@ -1,4 +1,4 @@
-package inheritance.sub_package;
+package com.dinesh.inheritance.sub_package;
 
 public class SubClass {
     protected String protectedField = "Protected Field";

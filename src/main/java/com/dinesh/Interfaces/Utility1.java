@@ -1,6 +1,6 @@
 package com.dinesh.Interfaces;
 
-import tricky.ImmutableUser;
+import com.dinesh.tricky.ImmutableUser;
 
 public interface Utility1 {
 

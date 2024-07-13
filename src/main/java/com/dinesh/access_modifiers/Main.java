@@ -1,6 +1,6 @@
-package access_modifiers;
+package com.dinesh.access_modifiers;
 
-import inheritance.Entity;
+import com.dinesh.inheritance.Entity;
 
 /**
  * Related with inheritance folder
@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         Entity entity = new Entity();
 //        entity.getProtectedField(); // throw's error
-        access_modifiers.Manager manager = new access_modifiers.Manager();
+        com.dinesh.access_modifiers.Manager manager = new Manager();
         String protectedField = manager.getProtectedField();
         System.out.println("protectedField = " + protectedField);
 

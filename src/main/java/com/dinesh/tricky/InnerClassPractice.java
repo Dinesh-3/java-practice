@@ -1,4 +1,4 @@
-package tricky;
+package com.dinesh.tricky;
 
 // Java program to demonstrate how to
 // implement static and non-static

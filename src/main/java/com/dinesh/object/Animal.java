@@ -1,4 +1,4 @@
-package object;
+package com.dinesh.object;
 
 import java.util.Objects;
 public abstract class Animal {

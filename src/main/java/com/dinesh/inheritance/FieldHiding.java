@@ -1,4 +1,4 @@
-package inheritance;
+package com.dinesh.inheritance;
 
 class Father {
     public String name = "Father";
@@ -10,6 +10,10 @@ class Father {
 
     public int getAge() {
         return age;
+    }
+
+    public static void fatherStatic() {
+        System.out.println("Father Static");
     }
 }
 
@@ -27,6 +31,10 @@ class Son extends Father {
         return age;
     }
 
+    public static void fatherStatic() {
+        System.out.println("Son Static");
+    }
+
 }
 
 public class FieldHiding {
@@ -35,7 +43,7 @@ public class FieldHiding {
         Father son = new Son();
         System.out.println("father.name = " + father.name);
         System.out.println("father.getName() = " + father.getName());
-
+        son.fatherStatic(); // Father Static will be printed since static methods are always belongs to the class
         System.out.println("son.name = " + son.name); // Father
         System.out.println("son.getName() = " + son.getName()); // Son
     }

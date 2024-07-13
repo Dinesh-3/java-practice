@@ -14,6 +14,10 @@ import java.util.List;
  */
 public class MajorityElementTwoGreaterThanNby3 {
 
+    public static void main(String[] args) {
+        MajorityElementTwoGreaterThanNby3 majority = new MajorityElementTwoGreaterThanNby3();
+    }
+
     public List<Integer> majorityElementMySolution(int[] nums) {
         Arrays.sort(nums);
 
@@ -59,9 +63,6 @@ public class MajorityElementTwoGreaterThanNby3 {
                 e2[0]--;
             }
         }
-
-        System.out.println(e1[1]);
-        System.out.println(e2[1]);
 
         e1[0] = e2[0] = 0;
 

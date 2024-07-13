@@ -1,4 +1,4 @@
-package tricky;
+package com.dinesh.tricky;
 
 
 /**

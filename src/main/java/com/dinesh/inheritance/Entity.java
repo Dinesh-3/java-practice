@@ -1,4 +1,4 @@
-package inheritance;
+package com.dinesh.inheritance;
 
 public class Entity {
     public static int index;
@@ -53,4 +53,9 @@ public class Entity {
     String getDefaultField() {
         return defaultField;
     }
+
+    public String getEntityName() {
+        return "ENTITY";
+    }
+
 }

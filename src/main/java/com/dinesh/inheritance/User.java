@@ -1,4 +1,4 @@
-package inheritance;
+package com.dinesh.inheritance;
 
 public class User extends Entity {
     private String firstName;

@@ -1,4 +1,4 @@
-package object;
+package com.dinesh.object;
 
 public class Dog extends Animal{
 

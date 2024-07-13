@@ -1,4 +1,4 @@
-package object;
+package com.dinesh.object;
 
 import model.User;
 import utils.Console;

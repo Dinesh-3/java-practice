@@ -1,6 +1,6 @@
-package access_modifiers;
+package com.dinesh.access_modifiers;
 
-import inheritance.User;
+import com.dinesh.inheritance.User;
 
 public class UserInherited extends User {
     public UserInherited(String firstName, String lastName) {

@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Laptop {
     private final String[] PROCESSORS = { "AMD", "INTEL" };
@@ -58,4 +59,16 @@ public class Laptop {
         this.dateOfSale = dateOfSale;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Laptop o1 = (Laptop) o;
+        return price == o1.price && RAM == o1.RAM && ROM == o1.ROM && Objects.equals(name, o1.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price, RAM, ROM);
+    }
 }

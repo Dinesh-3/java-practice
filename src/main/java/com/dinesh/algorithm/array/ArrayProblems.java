@@ -437,6 +437,21 @@ public class ArrayProblems {
         return maxLength;
     }
 
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int max = 0;
+
+        int count = 0;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == 1)
+                count++;
+            else
+                count = 0;
+            max = Math.max(count, max);
+        }
+
+        return max;
+    }
+
     private static void swap(int i, int j, int[] nums) {
         int temp = nums[i];
         nums[i] = nums[j];

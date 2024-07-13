@@ -1,4 +1,4 @@
-package tricky;
+package com.dinesh.tricky;
 
 import java.lang.reflect.Method;
 
