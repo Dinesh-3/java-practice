@@ -3,7 +3,19 @@ package com.dinesh.tricky;
 class BreakDemo {
     public static void main(String args[])
     {
+        for (int i = 0; i < 10; i++) first: {
+            for (int j = 0; j < 10; j++) {
+                System.out.println(i + "," + j);
+                if(i != j) {
+                    System.out.println("Breaking");
+                    break first;
+                }
+
+            }
+        }
+
         boolean isBreak = true;
+
         // label first
         first : {
 

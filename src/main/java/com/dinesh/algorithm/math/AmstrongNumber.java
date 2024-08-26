@@ -12,6 +12,7 @@ public class AmstrongNumber {
 
         double sum = 0;
         while (digit > 0) {
+
             int last = digit % 10;
             sum = Math.pow(last, 3) + sum;
 

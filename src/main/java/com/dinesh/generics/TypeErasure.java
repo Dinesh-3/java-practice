@@ -1,4 +1,4 @@
-package generics;
+package com.dinesh.generics;
 
 /**
  * Java replaces all the Generic Type to Object at compile time is known as Type Eraser

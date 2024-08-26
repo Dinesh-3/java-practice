@@ -1,19 +1,20 @@
-package io;
+package com.dinesh.io;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.nio.file.Paths;
 
 public class ImageProcessing extends Main{
     public static void main(String[] args) {
         String imagePath = "/home/dinesh/Pictures/Others/autoinn_dashboard.png";
-
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(imagePath));
-            System.out.println("bufferedReader = " + bufferedReader);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+//
+//        try {
+//            BufferedReader bufferedReader = new BufferedReader(new FileReader(imagePath));
+//            System.out.println("bufferedReader = " + bufferedReader);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
 
         // width of the image
         int width = 50;
@@ -50,8 +51,7 @@ public class ImageProcessing extends Main{
         // WRITE IMAGE
         try {
             // Output file path
-            File output_file = new File(
-                    "/home/dinesh/Downloads/java_practice/io/converted.png");
+            var output_file = new File(Paths.get("").toAbsolutePath() + "/src/main/java/com/dinesh/io/converted.png");
 
             // Writing to file taking type and path as
             ImageIO.write(image, "png", output_file);

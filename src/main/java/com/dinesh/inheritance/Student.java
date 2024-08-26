@@ -7,6 +7,7 @@ public class Student extends User {
     private LocalDate joinDate;
     public String className=this.getClass().getName();
     public static String staticClass=Student.class.getName();
+    public String field = "Student Field";
     public Student(String firstName, String lastName,LocalDate joinDate) {
         super(firstName, lastName);
         this.joinDate = joinDate;

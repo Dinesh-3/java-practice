@@ -30,25 +30,32 @@ public class SetPractise {
 
         Set<Integer> hashSet = new HashSet<>(Arrays.asList(nums));
         System.out.println("hashSet = " + hashSet);
-        System.out.println("hashSet.toArray() = " + hashSet.toArray());
+        System.out.println("hashSet.toArray() = " + Arrays.toString(hashSet.toArray()));
         System.out.println("hashSet.size() = " + hashSet.size());
         System.out.println("hashSet.isEmpty() = " + hashSet.isEmpty());
         System.out.println("hashSet.remove(4) = " + hashSet.remove(4));
 
+        String[] fruits = {"banana", "orange", "date", "apple", "cherry"};
+        Set<String> set = new HashSet<>(List.of(fruits));
+        System.out.println("set = " + set);
+
         /**
          *      LinkedHashSet
+         *
+         *  It uses a HashTable and doubly linked list to store and maintain the insertion order of the elements.
+         *
          * Points:
          *  1. It's preserves insertion order
          *  2. Internally uses doubly linked list
          *  3. Ordered version of Set
          */
 
-        Set<Integer> linkedHashSet = new LinkedHashSet<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+        Set<String> linkedHashSet = new LinkedHashSet<>(List.of(fruits));
         System.out.println("linkedHashSet.size() = " + linkedHashSet.size());
         System.out.println("linkedHashSet.isEmpty() = " + linkedHashSet.isEmpty());
-        System.out.println("linkedHashSet.remove(12) = " + linkedHashSet.remove(12));
-        System.out.println("linkedHashSet.add(10) = " + linkedHashSet.add(10));
-        System.out.println("linkedHashSet.contains(10) = " + linkedHashSet.contains(10));
+        System.out.println("linkedHashSet.remove(12) = " + linkedHashSet.remove("12"));
+        System.out.println("linkedHashSet.add(mango) = " + linkedHashSet.add("mango"));
+        System.out.println("linkedHashSet.contains(mango) = " + linkedHashSet.contains("mango"));
         System.out.println("linkedHashSet = " + linkedHashSet);
 
         /**
@@ -81,6 +88,9 @@ public class SetPractise {
         sortedStringSet.add("1");
         sortedStringSet.add("Banana");
         sortedStringSet.add("3");
+        Object o = new Object();
+        System.out.println("o.equals(2) = " + o.equals(2));
+
         System.out.println("sortedStringSet.headSet(\"Cake\") = " + sortedStringSet.headSet("Cake")); // case sensitive
 
         Set<String> set1 =

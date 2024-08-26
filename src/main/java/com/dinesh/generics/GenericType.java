@@ -1,4 +1,4 @@
-package generics;
+package com.dinesh.generics;
 
 import java.awt.*;
 import java.util.ArrayList;

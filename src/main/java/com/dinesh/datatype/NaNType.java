@@ -24,9 +24,10 @@ public class NaNType {
         double threeDivideByZero = 3 / ZERO;
         System.out.println("3 / ZERO = " + threeDivideByZero); // Infinity
 
-        System.out.println("2 + NaN = " +  (2 + Double.NaN));
-        System.out.println("2 - NaN = " +  (2 - Double.NaN));
-        System.out.println("2 * NaN = " +  (2 * Double.NaN));
-        System.out.println("2 / NaN = " +  (2 / Double.NaN));
+        System.out.println("2 + NaN = " +  (2 + Double.NaN)); // NaN
+        System.out.println("2 - NaN = " +  (2 - Double.NaN)); // NaN
+        System.out.println("2 * NaN = " +  (2 * Double.NaN)); // NaN
+        System.out.println("2 / NaN = " +  (2 / Double.NaN)); // NaN
+        System.out.println("NAN - NAN = " + (NAN - NAN)); // NaN
     }
 }

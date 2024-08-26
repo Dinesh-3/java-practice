@@ -14,10 +14,12 @@ public class Main {
         passingArray(new int[]{1,3,4,2}); // Passing array
 
         Dog dog = new Dog("dog");
-        Cat cat = new Cat("cat");
+        Cat catOne = new Cat("cat");
+        Cat catTwo = new Cat("cat");
 
+        System.out.println("catOne == catTwo = " +  String.valueOf(catOne.equals(catTwo)));
         System.out.println("dog.name = " + dog.name);
-        System.out.println("cat.name = " + cat.name);
+        System.out.println("cat.name = " + catOne.name);
 
         User user1 = new User("Dinesh", "I", "2001-01-01");
         User user2 = new User("Dinesh", "I", "2001-02-01");

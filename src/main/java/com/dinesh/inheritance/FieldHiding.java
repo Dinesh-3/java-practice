@@ -44,6 +44,7 @@ public class FieldHiding {
         System.out.println("father.name = " + father.name);
         System.out.println("father.getName() = " + father.getName());
         son.fatherStatic(); // Father Static will be printed since static methods are always belongs to the class
+        son.fatherStatic(); // ITS POSSIBLE
         System.out.println("son.name = " + son.name); // Father
         System.out.println("son.getName() = " + son.getName()); // Son
     }

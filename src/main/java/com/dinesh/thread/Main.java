@@ -27,12 +27,7 @@ package thread;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Thread.currentThread() = " + Thread.currentThread().getName());
-        System.out.println("Thread.activeCount() = " + Thread.activeCount());
-        System.out.println("Runtime.getRuntime().availableProcessors() = " + Runtime.getRuntime().availableProcessors());
         threadMethods();
-//        threadSignaling();
-//        daemonThread();
     }
 
     public static void threadMethods() {
@@ -44,9 +39,10 @@ public class Main {
             System.out.println(String.format("Thread: %s is running...",Thread.currentThread().getName()));
             Thread childThread = new Thread(() -> {System.out.println(String.format("Thread: %s is running...",Thread.currentThread().getName()));}, "Child-Thread");
             childThread.start();
-        }, "Parent-Thread");
+        });
 
         parentThread.start();
+        System.out.println("parentThread.getName() = " + parentThread.getName());
 
         // or using an instance of a class that implements the Runnable interface
         var status = new DownloadStatus();

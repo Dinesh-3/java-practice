@@ -1,6 +1,7 @@
 package jackson;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -27,6 +28,7 @@ public class User {
         return height;
     }
 
+    @JsonIgnore
     public void setHeight(BigDecimal height) {
         this.height = height;
     }

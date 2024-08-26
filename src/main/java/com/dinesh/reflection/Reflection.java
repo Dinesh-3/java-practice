@@ -11,9 +11,9 @@ import java.util.Optional;
 public class Reflection {
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
         Class<Person> personClass = Person.class;
-
+//        personClass.getConstructors()[0].newInstance();
         Person personObject = new Person("Dinesh", "Iyyandurai", LocalDate.of(2000, 07, 25));
-
+//        personObject.getClass();
         Method[] methods = personClass.getMethods();
 
         Optional<Method> optionalGetAgeMethod = Arrays.stream(methods).filter(method -> {
@@ -24,6 +24,5 @@ public class Reflection {
         Object age = optionalGetAgeMethod.get().invoke(personObject);
 
         System.out.println("age = " + age);
-
     }
 }

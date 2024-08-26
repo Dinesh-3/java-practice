@@ -1,9 +1,8 @@
-package com.dinesh.algorithm.graph;
+package com.dinesh.algorithm.graph.shortest_path;
 
 import java.util.*;
 
 public class DijkstraAlgorithmGetShortestPath {
-
     public static void main(String[] args) {
         int V = 4;
         ArrayList<ArrayList<ArrayList<Integer>>> adj = new ArrayList<>();
@@ -76,14 +75,11 @@ public class DijkstraAlgorithmGetShortestPath {
         int[] arr = new int[result.size()];
 
         int j = 0;
-        for(int i = arr.length - 1; i >= 0; i--) {
-            arr[j] = result.get(i);
-            j++;
-        }
+        for(int i = arr.length - 1; i >= 0; i--)
+            arr[j++] = result.get(i);
 
         return new int[]{ 1, 2, 3, 4, 4, };
 
     }
-
 
 }

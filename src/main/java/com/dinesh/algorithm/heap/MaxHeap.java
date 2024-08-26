@@ -1,7 +1,5 @@
 package com.dinesh.algorithm.heap;
 
-import com.dinesh.datastructure.heap.Heap;
-
 public class MaxHeap {
     private int[] array = new int[1000];
     private int size = 0;

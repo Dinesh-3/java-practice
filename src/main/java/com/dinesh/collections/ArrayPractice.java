@@ -1,6 +1,5 @@
-package collections;
+package com.dinesh.collections;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Spliterator;
@@ -13,16 +12,18 @@ import java.util.stream.Collectors;
  * 3. Compact memory usage if we know the size
  * 4. 2d, 3d arrays
  * Disadvantages:
- * 1. If array is full we need to copy the entire array to new big size array O(N)
+ * 1. If array is full, need to copy the entire array to new big size array leeds to O(N) time complexity
  * 2. Delete operation is hard
- *
  */
 public class ArrayPractice {
     public static void main(String[] args) {
         int[] numbers = {3, 8, 4, 7, 2, 1};
         int[] numbers1 = {3, 8, 2, 7, 4, 1};
 
-//        numbers.length = 10; // Throws cannot assign a value to final variable length.Because arrays are fixed in size
+        Integer[] numbersObj = {3, 8, 4, 7, 2, 1};
+        Integer[] numbers1Obj = {3, 8, 2, 7, 4, 1};
+
+//        numbers.length = 10; // Throws cannot assign a value to final variable length. // Because arrays are fixed in size
 
         int[] randomIntegers = new int[10];
         for (int i = 0; i < randomIntegers.length; i++) {
@@ -39,7 +40,7 @@ public class ArrayPractice {
         List<Integer> integerList = Arrays.stream(randomIntegers).boxed().collect(Collectors.toList());
         int[] array = Arrays.stream(numbers, 0, 3).peek(number -> System.out.println(number)).toArray();
 
-        // It will work fine for Boxed
+//        It will work fine for Boxed
 //        Arrays.asList();
 //        List.of();
 
@@ -55,7 +56,7 @@ public class ArrayPractice {
 //        int[] ints = Arrays.copyOf(numbers, numbers.length + (numbers.length) / 2);
         int[] copiedNumbers = Arrays.copyOf(numbers, numbers.length);
         System.out.println("numbers = " + numbers);
-        System.out.println("copiedNumbers = " + copiedNumbers);
+        System.out.println("copiedNumbers = " + Arrays.toString(copiedNumbers));
 
         int[] intCopyOfRange = Arrays.copyOfRange(numbers, 0, 2); // Exclusive => 0 to 2 -> 0 1
         System.out.println("intCopyOfRange = " + Arrays.toString(intCopyOfRange));
@@ -78,9 +79,9 @@ public class ArrayPractice {
         System.out.println("Arrays.binarySearch(numbers, 3) = " + Arrays.binarySearch(numbers, 3));
 
         // For 2D or multi dimensional array
-//        Arrays.deepEquals();
-//        Arrays.deepHashCode();
-//        Arrays.deepToString();
+        Arrays.deepEquals(numbers1Obj, numbersObj);
+        Arrays.deepHashCode(numbersObj);
+        Arrays.deepToString(numbersObj);
 
         Arrays.setAll(numbers, number -> number * number); // it will change existing array
         System.out.println("squared number = " + Arrays.toString(numbers));

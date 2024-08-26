@@ -7,9 +7,11 @@ public class Constructor {
     }
 
     public Constructor(int i) {
-        this(1,2);
+        this(1,i);
+//        this(); // Recursive constructor invocation
         System.out.println("Level 2 ");
     }
+
 
     public Constructor(int i, int j) {
         System.out.println("Level 3 ");

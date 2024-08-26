@@ -1,8 +1,7 @@
 package com.dinesh.algorithm.binary_search;
 
-import java.util.Comparator;
-import java.util.Objects;
-import java.util.PriorityQueue;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * https://leetcode.com/problems/minimize-max-distance-to-gas-station

@@ -14,7 +14,6 @@ public class Main {
     public static void main(String[] args) {
         int result = fib(50);
         List<Integer> numbers = Arrays.asList(7,14);
-
         System.out.println(canSum(300, numbers));
     }
 

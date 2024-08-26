@@ -20,22 +20,23 @@ import java.io.IOException;
  *  1. When an exception is thrown by main method. Java runtime terminates the program
  *      and prints the exception stack trace in the system console
  *  2. What is meant by unreachable catch block error
- *      It will happen , when there is multiple catch blocks, super class first and cub class later ( generic once above and more specific one below )
+ *      It will happen , when there is multiple catch blocks, super class first and Sub class later ( generic once above and more specific one below )
  *
  */
 public class ExceptionPractice {
     public static void main(String[] args) throws Exception {
 
-        try {
-//            throw new StackOverflowError("Overlow"); // Program terminates
-        }finally {
-            System.out.println("sdsd");
+        if(23 != 23) {
+            try {
+                throw new StackOverflowError("Overlow"); // Program terminates
+            }finally {
+                System.out.println("sdsd"); // It will run
+            }
         }
-
-        if(true)
+        if(false)
             throw new IllegalAccessException("Illegal Statement");
 
-        if(true)
+        if(false)
             throw new IllegalAccessException("Illegal Statement");
 
 //        throw new IllegalAccessException("Illegal Statement"); // Unreachable Statement compile time error

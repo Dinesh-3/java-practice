@@ -4,6 +4,7 @@ public class User extends Entity {
     private String firstName;
     private String lastName;
     public String className=this.getClass().getName();
+    public String field = "User Field";
 //    @Override // Fields are can't be override
 //    public String className = this.getClass().getName();
 //    private static String staticClass=model.User.class.getName();
@@ -42,6 +43,7 @@ public class User extends Entity {
 
     @Override
     public String getClassName() {
+        System.out.println("super.isEnabled = " + super.isEnabled);
         return className;
     }
 
@@ -59,7 +61,7 @@ public class User extends Entity {
     }
 
     @Override
-    String getDefaultField() { // we can change default to protected or public
+    String getDefaultField() {
         return super.getDefaultField();
     }
 }

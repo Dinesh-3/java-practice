@@ -25,4 +25,8 @@ public enum Genre {
     public String toString() {
         return genre;
     }
+
+    public String getUniqueName() {
+        return genre + "Unique Name";
+    }
 }

@@ -86,4 +86,20 @@ public class CanSum {
         return false;
     }
 
+    private static boolean isSubsetPresent(int index, int sum, int[] arr, int target) {
+        if(sum > target)
+            return false;
+        if(index == arr.length)
+            return sum == target;
+
+        if(isSubsetPresent(index+1, sum + arr[index], arr, target))
+            return true;
+
+        if(isSubsetPresent(index+1, sum, arr, target))
+            return true;
+
+        return false;
+
+    }
+
 }

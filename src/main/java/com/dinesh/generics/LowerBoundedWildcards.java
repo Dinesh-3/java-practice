@@ -1,4 +1,4 @@
-package generics;
+package com.dinesh.generics;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,6 +15,7 @@ public class LowerBoundedWildcards {
     }
 
     static void printNumbers(List<? super Integer> list) {
+//        list.add(32);
         list.forEach(e -> {
             System.out.println(e.getClass().getName());
             System.out.println(e);

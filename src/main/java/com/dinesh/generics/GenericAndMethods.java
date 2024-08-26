@@ -1,9 +1,9 @@
-package generics;
+package com.dinesh.generics;
 
 public class GenericAndMethods {
     public static void main(String[] args) {
-        String ali = "Ali";
-        String[] names = {ali, "jamila"};
+        String alien = "Alien";
+        String[] names = {alien, "jamila"};
         Character[] letters = {'A', 'B', 'C'};
         Integer[] numbers = {1, 2, 4, 5, 5};
 

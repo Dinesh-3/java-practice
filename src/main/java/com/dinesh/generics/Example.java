@@ -1,4 +1,4 @@
-package generics;
+package com.dinesh.generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,8 @@ public class Example {
         //        Comparable number = 10;
 //        number.compareTo("10");
         Comparable<Integer> number = 10;
-
+        Integer num = 3;
+        int NNN = num.compareTo(3);
         System.out.println("number.getClass() = " + number.getClass());
 
         System.out.println(number.compareTo(9));

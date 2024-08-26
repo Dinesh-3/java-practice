@@ -17,6 +17,8 @@ import java.util.stream.Stream;
 
 public class StreamMain {
     public static void main(String[] args) {
+//        List<Integer> collect = Arrays.stream(arr).boxed().map(num -> num * 2).collect(Collectors.toList());
+
         System.out.println("--- LAMBDA EXPRESSION ---");
         var users = new ArrayList<>(List.of(
                 new User("Dinesh", "I", "2001-04-25"),
@@ -69,8 +71,13 @@ public class StreamMain {
         ToLongFunction<Double> doubleToLongFunction = Double::longValue;
 
         DoubleToIntFunction doubleToIntFunction = arg -> (int) Math.round(arg);
+//        DoubleToLongFunction
+//        LongToIntFunction
+//        LongToDoubleFunction
+
         System.out.println("doubleToIntFunction.applyAsInt(1.2F) = " + doubleToIntFunction.applyAsInt(1.2F));
         IntToDoubleFunction intToDoubleFunction = arg -> arg;
+//        IntToLongFunction
 //        System.out.println("intToDoubleFunction.applyAsDouble(12) = " + intToDoubleFunction.applyAsDouble(12));
         String dinesh = toUppercase.andThen(i -> {
             System.out.println(i);
@@ -93,7 +100,7 @@ public class StreamMain {
         Predicate<String> isValidName = message -> message.length() > 5;
         BiPredicate<String, String> isEqual = String::equals;
         IntPredicate isFive = number -> number == 5; // Also have DoublePredicate, LongPredicate
-
+//        DoublePredicate
         boolean isValid = isValidName.test("Dsh"); // and, or, negate,test
         System.out.println("isValid = " + isValidName.negate().or(m -> m.startsWith("D")).test("Dinesh"));
         System.out.println("isFive.test(5); = " + isFive.test(5));
@@ -111,9 +118,9 @@ public class StreamMain {
                 .distinct()
 //                .sorted(Comparator.comparing(User::getFirstName))
                 .sorted(
-                        Comparator.comparing(User::getAge)
-                                .reversed()
-                                .thenComparing(User::getFirstName)
+                    Comparator.comparing(User::getAge)
+                        .reversed()
+                        .thenComparing(User::getFirstName)
                 )
 //                .peek(stream.StreamMain::accept) // Used to log each element
                 .map(user -> user.getFirstName().toUpperCase())
@@ -147,8 +154,9 @@ public class StreamMain {
         List<String> fruits = new ArrayList<>(List.of("Strawberries", "Fig", "pine apple", "Dragon", "apple", "orange", "banana", "mango", "grape"));
         List<String> sortedFruit = fruits.stream()
                 .sorted(
-                        Comparator.comparing(String::length) // First by length and then by alphabetical order
-                                .thenComparing(a -> a)
+                    Comparator.comparing(String::length) // First by length and then by alphabetical order
+//                            .reversed()
+                            .thenComparing(a -> a)
                 ) // ascending order
 //                .sorted(Comparator.comparingInt((String s) -> s.length()).reversed()) // descending order
 //                .sorted((a, b) -> a.length() - b.length()) // ascending order
@@ -188,7 +196,7 @@ public class StreamMain {
 //                .reduce((a1, b1) -> Integer.sum(a1, b1));
                 .reduce(0, Integer::sum); // param 1 is start value
         ;
-//        List<String> objects = Collections.emptyList();
+        List<String> objects = Collections.emptyList();
         System.out.println("result = " + result);
 
 //        WHILE
@@ -210,8 +218,13 @@ public class StreamMain {
 //                .collect(Collectors.averagingInt(a -> a))
                 .mapToInt(a -> a)
 //                .sum()
-                .mapToLong(a -> a)
-//                .mapMulti()
+//                .mapToLong(a -> a)
+//                .mapMulti((int number, IntConsumer consumer) -> {
+//                    String numberStr = number + "";
+//                    for (char c : numberStr.toCharArray()) {
+//                        consumer.accept(Integer.parseInt(c+""));
+//                    }
+//                })
 //                .collect(Collectors.summingInt(a -> a))
 //                .collect(Collectors.summarizingInt(a -> a))
                 ;
@@ -246,7 +259,7 @@ public class StreamMain {
         System.out.println("numberGreaterThan5 = " + numberGreaterThan5);
 
         BinaryOperator<Integer> addTwo = (a, b) -> a + b; // (int a, int b) -> a + b specifying type also valid but optional
-//        int sum = addTwo.add(1, 2);
+//        int sum = addTwo.apply(1, 2);
 //        System.out.println("sum = " + sum);
     }
 
@@ -284,7 +297,7 @@ public class StreamMain {
         //creats a stream of elemnts using flatMap()
         List<String> flatMapList = allproducts.stream()
 //                                                .flatMap(List::stream) // or Collection::Stream
-                .flatMap(strings -> strings.stream())
+                .flatMap(Collection::stream)
                 .collect(Collectors.toList());
         System.out.println("List After Applying Mapping and Flattening Operation: \n");
         //prints the new stream that we get after applying mapping and flattening

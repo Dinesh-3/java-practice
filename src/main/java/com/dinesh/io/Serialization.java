@@ -1,4 +1,4 @@
-package io;
+package com.dinesh.io;
 
 import java.io.*;
 import java.nio.file.Paths;
@@ -39,7 +39,7 @@ public class Serialization {
         System.out.println("againDeSerialized Customer= " + againDeSerialize);
 
         Movie movie = new Movie("Ayan", "Ayan actor Surya", "Action", 14);
-        File ayanFile = new File(Paths.get("").toAbsolutePath()+"/io/ayan.txt");
+        File ayanFile = new File(Paths.get("").toAbsolutePath()+"/src/main/java/com/dinesh/io/ayan.txt");
 
         FileOutputStream outputStream = new FileOutputStream(ayanFile);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
@@ -53,7 +53,6 @@ public class Serialization {
 
     //        DESERIALIZATION
     private static Customer deSerialize(File file) throws IOException, ClassNotFoundException {
-
         FileInputStream fileInputStream = new FileInputStream(file);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         return (Customer) objectInputStream.readObject();

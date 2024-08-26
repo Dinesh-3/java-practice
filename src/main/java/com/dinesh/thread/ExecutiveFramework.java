@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *  2. Executors
  *  3. Callable and Future and Interfaces
  *  4. Asynchronous Programming
- *  5. Completable Features
+ *  5. Completable Future
  */
 public class ExecutiveFramework {
     public static void main(String[] args) {

@@ -14,7 +14,7 @@ import java.util.*;
             ->  Stack extends Vector   Implementation ArrayDeque
                                     AbstractQueue,
                                     ArrayBlockingQueue,
-                                    ArrayDeque, ConcurrentLinkedDeque, ConcurrentLinkedQueue,
+                                    ArrayDeque, ConcurrentLinkedDeque,
                                     DelayQueue, LinkedBlockingDeque, LinkedBlockingQueue,
                                     LinkedList, LinkedTransferQueue, PriorityBlockingQueue,
                                     PriorityQueue, SynchronousQueue
@@ -48,7 +48,7 @@ public class CollectionPractise {
 
         Iterator<Integer> descendingIterator = integerLinkedList.descendingIterator();
         for(int i = 0; descendingIterator.hasNext(); i++) {
-            System.out.print(i + " = " + descendingIterator.next());
+            System.out.print(descendingIterator.next() + ",");
         }
         System.out.println();
         System.out.println("integerLinkedList = " + integerLinkedList);
@@ -59,6 +59,14 @@ public class CollectionPractise {
         collection.add("a");
         collection.add("b");
         collection.add("c");
+
+        Collection<String> other = new ArrayList<>();
+        other.add("a");
+        other.add("b");
+        other.add("c");
+
+        System.out.println(collection == other);
+        System.out.println(collection.equals(other));
 
         // Add multiple items in one go
         Collections.addAll(collection, "a", "b", "c");
@@ -72,18 +80,12 @@ public class CollectionPractise {
         var isEmpty = collection.isEmpty();
 
         Object[] objectArray = collection.toArray();
-        String[] stringArray = collection.toArray(new String[0]);
+        String[] stringArray = collection.toArray(new String[0]); // no instance(s) of type variable(s) exist so that Integer conforms to String
 
         System.out.println("collection = " + collection);
         System.out.println("objectArray = " + Arrays.toString(objectArray));
         System.out.println("stringArray = " + Arrays.toString(stringArray));
 
-        Collection<String> other = new ArrayList<>();
-        other.add("a");
-        other.add("b");
-        other.add("c");
-        System.out.println(collection == other);
-        System.out.println(collection.equals(other));
     }
 
 }

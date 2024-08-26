@@ -4,6 +4,7 @@ import com.google.common.collect.ForwardingSortedMultiset;
 import com.google.common.collect.SortedMultiset;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.dinesh.algorithm.binary_tree.TreeNode.insertLevelOrder;
 
@@ -42,7 +43,7 @@ public class VerticalOrderTraversalBinaryTree {
     }
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        Queue<Node> queue = new LinkedList<>();
+        java.util.Queue<Node> queue = new java.util.LinkedList<>();
         queue.add(new Node(root, 0, 0));
         SortedMap<Integer, SortedMap<Integer, Queue<Integer>>> result = new TreeMap<>();
 
@@ -51,16 +52,10 @@ public class VerticalOrderTraversalBinaryTree {
 
             for (int i = 0; i < size; i++) {
                 Node removed = queue.remove();
-                if(!result.containsKey(removed.verticalIndex))
-                    result.put(removed.verticalIndex, new TreeMap<>());
-                var vertx = result.get(removed.verticalIndex);
-                if(vertx.containsKey(removed.levelIndex))
-                    vertx.get(removed.levelIndex).add(removed.node.val);
-                else {
-                    Queue<Integer> pq = new PriorityQueue<>();
-                    pq.add(removed.node.val);
-                    vertx.put(removed.levelIndex, pq);
-                }
+
+                result.computeIfAbsent(removed.verticalIndex, k -> new TreeMap<>())
+                    .computeIfAbsent(removed.levelIndex, k -> new PriorityQueue<>())
+                    .add(removed.node.val);
 
                 if(removed.node.left != null)
                     queue.add(new Node(removed.node.left, removed.verticalIndex - 1, removed.levelIndex +1));
@@ -86,14 +81,12 @@ public class VerticalOrderTraversalBinaryTree {
         SortedMap<Integer, SortedMap<Integer, Queue<Integer>>> map = new TreeMap<>();
         traverse(root, 0, 0, map);
 
-        List<List<Integer>> result = new ArrayList<>();
-        for(var entry: map.entrySet()) {
-            List<Integer> level = new ArrayList<>();
-            for(var queue: entry.getValue().entrySet())
-                while(!queue.getValue().isEmpty())
-                    level.add(queue.getValue().remove());
-            result.add(level);
-        }
+        List<List<Integer>> result = map.entrySet().stream()
+                .map(entry -> entry.getValue().values().stream()
+                        .flatMap(queue -> queue.stream())
+                        .collect(Collectors.toList())
+                )
+                .collect(Collectors.toList());
 
         return result;
     }

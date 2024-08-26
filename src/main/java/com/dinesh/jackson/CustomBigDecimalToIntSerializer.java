@@ -18,7 +18,7 @@ public class CustomBigDecimalToIntSerializer extends JsonDeserializer<Long> {
     @Override
     public Long deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JsonProcessingException {
         System.out.println("true = " + true);
-
+//        ctxt.getParser().currentName();
         return 1000L;
     }
 }

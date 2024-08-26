@@ -29,7 +29,11 @@ public class NextGreaterElement {
         int[] input2 = {1,3,4,2};
         Map<Integer, Integer> elementMap = element.getAllNextGreaterElementMap(input2);
         System.out.println("elementMap = " + elementMap);
+
+        element.nextGreaterElements(new int[]{1,2,1});
+
     }
+
 
     // Without Circle
     private int[] getAllNextGreaterElement(int[] arr) {
@@ -102,5 +106,21 @@ public class NextGreaterElement {
 
     }
 
+    public int[] nextGreaterElements(int[] nums) {
+        int[] elements = new int[nums.length];
+
+        Stack<Integer> stack = new Stack<>();
+
+        for(int i = 2 * nums.length - 1; i >= 0; i--) {
+            int number = nums[i % nums.length];
+            while(!stack.isEmpty() && stack.peek() <= number)
+                stack.pop();
+            if(i < nums.length)
+                elements[i] = stack.isEmpty() ? -1 : stack.peek();
+            stack.push(number);
+        }
+
+        return elements;
+    }
 
 }

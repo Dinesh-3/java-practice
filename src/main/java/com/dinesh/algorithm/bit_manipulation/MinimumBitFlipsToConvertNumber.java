@@ -10,19 +10,17 @@ package com.dinesh.algorithm.bit_manipulation;
  */
 public class MinimumBitFlipsToConvertNumber {
     public int minBitFlips(int start, int goal) {
-
         int xor = start ^ goal;
 
         int count = 0;
 
-        while(xor > 0) {
-            if(xor % 2 == 1)
-                count++;
-
-            xor = xor / 2;
+        while(xor != 0) {
+            count += xor & 1;
+            xor = xor >> 1;
         }
 
         return count;
 
     }
+
 }

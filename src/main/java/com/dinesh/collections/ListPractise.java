@@ -41,6 +41,7 @@ public class ListPractise {
         Object num = 3;
         numbers.remove(num);
         numbers.sort(comparing(a -> a));
+        numbers.remove(num);
         System.out.println("numbers = " + numbers);
         /**
          *          LinkedList
@@ -48,7 +49,6 @@ public class ListPractise {
          * implements List<E>, Deque<E>, Cloneable, java.io.Serializable
          *
          * Doubly LinkedList Implementation
-         *
          *
          */
 
@@ -70,7 +70,6 @@ public class ListPractise {
          *      2. Thread safe
          *
          *  1. Synchronized
-         *
          */
 
         Vector<Integer> integers = new Vector<>();

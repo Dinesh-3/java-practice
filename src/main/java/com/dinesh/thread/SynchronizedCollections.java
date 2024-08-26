@@ -8,7 +8,7 @@ public class SynchronizedCollections {
         List<Integer> numbers = Collections.synchronizedList(new ArrayList<>());
 //        new SynchronousQueue<>()
 //        Collections.synchronizedSet();
-//        Collections.synchronizedNavigableSet()
+//        NavigableSet<Object> objects = Collections.synchronizedNavigableSet();
 //        Collections.synchronizedSortedSet()
 
 //        Collections.synchronizedMap();

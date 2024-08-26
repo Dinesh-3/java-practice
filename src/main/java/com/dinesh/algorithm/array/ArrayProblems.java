@@ -8,7 +8,18 @@ import java.util.*;
 public class ArrayProblems {
     public static void main(String[] args) {
 
-        int[] numbers = {1, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4};
+        List<List<Integer>> result = new ArrayList<>();
+        for (int i = 0; i < numbers.length; i++) {
+            List<Integer> row = new ArrayList<>();
+            for (int j = i; j < numbers.length; j++) {
+                row.add(numbers[j]);
+                result.add(new ArrayList<>(row));
+            }
+        }
+
+        System.out.println("result = " + result);
+
         System.out.println(Math.pow(4,2));
         List<Character> brackets
                 = Arrays.asList('(', '<', '[', '{');

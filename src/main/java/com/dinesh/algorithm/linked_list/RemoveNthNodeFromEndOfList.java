@@ -2,10 +2,11 @@ package com.dinesh.algorithm.linked_list;
 
 public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        int N = 3;
         RemoveNthNodeFromEndOfList list = new RemoveNthNodeFromEndOfList();
-        ListNode one = new ListNode(1);
-        one.next = new ListNode(2);
-        list.removeNthFromEnd(one, 2);
+        ListNode head = ListNode.create(arr);
+        list.removeNthFromEnd(head, N);
     }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {

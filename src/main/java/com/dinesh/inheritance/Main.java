@@ -21,7 +21,11 @@ public class Main {
     static {
         System.out.println("STatic Block 2");
     }
+    public Main() {
+        System.out.println("Constructor Main called"); // PRIORITY 2
+    }
     {
+        // PRIORITY 1
         System.out.println("called while instantiating the object = " + true);
     }
     public static void main(String[] args) throws Throwable {
@@ -33,6 +37,7 @@ public class Main {
 
         User student = new Student("Dinesh", "I", LocalDate.of(2017, Month.JUNE, 1));
         String fullName = student.getFullName();
+        System.out.println("student.field = " + student.field); // User Field
         System.out.println("fullName = " + fullName);
         System.out.println("student = " + student);
 //        System.out.println("student.getFinalYear() = " + student.getFinalYear());

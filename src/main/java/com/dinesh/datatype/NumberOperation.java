@@ -26,6 +26,7 @@ public class NumberOperation {
         long starsInSpace = 9_223_372_036_854_775_806L;
         float productPrice =  125.0000005F;
         double stackPrice = 12555.878857575758585D;
+        System.out.println("stackPrice = " + stackPrice);
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         String priceInRupee = currency.format(productPrice);
         Locale[] availableLocales = NumberFormat.getAvailableLocales();

@@ -17,8 +17,9 @@ public class InsertionSort {
                 j--;
             }
             array[j+1] = current;
-            System.out.println("array = " + Arrays.toString(array));
         }
+
+        System.out.println("array = " + Arrays.toString(array));
     }
 
     public static void sortNew(int[] array) {
@@ -32,5 +33,7 @@ public class InsertionSort {
 
             array[insertAt] = current;
         }
+
+        System.out.println("array = " + Arrays.toString(array));
     }
 }

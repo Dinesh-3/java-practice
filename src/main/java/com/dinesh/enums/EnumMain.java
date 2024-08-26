@@ -9,6 +9,8 @@ public class EnumMain {
 
         System.out.println("genre = " + genre);
         System.out.println("action = " + action);
+//        new stream.Gender("Action"); // Enum types cannot be instantiated
+        System.out.println("action.getUniqueName() = " + action.getUniqueName());
 
         DayOfWeek monday = DayOfWeek.MONDAY;
         System.out.println("monday = " + monday);

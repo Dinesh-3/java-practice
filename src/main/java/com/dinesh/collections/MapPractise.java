@@ -1,6 +1,6 @@
 package collections;
 
-import io.Customer;
+import com.dinesh.io.Customer;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -29,7 +29,10 @@ public class MapPractise {
         hashMap.put(2, "Babu");
         hashMap.put(2, "Babu K"); // overrides value if key already exist
         hashMap.putIfAbsent(1, "Dinesh I"); // only put if key not exist
-
+        hashMap.computeIfAbsent(1, (e) -> {
+            String prefix = "New";
+            return prefix + " " + "Value";
+        });
         System.out.println("hashMap.get(2) = " + hashMap.get(2));
         String getOrDefault = hashMap.getOrDefault(3, "N/A");
         System.out.println("getOrDefault = " + getOrDefault);
@@ -65,6 +68,7 @@ public class MapPractise {
         System.out.println("--- HASH TABLE ---");
         Hashtable<Integer, String> hashTable = new Hashtable<>();
         hashTable.put(0, "Dinesh");
+//        hashTable.put(null, "Dinesh"); // Cannot invoke "Object.hashCode()" because "key" is null
         Enumeration<String> elements = hashTable.elements();
         System.out.println("elements = " + elements);
 
@@ -75,7 +79,7 @@ public class MapPractise {
          * Points:
          *  1. Uses Red Black Tree
          *  2. Sort the elements based on key
-         *  3. Doesn't allow null key or value
+         *  3. Doesn't allow null key
          */
         System.out.println("--- TREE MAP ---");
         SortedMap<Integer, String> sortedMap = new TreeMap<>();
@@ -83,8 +87,8 @@ public class MapPractise {
         sortedMap.put(1, "Rahul");
         sortedMap.put(3, "Balaji");
         sortedMap.put(4, "Ragavan");
-//        sortedMap.put(null, "unknown"); // Throws error
-//        sortedMap.put(4, null); // allows null value
+//        sortedMap.put(null, "unknown"); // Throws error // Exception in thread "main" java.lang.NullPointerException
+        sortedMap.put(4, null); // allows null value
         System.out.println("sortedMap.firstKey() = " + sortedMap.firstKey());
         System.out.println("sortedMap.lastKey() = " + sortedMap.lastKey());
         System.out.println("sortedMap.values() = " + sortedMap.values());

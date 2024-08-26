@@ -5,73 +5,241 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/PascalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/RotateArrayByDPlaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArrayWithXORByK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/UnionOfTwoSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/basics/ArmstrongNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/basics/FindAllDivisorsOfGivenNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/basics/GCDAndLCMAndHCF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/basics/PrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/LongestZigzagPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CycleDetectionDirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/MinimumMultiplicationsToReachEnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/NearestExitFromEntranceMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/ShortestPathInDirectedAcyclicGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/WordLadderTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionsMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ClassNotFoundExceptionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/CustomClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ExceptionPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CountInversions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/FourSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ReversePairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/CubeOfANumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/FindKthElementOnTwoSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianInRowWiseSortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianTwoSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/BSTIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/CeilInBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/ConstructBSTFromPreOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/FloorInBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/InorderSuccessorInBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/LargestBSTInBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/LowestCommonAncestorInBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/RecoverBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search_tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/MinimumTimeToBurnAllTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/BitManipulationMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/CheckIthBitIsSetOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/CheckNumberIsPowerOf2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/CountNumberOfSetBits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/FindXorNumberFromLtoR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/PowerSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/SetIthBitIsSetOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/SingleNumberThatAppearsOnce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/twoNumberWithOddOccurrences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/DeleteAllOccurrenceOfLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/FindPairsWithGivenSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/FlattenLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/RemoveDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/NinjaTraining.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/CountLongestIncreasingSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/GetLongestIncreasingSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/LargestDivisibleSubset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/LongestBiotonicSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/LongestStringChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/NumberOfLongestIncreasingSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/partition/MinMatrixChainMultiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/partition/MinimumCostToCutTheStick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/stock/BestTimeToBuyAndSellStockIII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/stock/BestTimeToBuyAndSellStockIV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/stock/BestTimeToBuyAndSellStockMulti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/stock/BestTimeToBuyAndSellStockWithCooldown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/stock/BestTimeToBuyAndSellStockWithTransactionFee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/CoinChangeII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/CountSubsetSumWithSumK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/CuttingRodIntoPiecesMaxProfit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/KnapsackWithDuplicateItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/MinimumCoinChangeCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/PartitionEqualSubsetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/PartitionsWithGivenDifference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/SubsetProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/AllLongestCommonSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/DeleteOperationForTwoStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/DistinctSubsequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/EditDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/LongestCommonSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/LongestCommonSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/LongestPalindromicSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/MinimumInsertionToMakeStringPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/ShortestCommonSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/WildcardMatching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CriticalConnectionInNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/MColoringProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/components/ArticulationPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/components/BridgesInGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/components/StronglyConnectedComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/shortest_path/BellmanFordShortestPathAlgorithmWIthNegativeEdges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/shortest_path/DijkstraAlgorithmGetShortestPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/shortest_path/FindCityWithSmallestNumberOfNeighborsWithGivenThreshold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/shortest_path/FloydWarshall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/shortest_path/SwimInRisingWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/AccountsMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/DisjointSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/KruskalsAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MakingALargeIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MakingLargeIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MinimumSpanningTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MostStonesRemovedWithSameRowOrColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/NumberOfIslandsII2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/NumberOfOperationsToMakeNetworkConnected.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/SpanningTreeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/Candy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/PageFaultsInLRU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/greedy/ShortestJobFirst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CloneLinkedListWithRandomPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/SortLinkedList012.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/CountGoodNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/CountPrimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/PrimeFactorizationUsingSieve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/PrintAllDivisors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/PrintAllPrimeFactors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/PythagoreanTriples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/ExpressionAddOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/GenerateAllBinaryStringsWithoutConsecutiveOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/PalindromePartitioning.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/RateInAMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/WordBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/FruitIntoBaskets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/SubArrayWithKDifferentIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/InfixToPostfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/LFUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/LRUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/MaximumRectangles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/NearestSmallestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/NextGreaterElement2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/NumberOfNGEsToTheRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/OnlineStockSpanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PostfixToInfixConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PostfixToPrefixConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PrefixToInfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PrefixToPostFix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/RemoveKDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/ReverseStackUsingRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/SlidingWindowMaximum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/SortStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/SumOfSubArrayRanges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/TheCelebrityProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/TrappingRainWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/LongestPalindromicSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/trie/MaximumXorWithElementFromArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/trie/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/RoundingModeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/LowerBoundedWildcardExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/FileInputStreamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/NIOPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/maths/DecimalPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/TokenBucket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/IPHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/LeastConnections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/LeastResponseTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/RoundRobin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/WeightedRoundRobin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/JVMMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ThreadWaitNotifyNotifyAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/TimedLockExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Interfaces/Utility1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/OOP/OOPMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/OOP/OOPMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/UserInherited.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/access_modifiers/UserInherited.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ArrayProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ArrayProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/KadaneAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/KadaneAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElementTwoGreaterThanNby3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElementTwoGreaterThanNby3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SetMatrixZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SetMatrixZeros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ThreeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LongestSubArrayWithGivenSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LongestSubArrayWithGivenSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/LowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/LowerBound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CycleDetectionInDirectedGraphBFSKahnsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CycleDetectionInDirectedGraphBFSKahnsAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/GraphBipartite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/GraphBipartite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/VerticalOrderTraversalBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/VerticalOrderTraversalBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/MinimumBitFlipsToConvertNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/MinimumBitFlipsToConvertNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/MinimumFallingPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/MinimumFallingPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/heap/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/heap/MaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CheckIsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CheckIsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/RemoveNthNodeFromEndOfList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/AmstrongNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/AmstrongNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/GCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/GCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CanSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CanSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/Combinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/PowerOfX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/PowerOfX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/NextGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/NextGreaterElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/SumOfSubArrayMinimum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/SumOfSubArrayMinimum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountNumberOfSubstringWithKDistinctCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountNumberOfSubstringWithKDistinctCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/StringToIntegerAtoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/StringToIntegerAtoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionPractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionsPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/CollectionsPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/Conversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/Conversions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ListPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/ListPractise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/MapPractise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/SetPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/collections/SetPractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/ThreadPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/ThreadPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/VolatileExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/concurrent_collection/VolatileExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/course/datastructures_algorithm_udemy_course/interview.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BigDecimalOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NaNType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NaNType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NumberOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/NumberOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datatype/StringOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/DateTimePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/datetime/DateTimePractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/AbstractProfession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/creational/prototype/AbstractProfession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/EnumMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/EnumMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/enums/Genre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/exception/ExceptionPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/exception/ExceptionPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/BoundedTypeParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/BoundedTypeParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericAndMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericAndMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericsAndClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/GenericsAndClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Letter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Letter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/LowerBoundedWildcards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/LowerBoundedWildcards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/TypeErasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/TypeErasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/UnboundedWildcards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/UnboundedWildcards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/UpperBoundedWildcards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/UpperBoundedWildcards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/generics/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/AbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/AbstractClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/FieldHiding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/FieldHiding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/sub_package/SubClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/inheritance/sub_package/SubClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/model/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/model/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/interview.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/ImageProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/ImageProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Serialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/Serialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/ayan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/ayan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/converted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/converted.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/io/dinesh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/io/dinesh.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/CustomBigDecimalToIntSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/CustomBigDecimalToIntSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/jackson/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/nativeC/NativeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/nativeC/NativeMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/object/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/operators/MathOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/operators/MathOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/reflection/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/reflection/Reflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Abstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Abstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Boxing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Boxing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/sorting/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/stream/StreamMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/stream/StreamMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/AsynchronousProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/AsynchronousProgramming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrencyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrencyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrentCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrentCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ExecutiveFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ExecutiveFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/SynchronizedCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/SynchronizedCollections.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/BreakDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/BreakDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ClassPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ClassPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Commenting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Commenting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/Constructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/GarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/GarbageCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ImmutableUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/ImmutableUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/InnerClassPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/InnerClassPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/MethodOverloading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/MethodOverloading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/NativeKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/NativeKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/StringPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/StringPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/SystemPractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/SystemPractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/TrickyJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/TrickyJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/TypePromotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/TypePromotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/WindowsSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/tricky/WindowsSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +272,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/practice/JavaPractice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/fullstack/apimart_backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -120,13 +288,13 @@
       <recent name="com.dinesh.algorithm.array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExceptionPractice">
-    <configuration name="ClassNotFoundExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.tricky.ClassNotFoundExceptionDemo" />
+  <component name="RunManager" selected="Application.LRUCache">
+    <configuration name="FindCityWithSmallestNumberOfNeighborsWithGivenThreshold" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.graph.shortest_path.FindCityWithSmallestNumberOfNeighborsWithGivenThreshold" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.tricky.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.graph.shortest_path.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +302,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.tricky.CustomClassLoader" />
+    <configuration name="IPHash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.system_design.load_balancer.IPHash" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.tricky.*" />
+          <option name="PATTERN" value="com.dinesh.system_design.load_balancer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +315,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exception.ExceptionPractice" />
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.stack.LRUCache" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exception.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,12 +328,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FieldHiding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.inheritance.FieldHiding" />
+    <configuration name="LeastResponseTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.system_design.load_balancer.LeastResponseTime" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.inheritance.*" />
+          <option name="PATTERN" value="com.dinesh.system_design.load_balancer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +341,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetPractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.SetPractise" />
+    <configuration name="MinimumWindowSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.sliding_window.MinimumWindowSubsequence" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.*" />
+          <option name="PATTERN" value="com.dinesh.algorithm.sliding_window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,19 +355,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExceptionPractice" />
-      <item itemvalue="Application.FieldHiding" />
-      <item itemvalue="Application.ClassNotFoundExceptionDemo" />
-      <item itemvalue="Application.CustomClassLoader" />
-      <item itemvalue="Application.SetPractise" />
+      <item itemvalue="Application.FindCityWithSmallestNumberOfNeighborsWithGivenThreshold" />
+      <item itemvalue="Application.LRUCache" />
+      <item itemvalue="Application.MinimumWindowSubsequence" />
+      <item itemvalue="Application.IPHash" />
+      <item itemvalue="Application.LeastResponseTime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExceptionPractice" />
-        <item itemvalue="Application.FieldHiding" />
-        <item itemvalue="Application.CustomClassLoader" />
-        <item itemvalue="Application.ClassNotFoundExceptionDemo" />
-        <item itemvalue="Application.SetPractise" />
+        <item itemvalue="Application.LRUCache" />
+        <item itemvalue="Application.MinimumWindowSubsequence" />
+        <item itemvalue="Application.FindCityWithSmallestNumberOfNeighborsWithGivenThreshold" />
+        <item itemvalue="Application.IPHash" />
+        <item itemvalue="Application.LeastResponseTime" />
       </list>
     </recent_temporary>
   </component>
@@ -411,22 +579,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="213" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/collections/ArrayPractice.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/datatype/BooleanType.java</url>
-          <line>12</line>
+          <line>14</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/AmstrongNumber.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -531,17 +694,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
-          <line>68</line>
+          <line>67</line>
           <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="316" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
-          <line>116</line>
+          <line>115</line>
           <option name="timeStamp" value="317" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -585,21 +743,6 @@
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/StringToIntegerAtoi.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="330" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/StringToIntegerAtoi.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="331" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountNumberOfSubstringWithKDistinctCharacters.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="333" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/ReverseNodeInKGroup.java</url>
           <line>27</line>
           <option name="timeStamp" value="335" />
@@ -611,7 +754,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/LongestSubArrayWithGivenSum.java</url>
-          <line>11</line>
+          <line>21</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -666,7 +809,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/heap/MaxHeap.java</url>
-          <line>29</line>
+          <line>27</line>
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -799,7 +942,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/RemoveNthNodeFromEndOfList.java</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="437" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -821,26 +964,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/MaximumWidthOfBinaryTree.java</url>
           <line>56</line>
           <option name="timeStamp" value="444" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="447" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="449" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="451" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/DijkstraAlgorithmGetShortestPath.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="452" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/MaximumImportance.java</url>
@@ -883,14 +1006,174 @@
           <option name="timeStamp" value="470" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArrayWithXORByK.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="474" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/bit_manipulation/CheckIthBitIsSetOrNot.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="479" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArrayWithXORByK.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="475" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/InfixToPostfix.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PrefixToInfix.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PostfixToPrefixConversion.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/stack/PostfixToPrefixConversion.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountNumberOfSubstringWithKDistinctCharacters.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountNumberOfSubstringWithKDistinctCharacters.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/trie/Trie.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/trie/Trie.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/PrintAllPrimeFactors.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/sorting/InsertionSort.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/FourSum.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/ReversePairs.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="516" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianTwoSortedArray.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="517" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianInRowWiseSortedMatrix.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianInRowWiseSortedMatrix.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MedianInRowWiseSortedMatrix.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/FruitIntoBaskets.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubstring.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MakingALargeIsland.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="535" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/spanning_tree/MakingALargeIsland.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="537" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/LongestStringChain.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/longest_increasing_sequence/LongestStringChain.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/RemoveNthNodeFromEndOfList.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CloneLinkedListWithRandomPointer.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CloneLinkedListWithRandomPointer.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CloneLinkedListWithRandomPointer.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/ExpressionAddOperator.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="575" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/ExpressionAddOperator.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CriticalConnectionInNetwork.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/graph/CriticalConnectionInNetwork.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/WeightedRoundRobin.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="582" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/LeastResponseTime.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubsequence.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="587" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/CombinationSum.java</url>
@@ -948,7 +1231,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_search/MinimizeMaxDistanceToGasStation.java</url>
-          <line>98</line>
+          <line>97</line>
           <properties class="com.dinesh.algorithm.binary_search.MinimizeMaxDistanceToGasStation" method="MinimiseMaxDistancePriorityQueue">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -973,6 +1256,24 @@
           </properties>
           <option name="timeStamp" value="414" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/generics/Utils.java</url>
+          <line>10</line>
+          <properties class="com.dinesh.generics.Utils" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="545" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/system_design/load_balancer/WeightedRoundRobin.java</url>
+          <line>17</line>
+          <properties class="com.dinesh.system_design.load_balancer.WeightedRoundRobin" method="getNextServer">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="583" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -982,6 +1283,7 @@
         <PinnedItemInfo parentTag="com.dinesh.datastructure.tree.AVLTree$AVLNode" memberName="left" />
         <PinnedItemInfo parentTag="com.dinesh.algorithm.linked_list.ReverseNodeInKGroup$ListNode" memberName="next" />
         <PinnedItemInfo parentTag="com.dinesh.algorithm.leetcode75.BinaryTreeCountGoodNodes$TreeNode" memberName="left" />
+        <PinnedItemInfo parentTag="com.dinesh.algorithm.linked_list.CloneLinkedListWithRandomPointer$Node" memberName="next" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>

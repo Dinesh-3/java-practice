@@ -1,4 +1,4 @@
-package generics;
+package com.dinesh.generics;
 
 public class BoundedTypeParameter {
     public static void main(String[] args) {

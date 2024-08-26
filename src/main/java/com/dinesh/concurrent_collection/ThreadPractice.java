@@ -9,18 +9,18 @@ public class ThreadPractice {
         t1.start();
         t2.start();
 
-        Thread runnableThread = new Thread(new MyRunnable("MyRunnable Thread"));
+        Thread runnableThread = new Thread(new MyRunnable(), "MyRunnable Thread");
         runnableThread.start();
 
         try {
-            System.out.println("Waiting for threads to finish.");
+            System.out.println("===Waiting for threads to finish===");
             t1.join();
             t2.join();
         } catch (InterruptedException e) {
             System.out.println("Main thread was interrupted.");
         }
 
-        System.out.println("All threads have finished.");
+        System.out.println("===All threads have finished===");
     }
 
 }

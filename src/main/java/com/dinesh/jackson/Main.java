@@ -26,7 +26,7 @@ public class Main {
         user.setHeight(null);
         user.setDateOfBirth(LocalDateTime.of(2000, 7, 25, 9, 30));
         String result = objectWriter.writeValueAsString(user);
-
+        objectMapper.reader().readValues("");
         System.out.println("result = " + result);
     }
 }

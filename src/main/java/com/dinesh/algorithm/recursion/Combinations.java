@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class Combinations {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3 };
+        int[] arr = { 1, 2, 3, 4 };
         List<List<Integer>> combinations = new ArrayList<>();
         getAllCombinations(arr, 0, new Stack<>(), combinations);
         System.out.println("combinations = " + combinations);

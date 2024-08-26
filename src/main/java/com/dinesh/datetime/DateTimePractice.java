@@ -19,7 +19,7 @@ public class DateTimePractice {
         LocalDateTime now = LocalDateTime.now();
         System.out.println("number = " + String.format("%s 00:00:00",now));
 
-        double bookPrice = 34.46;
+            double bookPrice = 34.46;
         System.out.println("Math.round(bookPrice) = " + Math.round(bookPrice));
 
 //        System.out.println("Integer.parseInt(\"20.56\") = " + Integer.parseInt("20.56"));
@@ -40,7 +40,7 @@ public class DateTimePractice {
          * That is a leap year.
          *    - <- GMT -> +
          * GMT -> Greenwich Mean Time (England)
-         * 1 Hour -> 15 degree
+         * 1 Hour -> 15 degree (360 / 24)
          * 24 Hour -> 24*15 = 360 degree
          * India -> + 5.5
          */
@@ -128,8 +128,9 @@ public class DateTimePractice {
 //        Find Date Range
         boolean before = DATE_TIME_NOW.isBefore(plusOneMonths);
         boolean after = DATE_TIME_NOW.isAfter(plusOneMonths);
-        boolean isEqual = DATE_TIME_NOW.isEqual(plusOneMonths);
+        boolean isEqual = DATE_TIME_NOW.isEqual(LocalDate.now().atTime(LocalTime.now()));
         System.out.print("after = " + after + "before = " + before + "\n");
+        System.out.println("isEqual = " + isEqual);
 
         LocalDateTime withed = DATE_TIME_NOW.withMonth(12); //immutable returns new LocalDateTime
         System.out.println("withed = " + withed);

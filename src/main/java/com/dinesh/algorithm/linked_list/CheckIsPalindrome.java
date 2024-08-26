@@ -116,4 +116,31 @@ public class CheckIsPalindrome {
         return newHead;
 
     }
+
+    public ListNode rotateRightTwo(ListNode head, int k) {
+        if(head == null || head.next == null || k == 0)
+            return head;
+
+        ListNode current = head;
+        int length = 1;
+
+        while(current.next != null) {
+            current = current.next;
+            length++;
+        }
+
+        current.next = head;
+
+        int breakPoint = length - (k % length);
+
+        while(breakPoint != 0) {
+            current = current.next;
+            breakPoint--;
+        }
+
+        ListNode newHead = current.next;
+        current.next = null;
+        return newHead;
+    }
+
 }

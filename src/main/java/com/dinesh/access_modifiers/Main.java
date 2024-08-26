@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         Entity entity = new Entity();
-//        entity.getProtectedField(); // throw's error
+//        entity.getProtectedField(); // throw's error , 'getProtectedField()' has protected access in 'com.dinesh.inheritance.Entity'
         com.dinesh.access_modifiers.Manager manager = new Manager();
         String protectedField = manager.getProtectedField();
         System.out.println("protectedField = " + protectedField);

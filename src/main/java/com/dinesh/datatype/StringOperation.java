@@ -37,10 +37,15 @@ public class StringOperation {
         System.out.println("emptyString.isBlank() = " + emptyString.isBlank()); // If is empty or contains only white space
 
         String literalString = "SAME";
+        String literalString2 = "SAME";
+
         String newString = new String("SAME");
 
         System.out.print("newString == literalString = " );
         System.out.println(newString == literalString);
+
+        System.out.print("literalString == literalString2 = ");
+        System.out.println(literalString == literalString2);
 
         String concat = "Favorite Number: " + 3;
         System.out.println("concat.substring(0, 2) = " + concat.substring(0, 2)); // end exclusive

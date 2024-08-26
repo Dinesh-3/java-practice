@@ -38,7 +38,7 @@ public class AsynchronousProgramming {
 //      .thenAccept(result -> System.out.println(result)) // with result
         .thenRun(() -> System.out.println("mailSend Then Thread: "+ Thread.currentThread().getName())) // without result
 //        .thenRunAsync(() -> System.out.println("mailSend Then Thread: "+ Thread.currentThread().getName()));
-//        .thenAcceptAsync()
+        .thenAcceptAsync(System.out::println)
 //                .get() // Blocks Main thread
         ;
     }
@@ -94,9 +94,9 @@ public class AsynchronousProgramming {
          */
         System.out.println("--- Combine Completable Future Start ---");
         double PI = 3.14;
-        final var task1 = CompletableFuture.supplyAsync(() -> "Task 1 Result PI = "+ PI);
-        var task2 = CompletableFuture.supplyAsync(() -> "Task 2 Result");
-        var task3 = CompletableFuture.supplyAsync(() -> "Task 3 Result");
+        final var task1 = CompletableFuture.supplyAsync(() -> "Task 1 Result PI = "+ Thread.currentThread().getName());
+        var task2 = CompletableFuture.supplyAsync(() -> "Task 2 Result "+ Thread.currentThread().getName());
+        var task3 = CompletableFuture.supplyAsync(() -> "Task 3 Result "+ Thread.currentThread().getName());
 
         task1.thenCombine(task2, (result1, result2) -> result1 + " " + result2)
                 .thenAccept(result -> System.out.println("result = " + result));

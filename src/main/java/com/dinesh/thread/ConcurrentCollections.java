@@ -15,10 +15,9 @@ public class ConcurrentCollections {
         ConcurrentNavigableMap<Object, Object> skipListMap = new ConcurrentSkipListMap<>();
 
         ConcurrentLinkedQueue<Object> linkedQueue = new ConcurrentLinkedQueue<>();
-        ConcurrentLinkedDeque<Object> linkedDeque = new ConcurrentLinkedDeque<>();
+        Queue<Object> linkedDeque = new ConcurrentLinkedDeque<>();
 
         ConcurrentSkipListSet<Integer> set = new ConcurrentSkipListSet<>();
-
 //        concurrentSet(set);
 
         hashMap(concurrentHashMap);

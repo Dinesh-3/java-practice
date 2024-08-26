@@ -6,7 +6,7 @@ public class CollectionsPractice {
     public static void main(String[] args) {
 
         List<String> fruitsList = new ArrayList<>(List.of("Mango", "Apple", "Banana"));
-        Set<String> fruitsSet = new HashSet<>(List.of("Orange", "apple"));
+        Set<Object> fruitsSet = new HashSet<>(List.of("Orange", "apple"));
 
         /**
          * Returns true if the two specified collections have no elements in common.

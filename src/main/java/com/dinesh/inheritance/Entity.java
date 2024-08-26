@@ -54,7 +54,7 @@ public class Entity {
         return defaultField;
     }
 
-    public String getEntityName() {
+    protected String getEntityName() {
         return "ENTITY";
     }
 
