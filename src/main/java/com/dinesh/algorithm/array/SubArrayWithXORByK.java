@@ -24,7 +24,6 @@ public class SubArrayWithXORByK {
         }
 
         return count;
-
     }
 
 }

@@ -1,6 +1,7 @@
 package com.dinesh.algorithm.array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -19,47 +20,35 @@ public class UnionOfTwoSortedArray {
 
     public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
     {
-        ArrayList<Integer> result = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
-        int leftIndex = 0;
-        int rightIndex = 0;
+        int first = 0;
+        int second = 0;
 
-        while(leftIndex < arr1.length && rightIndex < arr2.length) {
-            while(!result.isEmpty() && leftIndex < arr1.length && result.get(result.size() - 1) == arr1[leftIndex]) {
-                leftIndex++;
-            }
-
-            while(!result.isEmpty() && rightIndex < arr2.length && result.get(result.size() - 1) == arr2[rightIndex]) {
-                rightIndex++;
-            }
-            if(leftIndex < arr1.length && rightIndex < arr2.length) {
-                if (arr1[leftIndex] < arr2[rightIndex]) {
-                    result.add(arr1[leftIndex++]);
-                } else {
-                    result.add(arr2[rightIndex++]);
-                }
+        while(first < n && second < m) {
+            if(arr1[first] <= arr2[second]) {
+                if(list.isEmpty() || list.get(list.size()-1) != arr1[first])
+                    list.add(arr1[first]);
+                first++;
+            } else {
+                if(list.isEmpty() || list.get(list.size()-1) != arr2[second])
+                    list.add(arr2[second]);
+                second++;
             }
         }
 
-        while(leftIndex < arr1.length) {
-            while(!result.isEmpty() && leftIndex < arr1.length  && result.get(result.size() - 1) == arr1[leftIndex])
-            {
-                leftIndex++;
-            }
-            if(leftIndex < arr1.length)
-                result.add(arr1[leftIndex++]);
+        while(first < n) {
+            if(list.isEmpty() || list.get(list.size()-1) != arr1[first])
+                list.add(arr1[first]);
+            first++;
         }
 
-        while(rightIndex < arr2.length) {
-            while(!result.isEmpty() && rightIndex < arr2.length && result.get(result.size() - 1) == arr2[rightIndex])
-            {
-                rightIndex++;
-            }
-            if(rightIndex < arr2.length)
-                result.add(arr2[rightIndex++]);
+        while(second < m) {
+            if(list.isEmpty() || list.get(list.size()-1) != arr2[second])
+                list.add(arr2[second]);
+            second++;
         }
 
-        return result;
-
+        return list;
     }
 }

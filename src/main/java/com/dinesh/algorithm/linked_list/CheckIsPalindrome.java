@@ -34,8 +34,7 @@ public class CheckIsPalindrome {
 
         if(fast != null)
             slow = slow.next;
-        System.out.println(slow.val);
-        System.out.println(prev.val);
+
         while(slow != null) {
             if(slow.val != prev.val)
                 return false;
@@ -94,9 +93,6 @@ public class CheckIsPalindrome {
 
         int module = k % (index+1);
 
-        System.out.println(index);
-        System.out.println(module);
-
         slow = head;
         fast = head;
 
@@ -106,8 +102,6 @@ public class CheckIsPalindrome {
             fast = fast.next;
             fasIndex+= 1;
         }
-        System.out.println(fasIndex);
-        System.out.println(fast.val);
 
         ListNode newHead = fast.next;
         fast.next = null;

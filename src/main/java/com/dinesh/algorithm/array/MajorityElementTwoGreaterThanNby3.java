@@ -2,6 +2,7 @@ package com.dinesh.algorithm.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -41,50 +42,52 @@ public class MajorityElementTwoGreaterThanNby3 {
 
     }
 
+    class Bucket {
+        int num;
+        int count;
+    }
     public List<Integer> majorityElement(int[] nums) {
-        int[] e1 = { 0, -1 };
-        int[] e2 = { 0, 0 };
+        int n = nums.length;
+        var bucket1 = new Bucket();
+        var bucket2 = new Bucket();
+        String[] numbers = {"1", "2", "3", "4", "5"};
 
-        for(int i = 0; i < nums.length; i++) {
-            if(e1[0] == 0 && nums[i] != e2[1]) {
-                e1[0] = 1;
-                e1[1] = nums[i];
-            }
-            else if(e2[0] == 0 && nums[i] != e1[1]) {
-                e2[0] = 1;
-                e2[1] = nums[i];
-            }
-            else if(e1[1] == nums[i])
-                e1[0]++;
-            else if (e2[1] == nums[i])
-                e2[0]++;
+        for (int num : nums) {
+            if (bucket1.count == 0 && num != bucket2.num) {
+                bucket1.num = num;
+                bucket1.count = 1;
+            } else if (bucket2.count == 0 && num != bucket1.num) {
+                bucket2.num = num;
+                bucket2.count = 1;
+            } else if (num == bucket1.num)
+                bucket1.count += 1;
+            else if (num == bucket2.num)
+                bucket2.count += 1;
             else {
-                e1[0]--;
-                e2[0]--;
+                bucket1.count -= 1;
+                bucket2.count -= 1;
             }
         }
 
-        e1[0] = e2[0] = 0;
+        bucket1.count = 0;
+        bucket2.count = 0;
+
+        for (int num : nums) {
+            if (bucket1.num == num)
+                bucket1.count++;
+            if (bucket2.num == num)
+                bucket2.count++;
+        }
 
         List<Integer> result = new ArrayList<>();
-        int targetCount = (nums.length / 3) + 1;
-        for(int i = 0; i < nums.length; i++) {
-            if(nums[i] == e1[1])
-                e1[0]++;
-            else if(nums[i] == e2[1])
-                e2[0]++;
 
-            if(e1[0] == targetCount && !result.contains(e1[1]))
-                result.add(e1[1]);
-            if(e2[0] == targetCount && !result.contains(e2[1]))
-                result.add(e2[1]);
+        if(bucket1.count > (n/3))
+            result.add(bucket1.num);
 
-            if(result.size() == 2)
-                break;
-        }
+        if(bucket2.count > (n/3) && bucket2.num != bucket1.num)
+            result.add(bucket2.num);
 
         return result;
-
     }
 
 }

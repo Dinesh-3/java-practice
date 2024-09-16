@@ -8,6 +8,25 @@ package com.dinesh.algorithm.dynamic_programming;
  *
  */
 public class HouseRobber {
+
+    public int robSpaceOptimization(int[] nums) {
+        int n = nums.length;
+
+        int prevOne = nums[0];
+        int prevTwo = 0;
+
+        for(int index = 1; index< n; index++) {
+            int pick = nums[index];
+            if(index - 2 >= 0)
+                pick += prevTwo;
+            int notPick = prevOne;
+            prevTwo = prevOne;
+            prevOne = Math.max(pick, notPick);
+        }
+
+        return prevOne;
+    }
+
     public int rob(int[] nums) {
         int[] dp = new int[nums.length];
         dp[0] = nums[0];

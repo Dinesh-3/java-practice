@@ -1,7 +1,6 @@
 package com.dinesh.algorithm.dynamic_programming;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 120. Triangle
@@ -18,35 +17,68 @@ public class TriangleSum {
                                         List.of(4,1,8,3)
                                     );
         TriangleSum triangleSum = new TriangleSum();
-        triangleSum.minimumTotal(triangle);
     }
+
+    private int max = (int)(1e9 + 7);
+    public int minimumTotalMemoization(List<List<Integer>> triangle) {
+        Map<String, Integer> map = new HashMap<>();
+        return traverse(0, 0, triangle, map);
+    }
+
+    private int traverse(int r, int c, List<List<Integer>> triangle, Map<String, Integer> map) {
+        String key = r + "," + c;
+        int row = triangle.size();
+        if(r == row)
+            return 0;
+        if(c >= triangle.get(r).size())
+            return 0;
+        if(map.containsKey(key))
+            return map.get(key);
+
+        int left = triangle.get(r).get(c) + traverse(r+1, c, triangle, map);
+        int right = triangle.get(r).get(c) + traverse(r+1, c+1, triangle, map);
+        map.put(key, Math.min(left, right));
+        return map.get(key);
+    }
+
     public int minimumTotal(List<List<Integer>> triangle) {
-
         int r = triangle.size();
-        int c = triangle.get(r-1).size();
 
-        int[][] dp = new int[r][c];
-        for (var row: dp)
-            Arrays.fill(row, -1);
+        int[][] dp = new int[r][r];
 
-        for(int i = 0; i < r; i++) {
-            for(int j = 0; j < triangle.get(i).size(); j++) {
-                if(i == 0 && j == 0)
-                    dp[0][0] = triangle.get(0).get(0);
-                else {
-                    int left = Integer.MAX_VALUE;
-                    if(j - 1 >= 0)
-                        left = triangle.get(i).get(j) + dp[i][j-1];
+        for(int i = 0; i < r; i++)
+            dp[r-1][i] = triangle.get(r-1).get(i);
 
-                    int diag = Integer.MAX_VALUE;
-                    if(i - 1 >= 0 && j - 1 >= 0)
-                        diag = triangle.get(i).get(j) + dp[i-1][j-1];
-                    dp[i][j] = Math.min(left, diag);
-                }
+        for(int i = r-2; i >= 0; i--) {
+            for(int j = 0; j <= i; j++) {
+                int left = triangle.get(i).get(j) + dp[i+1][j];
+                int right = triangle.get(i).get(j) + dp[i+1][j+1];
+                dp[i][j] = Math.min(left, right);
             }
         }
 
-        return dp[r-1][c-1];
-
+        return dp[0][0];
     }
+
+
+    public int minimumTotalSpaceOptimization(List<List<Integer>> triangle) {
+        int r = triangle.size();
+
+        int[] dp = new int[r];
+
+        for(int i = 0; i < r; i++)
+            dp[i] = triangle.get(r-1).get(i);
+
+        for(int i = r-2; i >= 0; i--) {
+            for(int j = 0; j <= i; j++) {
+                int left = triangle.get(i).get(j) + dp[j];
+                int right = triangle.get(i).get(j) + dp[j+1];
+                dp[j] = Math.min(left, right);
+            }
+        }
+
+        return dp[0];
+    }
+
+
 }

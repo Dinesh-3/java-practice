@@ -5,6 +5,37 @@ public class NinjaTraining {
         return maximumPoints(points, n);
     }
 
+    public int maximumPointsTabulation(int arr[][], int N) {
+
+        int r = arr.length;
+        int c = arr[0].length;
+
+
+        int[][] dp = new int[r][c];
+
+        for(int i = 0; i < c; i++)
+            dp[0][i] = arr[0][i];
+
+
+        for(int row = 1; row < r; row++) {
+            for(int col = 0; col < c; col++) {
+                int maxi = 0;
+                for(int i = 0; i < c; i++)
+                    if(col != i)
+                        maxi = Math.max(arr[row][col] + dp[row-1][i], maxi);
+                dp[row][col] = maxi;
+            }
+        }
+
+        int maximum = 0;
+
+        for(int i = 0; i < c; i++)
+            maximum = Math.max(maximum, dp[r-1][i]);
+        return maximum;
+
+    }
+
+
     public static int maximumPoints(int arr[][], int N) {
 
         int r = arr.length;

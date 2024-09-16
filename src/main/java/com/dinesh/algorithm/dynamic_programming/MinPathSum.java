@@ -57,4 +57,25 @@ public class MinPathSum {
         }
 
     }
+
+    public int minPathSumSpaceOptimization(int[][] grid) {
+        int r = grid.length;
+        int c = grid[0].length;
+        int[] dp = new int[c];
+        for(int i = 0; i < r; i++) {
+            int[] cur = new int[c];
+            for(int j = 0; j < c; j++) {
+                if(i == 0 && j == 0) {
+                    cur[j] = grid[0][0];
+                    continue;
+                }
+                int left = i-1 < 0 ? Integer.MAX_VALUE : grid[i][j] + dp[j];
+                int right = j-1 < 0 ? Integer.MAX_VALUE : grid[i][j] + cur[j-1];
+                cur[j] = Math.min(left, right);
+            }
+            dp = cur;
+        }
+        return dp[c-1];
+    }
+
 }

@@ -10,9 +10,9 @@ public class ReverseLinkedList {
             return node;
 
         ListNode last = reverse(node.next);
-        ListNode next = node.next;
+        ListNode front = node.next;
         node.next = null;
-        next.next = node;
+        front.next = node;
         return last;
     }
 }

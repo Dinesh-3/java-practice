@@ -1,5 +1,7 @@
 package com.dinesh.algorithm.dynamic_programming;
 
+import java.util.*;
+
 /**
  *
  * 63. Unique Paths II
@@ -37,4 +39,31 @@ public class UniquePathsTwo {
         return dp[m-1][n-1];
 
     }
+
+    public int uniquePathsWithObstaclesMemoization(int[][] grid) {
+        int r = grid.length;
+        int c = grid[0].length;
+        if(grid[0][0] == 1)
+            return 0;
+        Map<String, Integer> map = new HashMap<>();
+        return traverse(r-1, c-1, grid, map);
+    }
+
+    private int traverse(int r, int c, int[][] obstacleGrid, Map<String, Integer> map) {
+        String key = r + "," + c;
+        if(r < 0 || c < 0)
+            return 0;
+        if(r == 0 && c == 0 )
+            return 1;
+
+        if(obstacleGrid[r][c] == 1)
+            return 0;
+        if(map.containsKey(key))
+            return map.get(key);
+
+        int res = traverse(r-1, c, obstacleGrid, map) + traverse(r, c-1, obstacleGrid, map);
+        map.put(key, res);
+        return map.get(key);
+    }
+
 }

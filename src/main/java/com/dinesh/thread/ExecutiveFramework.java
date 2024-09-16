@@ -97,7 +97,9 @@ public class ExecutiveFramework {
                     return result+" $";
                 })
 //                .thenRun() // blocks, with no param, no return
-//                .thenAccept() // blocks, Consumer with 1 result param
+                .thenAccept((res) -> {
+                    System.out.println("res = " + res);
+                }) // blocks, Consumer with 1 result param
 //                .thenAcceptAsync() // non block
 
         ;
