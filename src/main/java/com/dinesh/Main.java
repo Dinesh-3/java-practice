@@ -1,55 +1,127 @@
 package com.dinesh;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
 
+    @Component
+    class Address {
+        private String addressLine1;
+    }
+
+    @Component
+    @Scope("singleton")
+    class Person {
+        private String employeeId;
+        private String firstName;
+        private String lastNa;
+        private List<Address> addresses;
+    }
+
+
+
+    static class Person {
+        private String name;
+        private String place;
+
+        public Person(String name, String place) {
+            this.name = name;
+            this.place = place;
+        }
+    }
+
     public static void main(String[] args) {
-//        commonStrings();
-
-
-//        int index = 0;
-//        while(numbers[index] != -1) {
-//
-//        }
-
-        int[] numbers = {0, 1, 2, 3, 4, 5, 6, -1};
-
-        int indexOne = 0;
-        int indexTwo = 0;
-
-        while (true) {
-            indexOne += 1;
-            indexTwo += 2;
-
-            if(numbers[indexTwo-1] == -1)
-                break;
-            if(numbers[indexTwo] == -1)
-                break;
-        }
-
-        System.out.println("indexOne = " + indexOne);
-
+        /**
+         *
+         *
+         *  employee
+         *  id, name, email
+         *
+         *  salaree, tax,
+         *
+         *  processed_salary
+         *
+         *  salary_status
+         *
+         *  SELECT TOP 10
+         *
+         *  10,
+         *
+         *  10kb
+         *
+         *  100kb
+         *
+         * 1000000 / 100
+         *
+         * 10
+         *
+         * 1GB
+         *
+         * 1000 * 1000 /
+         *
+         * 1000000 * 10KB
+         *
+         *
+         */
     }
 
-    private static void commonStrings() {
-        String[] names1 = {"one", "two", "three"};
-        String[] names2 = {"two", "five", "seven", "three"};
+    private static void filterPerson() {
 
-        Map<String, Integer> map = new HashMap<>();
 
-        for(String name: names1)
-            map.put(name, map.getOrDefault(name, 0) + 1);
+        //'dileep', 'dev'
 
-        List<String> result = new ArrayList<>();
+        List<Person> persons = new ArrayList<>();
+        persons.add(new Person("Murail", "Karnataka"));
+        persons.add(new Person("Dinesh", "Tamilnadu"));
+        persons.add(new Person("Dev", "Tamilnadu"));
+        persons.add(new Person("Raj", "Karnataka"));
 
-        for (String name: names2) {
-            if(map.containsKey(name))
-                result.add(name);
-        }
+        List<Person> personsFromKarnataka = new ArrayList<>();
+        List<Person> personsFromTamilNadu = new ArrayList<>();
 
-        System.out.println("result = " + result);
-    }
+        // persons.stream().collect(Collectors.groupingBy(()))
 
+
+//        Executors.newFixedThreadPool()
+
+        /**
+         *
+         *
+         *
+         *
+         */
+
+
+        /**
+         *
+         *
+         *  {
+         *
+         *      // murali,
+         *      //
+         *
+         *      //
+         *
+         *      1, 5, 8,
+         *
+         *      /
+         *         Total Sent - 5, Pending -
+         *
+         *
+         *
+         *      /
+         *
+         *
+         *  }
+         *
+         *
+         *
+         *
+         *
+         */}
 
 }

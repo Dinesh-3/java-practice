@@ -23,7 +23,7 @@ public class ConcurrentCollections {
         hashMap(concurrentHashMap);
         hashMap(skipListMap);
 
-//        queue(linkedQueue);
+        queue(linkedQueue);
 //        queue(linkedDeque);
 
     }

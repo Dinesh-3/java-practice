@@ -252,19 +252,35 @@ public class BehaviouralPattern {
 
     private static void StatePattern() {
         /**
-         *
-         * State Pattern -> Polymorphism and setter implementation contains one has a relation
-         *  the class behavior changes based on its state
-         * Application:
-         *  1. It keeps the state-specific behavior.
-         *  2. It makes any state transitions explicit.
-         *  3. Follows Open Close Principle
-         *
-         * Used When:
-         *  1. When the behavior of object depends on its state, and
-         *      it must be able to change its behavior at runtime according to the new state.
-         *  2. It is used when the operations have large, multipart conditional statements
-         *      that depend on the state of an object.
+         State Pattern -> Polymorphism and setter implementation contains one has a relation
+          the class behavior changes based on its state
+         Application:
+          1. It keeps the state-specific behavior.
+          2. It makes any state transitions explicit.
+          3. Follows Open Close Principle
+
+         Used When:
+          1. When the behavior of object depends on its state, and
+              it must be able to change its behavior at runtime according to the new state.
+          2. It is used when the operations have large, multipart conditional statements
+              that depend on the state of an object.
+         WHEN TO USE
+         1. Multiple algorithmic variations: Product Owner says "We need different shipping cost calculations based on carrier (FedEx, UPS, DHL) and service level (standard, express, overnight)" - Strategy eliminates complex conditional logic for algorithm selection
+         2. Runtime algorithm switching: When business requirements involve changing behavior dynamically based on user preferences, configuration, or external factors like "customers should be able to choose their preferred payment method at checkout"
+         3. Plugin-based architecture: Technical constraints requiring extensible systems where new algorithms can be added without modifying existing code, such as "the system should support new authentication methods without changing core login logic"
+         4. Algorithm-intensive domains: When dealing with sorting, filtering, validation rules, or calculation methods where different implementations serve different performance or business characteristics
+
+         WHEN NOT TO USE
+         1. Simple binary decisions: When only 2-3 algorithmic choices exist with minimal complexity differences, boolean flags or enums are simpler and more performant than full Strategy pattern overhead
+         2. Performance-critical tight loops: Strategy pattern introduces method call indirection and potential object creation costs; for high-frequency operations, direct method calls or template methods may be faster alternatives
+         3. Stateful behavior changes: When object behavior depends on internal state transitions rather than external algorithm selection, State pattern is more appropriate than Strategy pattern
+
+         PRACTICAL BUSINESS USE CASES
+         1. E-commerce Payment Processing: "As a customer, I want to pay using my preferred payment method (credit card, PayPal, digital wallet, bank transfer), so that I can complete purchases conveniently" - PaymentStrategy encapsulates each payment gateway's API calls, validation rules, and fee calculations independently.
+         2. Report Generation System: "As a business analyst, I want to generate the same report in different formats (PDF, Excel, CSV, HTML), so that I can share data with different stakeholders who have different tool preferences" - ReportStrategy handles format-specific rendering, pagination, and styling logic.
+         3. Content Filtering and Moderation: "As a content manager, I want to apply different content filtering rules based on user age groups and regional regulations, so that we maintain compliance while providing appropriate content" - FilterStrategy implements age-appropriate, region-specific, and content-type filtering algorithms.
+         4. Notification Delivery: "As a system admin, I want to send notifications through different channels (email, SMS, push, Slack) based on urgency and user preferences, so that critical alerts reach users through their preferred communication method" - NotificationStrategy encapsulates channel-specific APIs and message formatting.
+
          */
         System.out.println("\n*** State Pattern ***\n");
         Canvas canvas = new Canvas();

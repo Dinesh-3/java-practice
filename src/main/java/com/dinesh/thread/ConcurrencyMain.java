@@ -14,12 +14,12 @@ public class ConcurrencyMain {
         long startTime = System.currentTimeMillis();
         List<Customer> customers = new ArrayList<>();
         while (true) {
-//            thread.DownloadFileTask downloadFileTask = new thread.DownloadFileTask();
-//            Thread thread = new Thread(new DownloadFileTask());
-//            thread.start();
-            customers.add(new Customer("Random", "Random", "sds", (byte)8, LocalDate.now(), (int) Math.random()));
-            customers.addAll(customers);
-            Thread.sleep(10);
+            thread.DownloadFileTask downloadFileTask = new thread.DownloadFileTask();
+            Thread thread = new Thread(new DownloadFileTask());
+            thread.start();
+//            customers.add(new Customer("Random", "Random", "sds", (byte)8, LocalDate.now(), (int) Math.random()));
+//            customers.addAll(customers);
+//            Thread.sleep(10);
             System.out.println("customers = " + customers);
 //            downloadFileTask.run();
 //            threads.add(thread);

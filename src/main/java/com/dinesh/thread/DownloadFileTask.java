@@ -15,20 +15,26 @@ public class DownloadFileTask implements Runnable {
   @Override
   public void run() {
     System.out.println("Downloading a file Task started with Thread: " + Thread.currentThread().getName());
-
-    for (var i = 0; i < 1_000_000; i++) {
-      if (Thread.currentThread().isInterrupted()) {
-        System.out.printf("%s Thread Interrupted stopping... ", Thread.currentThread().getName());
-        return;
-      };
-      status.incrementTotalBytes();
+    try {
+      while (true) {
+        Thread.sleep(5000);
+      }
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
     }
-
-    status.done();
-    synchronized (status) {
-      status.notifyAll();
-    }
-    System.out.println("Downloading a file Task completed with Thread: " + Thread.currentThread().getName());
+//    for (var i = 0; i < 1_000_000; i++) {
+//      if (Thread.currentThread().isInterrupted()) {
+//        System.out.printf("%s Thread Interrupted stopping... ", Thread.currentThread().getName());
+//        return;
+//      };
+//      status.incrementTotalBytes();
+//    }
+//
+//    status.done();
+//    synchronized (status) {
+//      status.notifyAll();
+//    }
+    //System.out.println("Downloading a file Task completed with Thread: " + Thread.currentThread().getName());
   }
 
 }

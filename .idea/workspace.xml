@@ -5,34 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7cd9d93-ff37-4579-8fcf-c7833c938041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/ConstructBinaryTreeFromInorderAndPostorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/ConstructBinaryTreeFromInorderAndPreorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/ChocolatePickup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/ClimbStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/SubsetSumProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/TargetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/string/CountAndSay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ProducerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/LexographicPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/DeadlockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ReentrantLockExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElementTwoGreaterThanNby3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MajorityElementTwoGreaterThanNby3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArrayWithXORByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SubArrayWithXORByK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/UnionOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/UnionOfTwoSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/JumpFrogNMinimumEnergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/JumpFrogNMinimumEnergy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/MinPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/MinPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/NinjaTraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/NinjaTraining.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/TriangleSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/TriangleSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/UniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/UniquePathsTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/UniquePathsTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/CoinChangeII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence/CoinChangeII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CheckIsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/CheckIsPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/linked_list/ReverseLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ExecutiveFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ExecutiveFramework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/SynchronizedCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/SynchronizedCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ThreadLocalPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ThreadLocalPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/DeleteAllOccurrenceOfLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/DeleteAllOccurrenceOfLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/FlattenLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/doubly_linkedlist/FlattenLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/ShortestCommonSubSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/dynamic_programming/subsequence_string/ShortestCommonSubSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/RateInAMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/recursion/RateInAMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/BehaviouralPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/design_patterns/behavioural/BehaviouralPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/problems/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/problems/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/CompletableFutureDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/CompletableFutureDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrencyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrencyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrentCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/ConcurrentCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/DownloadFileTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dinesh/thread/DownloadFileTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +42,6 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2OmHYVSHfSMN9ixM7nfhSHM3GrH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,10 +50,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/fullstack/apimart_backend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/practice/JavaPractice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -82,12 +72,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="ConstructBinaryTreeFromInorderAndPostorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.binary_tree.ConstructBinaryTreeFromInorderAndPostorder" />
+    <configuration name="ConcurrencyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.ConcurrencyMain" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.binary_tree.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.stack.LRUCache" />
+    <configuration name="DeadlockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.thread.DeadlockExample" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.stack.*" />
+          <option name="PATTERN" value="com.dinesh.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,21 +111,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumWindowSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.sliding_window.MinimumWindowSubsequence" />
-      <module name="JavaPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dinesh.algorithm.sliding_window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dinesh.thread.ProducerConsumer" />
+    <configuration name="ReentrantLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.thread.ReentrantLockExample" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -147,20 +124,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShortestCommonSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinesh.algorithm.dynamic_programming.subsequence_string.ShortestCommonSubSequence" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dinesh.algorithm.dynamic_programming.subsequence_string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.DeadlockExample" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ProducerConsumer" />
-      <item itemvalue="Application.ConstructBinaryTreeFromInorderAndPostorder" />
-      <item itemvalue="Application.LRUCache" />
-      <item itemvalue="Application.MinimumWindowSubsequence" />
+      <item itemvalue="Application.ConcurrencyMain" />
+      <item itemvalue="Application.ReentrantLockExample" />
+      <item itemvalue="Application.ShortestCommonSubSequence" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ProducerConsumer" />
-        <item itemvalue="Application.ConstructBinaryTreeFromInorderAndPostorder" />
-        <item itemvalue="Application.LRUCache" />
-        <item itemvalue="Application.MinimumWindowSubsequence" />
+        <item itemvalue="Application.DeadlockExample" />
+        <item itemvalue="Application.ReentrantLockExample" />
+        <item itemvalue="Application.ShortestCommonSubSequence" />
+        <item itemvalue="Application.ConcurrencyMain" />
       </list>
     </recent_temporary>
   </component>
@@ -389,11 +379,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/RotateArrayByK.java</url>
           <line>19</line>
           <option name="timeStamp" value="242" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/MissingNumberInSortedArray.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/array/SortZerosOnesTwos.java</url>
@@ -954,11 +939,6 @@
           <option name="timeStamp" value="585" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/sliding_window/MinimumWindowSubsequence.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="587" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/binary_tree/ConstructBinaryTreeFromInorderAndPostorder.java</url>
           <line>32</line>
           <option name="timeStamp" value="589" />
@@ -1066,6 +1046,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="583" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dinesh/algorithm/math/LexographicPalindrome.java</url>
+          <line>42</line>
+          <properties class="com.dinesh.algorithm.math.LexographicPalindrome" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="591" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -37,4 +37,21 @@ public class DeleteAllOccurrenceOfLinkedList {
         return head;
     }
 
+    static Node deleteAllOccurOfXBetterApproach(Node head, int x) {
+        Node root = new Node(0);
+
+        Node current = root;
+        while(head != null) {
+            Node next = head.next;
+            head.next = null;
+            if(head.data != x) {
+                current.next = head;
+                head.prev = current;
+                current = current.next;
+            }
+            head = next;
+        }
+        return root.next;
+    }
+
 }

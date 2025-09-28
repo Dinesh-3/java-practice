@@ -9,7 +9,7 @@ public class CompletableFutureDemo {
     public static void show() {
         var start = LocalTime.now();
 
-        var service = new FlightService();
+        var service = new thread.FlightService();
         var futures = service.getQuotes()
                 .map(future -> future.thenAccept(System.out::println))
                 .collect(Collectors.toList());

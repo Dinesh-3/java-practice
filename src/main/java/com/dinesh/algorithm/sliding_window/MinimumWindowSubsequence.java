@@ -21,7 +21,7 @@ public class MinimumWindowSubsequence {
 
                 String newString = str1.substring(i, k);
 
-                if(j == tl && min > newString.length()) {
+                if(j == tl && newString.length() < min ) {
                     min = newString.length();
                     result = newString;
                 }

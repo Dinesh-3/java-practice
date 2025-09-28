@@ -1,5 +1,7 @@
 package com.dinesh.algorithm.dynamic_programming.subsequence_string;
 
+import java.util.Arrays;
+
 /**
  *
  * 1092. Shortest Common Supersequence
@@ -11,6 +13,14 @@ package com.dinesh.algorithm.dynamic_programming.subsequence_string;
  */
 
 public class ShortestCommonSubSequence {
+    public static void main(String[] args) {
+        String str1 = "abac";
+        String str2 = "cab";
+
+        ShortestCommonSubSequence sequence = new ShortestCommonSubSequence();
+        String result = sequence.shortestCommonSupersequence(str1, str2);
+        System.out.println("result = " + result);
+    }
     public String shortestCommonSupersequence(String str1, String str2) {
         int l1 = str1.length();
         int l2 = str2.length();
@@ -25,7 +35,7 @@ public class ShortestCommonSubSequence {
                     dp[i1][i2] = Math.max(dp[i1-1][i2], dp[i1][i2-1]);
             }
         }
-
+        System.out.println("dp = " + Arrays.deepToString(dp));
         StringBuilder builder = new StringBuilder();
 
         int i = l1;

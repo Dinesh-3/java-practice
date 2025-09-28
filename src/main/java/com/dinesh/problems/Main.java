@@ -10,7 +10,7 @@ public class Main {
         System.out.println("factorial = " + factorial);
         int reverse = reverseNumber(123);
         System.out.println("reverse = " + reverse);
-        int countDigit = countDigit(34540324, 4);
+        int countDigit = countDigit(657);
         System.out.println("countDigit = " + countDigit);
     }
 
@@ -65,14 +65,9 @@ public class Main {
         return sum;
     }
 
-    public static int countDigit(int number, int target){
-        int count = 0;
-        while (number !=0 ) {
-            int mod = number % 10;
-            if(mod == target) count++;
-            number = number / 10;
-        }
-        System.out.println("count = " + count);
-        return count;
+    public static int countDigit(int number){
+        if(number == 0)
+            return 1;
+        return (int) Math.floor(Math.log10(number)) + 1;
     }
 }

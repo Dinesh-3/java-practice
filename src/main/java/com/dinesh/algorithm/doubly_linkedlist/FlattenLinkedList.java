@@ -46,7 +46,6 @@ public class FlattenLinkedList {
             }
 
             current = current.bottom;
-            current.bottom = null;
         }
 
         if(left != null)
